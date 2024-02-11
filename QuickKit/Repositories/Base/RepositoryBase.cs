@@ -1,18 +1,16 @@
 ﻿using Dapper;
 using FluentValidation;
-using Microsoft.Extensions.DependencyInjection;
 using QuickKit.Entities;
 using QuickKit.Exceptions;
 using QuickKit.Extensions.Data;
 using QuickKit.Shared.Builders;
-using QuickKit.Shared.Constants;
 using QuickKit.Shared.Handlers;
 using QuickKit.Validations.Extensions;
 using System.Data;
 
 namespace QuickKit.Repositories.Base;
 
-public abstract class RepositoryBase<TEntity> : IRepository<TEntity> where TEntity : class, IEntityBase
+public abstract class RepositoryBase<TEntity, TKey> : IRepository<TEntity, TKey> where TEntity : class, IEntityBase where TKey : struct
 {
     protected static readonly string ProcedureNameAdd = ProcedureNameEntityBuilder<TEntity>.Add;
     protected static readonly string ProcedureNameDelete = ProcedureNameEntityBuilder<TEntity>.Delete;
@@ -32,22 +30,19 @@ public abstract class RepositoryBase<TEntity> : IRepository<TEntity> where TEnti
     public abstract Task<IEnumerable<TEntity>> GetAllAsync();
     public abstract Task<int> AddAsync(TEntity entity);
     public abstract Task<int> UpdateAsync(TEntity entity);
-    public abstract Task<int> DeleteAsync(int id);
-    public abstract Task<TEntity?> GetByIdAsync(int id);
+    public abstract Task<int> DeleteAsync(TKey id);
+    public abstract Task<TEntity?> GetByIdAsync(TKey id);
 
-    public async Task<TEntity> GetByIdThrowAsync(int id, string notFoundExceptionMessage)
+    public async Task<TEntity> GetByIdThrowAsync(TKey id, string notFoundExceptionMessage)
     {
         return await GetByIdAsync(id) ?? throw new NotFoundException(notFoundExceptionMessage);
     }
 
-    protected async Task<bool> ExistsAsync(int id)
+    protected async Task<bool> ExistsAsync(CommandDefinition command)
     {
         using (IDbConnection conn = ConnectToDatabase())
         {
-            return await conn.QuerySingleAsync<bool>(
-                ProcedureNameEntityBuilder<TEntity>.ExistsById(),
-                new { id },
-                commandTimeout: DEFAULT_DATABASE_CNT.DEFAULT_COMMAND_TIMEOUT);
+            return await conn.QuerySingleAsync<bool>(command);
         }
     }
 
@@ -56,13 +51,13 @@ public abstract class RepositoryBase<TEntity> : IRepository<TEntity> where TEnti
         return _handler.ConnectToMySQL();
     }
 
-    protected virtual async Task<int> ExecuteOnDatabaseAsync(string procedureName, object? parameters)
+    protected virtual async Task<int> ExecuteOnDatabaseAsync(CommandDefinition command)
     {
         using (IDbConnection conn = ConnectToDatabase())
         {
             return await ExecuteOnTransactionAsync(conn, async () =>
             {
-                return await conn.SLExecuteAsync(procedureName, parameters);
+                return await conn.KitExecuteAsync(command);
             });
         }
     }
@@ -86,31 +81,26 @@ public abstract class RepositoryBase<TEntity> : IRepository<TEntity> where TEnti
         }
     }
 
-    protected async Task<int> ExecuteAsync(TEntity entity, string procedureName, object? parameters, string validationFailureMessage)
+    protected async Task<int> ExecuteAsync(TEntity entity, CommandDefinition command,
+                                           string validationFailureMessage)
     {
         await _validator.ValidateThrowAsync(entity, validationFailureMessage);
-        return await ExecuteOnDatabaseAsync(procedureName, parameters);
+        return await ExecuteOnDatabaseAsync(command);
     }
 
-    protected async Task<int> ExecuteIfExistsAsync(int id, string procedureName, string notFoundExceptionMessage, object? parameters)
-    {
-        if (!await ExistsAsync(id)) throw new NotFoundException(notFoundExceptionMessage);
-        return await ExecuteOnDatabaseAsync(procedureName, parameters);
-    }
-
-    protected async Task<IEnumerable<TResult>> QueryAsync<TResult>(string procedureName, object? parameters = null)
+    protected async Task<IEnumerable<TResult>> QueryAsync<TResult>(CommandDefinition command)
     {
         using (IDbConnection conn = ConnectToDatabase())
         {
-            return await conn.SLQuery<TResult>(procedureName, parameters);
+            return await conn.KitQuery<TResult>(command);
         }
     }
 
-    protected async Task<TResult?> QuerySingleOrDefaultAsync<TResult>(string procedureName, object? parameters = null)
+    protected async Task<TResult?> QuerySingleOrDefaultAsync<TResult>(CommandDefinition command)
     {
         using (IDbConnection conn = ConnectToDatabase())
         {
-            return await conn.SLQuerySingleOrDefaultAsync<TResult>(procedureName, parameters);
+            return await conn.KitQuerySingleOrDefaultAsync<TResult>(command);
         }
     }
 }
