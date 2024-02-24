@@ -1,5 +1,5 @@
 ﻿using Dapper;
-using QuickKit.Entities;
+using QuickKit.Shared.Entities;
 
 namespace QuickKit.Repositories.Base;
 

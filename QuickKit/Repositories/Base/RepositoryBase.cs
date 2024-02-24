@@ -1,11 +1,11 @@
 ﻿using Dapper;
 using FluentValidation;
-using QuickKit.Entities;
-using QuickKit.Exceptions;
 using QuickKit.Extensions.Data;
 using QuickKit.Shared.Builders;
+using QuickKit.Shared.Entities;
+using QuickKit.Shared.Exceptions;
 using QuickKit.Shared.Handlers;
-using QuickKit.Validations.Extensions;
+using QuickKit.Shared.Validations.Extensions;
 using System.Data;
 
 namespace QuickKit.Repositories.Base;

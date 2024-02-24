@@ -1,8 +1,8 @@
 ﻿using QuickKit.Cmd.Enums;
 
-namespace QuickKit.Cmd
+namespace QuickKit.Cmd.Shared
 {
-    public class Writer
+    internal class Writer
     {
         #region Write
         public static void Write(string text)
@@ -15,10 +15,6 @@ namespace QuickKit.Cmd
             Alerter.ShowAlert(text, type);
         }
 
-        #endregion
-
-        #region WriteLine
-
         public static void WriteLine(string text)
         {
             Console.WriteLine(text);
@@ -28,7 +24,6 @@ namespace QuickKit.Cmd
         {
             Alerter.ShowAlert(text, type);
         }
-
         #endregion
     }
 }

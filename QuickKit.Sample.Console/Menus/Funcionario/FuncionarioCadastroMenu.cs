@@ -1,12 +1,14 @@
 ﻿using QuickKit.Cmd;
+using QuickKit.Cmd.Enums;
+using QuickKit.Cmd.Menu;
 
-namespace QuickKit.Sample.Console.Menus.Funcionario
+namespace QuickKit.Sample.Cmd.Menus.Funcionario
 {
-    internal class FuncionarioCadastroMenu : IMenu
+    internal class FuncionarioCadastroMenu : MenuNoOption
     {
-        public void Show()
+        public override void Show()
         {
-            Writer.WriteLine("cadastrando funcionário");
+            Consoler.WriteLine("cadastrando funcionario...", AlertType.Success);
         }
     }
 }

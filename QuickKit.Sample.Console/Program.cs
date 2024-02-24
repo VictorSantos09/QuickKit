@@ -1,7 +1,7 @@
-﻿using QuickKit.Sample.Console.Menus;
+﻿using QuickKit.Sample.Cmd.Menus.Shared;
 
 while (true)
 {
-    MainMenu menu = new();
+    MenuPrimary menu = new();
     menu.Show();
 }

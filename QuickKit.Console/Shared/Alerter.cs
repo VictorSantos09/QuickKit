@@ -1,6 +1,6 @@
 ﻿using QuickKit.Cmd.Enums;
 
-namespace QuickKit.Cmd
+namespace QuickKit.Cmd.Shared
 {
     public class Alerter
     {
@@ -40,7 +40,7 @@ namespace QuickKit.Cmd
         #endregion
 
         #region Alerts
-        
+
         public static void ShowAlert(string text, AlertType type)
         {
             switch (type)

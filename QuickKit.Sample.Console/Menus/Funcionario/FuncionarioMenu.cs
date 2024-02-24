@@ -1,23 +1,27 @@
 ﻿using QuickKit.Cmd;
-using QuickKit.Sample.Console.Shared;
+using QuickKit.Cmd.Menu;
+using QuickKit.Sample.Cmd.Menus.Shared;
 
-namespace QuickKit.Sample.Console.Menus.Funcionario;
+namespace QuickKit.Sample.Cmd.Menus.Funcionario;
 
-internal class FuncionarioMenu : Menu
+internal class FuncionarioMenu : MenuSecundary
 {
     private readonly FuncionarioCadastroMenu _funcionarioCadastroMenu;
     private readonly FuncionarioConsultaMenu _funcionarioConsultaMenu;
+
+    private static readonly string _defaultInvalidOptionMessage = "Opção inválida, tente novamente.";
     public FuncionarioMenu()
     {
         _funcionarioCadastroMenu = new();
         _funcionarioConsultaMenu = new();
     }
-    internal override void GoToOption(int option)
+
+    public override void GoToOption(int option)
     {
         switch (option)
         {
             case 0:
-                OnBack();
+                Back();
                 break;
             case 1:
                 _funcionarioCadastroMenu.Show();
@@ -26,14 +30,15 @@ internal class FuncionarioMenu : Menu
                 _funcionarioConsultaMenu.Show();
                 break;
             default:
-                ShowInvalidOptionMessage();
+                ShowInvalidOptionMessage(_defaultInvalidOptionMessage);
                 break;
         }
     }
 
-    internal override void ShowOptions()
+
+    public override void ShowOptions()
     {
-        Writer.WriteLine("1 - Cadastrar");
-        Writer.WriteLine("2 - Consultar");
+        Consoler.WriteLine("1 - Cadastrar");
+        Consoler.WriteLine("2 - Consultar");
     }
 }
