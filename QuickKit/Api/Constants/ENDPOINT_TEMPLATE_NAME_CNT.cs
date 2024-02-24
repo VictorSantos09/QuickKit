@@ -7,4 +7,5 @@ public readonly struct ENDPOINT_TEMPLATE_NAME_CNT
     public const string UPDATE = "update";
     public const string GET_ALL = "";
     public const string GET_BY_ID = "{id}";
+    public const string TEST = "test";
 }

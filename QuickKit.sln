@@ -9,13 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit.Sample.Cmd", "Quic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit.Shared", "QuickKit.Shared\QuickKit.Shared.csproj", "{61E2ED52-2375-42FC-A273-F24506CD3499}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickKit.Cmd", "QuickKit.Console\QuickKit.Cmd.csproj", "{E0664F76-7C90-4F03-A24E-B1461CE1A8C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit.Cmd", "QuickKit.Console\QuickKit.Cmd.csproj", "{E0664F76-7C90-4F03-A24E-B1461CE1A8C9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frameworks", "Frameworks", "{9ED6F13C-CCAD-424A-86A1-8041F79A9FDF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{DB761A94-E0F6-4251-8337-FF7262C55FBD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{586077C5-AE84-4B9E-A480-803A90E177FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickKit.Sample.API", "QuickKit.Sample.API\QuickKit.Sample.API.csproj", "{193CC90C-1EBE-4EBA-96BC-3D1FC5BE982A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{E0664F76-7C90-4F03-A24E-B1461CE1A8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0664F76-7C90-4F03-A24E-B1461CE1A8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0664F76-7C90-4F03-A24E-B1461CE1A8C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193CC90C-1EBE-4EBA-96BC-3D1FC5BE982A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193CC90C-1EBE-4EBA-96BC-3D1FC5BE982A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193CC90C-1EBE-4EBA-96BC-3D1FC5BE982A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193CC90C-1EBE-4EBA-96BC-3D1FC5BE982A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{B7167730-E1EA-4AC7-BFCB-C3C9DB5ECEC7} = {DB761A94-E0F6-4251-8337-FF7262C55FBD}
 		{61E2ED52-2375-42FC-A273-F24506CD3499} = {586077C5-AE84-4B9E-A480-803A90E177FA}
 		{E0664F76-7C90-4F03-A24E-B1461CE1A8C9} = {9ED6F13C-CCAD-424A-86A1-8041F79A9FDF}
+		{193CC90C-1EBE-4EBA-96BC-3D1FC5BE982A} = {DB761A94-E0F6-4251-8337-FF7262C55FBD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E732398-F1E1-4A23-A3B6-3BCF05F12144}

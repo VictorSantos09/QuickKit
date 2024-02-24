@@ -1,11 +1,8 @@
-﻿using Dapper;
-using QuickKit.Shared.Entities;
+﻿using QuickKit.Shared.Entities;
 
 namespace QuickKit.Repositories.Base;
 
-public interface IRepository {}
-
-public interface IRepository<TEntity, TKey> : IRepository where TEntity : class, IEntityBase where TKey : struct
+public interface IRepository<TEntity, TKey> where TEntity : class, IEntityBase where TKey : struct
 {
     Task<IEnumerable<TEntity>> GetAllAsync();
     Task<TEntity?> GetByIdAsync(TKey id);
