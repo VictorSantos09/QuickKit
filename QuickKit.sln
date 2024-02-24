@@ -5,6 +5,10 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit", "QuickKit\QuickKit.csproj", "{D66078C1-B3C8-439B-B2AD-C3902316C691}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickKit.Sample.Console", "QuickKit.Sample.Console\QuickKit.Sample.Console.csproj", "{B7167730-E1EA-4AC7-BFCB-C3C9DB5ECEC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickKit.Shared", "QuickKit.Shared\QuickKit.Shared.csproj", "{61E2ED52-2375-42FC-A273-F24506CD3499}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D66078C1-B3C8-439B-B2AD-C3902316C691}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D66078C1-B3C8-439B-B2AD-C3902316C691}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D66078C1-B3C8-439B-B2AD-C3902316C691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7167730-E1EA-4AC7-BFCB-C3C9DB5ECEC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7167730-E1EA-4AC7-BFCB-C3C9DB5ECEC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7167730-E1EA-4AC7-BFCB-C3C9DB5ECEC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7167730-E1EA-4AC7-BFCB-C3C9DB5ECEC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E2ED52-2375-42FC-A273-F24506CD3499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E2ED52-2375-42FC-A273-F24506CD3499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E2ED52-2375-42FC-A273-F24506CD3499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E2ED52-2375-42FC-A273-F24506CD3499}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
