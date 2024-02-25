@@ -1,4 +1,4 @@
-﻿using QuickKit.Entities;
+﻿using QuickKit.Shared.Entities;
 
 namespace QuickKit.Shared.Builders;
 public class ViewNameEntityBuilder<TEntity> where TEntity : class, IEntityBase

@@ -1,4 +1,4 @@
-﻿namespace QuickKit.Exceptions;
+﻿namespace QuickKit.Shared.Exceptions;
 
 public class NotFoundException : Exception
 {

@@ -1,6 +1,6 @@
 ﻿using FluentValidation.Results;
 
-namespace QuickKit.Exceptions;
+namespace QuickKit.Shared.Exceptions;
 
 public class ValidationFailureException : Exception
 {

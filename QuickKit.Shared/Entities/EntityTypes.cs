@@ -1,6 +1,6 @@
-﻿namespace QuickKit.Entities;
+﻿namespace QuickKit.Shared.Entities;
 
-public interface IEntityBase {}
+public interface IEntityBase { }
 
 public interface IEntity : IEntityBase
 {

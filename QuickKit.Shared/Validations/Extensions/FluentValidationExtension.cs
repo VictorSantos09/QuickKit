@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
-using QuickKit.Entities;
-using QuickKit.Exceptions;
+using QuickKit.Shared.Entities;
+using QuickKit.Shared.Exceptions;
 
-namespace QuickKit.Validations.Extensions;
+namespace QuickKit.Shared.Validations.Extensions;
 
 public static class FluentValidationExtension
 {
