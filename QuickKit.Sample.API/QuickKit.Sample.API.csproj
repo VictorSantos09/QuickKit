@@ -14,6 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\QuickKit.AspNetCore\QuickKit.AspNetCore.csproj" />
+    <ProjectReference Include="..\QuickKit.Security\QuickKit.Security.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="QuickKit">
       <HintPath>..\QuickKit\bin\Debug\net7.0\QuickKit.dll</HintPath>
     </Reference>

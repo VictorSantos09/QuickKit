@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using QuickKit.Api;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using QuickKit.AspNetCore.Attributes;
 using QuickKit.Sample.API.Entities;
 using QuickKit.Sample.API.Services;
 
@@ -17,6 +18,7 @@ public class CargaController : ControllerBase
     }
 
     [HttpAddKit]
+    [Authorize]
     public async Task<IActionResult> AddAsync(CargaEntity entity)
     {
         await _cargaService.AddAsync(entity);

@@ -7,9 +7,9 @@ using System.Data;
 
 namespace QuickKit.Sample.API.Repositories;
 
-public class CargaRepository : RepositoryBase<CargaEntity, int>, ICargaRepository
+public class CargaRepository : Repository<CargaEntity, int>, ICargaRepository
 {
-    public CargaRepository(CargaValidator validator, DatabaseConnectionHandler handler) : base(validator, handler)
+    public CargaRepository(CargaValidator validator, IDatabaseConnectionHandler handler) : base(validator, handler)
     {
     }
 

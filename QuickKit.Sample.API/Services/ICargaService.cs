@@ -3,7 +3,7 @@ using QuickKit.Shared.Services;
 
 namespace QuickKit.Sample.API.Services;
 
-public interface ICargaService : IServiceTemplate<CargaEntity, int>
+public interface ICargaService : IService<CargaEntity, int>
 {
   
 }
