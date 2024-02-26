@@ -6,12 +6,12 @@ namespace QuickKit.Tests.Repositories;
 public class RepositoryBaseTests
 {
     private readonly IRepository<PersonEntity, int> _sut = Substitute.For<IRepository<PersonEntity, int>>();
-    
+
     [Fact]
     public async Task Add_ShouldComplete()
     {
         // Arrange
-        _sut.AddAsync(Arg.Any<PersonEntity>()).Returns(1);
+        _ = _sut.AddAsync(Arg.Any<PersonEntity>()).Returns(1);
 
         // Act
         var actual = await _sut.AddAsync(new PersonEntity());

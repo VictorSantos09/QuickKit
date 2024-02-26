@@ -17,12 +17,12 @@ public static class KitConfiguration
     /// <returns>The modified <see cref="IServiceCollection"/>.</returns>
     public static IServiceCollection AddQuickKit(this IServiceCollection services, string connectionString, Func<IDatabaseConnectionHandler>? config = null)
     {
-        if (config is null) services.AddSingleton<IDatabaseConnectionHandler>(new DatabaseConnectionHandlerMySQL(connectionString));
-        
+        if (config is null) _ = services.AddSingleton<IDatabaseConnectionHandler>(new DatabaseConnectionHandlerMySQL(connectionString));
+
         else
         {
             var handler = config.Invoke();
-            services.AddSingleton(handler);
+            _ = services.AddSingleton(handler);
         }
 
         return services;

@@ -3,7 +3,7 @@
 namespace QuickKit.AspNetCore.Middlewares.Requests;
 
 /// <summary>
-/// Represents a configuration request for the GlobalExceptionMiddleware./>/>
+/// Represents a configuration request for the GlobalExceptionMiddleware.
 /// </summary>
 /// <typeparam name="TException">The type of exception to handle.</typeparam>
 public readonly struct GlobalExceptionMiddlewareConfigurationRequest<TException> where TException : Exception

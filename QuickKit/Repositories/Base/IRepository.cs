@@ -7,7 +7,7 @@ namespace QuickKit.Repositories.Base;
 /// </summary>
 /// <typeparam name="TEntity">The type of the entity.</typeparam>
 /// <typeparam name="TKey">The type of the entity's primary key.</typeparam>
-public interface IRepository<TEntity, TKey> 
+public interface IRepository<TEntity, TKey>
     where TEntity : IEntity
     where TKey : IConvertible
 {

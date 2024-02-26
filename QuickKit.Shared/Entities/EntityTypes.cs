@@ -28,8 +28,8 @@ public interface IEntity<TKey> : IEntity
 /// <typeparam name="TEntity">The type of the entity.</typeparam>
 /// <typeparam name="TSnapshot">The type of the snapshot.</typeparam>
 /// <typeparam name="TKey">The type of the entity's key.</typeparam>
-public interface IEntity<TEntity, TSnapshot, TKey> : IEntity<TKey> 
-    where TEntity : IEntity<TKey> 
+public interface IEntity<TEntity, TSnapshot, TKey> : IEntity<TKey>
+    where TEntity : IEntity<TKey>
     where TSnapshot : class
     where TKey : IConvertible
 {

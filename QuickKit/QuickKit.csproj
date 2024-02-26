@@ -19,4 +19,12 @@
     <ProjectReference Include="..\QuickKit.Shared\QuickKit.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\victo\OneDrive\Área de Trabalho\QuickKit\QuickKit\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\victo\OneDrive\Área de Trabalho\QuickKit\QuickKit\.editorconfig" />
+  </ItemGroup>
+
 </Project>

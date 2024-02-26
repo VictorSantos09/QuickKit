@@ -22,9 +22,9 @@ public class CargaRepository : Repository<CargaEntity, int>, ICargaRepository
     public override async Task<int> DeleteAsync(int id)
     {
         var entity = await GetByIdThrowAsync(id, "carga não encontrada");
-        
+
         var command = new CommandDefinition(ProcedureNameDelete, new { id }, commandType: CommandType.StoredProcedure);
-        
+
         return await ExecuteAsync(entity, command, "carga inválida");
     }
 

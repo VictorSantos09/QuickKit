@@ -5,5 +5,5 @@ namespace QuickKit.Sample.API.Services;
 
 public interface ICargaService : IService<CargaEntity, int>
 {
-  
+
 }

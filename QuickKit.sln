@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit.AspNetCore", "Quic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E5C3F8FE-1E7A-4E85-BDB9-8D1ABE2A3A29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickKit.Tests", "QuickKit.Tests\QuickKit.Tests.csproj", "{1E81E73A-75C2-4931-9235-527159B60D42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit.Tests", "QuickKit.Tests\QuickKit.Tests.csproj", "{1E81E73A-75C2-4931-9235-527159B60D42}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{8A2D48FB-58D0-4833-BF99-E6B9FA9075D1}"
 EndProject
@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit.Sample.API", "Quic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit.Sample.Cmd", "QuickKit.Sample.Console\QuickKit.Sample.Cmd.csproj", "{BEC74464-3CA4-48B8-B046-68EE220149BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickKit.Security", "QuickKit.Security\QuickKit.Security.csproj", "{0E730C74-3ED3-4D47-84A8-9CD58E50FC4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit.Security", "QuickKit.Security\QuickKit.Security.csproj", "{0E730C74-3ED3-4D47-84A8-9CD58E50FC4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

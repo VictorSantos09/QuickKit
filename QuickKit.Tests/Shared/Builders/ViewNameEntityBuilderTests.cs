@@ -7,10 +7,10 @@ public class ViewNameEntityBuilderTests
     [Fact]
     public void Build_shouldReturnViewNameWithoutEntity()
     {
-		// Act
+        // Act
         var viewName = ViewNameEntityBuilder<ValidNameTestEntity>.All;
 
-		// Assert
+        // Assert
         Assert.Equal("vw_validnametest_all", viewName);
-    }   
+    }
 }

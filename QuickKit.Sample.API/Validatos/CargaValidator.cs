@@ -8,7 +8,7 @@ public class CargaValidator : Validator<CargaEntity>
 {
     public CargaValidator()
     {
-        RuleFor(x => x.Nome).NotEmpty().WithMessage("Nome é obrigatório");
-        RuleFor(x => x.Descricao).NotEmpty().WithMessage("Descrição é obrigatória");
+        _ = RuleFor(x => x.Nome).NotEmpty().WithMessage("Nome é obrigatório");
+        _ = RuleFor(x => x.Descricao).NotEmpty().WithMessage("Descrição é obrigatória");
     }
 }

@@ -1,5 +1,4 @@
 ﻿using QuickKit.Cmd;
-using QuickKit.Cmd.Menu;
 using QuickKit.Sample.Cmd.Menus.Shared;
 
 namespace QuickKit.Sample.Cmd.Menus.Funcionario;

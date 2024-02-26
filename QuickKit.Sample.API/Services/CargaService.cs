@@ -14,12 +14,12 @@ public class CargaService : ICargaService
 
     public async Task AddAsync(CargaEntity entity)
     {
-        await _cargaRepository.AddAsync(entity);
+        _ = await _cargaRepository.AddAsync(entity);
     }
 
     public async Task DeleteAsync(int id)
     {
-        await _cargaRepository.DeleteAsync(id);
+        _ = await _cargaRepository.DeleteAsync(id);
     }
 
     public async Task<IEnumerable<CargaEntity>> GetAllAsync()
@@ -34,6 +34,6 @@ public class CargaService : ICargaService
 
     public async Task UpdateAsync(CargaEntity entity)
     {
-        await _cargaRepository.UpdateAsync(entity);
+        _ = await _cargaRepository.UpdateAsync(entity);
     }
 }

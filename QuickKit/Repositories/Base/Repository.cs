@@ -15,8 +15,8 @@ namespace QuickKit.Repositories.Base;
 /// </summary>
 /// <typeparam name="TEntity">The type of the entity.</typeparam>
 /// <typeparam name="TKey">The type of the entity's primary key.</typeparam>
-public abstract class Repository<TEntity, TKey> 
-    where TEntity : IEntity 
+public abstract class Repository<TEntity, TKey>
+    where TEntity : IEntity
     where TKey : IConvertible
 {
     protected static readonly string ProcedureNameAdd = ProcedureNameEntityBuilder<TEntity>.Add;
