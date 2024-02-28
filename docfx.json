@@ -1,0 +1,71 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "**/*.csproj"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "**QuickKit.Sample.API/**",
+            "**QuickKit.Sample.Console/**",
+            "**QuickKit.Tests/**"
+
+          ],
+          "src": "./"
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml,xml}"
+        ],
+        "exclude": [
+          "_site/**",
+          "obj/**",
+          "bin/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ],
+        "exclude": [
+          "obj/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "modern",
+      "default"
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "*/**.md",
+          "*/**.yml",
+          "*/**.xml",
+          "*/**.cs"
+        ],
+        "exclude": [
+          "obj/**"
+        ]
+      }
+    ],
+    "globalMetadata": {
+      "_appName": "QuickKit",
+      "_appTitle": "QuickKit",
+      "_enableSearch": true,
+      "pdf": true
+    }
+  }
+}
