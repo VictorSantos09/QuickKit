@@ -1,25 +1,48 @@
 ﻿namespace QuickKit.Shared.Entities;
 
-public interface IEntityBase { }
+/// <summary>
+/// Interface base for all entities used in the application.
+/// </summary>
+/// <remarks>-- DO NOT USE DIRECTLY ON ENTITIES --
+/// <para>Instead implements from <see cref="IEntity{TKey}"/> or <see cref="IEntity{TEntity, TSnapshot, TKey}"/></para>
+/// <para>It is only used to identity entities, you can use it to do the same.</para>
+/// </remarks>
+public interface IEntity { }
 
-public interface IEntity : IEntityBase
+/// <summary>
+/// Represents an entity with a specified key.
+/// </summary>
+/// <typeparam name="TKey">The type of the entity's key.</typeparam>
+public interface IEntity<TKey> : IEntity
+    where TKey : IConvertible
 {
-    public int Id { get; set; }
+    /// <summary>
+    /// Gets or sets the entity's key.
+    /// </summary>
+    TKey Id { get; set; }
 }
 
-public interface IEntity<TKey> : IEntityBase where TKey : struct
+/// <summary>
+/// Represents an entity with a specified key, along with methods to convert to and from a snapshot.
+/// </summary>
+/// <typeparam name="TEntity">The type of the entity.</typeparam>
+/// <typeparam name="TSnapshot">The type of the snapshot.</typeparam>
+/// <typeparam name="TKey">The type of the entity's key.</typeparam>
+public interface IEntity<TEntity, TSnapshot, TKey> : IEntity<TKey>
+    where TEntity : IEntity<TKey>
+    where TSnapshot : class
+    where TKey : IConvertible
 {
-    public TKey Id { get; set; }
-}
-
-public interface IEntity<TEntity, TSnapshot> : IEntity where TEntity : IEntity
-{
+    /// <summary>
+    /// Converts a snapshot to an entity.
+    /// </summary>
+    /// <param name="snapshot">The snapshot to convert.</param>
+    /// <returns>The converted entity.</returns>
     public abstract static TEntity FromSnapshot(TSnapshot snapshot);
-    TSnapshot ToSnapshot();
-}
 
-public interface IEntity<TEntity, TSnapshot, Tkey> : IEntity where TEntity : IEntity<Tkey> where Tkey : struct
-{
-    public abstract static TEntity FromSnapshot(TSnapshot snapshot);
+    /// <summary>
+    /// Converts the entity to a snapshot.
+    /// </summary>
+    /// <returns>The snapshot representation of the entity.</returns>
     TSnapshot ToSnapshot();
 }

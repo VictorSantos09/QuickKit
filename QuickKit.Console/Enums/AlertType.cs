@@ -1,10 +1,9 @@
-﻿namespace QuickKit.Cmd.Enums
+﻿namespace QuickKit.Cmd.Enums;
+
+public enum AlertType
 {
-    public enum AlertType
-    {
-        None,
-        Warning,
-        Error,
-        Success
-    }
+    None,
+    Warning,
+    Error,
+    Success
 }

@@ -1,6 +1,4 @@
-﻿using QuickKit.Cmd.Enums;
-
-namespace QuickKit.Cmd.Menu.Interfaces;
+﻿namespace QuickKit.Cmd.Menu.Interfaces;
 
 public interface IMenuMain : IMenu
 {
