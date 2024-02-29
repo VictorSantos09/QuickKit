@@ -691,6 +691,76 @@
       "version": ""
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Repositories.RepositoryBaseTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Repositories.RepositoryBaseTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Repositories.TestEntities.PersonEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Repositories.TestEntities.PersonEntity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Repositories.TestEntities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Repositories.TestEntities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Repositories.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Shared.Builders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Shared.Builders.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
@@ -709,6 +779,19 @@
       "output": {
         ".html": {
           "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""

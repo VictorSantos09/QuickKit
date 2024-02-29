@@ -214,5 +214,16 @@
   "QuickKit.Shared.Validations.Common.Validator`1": "QuickKit.Shared.Validations.Common.Validator-1.yml",
   "QuickKit.Shared.Validations.Extensions": "QuickKit.Shared.Validations.Extensions.yml",
   "QuickKit.Shared.Validations.Extensions.FluentValidationExtension": "QuickKit.Shared.Validations.Extensions.FluentValidationExtension.yml",
-  "QuickKit.Shared.Validations.Extensions.FluentValidationExtension.ValidateThrowAsync``1(FluentValidation.IValidator{``0},``0,System.String)": "QuickKit.Shared.Validations.Extensions.FluentValidationExtension.yml"
+  "QuickKit.Shared.Validations.Extensions.FluentValidationExtension.ValidateThrowAsync``1(FluentValidation.IValidator{``0},``0,System.String)": "QuickKit.Shared.Validations.Extensions.FluentValidationExtension.yml",
+  "QuickKit.Tests.Repositories": "QuickKit.Tests.Repositories.yml",
+  "QuickKit.Tests.Repositories.RepositoryBaseTests": "QuickKit.Tests.Repositories.RepositoryBaseTests.yml",
+  "QuickKit.Tests.Repositories.RepositoryBaseTests.Add_ShouldComplete": "QuickKit.Tests.Repositories.RepositoryBaseTests.yml",
+  "QuickKit.Tests.Repositories.TestEntities": "QuickKit.Tests.Repositories.TestEntities.yml",
+  "QuickKit.Tests.Repositories.TestEntities.PersonEntity": "QuickKit.Tests.Repositories.TestEntities.PersonEntity.yml",
+  "QuickKit.Tests.Repositories.TestEntities.PersonEntity.Id": "QuickKit.Tests.Repositories.TestEntities.PersonEntity.yml",
+  "QuickKit.Tests.Shared.Builders": "QuickKit.Tests.Shared.Builders.yml",
+  "QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests": "QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.yml",
+  "QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity": "QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.yml",
+  "QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests": "QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.yml",
+  "QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.Build_shouldReturnViewNameWithoutEntity": "QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.yml"
 }
