@@ -1,0 +1,80 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.AspNetCore.Controllers
+  commentId: N:QuickKit.AspNetCore.Controllers
+  id: QuickKit.AspNetCore.Controllers
+  children:
+  - QuickKit.AspNetCore.Controllers.Controller`2
+  - QuickKit.AspNetCore.Controllers.IController`2
+  langs:
+  - csharp
+  - vb
+  name: QuickKit.AspNetCore.Controllers
+  nameWithType: QuickKit.AspNetCore.Controllers
+  fullName: QuickKit.AspNetCore.Controllers
+  type: Namespace
+  assemblies:
+  - QuickKit.AspNetCore
+references:
+- uid: QuickKit.AspNetCore.Controllers.IController`2
+  commentId: T:QuickKit.AspNetCore.Controllers.IController`2
+  href: QuickKit.AspNetCore.Controllers.IController-2.html
+  name: IController<TEntity, TKey>
+  nameWithType: IController<TEntity, TKey>
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>
+  nameWithType.vb: IController(Of TEntity, TKey)
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey)
+  name.vb: IController(Of TEntity, TKey)
+  spec.csharp:
+  - uid: QuickKit.AspNetCore.Controllers.IController`2
+    name: IController
+    href: QuickKit.AspNetCore.Controllers.IController-2.html
+  - name: <
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: '>'
+  spec.vb:
+  - uid: QuickKit.AspNetCore.Controllers.IController`2
+    name: IController
+    href: QuickKit.AspNetCore.Controllers.IController-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: )
+- uid: QuickKit.AspNetCore.Controllers.Controller`2
+  commentId: T:QuickKit.AspNetCore.Controllers.Controller`2
+  href: QuickKit.AspNetCore.Controllers.Controller-2.html
+  name: Controller<TEntity, TKey>
+  nameWithType: Controller<TEntity, TKey>
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>
+  nameWithType.vb: Controller(Of TEntity, TKey)
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey)
+  name.vb: Controller(Of TEntity, TKey)
+  spec.csharp:
+  - uid: QuickKit.AspNetCore.Controllers.Controller`2
+    name: Controller
+    href: QuickKit.AspNetCore.Controllers.Controller-2.html
+  - name: <
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: '>'
+  spec.vb:
+  - uid: QuickKit.AspNetCore.Controllers.Controller`2
+    name: Controller
+    href: QuickKit.AspNetCore.Controllers.Controller-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: )

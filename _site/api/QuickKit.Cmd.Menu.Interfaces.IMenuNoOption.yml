@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption
+  commentId: T:QuickKit.Cmd.Menu.Interfaces.IMenuNoOption
+  id: IMenuNoOption
+  parent: QuickKit.Cmd.Menu.Interfaces
+  children:
+  - QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show
+  langs:
+  - csharp
+  - vb
+  name: IMenuNoOption
+  nameWithType: IMenuNoOption
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption
+  type: Interface
+  source:
+    remote:
+      path: QuickKit.Console/Menu/Interfaces/IMenuNoOption.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: IMenuNoOption
+    path: QuickKit.Console/Menu/Interfaces/IMenuNoOption.cs
+    startLine: 1
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu.Interfaces
+  syntax:
+    content: public interface IMenuNoOption
+    content.vb: Public Interface IMenuNoOption
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show
+  id: Show
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption
+  langs:
+  - csharp
+  - vb
+  name: Show()
+  nameWithType: IMenuNoOption.Show()
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/Interfaces/IMenuNoOption.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: Show
+    path: QuickKit.Console/Menu/Interfaces/IMenuNoOption.cs
+    startLine: 3
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu.Interfaces
+  syntax:
+    content: void Show()
+    content.vb: Sub Show()
+  overload: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show*
+references:
+- uid: QuickKit.Cmd.Menu.Interfaces
+  commentId: N:QuickKit.Cmd.Menu.Interfaces
+  href: QuickKit.html
+  name: QuickKit.Cmd.Menu.Interfaces
+  nameWithType: QuickKit.Cmd.Menu.Interfaces
+  fullName: QuickKit.Cmd.Menu.Interfaces
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu
+    name: Menu
+    href: QuickKit.Cmd.Menu.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu.Interfaces
+    name: Interfaces
+    href: QuickKit.Cmd.Menu.Interfaces.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu
+    name: Menu
+    href: QuickKit.Cmd.Menu.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu.Interfaces
+    name: Interfaces
+    href: QuickKit.Cmd.Menu.Interfaces.html
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show*
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show
+  href: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.html#QuickKit_Cmd_Menu_Interfaces_IMenuNoOption_Show
+  name: Show
+  nameWithType: IMenuNoOption.Show
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show

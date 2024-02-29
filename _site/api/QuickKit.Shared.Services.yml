@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Shared.Services
+  commentId: N:QuickKit.Shared.Services
+  id: QuickKit.Shared.Services
+  children:
+  - QuickKit.Shared.Services.IService`2
+  langs:
+  - csharp
+  - vb
+  name: QuickKit.Shared.Services
+  nameWithType: QuickKit.Shared.Services
+  fullName: QuickKit.Shared.Services
+  type: Namespace
+  assemblies:
+  - QuickKit.Shared
+references:
+- uid: QuickKit.Shared.Services.IService`2
+  commentId: T:QuickKit.Shared.Services.IService`2
+  href: QuickKit.Shared.Services.IService-2.html
+  name: IService<TEntity, TKey>
+  nameWithType: IService<TEntity, TKey>
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>
+  nameWithType.vb: IService(Of TEntity, TKey)
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey)
+  name.vb: IService(Of TEntity, TKey)
+  spec.csharp:
+  - uid: QuickKit.Shared.Services.IService`2
+    name: IService
+    href: QuickKit.Shared.Services.IService-2.html
+  - name: <
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: '>'
+  spec.vb:
+  - uid: QuickKit.Shared.Services.IService`2
+    name: IService
+    href: QuickKit.Shared.Services.IService-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: )

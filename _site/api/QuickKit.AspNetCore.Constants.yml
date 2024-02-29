@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.AspNetCore.Constants
+  commentId: N:QuickKit.AspNetCore.Constants
+  id: QuickKit.AspNetCore.Constants
+  children:
+  - QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  langs:
+  - csharp
+  - vb
+  name: QuickKit.AspNetCore.Constants
+  nameWithType: QuickKit.AspNetCore.Constants
+  fullName: QuickKit.AspNetCore.Constants
+  type: Namespace
+  assemblies:
+  - QuickKit.AspNetCore
+references:
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  commentId: T:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  href: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.html
+  name: ENDPOINT_NAME_CNT_KIT
+  nameWithType: ENDPOINT_NAME_CNT_KIT
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT

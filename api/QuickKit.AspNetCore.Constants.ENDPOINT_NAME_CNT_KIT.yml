@@ -1,0 +1,476 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  commentId: T:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  id: ENDPOINT_NAME_CNT_KIT
+  parent: QuickKit.AspNetCore.Constants
+  children:
+  - QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.ADD
+  - QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.DELETE
+  - QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_ALL
+  - QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_BY_ID
+  - QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.TEST
+  - QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.UPDATE
+  langs:
+  - csharp
+  - vb
+  name: ENDPOINT_NAME_CNT_KIT
+  nameWithType: ENDPOINT_NAME_CNT_KIT
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  type: Struct
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ENDPOINT_NAME_CNT_KIT
+    path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+    startLine: 5
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Constants
+  summary: Contains the endpoint naming conventions from the QuickKit Framework.
+  example: []
+  syntax:
+    content: public readonly struct ENDPOINT_NAME_CNT_KIT
+    content.vb: Public Structure ENDPOINT_NAME_CNT_KIT
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.DELETE
+  commentId: F:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.DELETE
+  id: DELETE
+  parent: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  langs:
+  - csharp
+  - vb
+  name: DELETE
+  nameWithType: ENDPOINT_NAME_CNT_KIT.DELETE
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.DELETE
+  type: Field
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: DELETE
+    path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+    startLine: 10
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Constants
+  summary: Represents the "delete" endpoint.
+  example: []
+  syntax:
+    content: public const string DELETE = "delete"
+    return:
+      type: System.String
+    content.vb: Public Const DELETE As String = "delete"
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.ADD
+  commentId: F:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.ADD
+  id: ADD
+  parent: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  langs:
+  - csharp
+  - vb
+  name: ADD
+  nameWithType: ENDPOINT_NAME_CNT_KIT.ADD
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.ADD
+  type: Field
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ADD
+    path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+    startLine: 15
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Constants
+  summary: Represents the "add" endpoint.
+  example: []
+  syntax:
+    content: public const string ADD = "add"
+    return:
+      type: System.String
+    content.vb: Public Const ADD As String = "add"
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.UPDATE
+  commentId: F:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.UPDATE
+  id: UPDATE
+  parent: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  langs:
+  - csharp
+  - vb
+  name: UPDATE
+  nameWithType: ENDPOINT_NAME_CNT_KIT.UPDATE
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.UPDATE
+  type: Field
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: UPDATE
+    path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+    startLine: 20
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Constants
+  summary: Represents the "update" endpoint.
+  example: []
+  syntax:
+    content: public const string UPDATE = "update"
+    return:
+      type: System.String
+    content.vb: Public Const UPDATE As String = "update"
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_ALL
+  commentId: F:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_ALL
+  id: GET_ALL
+  parent: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  langs:
+  - csharp
+  - vb
+  name: GET_ALL
+  nameWithType: ENDPOINT_NAME_CNT_KIT.GET_ALL
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_ALL
+  type: Field
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: GET_ALL
+    path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+    startLine: 25
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Constants
+  summary: Represents the "get all" endpoint.
+  example: []
+  syntax:
+    content: public const string GET_ALL = ""
+    return:
+      type: System.String
+    content.vb: Public Const GET_ALL As String = ""
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_BY_ID
+  commentId: F:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_BY_ID
+  id: GET_BY_ID
+  parent: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  langs:
+  - csharp
+  - vb
+  name: GET_BY_ID
+  nameWithType: ENDPOINT_NAME_CNT_KIT.GET_BY_ID
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_BY_ID
+  type: Field
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: GET_BY_ID
+    path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+    startLine: 30
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Constants
+  summary: Represents the "get by id" endpoint with a placeholder for the ID.
+  example: []
+  syntax:
+    content: public const string GET_BY_ID = "{id}"
+    return:
+      type: System.String
+    content.vb: Public Const GET_BY_ID As String = "{id}"
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.TEST
+  commentId: F:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.TEST
+  id: TEST
+  parent: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  langs:
+  - csharp
+  - vb
+  name: TEST
+  nameWithType: ENDPOINT_NAME_CNT_KIT.TEST
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.TEST
+  type: Field
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: TEST
+    path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
+    startLine: 35
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Constants
+  summary: Represents the "test" endpoint.
+  example: []
+  syntax:
+    content: public const string TEST = "test"
+    return:
+      type: System.String
+    content.vb: Public Const TEST As String = "test"
+references:
+- uid: QuickKit.AspNetCore.Constants
+  commentId: N:QuickKit.AspNetCore.Constants
+  href: QuickKit.html
+  name: QuickKit.AspNetCore.Constants
+  nameWithType: QuickKit.AspNetCore.Constants
+  fullName: QuickKit.AspNetCore.Constants
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.AspNetCore
+    name: AspNetCore
+    href: QuickKit.AspNetCore.html
+  - name: .
+  - uid: QuickKit.AspNetCore.Constants
+    name: Constants
+    href: QuickKit.AspNetCore.Constants.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.AspNetCore
+    name: AspNetCore
+    href: QuickKit.AspNetCore.html
+  - name: .
+  - uid: QuickKit.AspNetCore.Constants
+    name: Constants
+    href: QuickKit.AspNetCore.Constants.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

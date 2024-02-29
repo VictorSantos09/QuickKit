@@ -1,0 +1,780 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Security.Jwt.JwtTokenRequest
+  commentId: T:QuickKit.Security.Jwt.JwtTokenRequest
+  id: JwtTokenRequest
+  parent: QuickKit.Security.Jwt
+  children:
+  - QuickKit.Security.Jwt.JwtTokenRequest.#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.DateTime,System.String,System.String,System.String,System.Nullable{System.DateTime},System.String)
+  - QuickKit.Security.Jwt.JwtTokenRequest.Algorithm
+  - QuickKit.Security.Jwt.JwtTokenRequest.Audience
+  - QuickKit.Security.Jwt.JwtTokenRequest.Claims
+  - QuickKit.Security.Jwt.JwtTokenRequest.Expires
+  - QuickKit.Security.Jwt.JwtTokenRequest.Issuer
+  - QuickKit.Security.Jwt.JwtTokenRequest.NotBefore
+  - QuickKit.Security.Jwt.JwtTokenRequest.TokenKey
+  langs:
+  - csharp
+  - vb
+  name: JwtTokenRequest
+  nameWithType: JwtTokenRequest
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest
+  type: Struct
+  source:
+    remote:
+      path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: JwtTokenRequest
+    path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+    startLine: 8
+  assemblies:
+  - QuickKit.Security
+  namespace: QuickKit.Security.Jwt
+  summary: Represents a request for generating a JWT token.
+  example: []
+  syntax:
+    content: public readonly struct JwtTokenRequest
+    content.vb: Public Structure JwtTokenRequest
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Claims
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.Claims
+  id: Claims
+  parent: QuickKit.Security.Jwt.JwtTokenRequest
+  langs:
+  - csharp
+  - vb
+  name: Claims
+  nameWithType: JwtTokenRequest.Claims
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Claims
+  type: Property
+  source:
+    remote:
+      path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: Claims
+    path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+    startLine: 10
+  assemblies:
+  - QuickKit.Security
+  namespace: QuickKit.Security.Jwt
+  syntax:
+    content: public IEnumerable<Claim> Claims { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Security.Claims.Claim}
+    content.vb: Public Property Claims As IEnumerable(Of Claim)
+  overload: QuickKit.Security.Jwt.JwtTokenRequest.Claims*
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Expires
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.Expires
+  id: Expires
+  parent: QuickKit.Security.Jwt.JwtTokenRequest
+  langs:
+  - csharp
+  - vb
+  name: Expires
+  nameWithType: JwtTokenRequest.Expires
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Expires
+  type: Property
+  source:
+    remote:
+      path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: Expires
+    path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+    startLine: 11
+  assemblies:
+  - QuickKit.Security
+  namespace: QuickKit.Security.Jwt
+  syntax:
+    content: public DateTime Expires { get; init; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property Expires As Date
+  overload: QuickKit.Security.Jwt.JwtTokenRequest.Expires*
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.TokenKey
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.TokenKey
+  id: TokenKey
+  parent: QuickKit.Security.Jwt.JwtTokenRequest
+  langs:
+  - csharp
+  - vb
+  name: TokenKey
+  nameWithType: JwtTokenRequest.TokenKey
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.TokenKey
+  type: Property
+  source:
+    remote:
+      path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: TokenKey
+    path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+    startLine: 12
+  assemblies:
+  - QuickKit.Security
+  namespace: QuickKit.Security.Jwt
+  syntax:
+    content: public string TokenKey { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TokenKey As String
+  overload: QuickKit.Security.Jwt.JwtTokenRequest.TokenKey*
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Issuer
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.Issuer
+  id: Issuer
+  parent: QuickKit.Security.Jwt.JwtTokenRequest
+  langs:
+  - csharp
+  - vb
+  name: Issuer
+  nameWithType: JwtTokenRequest.Issuer
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Issuer
+  type: Property
+  source:
+    remote:
+      path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: Issuer
+    path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+    startLine: 13
+  assemblies:
+  - QuickKit.Security
+  namespace: QuickKit.Security.Jwt
+  syntax:
+    content: public string Issuer { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Issuer As String
+  overload: QuickKit.Security.Jwt.JwtTokenRequest.Issuer*
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Audience
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.Audience
+  id: Audience
+  parent: QuickKit.Security.Jwt.JwtTokenRequest
+  langs:
+  - csharp
+  - vb
+  name: Audience
+  nameWithType: JwtTokenRequest.Audience
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Audience
+  type: Property
+  source:
+    remote:
+      path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: Audience
+    path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+    startLine: 14
+  assemblies:
+  - QuickKit.Security
+  namespace: QuickKit.Security.Jwt
+  syntax:
+    content: public string Audience { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Audience As String
+  overload: QuickKit.Security.Jwt.JwtTokenRequest.Audience*
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.NotBefore
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.NotBefore
+  id: NotBefore
+  parent: QuickKit.Security.Jwt.JwtTokenRequest
+  langs:
+  - csharp
+  - vb
+  name: NotBefore
+  nameWithType: JwtTokenRequest.NotBefore
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.NotBefore
+  type: Property
+  source:
+    remote:
+      path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: NotBefore
+    path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+    startLine: 15
+  assemblies:
+  - QuickKit.Security
+  namespace: QuickKit.Security.Jwt
+  syntax:
+    content: public DateTime? NotBefore { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property NotBefore As Date?
+  overload: QuickKit.Security.Jwt.JwtTokenRequest.NotBefore*
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Algorithm
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.Algorithm
+  id: Algorithm
+  parent: QuickKit.Security.Jwt.JwtTokenRequest
+  langs:
+  - csharp
+  - vb
+  name: Algorithm
+  nameWithType: JwtTokenRequest.Algorithm
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Algorithm
+  type: Property
+  source:
+    remote:
+      path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: Algorithm
+    path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+    startLine: 16
+  assemblies:
+  - QuickKit.Security
+  namespace: QuickKit.Security.Jwt
+  syntax:
+    content: public string Algorithm { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Algorithm As String
+  overload: QuickKit.Security.Jwt.JwtTokenRequest.Algorithm*
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.DateTime,System.String,System.String,System.String,System.Nullable{System.DateTime},System.String)
+  commentId: M:QuickKit.Security.Jwt.JwtTokenRequest.#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.DateTime,System.String,System.String,System.String,System.Nullable{System.DateTime},System.String)
+  id: '#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.DateTime,System.String,System.String,System.String,System.Nullable{System.DateTime},System.String)'
+  parent: QuickKit.Security.Jwt.JwtTokenRequest
+  langs:
+  - csharp
+  - vb
+  name: JwtTokenRequest(IEnumerable<Claim>, DateTime, string, string, string, DateTime?, string)
+  nameWithType: JwtTokenRequest.JwtTokenRequest(IEnumerable<Claim>, DateTime, string, string, string, DateTime?, string)
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.JwtTokenRequest(System.Collections.Generic.IEnumerable<System.Security.Claims.Claim>, System.DateTime, string, string, string, System.DateTime?, string)
+  type: Constructor
+  source:
+    remote:
+      path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+      branch: fea-docs
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: .ctor
+    path: QuickKit.Security/Jwt/JwtTokenRequest.cs
+    startLine: 28
+  assemblies:
+  - QuickKit.Security
+  namespace: QuickKit.Security.Jwt
+  summary: Initializes a new instance of the <xref href="QuickKit.Security.Jwt.JwtTokenRequest" data-throw-if-not-resolved="false"></xref> struct.
+  example: []
+  syntax:
+    content: public JwtTokenRequest(IEnumerable<Claim> claims, DateTime expires, string tokenKey, string issuer, string audience, DateTime? notBefore = null, string algorithm = "HS256")
+    parameters:
+    - id: claims
+      type: System.Collections.Generic.IEnumerable{System.Security.Claims.Claim}
+      description: The claims to include in the token.
+    - id: expires
+      type: System.DateTime
+      description: The expiration date and time of the token.
+    - id: tokenKey
+      type: System.String
+      description: The key used to sign the token.
+    - id: issuer
+      type: System.String
+      description: The issuer of the token.
+    - id: audience
+      type: System.String
+      description: The audience of the token.
+    - id: notBefore
+      type: System.Nullable{System.DateTime}
+      description: The not-before date and time of the token.
+    - id: algorithm
+      type: System.String
+      description: The algorithm used to sign the token.
+    content.vb: Public Sub New(claims As IEnumerable(Of Claim), expires As Date, tokenKey As String, issuer As String, audience As String, notBefore As Date? = Nothing, algorithm As String = "HS256")
+  overload: QuickKit.Security.Jwt.JwtTokenRequest.#ctor*
+  nameWithType.vb: JwtTokenRequest.New(IEnumerable(Of Claim), Date, String, String, String, Date?, String)
+  fullName.vb: QuickKit.Security.Jwt.JwtTokenRequest.New(System.Collections.Generic.IEnumerable(Of System.Security.Claims.Claim), Date, String, String, String, Date?, String)
+  name.vb: New(IEnumerable(Of Claim), Date, String, String, String, Date?, String)
+references:
+- uid: QuickKit.Security.Jwt
+  commentId: N:QuickKit.Security.Jwt
+  href: QuickKit.html
+  name: QuickKit.Security.Jwt
+  nameWithType: QuickKit.Security.Jwt
+  fullName: QuickKit.Security.Jwt
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Security
+    name: Security
+    href: QuickKit.Security.html
+  - name: .
+  - uid: QuickKit.Security.Jwt
+    name: Jwt
+    href: QuickKit.Security.Jwt.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Security
+    name: Security
+    href: QuickKit.Security.html
+  - name: .
+  - uid: QuickKit.Security.Jwt
+    name: Jwt
+    href: QuickKit.Security.Jwt.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Claims*
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.Claims
+  href: QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Claims
+  name: Claims
+  nameWithType: JwtTokenRequest.Claims
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Claims
+- uid: System.Collections.Generic.IEnumerable{System.Security.Claims.Claim}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Security.Claims.Claim}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Claim>
+  nameWithType: IEnumerable<Claim>
+  fullName: System.Collections.Generic.IEnumerable<System.Security.Claims.Claim>
+  nameWithType.vb: IEnumerable(Of Claim)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Security.Claims.Claim)
+  name.vb: IEnumerable(Of Claim)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.claims.claim
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.claims.claim
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Expires*
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.Expires
+  href: QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Expires
+  name: Expires
+  nameWithType: JwtTokenRequest.Expires
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Expires
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.TokenKey*
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.TokenKey
+  href: QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_TokenKey
+  name: TokenKey
+  nameWithType: JwtTokenRequest.TokenKey
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.TokenKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Issuer*
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.Issuer
+  href: QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Issuer
+  name: Issuer
+  nameWithType: JwtTokenRequest.Issuer
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Issuer
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Audience*
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.Audience
+  href: QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Audience
+  name: Audience
+  nameWithType: JwtTokenRequest.Audience
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Audience
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.NotBefore*
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.NotBefore
+  href: QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_NotBefore
+  name: NotBefore
+  nameWithType: JwtTokenRequest.NotBefore
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.NotBefore
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Algorithm*
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.Algorithm
+  href: QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Algorithm
+  name: Algorithm
+  nameWithType: JwtTokenRequest.Algorithm
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Algorithm
+- uid: QuickKit.Security.Jwt.JwtTokenRequest
+  commentId: T:QuickKit.Security.Jwt.JwtTokenRequest
+  parent: QuickKit.Security.Jwt
+  href: QuickKit.Security.Jwt.JwtTokenRequest.html
+  name: JwtTokenRequest
+  nameWithType: JwtTokenRequest
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.#ctor*
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.#ctor
+  href: QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest__ctor_System_Collections_Generic_IEnumerable_System_Security_Claims_Claim__System_DateTime_System_String_System_String_System_String_System_Nullable_System_DateTime__System_String_
+  name: JwtTokenRequest
+  nameWithType: JwtTokenRequest.JwtTokenRequest
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.JwtTokenRequest
+  nameWithType.vb: JwtTokenRequest.New
+  fullName.vb: QuickKit.Security.Jwt.JwtTokenRequest.New
+  name.vb: New

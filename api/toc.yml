@@ -1,0 +1,163 @@
+### YamlMime:TableOfContent
+items:
+- uid: QuickKit.AspNetCore.Attributes
+  name: QuickKit.AspNetCore.Attributes
+  items:
+  - uid: QuickKit.AspNetCore.Attributes.HttpAddKit
+    name: HttpAddKit
+  - uid: QuickKit.AspNetCore.Attributes.HttpDeleteKit
+    name: HttpDeleteKit
+  - uid: QuickKit.AspNetCore.Attributes.HttpGetAllKit
+    name: HttpGetAllKit
+  - uid: QuickKit.AspNetCore.Attributes.HttpGetByIdKit
+    name: HttpGetByIdKit
+  - uid: QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit
+    name: HttpGetTestEndPointKit
+  - uid: QuickKit.AspNetCore.Attributes.HttpUpdateKit
+    name: HttpUpdateKit
+- uid: QuickKit.AspNetCore.Configuration
+  name: QuickKit.AspNetCore.Configuration
+  items:
+  - uid: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration
+    name: AspNetCoreConfiguration
+- uid: QuickKit.AspNetCore.Constants
+  name: QuickKit.AspNetCore.Constants
+  items:
+  - uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+    name: ENDPOINT_NAME_CNT_KIT
+- uid: QuickKit.AspNetCore.Controllers
+  name: QuickKit.AspNetCore.Controllers
+  items:
+  - uid: QuickKit.AspNetCore.Controllers.Controller`2
+    name: Controller<TEntity, TKey>
+  - uid: QuickKit.AspNetCore.Controllers.IController`2
+    name: IController<TEntity, TKey>
+- uid: QuickKit.AspNetCore.Middlewares.Requests
+  name: QuickKit.AspNetCore.Middlewares.Requests
+  items:
+  - uid: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1
+    name: GlobalExceptionMiddlewareConfigurationRequest<TException>
+- uid: QuickKit.AspNetCore.Middlewares.Types
+  name: QuickKit.AspNetCore.Middlewares.Types
+  items:
+  - uid: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom`1
+    name: GlobalExceptiomMiddlewareCustom<TException>
+  - uid: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault
+    name: GlobalExceptionMiddlewareDefault
+- uid: QuickKit.Cmd
+  name: QuickKit.Cmd
+  items:
+  - uid: QuickKit.Cmd.Consoler
+    name: Consoler
+- uid: QuickKit.Cmd.Enums
+  name: QuickKit.Cmd.Enums
+  items:
+  - uid: QuickKit.Cmd.Enums.AlertType
+    name: AlertType
+- uid: QuickKit.Cmd.Menu
+  name: QuickKit.Cmd.Menu
+  items:
+  - uid: QuickKit.Cmd.Menu.MenuMain
+    name: MenuMain
+  - uid: QuickKit.Cmd.Menu.MenuNoOption
+    name: MenuNoOption
+  - uid: QuickKit.Cmd.Menu.MenuSub
+    name: MenuSub
+- uid: QuickKit.Cmd.Menu.Interfaces
+  name: QuickKit.Cmd.Menu.Interfaces
+  items:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu
+    name: IMenu
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenuMain
+    name: IMenuMain
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption
+    name: IMenuNoOption
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenuSub
+    name: IMenuSub
+- uid: QuickKit.Cmd.Shared
+  name: QuickKit.Cmd.Shared
+  items:
+  - uid: QuickKit.Cmd.Shared.Alerter
+    name: Alerter
+- uid: QuickKit.Configuration
+  name: QuickKit.Configuration
+  items:
+  - uid: QuickKit.Configuration.KitConfiguration
+    name: KitConfiguration
+- uid: QuickKit.Repositories.Base
+  name: QuickKit.Repositories.Base
+  items:
+  - uid: QuickKit.Repositories.Base.IRepository`2
+    name: IRepository<TEntity, TKey>
+  - uid: QuickKit.Repositories.Base.Repository`2
+    name: Repository<TEntity, TKey>
+- uid: QuickKit.Security.Configuration
+  name: QuickKit.Security.Configuration
+  items:
+  - uid: QuickKit.Security.Configuration.SecurityConfiguration
+    name: SecurityConfiguration
+- uid: QuickKit.Security.Configuration.Jwt
+  name: QuickKit.Security.Configuration.Jwt
+  items:
+  - uid: QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration
+    name: JwtBearerConfiguration
+- uid: QuickKit.Security.Jwt
+  name: QuickKit.Security.Jwt
+  items:
+  - uid: QuickKit.Security.Jwt.IJwtTokenGenerator
+    name: IJwtTokenGenerator
+  - uid: QuickKit.Security.Jwt.JwtTokenRequest
+    name: JwtTokenRequest
+- uid: QuickKit.Shared.Builders
+  name: QuickKit.Shared.Builders
+  items:
+  - uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+    name: ProcedureNameEntityBuilder<TEntity>
+  - uid: QuickKit.Shared.Builders.ViewNameEntityBuilder`1
+    name: ViewNameEntityBuilder<TEntity>
+- uid: QuickKit.Shared.Entities
+  name: QuickKit.Shared.Entities
+  items:
+  - uid: QuickKit.Shared.Entities.IEntity
+    name: IEntity
+  - uid: QuickKit.Shared.Entities.IEntity`1
+    name: IEntity<TKey>
+  - uid: QuickKit.Shared.Entities.IEntity`3
+    name: IEntity<TEntity, TSnapshot, TKey>
+- uid: QuickKit.Shared.Exceptions
+  name: QuickKit.Shared.Exceptions
+  items:
+  - uid: QuickKit.Shared.Exceptions.EntityNotFoundException
+    name: EntityNotFoundException
+  - uid: QuickKit.Shared.Exceptions.NotFoundException
+    name: NotFoundException
+  - uid: QuickKit.Shared.Exceptions.SnapshotNullException
+    name: SnapshotNullException
+  - uid: QuickKit.Shared.Exceptions.ValidationFailureException
+    name: ValidationFailureException
+- uid: QuickKit.Shared.Extensions
+  name: QuickKit.Shared.Extensions
+  items:
+  - uid: QuickKit.Shared.Extensions.StringExtensions
+    name: StringExtensions
+- uid: QuickKit.Shared.Handlers
+  name: QuickKit.Shared.Handlers
+  items:
+  - uid: QuickKit.Shared.Handlers.IDatabaseConnectionHandler
+    name: IDatabaseConnectionHandler
+- uid: QuickKit.Shared.Services
+  name: QuickKit.Shared.Services
+  items:
+  - uid: QuickKit.Shared.Services.IService`2
+    name: IService<TEntity, TKey>
+- uid: QuickKit.Shared.Validations.Common
+  name: QuickKit.Shared.Validations.Common
+  items:
+  - uid: QuickKit.Shared.Validations.Common.Validator`1
+    name: Validator<TEntity>
+- uid: QuickKit.Shared.Validations.Extensions
+  name: QuickKit.Shared.Validations.Extensions
+  items:
+  - uid: QuickKit.Shared.Validations.Extensions.FluentValidationExtension
+    name: FluentValidationExtension
+memberLayout: SamePage

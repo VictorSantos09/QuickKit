@@ -3,33 +3,23 @@
     {
       "src": [
         {
+          "src": "..",
           "files": [
             "**/*.csproj"
-          ],
-          "exclude": [
-            "**/obj/**",
-            "**/bin/**",
-            "**QuickKit.Sample.API/**",
-            "**QuickKit.Sample.Console/**",
-            "**QuickKit.Tests/**"
-
-          ],
-          "src": "./"
+          ]
         }
       ],
-      "dest": "api"
+      "dest": "_site/api"
     }
   ],
   "build": {
     "content": [
       {
         "files": [
-          "**/*.{md,yml,xml}"
+          "**/*.{md,yml,xml,csproj}"
         ],
         "exclude": [
-          "_site/**",
-          "obj/**",
-          "bin/**"
+          "_site/**"
         ]
       }
     ],
@@ -37,29 +27,13 @@
       {
         "files": [
           "images/**"
-        ],
-        "exclude": [
-          "obj/**"
         ]
       }
     ],
     "output": "_site",
     "template": [
-      "modern",
-      "default"
-    ],
-    "overwrite": [
-      {
-        "files": [
-          "*/**.md",
-          "*/**.yml",
-          "*/**.xml",
-          "*/**.cs"
-        ],
-        "exclude": [
-          "obj/**"
-        ]
-      }
+      "default",
+      "modern"
     ],
     "globalMetadata": {
       "_appName": "QuickKit",

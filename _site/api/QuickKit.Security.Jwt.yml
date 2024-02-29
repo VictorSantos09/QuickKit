@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Security.Jwt
+  commentId: N:QuickKit.Security.Jwt
+  id: QuickKit.Security.Jwt
+  children:
+  - QuickKit.Security.Jwt.IJwtTokenGenerator
+  - QuickKit.Security.Jwt.JwtTokenRequest
+  langs:
+  - csharp
+  - vb
+  name: QuickKit.Security.Jwt
+  nameWithType: QuickKit.Security.Jwt
+  fullName: QuickKit.Security.Jwt
+  type: Namespace
+  assemblies:
+  - QuickKit.Security
+references:
+- uid: QuickKit.Security.Jwt.IJwtTokenGenerator
+  commentId: T:QuickKit.Security.Jwt.IJwtTokenGenerator
+  href: QuickKit.Security.Jwt.IJwtTokenGenerator.html
+  name: IJwtTokenGenerator
+  nameWithType: IJwtTokenGenerator
+  fullName: QuickKit.Security.Jwt.IJwtTokenGenerator
+- uid: QuickKit.Security.Jwt.JwtTokenRequest
+  commentId: T:QuickKit.Security.Jwt.JwtTokenRequest
+  parent: QuickKit.Security.Jwt
+  href: QuickKit.Security.Jwt.JwtTokenRequest.html
+  name: JwtTokenRequest
+  nameWithType: JwtTokenRequest
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest
+- uid: QuickKit.Security.Jwt
+  commentId: N:QuickKit.Security.Jwt
+  href: QuickKit.html
+  name: QuickKit.Security.Jwt
+  nameWithType: QuickKit.Security.Jwt
+  fullName: QuickKit.Security.Jwt
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Security
+    name: Security
+    href: QuickKit.Security.html
+  - name: .
+  - uid: QuickKit.Security.Jwt
+    name: Jwt
+    href: QuickKit.Security.Jwt.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Security
+    name: Security
+    href: QuickKit.Security.html
+  - name: .
+  - uid: QuickKit.Security.Jwt
+    name: Jwt
+    href: QuickKit.Security.Jwt.html
