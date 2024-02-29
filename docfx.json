@@ -6,13 +6,6 @@
           "src": "../",
           "files": [
             "**/*.csproj"
-          ],
-          "excludes":[
-            "**/obj/**",
-            "**/bin/**",
-            "**QuickKit.Sample.API/**",
-            "**QuickKit.Sample.Console/**",
-            "**QuickKit.Tests/**"
           ]
         }
       ],
@@ -26,9 +19,7 @@
           "**/*.{md,yml,xml}"
         ],
         "exclude": [
-          "_site/**",
-          "obj/**",
-          "bin/**"
+          "_site/**"
         ]
       }
     ],
