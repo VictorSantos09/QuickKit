@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.AspNetCore.Configuration
+  commentId: N:QuickKit.AspNetCore.Configuration
+  id: QuickKit.AspNetCore.Configuration
+  children:
+  - QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration
+  langs:
+  - csharp
+  - vb
+  name: QuickKit.AspNetCore.Configuration
+  nameWithType: QuickKit.AspNetCore.Configuration
+  fullName: QuickKit.AspNetCore.Configuration
+  type: Namespace
+  assemblies:
+  - QuickKit.AspNetCore
+references:
+- uid: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration
+  commentId: T:QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration
+  href: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.html
+  name: AspNetCoreConfiguration
+  nameWithType: AspNetCoreConfiguration
+  fullName: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration

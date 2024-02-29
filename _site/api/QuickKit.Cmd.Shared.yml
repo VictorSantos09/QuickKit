@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Cmd.Shared
+  commentId: N:QuickKit.Cmd.Shared
+  id: QuickKit.Cmd.Shared
+  children:
+  - QuickKit.Cmd.Shared.Alerter
+  langs:
+  - csharp
+  - vb
+  name: QuickKit.Cmd.Shared
+  nameWithType: QuickKit.Cmd.Shared
+  fullName: QuickKit.Cmd.Shared
+  type: Namespace
+  assemblies:
+  - QuickKit.Cmd
+references:
+- uid: QuickKit.Cmd.Shared.Alerter
+  commentId: T:QuickKit.Cmd.Shared.Alerter
+  href: QuickKit.Cmd.Shared.Alerter.html
+  name: Alerter
+  nameWithType: Alerter
+  fullName: QuickKit.Cmd.Shared.Alerter

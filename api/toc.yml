@@ -160,21 +160,4 @@ items:
   items:
   - uid: QuickKit.Shared.Validations.Extensions.FluentValidationExtension
     name: FluentValidationExtension
-- uid: QuickKit.Tests.Repositories
-  name: QuickKit.Tests.Repositories
-  items:
-  - uid: QuickKit.Tests.Repositories.RepositoryBaseTests
-    name: RepositoryBaseTests
-- uid: QuickKit.Tests.Repositories.TestEntities
-  name: QuickKit.Tests.Repositories.TestEntities
-  items:
-  - uid: QuickKit.Tests.Repositories.TestEntities.PersonEntity
-    name: PersonEntity
-- uid: QuickKit.Tests.Shared.Builders
-  name: QuickKit.Tests.Shared.Builders
-  items:
-  - uid: QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests
-    name: ProcedureNameEntityBuilderTests
-  - uid: QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests
-    name: ViewNameEntityBuilderTests
 memberLayout: SamePage

@@ -339,40 +339,15 @@
     "title": "Namespace QuickKit.Shared.Validations.Extensions | QuickKit",
     "keywords": "Namespace QuickKit.Shared.Validations.Extensions Classes FluentValidationExtension"
   },
-  "api/QuickKit.Tests.Repositories.RepositoryBaseTests.html": {
-    "href": "api/QuickKit.Tests.Repositories.RepositoryBaseTests.html",
-    "title": "Class RepositoryBaseTests | QuickKit",
-    "keywords": "Class RepositoryBaseTests Namespace QuickKit.Tests.Repositories Assembly QuickKit.Tests.dll public class RepositoryBaseTests Inheritance object RepositoryBaseTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Add_ShouldComplete() [Fact] public Task Add_ShouldComplete() Returns Task"
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | QuickKit",
+    "keywords": "Getting Started"
   },
-  "api/QuickKit.Tests.Repositories.TestEntities.PersonEntity.html": {
-    "href": "api/QuickKit.Tests.Repositories.TestEntities.PersonEntity.html",
-    "title": "Class PersonEntity | QuickKit",
-    "keywords": "Class PersonEntity Namespace QuickKit.Tests.Repositories.TestEntities Assembly QuickKit.Tests.dll public class PersonEntity : IEntity Inheritance object PersonEntity Implements IEntity Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties Id public int Id { get; set; } Property Value int"
-  },
-  "api/QuickKit.Tests.Repositories.TestEntities.html": {
-    "href": "api/QuickKit.Tests.Repositories.TestEntities.html",
-    "title": "Namespace QuickKit.Tests.Repositories.TestEntities | QuickKit",
-    "keywords": "Namespace QuickKit.Tests.Repositories.TestEntities Classes PersonEntity"
-  },
-  "api/QuickKit.Tests.Repositories.html": {
-    "href": "api/QuickKit.Tests.Repositories.html",
-    "title": "Namespace QuickKit.Tests.Repositories | QuickKit",
-    "keywords": "Namespace QuickKit.Tests.Repositories Classes RepositoryBaseTests"
-  },
-  "api/QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.html": {
-    "href": "api/QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.html",
-    "title": "Class ProcedureNameEntityBuilderTests | QuickKit",
-    "keywords": "Class ProcedureNameEntityBuilderTests Namespace QuickKit.Tests.Shared.Builders Assembly QuickKit.Tests.dll public class ProcedureNameEntityBuilderTests Inheritance object ProcedureNameEntityBuilderTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity() [Fact] public void Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity()"
-  },
-  "api/QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.html": {
-    "href": "api/QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.html",
-    "title": "Class ViewNameEntityBuilderTests | QuickKit",
-    "keywords": "Class ViewNameEntityBuilderTests Namespace QuickKit.Tests.Shared.Builders Assembly QuickKit.Tests.dll public class ViewNameEntityBuilderTests Inheritance object ViewNameEntityBuilderTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Build_shouldReturnViewNameWithoutEntity() [Fact] public void Build_shouldReturnViewNameWithoutEntity()"
-  },
-  "api/QuickKit.Tests.Shared.Builders.html": {
-    "href": "api/QuickKit.Tests.Shared.Builders.html",
-    "title": "Namespace QuickKit.Tests.Shared.Builders | QuickKit",
-    "keywords": "Namespace QuickKit.Tests.Shared.Builders Classes ProcedureNameEntityBuilderTests ViewNameEntityBuilderTests"
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | QuickKit",
+    "keywords": "Introduction"
   },
   "index.html": {
     "href": "index.html",

@@ -19,7 +19,6 @@ items:
 references:
 - uid: QuickKit.Shared.Entities.IEntity
   commentId: T:QuickKit.Shared.Entities.IEntity
-  parent: QuickKit.Shared.Entities
   href: QuickKit.Shared.Entities.IEntity.html
   name: IEntity
   nameWithType: IEntity
@@ -86,33 +85,3 @@ references:
   - name: " "
   - name: TKey
   - name: )
-- uid: QuickKit.Shared.Entities
-  commentId: N:QuickKit.Shared.Entities
-  href: QuickKit.html
-  name: QuickKit.Shared.Entities
-  nameWithType: QuickKit.Shared.Entities
-  fullName: QuickKit.Shared.Entities
-  spec.csharp:
-  - uid: QuickKit
-    name: QuickKit
-    href: QuickKit.html
-  - name: .
-  - uid: QuickKit.Shared
-    name: Shared
-    href: QuickKit.Shared.html
-  - name: .
-  - uid: QuickKit.Shared.Entities
-    name: Entities
-    href: QuickKit.Shared.Entities.html
-  spec.vb:
-  - uid: QuickKit
-    name: QuickKit
-    href: QuickKit.html
-  - name: .
-  - uid: QuickKit.Shared
-    name: Shared
-    href: QuickKit.Shared.html
-  - name: .
-  - uid: QuickKit.Shared.Entities
-    name: Entities
-    href: QuickKit.Shared.Entities.html

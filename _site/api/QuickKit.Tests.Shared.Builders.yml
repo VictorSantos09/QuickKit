@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Tests.Shared.Builders
+  commentId: N:QuickKit.Tests.Shared.Builders
+  id: QuickKit.Tests.Shared.Builders
+  children:
+  - QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests
+  - QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests
+  langs:
+  - csharp
+  - vb
+  name: QuickKit.Tests.Shared.Builders
+  nameWithType: QuickKit.Tests.Shared.Builders
+  fullName: QuickKit.Tests.Shared.Builders
+  type: Namespace
+  assemblies:
+  - QuickKit.Tests
+references:
+- uid: QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests
+  commentId: T:QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests
+  href: QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.html
+  name: ProcedureNameEntityBuilderTests
+  nameWithType: ProcedureNameEntityBuilderTests
+  fullName: QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests
+- uid: QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests
+  commentId: T:QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests
+  href: QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.html
+  name: ViewNameEntityBuilderTests
+  nameWithType: ViewNameEntityBuilderTests
+  fullName: QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests

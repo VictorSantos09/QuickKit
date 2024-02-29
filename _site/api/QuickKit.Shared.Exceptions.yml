@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Shared.Exceptions
+  commentId: N:QuickKit.Shared.Exceptions
+  id: QuickKit.Shared.Exceptions
+  children:
+  - QuickKit.Shared.Exceptions.EntityNotFoundException
+  - QuickKit.Shared.Exceptions.NotFoundException
+  - QuickKit.Shared.Exceptions.SnapshotNullException
+  - QuickKit.Shared.Exceptions.ValidationFailureException
+  langs:
+  - csharp
+  - vb
+  name: QuickKit.Shared.Exceptions
+  nameWithType: QuickKit.Shared.Exceptions
+  fullName: QuickKit.Shared.Exceptions
+  type: Namespace
+  assemblies:
+  - QuickKit.Shared
+references:
+- uid: QuickKit.Shared.Exceptions.EntityNotFoundException
+  commentId: T:QuickKit.Shared.Exceptions.EntityNotFoundException
+  href: QuickKit.Shared.Exceptions.EntityNotFoundException.html
+  name: EntityNotFoundException
+  nameWithType: EntityNotFoundException
+  fullName: QuickKit.Shared.Exceptions.EntityNotFoundException
+- uid: QuickKit.Shared.Exceptions.NotFoundException
+  commentId: T:QuickKit.Shared.Exceptions.NotFoundException
+  href: QuickKit.Shared.Exceptions.NotFoundException.html
+  name: NotFoundException
+  nameWithType: NotFoundException
+  fullName: QuickKit.Shared.Exceptions.NotFoundException
+- uid: QuickKit.Shared.Exceptions.SnapshotNullException
+  commentId: T:QuickKit.Shared.Exceptions.SnapshotNullException
+  href: QuickKit.Shared.Exceptions.SnapshotNullException.html
+  name: SnapshotNullException
+  nameWithType: SnapshotNullException
+  fullName: QuickKit.Shared.Exceptions.SnapshotNullException
+- uid: QuickKit.Shared.Exceptions.ValidationFailureException
+  commentId: T:QuickKit.Shared.Exceptions.ValidationFailureException
+  href: QuickKit.Shared.Exceptions.ValidationFailureException.html
+  name: ValidationFailureException
+  nameWithType: ValidationFailureException
+  fullName: QuickKit.Shared.Exceptions.ValidationFailureException

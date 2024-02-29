@@ -3,20 +3,20 @@
     {
       "src": [
         {
-          "src": "../",
+          "src": "..",
           "files": [
             "**/*.csproj"
           ]
         }
       ],
-      "dest": "api"
+      "dest": "_site/api"
     }
   ],
   "build": {
     "content": [
       {
         "files": [
-          "**/*.{md,yml,xml}"
+          "**/*.{md,yml,xml,csproj}"
         ],
         "exclude": [
           "_site/**"
