@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Security.Configuration
+  commentId: N:QuickKit.Security.Configuration
+  id: QuickKit.Security.Configuration
+  children:
+  - QuickKit.Security.Configuration.SecurityConfiguration
+  langs:
+  - csharp
+  - vb
+  name: QuickKit.Security.Configuration
+  nameWithType: QuickKit.Security.Configuration
+  fullName: QuickKit.Security.Configuration
+  type: Namespace
+  assemblies:
+  - QuickKit.Security
+references:
+- uid: QuickKit.Security.Configuration.SecurityConfiguration
+  commentId: T:QuickKit.Security.Configuration.SecurityConfiguration
+  href: QuickKit.Security.Configuration.SecurityConfiguration.html
+  name: SecurityConfiguration
+  nameWithType: SecurityConfiguration
+  fullName: QuickKit.Security.Configuration.SecurityConfiguration

@@ -1,0 +1,584 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+  commentId: T:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+  id: ProcedureNameEntityBuilder`1
+  parent: QuickKit.Shared.Builders
+  children:
+  - QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Add
+  - QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Delete
+  - QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.ExistsById
+  - QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetAll
+  - QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetById
+  - QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Update
+  langs:
+  - csharp
+  - vb
+  name: ProcedureNameEntityBuilder<TEntity>
+  nameWithType: ProcedureNameEntityBuilder<TEntity>
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>
+  type: Class
+  source:
+    remote:
+      path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ProcedureNameEntityBuilder
+    path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+    startLine: 11
+  assemblies:
+  - QuickKit
+  namespace: QuickKit.Shared.Builders
+  summary: >-
+    Represents a builder class for generating procedure names based on the entity type.
+
+    <p>Remove the "Entity" suffix from the entity type name and convert it to lowercase.</p>
+
+    <p>These names are used to call the stored procedures in the database.</p>
+
+    <p>Example: For a stored procedure for add a PersonEntity, the output would be "sp_person_add"</p>
+  example: []
+  syntax:
+    content: 'public class ProcedureNameEntityBuilder<TEntity> where TEntity : IEntity'
+    typeParameters:
+    - id: TEntity
+      description: The type of the entity.
+    content.vb: Public Class ProcedureNameEntityBuilder(Of TEntity As IEntity)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity)
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity)
+  name.vb: ProcedureNameEntityBuilder(Of TEntity)
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Add
+  commentId: P:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Add
+  id: Add
+  parent: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Add
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.Add
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.Add
+  type: Property
+  source:
+    remote:
+      path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: Add
+    path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+    startLine: 16
+  assemblies:
+  - QuickKit
+  namespace: QuickKit.Shared.Builders
+  summary: Gets the name for the "Add" procedure.
+  example: []
+  syntax:
+    content: public static string Add { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Add As String
+  overload: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Add*
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).Add
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).Add
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Update
+  commentId: P:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Update
+  id: Update
+  parent: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Update
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.Update
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.Update
+  type: Property
+  source:
+    remote:
+      path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: Update
+    path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+    startLine: 21
+  assemblies:
+  - QuickKit
+  namespace: QuickKit.Shared.Builders
+  summary: Gets the name for the "Update" procedure.
+  example: []
+  syntax:
+    content: public static string Update { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Update As String
+  overload: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Update*
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).Update
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).Update
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Delete
+  commentId: P:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Delete
+  id: Delete
+  parent: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Delete
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.Delete
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.Delete
+  type: Property
+  source:
+    remote:
+      path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: Delete
+    path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+    startLine: 26
+  assemblies:
+  - QuickKit
+  namespace: QuickKit.Shared.Builders
+  summary: Gets the name for the "Delete" procedure.
+  example: []
+  syntax:
+    content: public static string Delete { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Delete As String
+  overload: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Delete*
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).Delete
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).Delete
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetAll
+  commentId: P:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetAll
+  id: GetAll
+  parent: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: GetAll
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.GetAll
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.GetAll
+  type: Property
+  source:
+    remote:
+      path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: GetAll
+    path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+    startLine: 31
+  assemblies:
+  - QuickKit
+  namespace: QuickKit.Shared.Builders
+  summary: Gets the name for the "GetAll" procedure.
+  example: []
+  syntax:
+    content: public static string GetAll { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property GetAll As String
+  overload: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetAll*
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).GetAll
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).GetAll
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetById
+  commentId: P:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetById
+  id: GetById
+  parent: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: GetById
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.GetById
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.GetById
+  type: Property
+  source:
+    remote:
+      path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: GetById
+    path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+    startLine: 36
+  assemblies:
+  - QuickKit
+  namespace: QuickKit.Shared.Builders
+  summary: Gets the name for the "GetById" procedure.
+  example: []
+  syntax:
+    content: public static string GetById { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property GetById As String
+  overload: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetById*
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).GetById
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).GetById
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.ExistsById
+  commentId: M:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.ExistsById
+  id: ExistsById
+  parent: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: ExistsById()
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.ExistsById()
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.ExistsById()
+  type: Method
+  source:
+    remote:
+      path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ExistsById
+    path: QuickKit/Shared/Builders/ProcedureNameEntityBuilder.cs
+    startLine: 51
+  assemblies:
+  - QuickKit
+  namespace: QuickKit.Shared.Builders
+  summary: Gets the name for the "ExistsById" procedure.
+  example: []
+  syntax:
+    content: public static string ExistsById()
+    return:
+      type: System.String
+      description: The name for the "ExistsById" procedure.
+    content.vb: Public Shared Function ExistsById() As String
+  overload: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.ExistsById*
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).ExistsById()
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).ExistsById()
+references:
+- uid: QuickKit.Shared.Builders
+  commentId: N:QuickKit.Shared.Builders
+  href: QuickKit.html
+  name: QuickKit.Shared.Builders
+  nameWithType: QuickKit.Shared.Builders
+  fullName: QuickKit.Shared.Builders
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Shared
+    name: Shared
+    href: QuickKit.Shared.html
+  - name: .
+  - uid: QuickKit.Shared.Builders
+    name: Builders
+    href: QuickKit.Shared.Builders.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Shared
+    name: Shared
+    href: QuickKit.Shared.html
+  - name: .
+  - uid: QuickKit.Shared.Builders
+    name: Builders
+    href: QuickKit.Shared.Builders.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Add*
+  commentId: Overload:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Add
+  href: QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_Add
+  name: Add
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.Add
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.Add
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).Add
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).Add
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Update*
+  commentId: Overload:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Update
+  href: QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_Update
+  name: Update
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.Update
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.Update
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).Update
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).Update
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Delete*
+  commentId: Overload:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Delete
+  href: QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_Delete
+  name: Delete
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.Delete
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.Delete
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).Delete
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).Delete
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetAll*
+  commentId: Overload:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetAll
+  href: QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_GetAll
+  name: GetAll
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.GetAll
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.GetAll
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).GetAll
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).GetAll
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetById*
+  commentId: Overload:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetById
+  href: QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_GetById
+  name: GetById
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.GetById
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.GetById
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).GetById
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).GetById
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.ExistsById*
+  commentId: Overload:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.ExistsById
+  href: QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_ExistsById
+  name: ExistsById
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.ExistsById
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.ExistsById
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).ExistsById
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).ExistsById

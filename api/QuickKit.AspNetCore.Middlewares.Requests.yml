@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.AspNetCore.Middlewares.Requests
+  commentId: N:QuickKit.AspNetCore.Middlewares.Requests
+  id: QuickKit.AspNetCore.Middlewares.Requests
+  children:
+  - QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1
+  langs:
+  - csharp
+  - vb
+  name: QuickKit.AspNetCore.Middlewares.Requests
+  nameWithType: QuickKit.AspNetCore.Middlewares.Requests
+  fullName: QuickKit.AspNetCore.Middlewares.Requests
+  type: Namespace
+  assemblies:
+  - QuickKit.AspNetCore
+references:
+- uid: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1
+  commentId: T:QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1
+  href: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.html
+  name: GlobalExceptionMiddlewareConfigurationRequest<TException>
+  nameWithType: GlobalExceptionMiddlewareConfigurationRequest<TException>
+  fullName: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest<TException>
+  nameWithType.vb: GlobalExceptionMiddlewareConfigurationRequest(Of TException)
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest(Of TException)
+  name.vb: GlobalExceptionMiddlewareConfigurationRequest(Of TException)
+  spec.csharp:
+  - uid: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1
+    name: GlobalExceptionMiddlewareConfigurationRequest
+    href: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.html
+  - name: <
+  - name: TException
+  - name: '>'
+  spec.vb:
+  - uid: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1
+    name: GlobalExceptionMiddlewareConfigurationRequest
+    href: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TException
+  - name: )

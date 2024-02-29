@@ -1,0 +1,251 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Shared.Entities.IEntity`3
+  commentId: T:QuickKit.Shared.Entities.IEntity`3
+  id: IEntity`3
+  parent: QuickKit.Shared.Entities
+  children:
+  - QuickKit.Shared.Entities.IEntity`3.FromSnapshot(`1)
+  - QuickKit.Shared.Entities.IEntity`3.ToSnapshot
+  langs:
+  - csharp
+  - vb
+  name: IEntity<TEntity, TSnapshot, TKey>
+  nameWithType: IEntity<TEntity, TSnapshot, TKey>
+  fullName: QuickKit.Shared.Entities.IEntity<TEntity, TSnapshot, TKey>
+  type: Interface
+  source:
+    remote:
+      path: QuickKit.Shared/Entities/EntityTypes.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: IEntity
+    path: QuickKit.Shared/Entities/EntityTypes.cs
+    startLine: 30
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Entities
+  summary: Represents an entity with a specified key, along with methods to convert to and from a snapshot.
+  example: []
+  syntax:
+    content: 'public interface IEntity<TEntity, TSnapshot, TKey> : IEntity<TKey>, IEntity where TEntity : IEntity<TKey> where TSnapshot : class where TKey : IConvertible'
+    typeParameters:
+    - id: TEntity
+      description: The type of the entity.
+    - id: TSnapshot
+      description: The type of the snapshot.
+    - id: TKey
+      description: The type of the entity's key.
+    content.vb: Public Interface IEntity(Of TEntity As IEntity(Of TKey), TSnapshot As Class, TKey As IConvertible) Inherits IEntity(Of TKey), IEntity
+  inheritedMembers:
+  - QuickKit.Shared.Entities.IEntity{{TKey}}.Id
+  nameWithType.vb: IEntity(Of TEntity, TSnapshot, TKey)
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TEntity, TSnapshot, TKey)
+  name.vb: IEntity(Of TEntity, TSnapshot, TKey)
+- uid: QuickKit.Shared.Entities.IEntity`3.FromSnapshot(`1)
+  commentId: M:QuickKit.Shared.Entities.IEntity`3.FromSnapshot(`1)
+  id: FromSnapshot(`1)
+  parent: QuickKit.Shared.Entities.IEntity`3
+  langs:
+  - csharp
+  - vb
+  name: FromSnapshot(TSnapshot)
+  nameWithType: IEntity<TEntity, TSnapshot, TKey>.FromSnapshot(TSnapshot)
+  fullName: QuickKit.Shared.Entities.IEntity<TEntity, TSnapshot, TKey>.FromSnapshot(TSnapshot)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Entities/EntityTypes.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: FromSnapshot
+    path: QuickKit.Shared/Entities/EntityTypes.cs
+    startLine: 40
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Entities
+  summary: Converts a snapshot to an entity.
+  example: []
+  syntax:
+    content: public static abstract TEntity FromSnapshot(TSnapshot snapshot)
+    parameters:
+    - id: snapshot
+      type: '{TSnapshot}'
+      description: The snapshot to convert.
+    return:
+      type: '{TEntity}'
+      description: The converted entity.
+    content.vb: Public Shared MustInherit Function FromSnapshot(snapshot As TSnapshot) As TEntity
+  overload: QuickKit.Shared.Entities.IEntity`3.FromSnapshot*
+  nameWithType.vb: IEntity(Of TEntity, TSnapshot, TKey).FromSnapshot(TSnapshot)
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TEntity, TSnapshot, TKey).FromSnapshot(TSnapshot)
+- uid: QuickKit.Shared.Entities.IEntity`3.ToSnapshot
+  commentId: M:QuickKit.Shared.Entities.IEntity`3.ToSnapshot
+  id: ToSnapshot
+  parent: QuickKit.Shared.Entities.IEntity`3
+  langs:
+  - csharp
+  - vb
+  name: ToSnapshot()
+  nameWithType: IEntity<TEntity, TSnapshot, TKey>.ToSnapshot()
+  fullName: QuickKit.Shared.Entities.IEntity<TEntity, TSnapshot, TKey>.ToSnapshot()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Entities/EntityTypes.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ToSnapshot
+    path: QuickKit.Shared/Entities/EntityTypes.cs
+    startLine: 46
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Entities
+  summary: Converts the entity to a snapshot.
+  example: []
+  syntax:
+    content: TSnapshot ToSnapshot()
+    return:
+      type: '{TSnapshot}'
+      description: The snapshot representation of the entity.
+    content.vb: Function ToSnapshot() As TSnapshot
+  overload: QuickKit.Shared.Entities.IEntity`3.ToSnapshot*
+  nameWithType.vb: IEntity(Of TEntity, TSnapshot, TKey).ToSnapshot()
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TEntity, TSnapshot, TKey).ToSnapshot()
+references:
+- uid: QuickKit.Shared.Entities
+  commentId: N:QuickKit.Shared.Entities
+  href: QuickKit.html
+  name: QuickKit.Shared.Entities
+  nameWithType: QuickKit.Shared.Entities
+  fullName: QuickKit.Shared.Entities
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Shared
+    name: Shared
+    href: QuickKit.Shared.html
+  - name: .
+  - uid: QuickKit.Shared.Entities
+    name: Entities
+    href: QuickKit.Shared.Entities.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Shared
+    name: Shared
+    href: QuickKit.Shared.html
+  - name: .
+  - uid: QuickKit.Shared.Entities
+    name: Entities
+    href: QuickKit.Shared.Entities.html
+- uid: QuickKit.Shared.Entities.IEntity{{TKey}}.Id
+  commentId: P:QuickKit.Shared.Entities.IEntity{`2}.Id
+  parent: QuickKit.Shared.Entities.IEntity{{TKey}}
+  definition: QuickKit.Shared.Entities.IEntity`1.Id
+  href: QuickKit.Shared.Entities.IEntity-1.html#QuickKit_Shared_Entities_IEntity_1_Id
+  name: Id
+  nameWithType: IEntity<TKey>.Id
+  fullName: QuickKit.Shared.Entities.IEntity<TKey>.Id
+  nameWithType.vb: IEntity(Of TKey).Id
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TKey).Id
+- uid: QuickKit.Shared.Entities.IEntity`1.Id
+  commentId: P:QuickKit.Shared.Entities.IEntity`1.Id
+  href: QuickKit.Shared.Entities.IEntity-1.html#QuickKit_Shared_Entities_IEntity_1_Id
+  name: Id
+  nameWithType: IEntity<TKey>.Id
+  fullName: QuickKit.Shared.Entities.IEntity<TKey>.Id
+  nameWithType.vb: IEntity(Of TKey).Id
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TKey).Id
+- uid: QuickKit.Shared.Entities.IEntity{{TKey}}
+  commentId: T:QuickKit.Shared.Entities.IEntity{`2}
+  parent: QuickKit.Shared.Entities
+  definition: QuickKit.Shared.Entities.IEntity`1
+  href: QuickKit.Shared.Entities.IEntity-1.html
+  name: IEntity<TKey>
+  nameWithType: IEntity<TKey>
+  fullName: QuickKit.Shared.Entities.IEntity<TKey>
+  nameWithType.vb: IEntity(Of TKey)
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TKey)
+  name.vb: IEntity(Of TKey)
+  spec.csharp:
+  - uid: QuickKit.Shared.Entities.IEntity`1
+    name: IEntity
+    href: QuickKit.Shared.Entities.IEntity-1.html
+  - name: <
+  - name: TKey
+  - name: '>'
+  spec.vb:
+  - uid: QuickKit.Shared.Entities.IEntity`1
+    name: IEntity
+    href: QuickKit.Shared.Entities.IEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: )
+- uid: QuickKit.Shared.Entities.IEntity`1
+  commentId: T:QuickKit.Shared.Entities.IEntity`1
+  href: QuickKit.Shared.Entities.IEntity-1.html
+  name: IEntity<TKey>
+  nameWithType: IEntity<TKey>
+  fullName: QuickKit.Shared.Entities.IEntity<TKey>
+  nameWithType.vb: IEntity(Of TKey)
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TKey)
+  name.vb: IEntity(Of TKey)
+  spec.csharp:
+  - uid: QuickKit.Shared.Entities.IEntity`1
+    name: IEntity
+    href: QuickKit.Shared.Entities.IEntity-1.html
+  - name: <
+  - name: TKey
+  - name: '>'
+  spec.vb:
+  - uid: QuickKit.Shared.Entities.IEntity`1
+    name: IEntity
+    href: QuickKit.Shared.Entities.IEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: )
+- uid: QuickKit.Shared.Entities.IEntity`3.FromSnapshot*
+  commentId: Overload:QuickKit.Shared.Entities.IEntity`3.FromSnapshot
+  href: QuickKit.Shared.Entities.IEntity-3.html#QuickKit_Shared_Entities_IEntity_3_FromSnapshot__1_
+  name: FromSnapshot
+  nameWithType: IEntity<TEntity, TSnapshot, TKey>.FromSnapshot
+  fullName: QuickKit.Shared.Entities.IEntity<TEntity, TSnapshot, TKey>.FromSnapshot
+  nameWithType.vb: IEntity(Of TEntity, TSnapshot, TKey).FromSnapshot
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TEntity, TSnapshot, TKey).FromSnapshot
+- uid: '{TSnapshot}'
+  commentId: '!:TSnapshot'
+  definition: TSnapshot
+  name: TSnapshot
+  nameWithType: TSnapshot
+  fullName: TSnapshot
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TSnapshot
+  name: TSnapshot
+  nameWithType: TSnapshot
+  fullName: TSnapshot
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: QuickKit.Shared.Entities.IEntity`3.ToSnapshot*
+  commentId: Overload:QuickKit.Shared.Entities.IEntity`3.ToSnapshot
+  href: QuickKit.Shared.Entities.IEntity-3.html#QuickKit_Shared_Entities_IEntity_3_ToSnapshot
+  name: ToSnapshot
+  nameWithType: IEntity<TEntity, TSnapshot, TKey>.ToSnapshot
+  fullName: QuickKit.Shared.Entities.IEntity<TEntity, TSnapshot, TKey>.ToSnapshot
+  nameWithType.vb: IEntity(Of TEntity, TSnapshot, TKey).ToSnapshot
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TEntity, TSnapshot, TKey).ToSnapshot

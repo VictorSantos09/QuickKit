@@ -1,0 +1,891 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Cmd.Menu.MenuSub
+  commentId: T:QuickKit.Cmd.Menu.MenuSub
+  id: MenuSub
+  parent: QuickKit.Cmd.Menu
+  children:
+  - QuickKit.Cmd.Menu.MenuSub.Back
+  - QuickKit.Cmd.Menu.MenuSub.GoToOption(System.Int32)
+  - QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage
+  - QuickKit.Cmd.Menu.MenuSub.SelectOption
+  - QuickKit.Cmd.Menu.MenuSub.Show
+  - QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  - QuickKit.Cmd.Menu.MenuSub.ShowOptions
+  - QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption
+  langs:
+  - csharp
+  - vb
+  name: MenuSub
+  nameWithType: MenuSub
+  fullName: QuickKit.Cmd.Menu.MenuSub
+  type: Class
+  source:
+    remote:
+      path: QuickKit.Console/Menu/MenuSub.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: MenuSub
+    path: QuickKit.Console/Menu/MenuSub.cs
+    startLine: 5
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu
+  syntax:
+    content: 'public abstract class MenuSub : IMenuSub, IMenu'
+    content.vb: Public MustInherit Class MenuSub Implements IMenuSub, IMenu
+  inheritance:
+  - System.Object
+  implements:
+  - QuickKit.Cmd.Menu.Interfaces.IMenuSub
+  - QuickKit.Cmd.Menu.Interfaces.IMenu
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage
+  commentId: P:QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage
+  id: NotNullAlertMessage
+  parent: QuickKit.Cmd.Menu.MenuSub
+  langs:
+  - csharp
+  - vb
+  name: NotNullAlertMessage
+  nameWithType: MenuSub.NotNullAlertMessage
+  fullName: QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage
+  type: Property
+  source:
+    remote:
+      path: QuickKit.Console/Menu/MenuSub.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: NotNullAlertMessage
+    path: QuickKit.Console/Menu/MenuSub.cs
+    startLine: 7
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu
+  syntax:
+    content: protected abstract string NotNullAlertMessage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected MustOverride Property NotNullAlertMessage As String
+  overload: QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage*
+- uid: QuickKit.Cmd.Menu.MenuSub.Back
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.Back
+  id: Back
+  parent: QuickKit.Cmd.Menu.MenuSub
+  langs:
+  - csharp
+  - vb
+  name: Back()
+  nameWithType: MenuSub.Back()
+  fullName: QuickKit.Cmd.Menu.MenuSub.Back()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/MenuSub.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: Back
+    path: QuickKit.Console/Menu/MenuSub.cs
+    startLine: 9
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu
+  example: []
+  syntax:
+    content: public virtual void Back()
+    content.vb: Public Overridable Sub Back()
+  overload: QuickKit.Cmd.Menu.MenuSub.Back*
+  implements:
+  - QuickKit.Cmd.Menu.Interfaces.IMenuSub.Back
+- uid: QuickKit.Cmd.Menu.MenuSub.GoToOption(System.Int32)
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.GoToOption(System.Int32)
+  id: GoToOption(System.Int32)
+  parent: QuickKit.Cmd.Menu.MenuSub
+  langs:
+  - csharp
+  - vb
+  name: GoToOption(int)
+  nameWithType: MenuSub.GoToOption(int)
+  fullName: QuickKit.Cmd.Menu.MenuSub.GoToOption(int)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/MenuSub.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: GoToOption
+    path: QuickKit.Console/Menu/MenuSub.cs
+    startLine: 15
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu
+  example: []
+  syntax:
+    content: public abstract void GoToOption(int option)
+    parameters:
+    - id: option
+      type: System.Int32
+    content.vb: Public MustOverride Sub GoToOption([option] As Integer)
+  overload: QuickKit.Cmd.Menu.MenuSub.GoToOption*
+  implements:
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+  nameWithType.vb: MenuSub.GoToOption(Integer)
+  fullName.vb: QuickKit.Cmd.Menu.MenuSub.GoToOption(Integer)
+  name.vb: GoToOption(Integer)
+- uid: QuickKit.Cmd.Menu.MenuSub.SelectOption
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.SelectOption
+  id: SelectOption
+  parent: QuickKit.Cmd.Menu.MenuSub
+  langs:
+  - csharp
+  - vb
+  name: SelectOption()
+  nameWithType: MenuSub.SelectOption()
+  fullName: QuickKit.Cmd.Menu.MenuSub.SelectOption()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/MenuSub.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: SelectOption
+    path: QuickKit.Console/Menu/MenuSub.cs
+    startLine: 17
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu
+  example: []
+  syntax:
+    content: public virtual int SelectOption()
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Function SelectOption() As Integer
+  overload: QuickKit.Cmd.Menu.MenuSub.SelectOption*
+  implements:
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+- uid: QuickKit.Cmd.Menu.MenuSub.Show
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.Show
+  id: Show
+  parent: QuickKit.Cmd.Menu.MenuSub
+  langs:
+  - csharp
+  - vb
+  name: Show()
+  nameWithType: MenuSub.Show()
+  fullName: QuickKit.Cmd.Menu.MenuSub.Show()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/MenuSub.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: Show
+    path: QuickKit.Console/Menu/MenuSub.cs
+    startLine: 24
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu
+  example: []
+  syntax:
+    content: public abstract void Show()
+    content.vb: Public MustOverride Sub Show()
+  overload: QuickKit.Cmd.Menu.MenuSub.Show*
+  implements:
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+- uid: QuickKit.Cmd.Menu.MenuSub.ShowOptions
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.ShowOptions
+  id: ShowOptions
+  parent: QuickKit.Cmd.Menu.MenuSub
+  langs:
+  - csharp
+  - vb
+  name: ShowOptions()
+  nameWithType: MenuSub.ShowOptions()
+  fullName: QuickKit.Cmd.Menu.MenuSub.ShowOptions()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/MenuSub.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ShowOptions
+    path: QuickKit.Console/Menu/MenuSub.cs
+    startLine: 26
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu
+  example: []
+  syntax:
+    content: public abstract void ShowOptions()
+    content.vb: Public MustOverride Sub ShowOptions()
+  overload: QuickKit.Cmd.Menu.MenuSub.ShowOptions*
+  implements:
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+- uid: QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption
+  id: ShowPreviousOption
+  parent: QuickKit.Cmd.Menu.MenuSub
+  langs:
+  - csharp
+  - vb
+  name: ShowPreviousOption()
+  nameWithType: MenuSub.ShowPreviousOption()
+  fullName: QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/MenuSub.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ShowPreviousOption
+    path: QuickKit.Console/Menu/MenuSub.cs
+    startLine: 28
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu
+  example: []
+  syntax:
+    content: public abstract void ShowPreviousOption()
+    content.vb: Public MustOverride Sub ShowPreviousOption()
+  overload: QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption*
+  implements:
+  - QuickKit.Cmd.Menu.Interfaces.IMenuSub.ShowPreviousOption
+- uid: QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  id: ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  parent: QuickKit.Cmd.Menu.MenuSub
+  langs:
+  - csharp
+  - vb
+  name: ShowInvalidOptionMessage(string, AlertType)
+  nameWithType: MenuSub.ShowInvalidOptionMessage(string, AlertType)
+  fullName: QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage(string, QuickKit.Cmd.Enums.AlertType)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/MenuSub.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ShowInvalidOptionMessage
+    path: QuickKit.Console/Menu/MenuSub.cs
+    startLine: 30
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu
+  example: []
+  syntax:
+    content: public virtual void ShowInvalidOptionMessage(string message, AlertType alertType = AlertType.Warning)
+    parameters:
+    - id: message
+      type: System.String
+    - id: alertType
+      type: QuickKit.Cmd.Enums.AlertType
+    content.vb: Public Overridable Sub ShowInvalidOptionMessage(message As String, alertType As AlertType = AlertType.Warning)
+  overload: QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage*
+  implements:
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  nameWithType.vb: MenuSub.ShowInvalidOptionMessage(String, AlertType)
+  fullName.vb: QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage(String, QuickKit.Cmd.Enums.AlertType)
+  name.vb: ShowInvalidOptionMessage(String, AlertType)
+references:
+- uid: QuickKit.Cmd.Menu
+  commentId: N:QuickKit.Cmd.Menu
+  href: QuickKit.html
+  name: QuickKit.Cmd.Menu
+  nameWithType: QuickKit.Cmd.Menu
+  fullName: QuickKit.Cmd.Menu
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu
+    name: Menu
+    href: QuickKit.Cmd.Menu.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu
+    name: Menu
+    href: QuickKit.Cmd.Menu.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuSub
+  commentId: T:QuickKit.Cmd.Menu.Interfaces.IMenuSub
+  parent: QuickKit.Cmd.Menu.Interfaces
+  href: QuickKit.Cmd.Menu.Interfaces.IMenuSub.html
+  name: IMenuSub
+  nameWithType: IMenuSub
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuSub
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu
+  commentId: T:QuickKit.Cmd.Menu.Interfaces.IMenu
+  parent: QuickKit.Cmd.Menu.Interfaces
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html
+  name: IMenu
+  nameWithType: IMenu
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: QuickKit.Cmd.Menu.Interfaces
+  commentId: N:QuickKit.Cmd.Menu.Interfaces
+  href: QuickKit.html
+  name: QuickKit.Cmd.Menu.Interfaces
+  nameWithType: QuickKit.Cmd.Menu.Interfaces
+  fullName: QuickKit.Cmd.Menu.Interfaces
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu
+    name: Menu
+    href: QuickKit.Cmd.Menu.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu.Interfaces
+    name: Interfaces
+    href: QuickKit.Cmd.Menu.Interfaces.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu
+    name: Menu
+    href: QuickKit.Cmd.Menu.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu.Interfaces
+    name: Interfaces
+    href: QuickKit.Cmd.Menu.Interfaces.html
+- uid: QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage*
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage
+  href: QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_NotNullAlertMessage
+  name: NotNullAlertMessage
+  nameWithType: MenuSub.NotNullAlertMessage
+  fullName: QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: QuickKit.Cmd.Menu.MenuSub.Back*
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.Back
+  href: QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_Back
+  name: Back
+  nameWithType: MenuSub.Back
+  fullName: QuickKit.Cmd.Menu.MenuSub.Back
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuSub.Back
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenuSub.Back
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenuSub
+  href: QuickKit.Cmd.Menu.Interfaces.IMenuSub.html#QuickKit_Cmd_Menu_Interfaces_IMenuSub_Back
+  name: Back()
+  nameWithType: IMenuSub.Back()
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuSub.Back()
+  spec.csharp:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenuSub.Back
+    name: Back
+    href: QuickKit.Cmd.Menu.Interfaces.IMenuSub.html#QuickKit_Cmd_Menu_Interfaces_IMenuSub_Back
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenuSub.Back
+    name: Back
+    href: QuickKit.Cmd.Menu.Interfaces.IMenuSub.html#QuickKit_Cmd_Menu_Interfaces_IMenuSub_Back
+  - name: (
+  - name: )
+- uid: QuickKit.Cmd.Menu.MenuSub.GoToOption*
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.GoToOption
+  href: QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_GoToOption_System_Int32_
+  name: GoToOption
+  nameWithType: MenuSub.GoToOption
+  fullName: QuickKit.Cmd.Menu.MenuSub.GoToOption
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  isExternal: true
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_GoToOption_System_Int32_
+  name: GoToOption(int)
+  nameWithType: IMenu.GoToOption(int)
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(int)
+  nameWithType.vb: IMenu.GoToOption(Integer)
+  fullName.vb: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(Integer)
+  name.vb: GoToOption(Integer)
+  spec.csharp:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+    name: GoToOption
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_GoToOption_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+    name: GoToOption
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_GoToOption_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: QuickKit.Cmd.Menu.MenuSub.SelectOption*
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.SelectOption
+  href: QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_SelectOption
+  name: SelectOption
+  nameWithType: MenuSub.SelectOption
+  fullName: QuickKit.Cmd.Menu.MenuSub.SelectOption
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_SelectOption
+  name: SelectOption()
+  nameWithType: IMenu.SelectOption()
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption()
+  spec.csharp:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+    name: SelectOption
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_SelectOption
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+    name: SelectOption
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_SelectOption
+  - name: (
+  - name: )
+- uid: QuickKit.Cmd.Menu.MenuSub.Show*
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.Show
+  href: QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_Show
+  name: Show
+  nameWithType: MenuSub.Show
+  fullName: QuickKit.Cmd.Menu.MenuSub.Show
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_Show
+  name: Show()
+  nameWithType: IMenu.Show()
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.Show()
+  spec.csharp:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+    name: Show
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_Show
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+    name: Show
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_Show
+  - name: (
+  - name: )
+- uid: QuickKit.Cmd.Menu.MenuSub.ShowOptions*
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.ShowOptions
+  href: QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_ShowOptions
+  name: ShowOptions
+  nameWithType: MenuSub.ShowOptions
+  fullName: QuickKit.Cmd.Menu.MenuSub.ShowOptions
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowOptions
+  name: ShowOptions()
+  nameWithType: IMenu.ShowOptions()
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions()
+  spec.csharp:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+    name: ShowOptions
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowOptions
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+    name: ShowOptions
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowOptions
+  - name: (
+  - name: )
+- uid: QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption*
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption
+  href: QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_ShowPreviousOption
+  name: ShowPreviousOption
+  nameWithType: MenuSub.ShowPreviousOption
+  fullName: QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuSub.ShowPreviousOption
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenuSub.ShowPreviousOption
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenuSub
+  href: QuickKit.Cmd.Menu.Interfaces.IMenuSub.html#QuickKit_Cmd_Menu_Interfaces_IMenuSub_ShowPreviousOption
+  name: ShowPreviousOption()
+  nameWithType: IMenuSub.ShowPreviousOption()
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuSub.ShowPreviousOption()
+  spec.csharp:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenuSub.ShowPreviousOption
+    name: ShowPreviousOption
+    href: QuickKit.Cmd.Menu.Interfaces.IMenuSub.html#QuickKit_Cmd_Menu_Interfaces_IMenuSub_ShowPreviousOption
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenuSub.ShowPreviousOption
+    name: ShowPreviousOption
+    href: QuickKit.Cmd.Menu.Interfaces.IMenuSub.html#QuickKit_Cmd_Menu_Interfaces_IMenuSub_ShowPreviousOption
+  - name: (
+  - name: )
+- uid: QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage*
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage
+  href: QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_ShowInvalidOptionMessage_System_String_QuickKit_Cmd_Enums_AlertType_
+  name: ShowInvalidOptionMessage
+  nameWithType: MenuSub.ShowInvalidOptionMessage
+  fullName: QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  isExternal: true
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowInvalidOptionMessage_System_String_QuickKit_Cmd_Enums_AlertType_
+  name: ShowInvalidOptionMessage(string, AlertType)
+  nameWithType: IMenu.ShowInvalidOptionMessage(string, AlertType)
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(string, QuickKit.Cmd.Enums.AlertType)
+  nameWithType.vb: IMenu.ShowInvalidOptionMessage(String, AlertType)
+  fullName.vb: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(String, QuickKit.Cmd.Enums.AlertType)
+  name.vb: ShowInvalidOptionMessage(String, AlertType)
+  spec.csharp:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+    name: ShowInvalidOptionMessage
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowInvalidOptionMessage_System_String_QuickKit_Cmd_Enums_AlertType_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: QuickKit.Cmd.Enums.AlertType
+    name: AlertType
+    href: QuickKit.Cmd.Enums.AlertType.html
+  - name: )
+  spec.vb:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+    name: ShowInvalidOptionMessage
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowInvalidOptionMessage_System_String_QuickKit_Cmd_Enums_AlertType_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: QuickKit.Cmd.Enums.AlertType
+    name: AlertType
+    href: QuickKit.Cmd.Enums.AlertType.html
+  - name: )
+- uid: QuickKit.Cmd.Enums.AlertType
+  commentId: T:QuickKit.Cmd.Enums.AlertType
+  parent: QuickKit.Cmd.Enums
+  href: QuickKit.Cmd.Enums.AlertType.html
+  name: AlertType
+  nameWithType: AlertType
+  fullName: QuickKit.Cmd.Enums.AlertType
+- uid: QuickKit.Cmd.Enums
+  commentId: N:QuickKit.Cmd.Enums
+  href: QuickKit.html
+  name: QuickKit.Cmd.Enums
+  nameWithType: QuickKit.Cmd.Enums
+  fullName: QuickKit.Cmd.Enums
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Enums
+    name: Enums
+    href: QuickKit.Cmd.Enums.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Enums
+    name: Enums
+    href: QuickKit.Cmd.Enums.html

@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Shared.Handlers.IDatabaseConnectionHandler
+  commentId: T:QuickKit.Shared.Handlers.IDatabaseConnectionHandler
+  id: IDatabaseConnectionHandler
+  parent: QuickKit.Shared.Handlers
+  children:
+  - QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect
+  langs:
+  - csharp
+  - vb
+  name: IDatabaseConnectionHandler
+  nameWithType: IDatabaseConnectionHandler
+  fullName: QuickKit.Shared.Handlers.IDatabaseConnectionHandler
+  type: Interface
+  source:
+    remote:
+      path: QuickKit/Shared/Handlers/IDatabaseConnectionHandler.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: IDatabaseConnectionHandler
+    path: QuickKit/Shared/Handlers/IDatabaseConnectionHandler.cs
+    startLine: 7
+  assemblies:
+  - QuickKit
+  namespace: QuickKit.Shared.Handlers
+  summary: Represents a handler for establishing database connections.
+  example: []
+  syntax:
+    content: public interface IDatabaseConnectionHandler
+    content.vb: Public Interface IDatabaseConnectionHandler
+- uid: QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect
+  commentId: M:QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect
+  id: Connect
+  parent: QuickKit.Shared.Handlers.IDatabaseConnectionHandler
+  langs:
+  - csharp
+  - vb
+  name: Connect()
+  nameWithType: IDatabaseConnectionHandler.Connect()
+  fullName: QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect()
+  type: Method
+  source:
+    remote:
+      path: QuickKit/Shared/Handlers/IDatabaseConnectionHandler.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: Connect
+    path: QuickKit/Shared/Handlers/IDatabaseConnectionHandler.cs
+    startLine: 13
+  assemblies:
+  - QuickKit
+  namespace: QuickKit.Shared.Handlers
+  summary: Connects to the database and returns a database connection object.
+  example: []
+  syntax:
+    content: IDbConnection Connect()
+    return:
+      type: System.Data.IDbConnection
+      description: The database connection object.
+    content.vb: Function Connect() As IDbConnection
+  overload: QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect*
+references:
+- uid: QuickKit.Shared.Handlers
+  commentId: N:QuickKit.Shared.Handlers
+  href: QuickKit.html
+  name: QuickKit.Shared.Handlers
+  nameWithType: QuickKit.Shared.Handlers
+  fullName: QuickKit.Shared.Handlers
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Shared
+    name: Shared
+    href: QuickKit.Shared.html
+  - name: .
+  - uid: QuickKit.Shared.Handlers
+    name: Handlers
+    href: QuickKit.Shared.Handlers.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Shared
+    name: Shared
+    href: QuickKit.Shared.html
+  - name: .
+  - uid: QuickKit.Shared.Handlers
+    name: Handlers
+    href: QuickKit.Shared.Handlers.html
+- uid: QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect*
+  commentId: Overload:QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect
+  href: QuickKit.Shared.Handlers.IDatabaseConnectionHandler.html#QuickKit_Shared_Handlers_IDatabaseConnectionHandler_Connect
+  name: Connect
+  nameWithType: IDatabaseConnectionHandler.Connect
+  fullName: QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect
+- uid: System.Data.IDbConnection
+  commentId: T:System.Data.IDbConnection
+  parent: System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.data.idbconnection
+  name: IDbConnection
+  nameWithType: IDbConnection
+  fullName: System.Data.IDbConnection
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Data
+    name: Data
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.data

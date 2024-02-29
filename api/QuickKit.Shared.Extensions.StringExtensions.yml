@@ -1,0 +1,958 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Shared.Extensions.StringExtensions
+  commentId: T:QuickKit.Shared.Extensions.StringExtensions
+  id: StringExtensions
+  parent: QuickKit.Shared.Extensions
+  children:
+  - QuickKit.Shared.Extensions.StringExtensions.IsEmpty(System.String)
+  - QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan(System.String,System.Int32)
+  - QuickKit.Shared.Extensions.StringExtensions.IsHigherThan(System.String,System.Int32)
+  - QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan(System.String,System.Int32)
+  - QuickKit.Shared.Extensions.StringExtensions.IsLowerThan(System.String,System.Int32)
+  - QuickKit.Shared.Extensions.StringExtensions.ToBool(System.String)
+  - QuickKit.Shared.Extensions.StringExtensions.ToDateOnly(System.String)
+  - QuickKit.Shared.Extensions.StringExtensions.ToDateTime(System.String)
+  - QuickKit.Shared.Extensions.StringExtensions.ToDecimal(System.String)
+  - QuickKit.Shared.Extensions.StringExtensions.ToDouble(System.String)
+  - QuickKit.Shared.Extensions.StringExtensions.ToInt(System.String)
+  - QuickKit.Shared.Extensions.StringExtensions.To``1(System.String)
+  langs:
+  - csharp
+  - vb
+  name: StringExtensions
+  nameWithType: StringExtensions
+  fullName: QuickKit.Shared.Extensions.StringExtensions
+  type: Class
+  source:
+    remote:
+      path: QuickKit.Shared/Extensions/StringExtensions.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: StringExtensions
+    path: QuickKit.Shared/Extensions/StringExtensions.cs
+    startLine: 2
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Extensions
+  syntax:
+    content: public static class StringExtensions
+    content.vb: Public Module StringExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsEmpty(System.String)
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.IsEmpty(System.String)
+  id: IsEmpty(System.String)
+  isExtensionMethod: true
+  parent: QuickKit.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty(string?)
+  nameWithType: StringExtensions.IsEmpty(string?)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsEmpty(string?)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Extensions/StringExtensions.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: IsEmpty
+    path: QuickKit.Shared/Extensions/StringExtensions.cs
+    startLine: 10
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Extensions
+  summary: Determines whether the specified string is empty, null, or consists only of white-space characters.
+  example: []
+  syntax:
+    content: public static bool IsEmpty(this string? value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to check.
+    return:
+      type: System.Boolean
+      description: true if the string is empty, null, or consists only of white-space characters; otherwise, false.
+    content.vb: Public Shared Function IsEmpty(value As String) As Boolean
+  overload: QuickKit.Shared.Extensions.StringExtensions.IsEmpty*
+  nameWithType.vb: StringExtensions.IsEmpty(String)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.IsEmpty(String)
+  name.vb: IsEmpty(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsHigherThan(System.String,System.Int32)
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.IsHigherThan(System.String,System.Int32)
+  id: IsHigherThan(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: QuickKit.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsHigherThan(string?, int)
+  nameWithType: StringExtensions.IsHigherThan(string?, int)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsHigherThan(string?, int)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Extensions/StringExtensions.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: IsHigherThan
+    path: QuickKit.Shared/Extensions/StringExtensions.cs
+    startLine: 21
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Extensions
+  summary: Determines whether the length of the specified string is higher than the specified length.
+  example: []
+  syntax:
+    content: public static bool IsHigherThan(this string? value, int length)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to check.
+    - id: length
+      type: System.Int32
+      description: The length to compare against.
+    return:
+      type: System.Boolean
+      description: true if the length of the string is higher than the specified length; otherwise, false.
+    content.vb: Public Shared Function IsHigherThan(value As String, length As Integer) As Boolean
+  overload: QuickKit.Shared.Extensions.StringExtensions.IsHigherThan*
+  nameWithType.vb: StringExtensions.IsHigherThan(String, Integer)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.IsHigherThan(String, Integer)
+  name.vb: IsHigherThan(String, Integer)
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan(System.String,System.Int32)
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan(System.String,System.Int32)
+  id: IsHigherOrEqualThan(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: QuickKit.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsHigherOrEqualThan(string?, int)
+  nameWithType: StringExtensions.IsHigherOrEqualThan(string?, int)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan(string?, int)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Extensions/StringExtensions.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: IsHigherOrEqualThan
+    path: QuickKit.Shared/Extensions/StringExtensions.cs
+    startLine: 32
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Extensions
+  summary: Determines whether the length of the specified string is higher than or equal to the specified length.
+  example: []
+  syntax:
+    content: public static bool IsHigherOrEqualThan(this string? value, int length)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to check.
+    - id: length
+      type: System.Int32
+      description: The length to compare against.
+    return:
+      type: System.Boolean
+      description: true if the length of the string is higher than or equal to the specified length; otherwise, false.
+    content.vb: Public Shared Function IsHigherOrEqualThan(value As String, length As Integer) As Boolean
+  overload: QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan*
+  nameWithType.vb: StringExtensions.IsHigherOrEqualThan(String, Integer)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan(String, Integer)
+  name.vb: IsHigherOrEqualThan(String, Integer)
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsLowerThan(System.String,System.Int32)
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.IsLowerThan(System.String,System.Int32)
+  id: IsLowerThan(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: QuickKit.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsLowerThan(string?, int)
+  nameWithType: StringExtensions.IsLowerThan(string?, int)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsLowerThan(string?, int)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Extensions/StringExtensions.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: IsLowerThan
+    path: QuickKit.Shared/Extensions/StringExtensions.cs
+    startLine: 43
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Extensions
+  summary: Determines whether the length of the specified string is lower than the specified length.
+  example: []
+  syntax:
+    content: public static bool IsLowerThan(this string? value, int length)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to check.
+    - id: length
+      type: System.Int32
+      description: The length to compare against.
+    return:
+      type: System.Boolean
+      description: true if the length of the string is lower than the specified length; otherwise, false.
+    content.vb: Public Shared Function IsLowerThan(value As String, length As Integer) As Boolean
+  overload: QuickKit.Shared.Extensions.StringExtensions.IsLowerThan*
+  nameWithType.vb: StringExtensions.IsLowerThan(String, Integer)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.IsLowerThan(String, Integer)
+  name.vb: IsLowerThan(String, Integer)
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan(System.String,System.Int32)
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan(System.String,System.Int32)
+  id: IsLowerOrEqualThan(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: QuickKit.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsLowerOrEqualThan(string?, int)
+  nameWithType: StringExtensions.IsLowerOrEqualThan(string?, int)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan(string?, int)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Extensions/StringExtensions.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: IsLowerOrEqualThan
+    path: QuickKit.Shared/Extensions/StringExtensions.cs
+    startLine: 54
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Extensions
+  summary: Determines whether the length of the specified string is lower than or equal to the specified length.
+  example: []
+  syntax:
+    content: public static bool IsLowerOrEqualThan(this string? value, int length)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to check.
+    - id: length
+      type: System.Int32
+      description: The length to compare against.
+    return:
+      type: System.Boolean
+      description: true if the length of the string is lower than or equal to the specified length; otherwise, false.
+    content.vb: Public Shared Function IsLowerOrEqualThan(value As String, length As Integer) As Boolean
+  overload: QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan*
+  nameWithType.vb: StringExtensions.IsLowerOrEqualThan(String, Integer)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan(String, Integer)
+  name.vb: IsLowerOrEqualThan(String, Integer)
+- uid: QuickKit.Shared.Extensions.StringExtensions.To``1(System.String)
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.To``1(System.String)
+  id: To``1(System.String)
+  isExtensionMethod: true
+  parent: QuickKit.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: To<TType>(string)
+  nameWithType: StringExtensions.To<TType>(string)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.To<TType>(string)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Extensions/StringExtensions.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: To
+    path: QuickKit.Shared/Extensions/StringExtensions.cs
+    startLine: 67
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Extensions
+  summary: Converts the specified string to the specified type.
+  example: []
+  syntax:
+    content: 'public static TType To<TType>(this string value) where TType : struct'
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to convert.
+    typeParameters:
+    - id: TType
+      description: The type to convert the string to.
+    return:
+      type: '{TType}'
+      description: The converted value of the specified type.
+    content.vb: Public Shared Function [To](Of TType As Structure)(value As String) As TType
+  overload: QuickKit.Shared.Extensions.StringExtensions.To*
+  nameWithType.vb: StringExtensions.To(Of TType)(String)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.To(Of TType)(String)
+  name.vb: To(Of TType)(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToInt(System.String)
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.ToInt(System.String)
+  id: ToInt(System.String)
+  isExtensionMethod: true
+  parent: QuickKit.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToInt(string)
+  nameWithType: StringExtensions.ToInt(string)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToInt(string)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Extensions/StringExtensions.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ToInt
+    path: QuickKit.Shared/Extensions/StringExtensions.cs
+    startLine: 77
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Extensions
+  summary: Converts the specified string to an integer.
+  example: []
+  syntax:
+    content: public static int ToInt(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to convert.
+    return:
+      type: System.Int32
+      description: The converted integer value.
+    content.vb: Public Shared Function ToInt(value As String) As Integer
+  overload: QuickKit.Shared.Extensions.StringExtensions.ToInt*
+  nameWithType.vb: StringExtensions.ToInt(String)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.ToInt(String)
+  name.vb: ToInt(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDouble(System.String)
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.ToDouble(System.String)
+  id: ToDouble(System.String)
+  isExtensionMethod: true
+  parent: QuickKit.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToDouble(string)
+  nameWithType: StringExtensions.ToDouble(string)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDouble(string)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Extensions/StringExtensions.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ToDouble
+    path: QuickKit.Shared/Extensions/StringExtensions.cs
+    startLine: 87
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Extensions
+  summary: Converts the specified string to a double.
+  example: []
+  syntax:
+    content: public static double ToDouble(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to convert.
+    return:
+      type: System.Double
+      description: The converted double value.
+    content.vb: Public Shared Function ToDouble(value As String) As Double
+  overload: QuickKit.Shared.Extensions.StringExtensions.ToDouble*
+  nameWithType.vb: StringExtensions.ToDouble(String)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.ToDouble(String)
+  name.vb: ToDouble(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDecimal(System.String)
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.ToDecimal(System.String)
+  id: ToDecimal(System.String)
+  isExtensionMethod: true
+  parent: QuickKit.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToDecimal(string)
+  nameWithType: StringExtensions.ToDecimal(string)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDecimal(string)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Extensions/StringExtensions.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ToDecimal
+    path: QuickKit.Shared/Extensions/StringExtensions.cs
+    startLine: 97
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Extensions
+  summary: Converts the specified string to a decimal.
+  example: []
+  syntax:
+    content: public static decimal ToDecimal(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to convert.
+    return:
+      type: System.Decimal
+      description: The converted decimal value.
+    content.vb: Public Shared Function ToDecimal(value As String) As Decimal
+  overload: QuickKit.Shared.Extensions.StringExtensions.ToDecimal*
+  nameWithType.vb: StringExtensions.ToDecimal(String)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.ToDecimal(String)
+  name.vb: ToDecimal(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToBool(System.String)
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.ToBool(System.String)
+  id: ToBool(System.String)
+  isExtensionMethod: true
+  parent: QuickKit.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToBool(string)
+  nameWithType: StringExtensions.ToBool(string)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToBool(string)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Extensions/StringExtensions.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ToBool
+    path: QuickKit.Shared/Extensions/StringExtensions.cs
+    startLine: 107
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Extensions
+  summary: Converts the specified string to a boolean.
+  example: []
+  syntax:
+    content: public static bool ToBool(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to convert.
+    return:
+      type: System.Boolean
+      description: The converted boolean value.
+    content.vb: Public Shared Function ToBool(value As String) As Boolean
+  overload: QuickKit.Shared.Extensions.StringExtensions.ToBool*
+  nameWithType.vb: StringExtensions.ToBool(String)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.ToBool(String)
+  name.vb: ToBool(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDateTime(System.String)
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.ToDateTime(System.String)
+  id: ToDateTime(System.String)
+  isExtensionMethod: true
+  parent: QuickKit.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToDateTime(string)
+  nameWithType: StringExtensions.ToDateTime(string)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDateTime(string)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Extensions/StringExtensions.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ToDateTime
+    path: QuickKit.Shared/Extensions/StringExtensions.cs
+    startLine: 117
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Extensions
+  summary: Converts the specified string to a DateTime.
+  example: []
+  syntax:
+    content: public static DateTime ToDateTime(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to convert.
+    return:
+      type: System.DateTime
+      description: The converted DateTime value.
+    content.vb: Public Shared Function ToDateTime(value As String) As Date
+  overload: QuickKit.Shared.Extensions.StringExtensions.ToDateTime*
+  nameWithType.vb: StringExtensions.ToDateTime(String)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.ToDateTime(String)
+  name.vb: ToDateTime(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDateOnly(System.String)
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.ToDateOnly(System.String)
+  id: ToDateOnly(System.String)
+  isExtensionMethod: true
+  parent: QuickKit.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToDateOnly(string)
+  nameWithType: StringExtensions.ToDateOnly(string)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDateOnly(string)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Extensions/StringExtensions.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: ToDateOnly
+    path: QuickKit.Shared/Extensions/StringExtensions.cs
+    startLine: 127
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Extensions
+  summary: Converts the specified string to a DateOnly.
+  example: []
+  syntax:
+    content: public static DateOnly ToDateOnly(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to convert.
+    return:
+      type: System.DateOnly
+      description: The converted DateOnly value.
+    content.vb: Public Shared Function ToDateOnly(value As String) As DateOnly
+  overload: QuickKit.Shared.Extensions.StringExtensions.ToDateOnly*
+  nameWithType.vb: StringExtensions.ToDateOnly(String)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.ToDateOnly(String)
+  name.vb: ToDateOnly(String)
+references:
+- uid: QuickKit.Shared.Extensions
+  commentId: N:QuickKit.Shared.Extensions
+  href: QuickKit.html
+  name: QuickKit.Shared.Extensions
+  nameWithType: QuickKit.Shared.Extensions
+  fullName: QuickKit.Shared.Extensions
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Shared
+    name: Shared
+    href: QuickKit.Shared.html
+  - name: .
+  - uid: QuickKit.Shared.Extensions
+    name: Extensions
+    href: QuickKit.Shared.Extensions.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Shared
+    name: Shared
+    href: QuickKit.Shared.html
+  - name: .
+  - uid: QuickKit.Shared.Extensions
+    name: Extensions
+    href: QuickKit.Shared.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsEmpty*
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.IsEmpty
+  href: QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsEmpty_System_String_
+  name: IsEmpty
+  nameWithType: StringExtensions.IsEmpty
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsEmpty
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsHigherThan*
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.IsHigherThan
+  href: QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsHigherThan_System_String_System_Int32_
+  name: IsHigherThan
+  nameWithType: StringExtensions.IsHigherThan
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsHigherThan
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan*
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan
+  href: QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsHigherOrEqualThan_System_String_System_Int32_
+  name: IsHigherOrEqualThan
+  nameWithType: StringExtensions.IsHigherOrEqualThan
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsLowerThan*
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.IsLowerThan
+  href: QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsLowerThan_System_String_System_Int32_
+  name: IsLowerThan
+  nameWithType: StringExtensions.IsLowerThan
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsLowerThan
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan*
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan
+  href: QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsLowerOrEqualThan_System_String_System_Int32_
+  name: IsLowerOrEqualThan
+  nameWithType: StringExtensions.IsLowerOrEqualThan
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan
+- uid: QuickKit.Shared.Extensions.StringExtensions.To*
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.To
+  href: QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_To__1_System_String_
+  name: To
+  nameWithType: StringExtensions.To
+  fullName: QuickKit.Shared.Extensions.StringExtensions.To
+- uid: '{TType}'
+  commentId: '!:TType'
+  definition: TType
+  name: TType
+  nameWithType: TType
+  fullName: TType
+- uid: TType
+  commentId: '!:TType'
+  name: TType
+  nameWithType: TType
+  fullName: TType
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToInt*
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.ToInt
+  href: QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToInt_System_String_
+  name: ToInt
+  nameWithType: StringExtensions.ToInt
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToInt
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDouble*
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.ToDouble
+  href: QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToDouble_System_String_
+  name: ToDouble
+  nameWithType: StringExtensions.ToDouble
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDouble
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDecimal*
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.ToDecimal
+  href: QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToDecimal_System_String_
+  name: ToDecimal
+  nameWithType: StringExtensions.ToDecimal
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDecimal
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToBool*
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.ToBool
+  href: QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToBool_System_String_
+  name: ToBool
+  nameWithType: StringExtensions.ToBool
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToBool
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDateTime*
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.ToDateTime
+  href: QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToDateTime_System_String_
+  name: ToDateTime
+  nameWithType: StringExtensions.ToDateTime
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDateTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDateOnly*
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.ToDateOnly
+  href: QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToDateOnly_System_String_
+  name: ToDateOnly
+  nameWithType: StringExtensions.ToDateOnly
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDateOnly
+- uid: System.DateOnly
+  commentId: T:System.DateOnly
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.dateonly
+  name: DateOnly
+  nameWithType: DateOnly
+  fullName: System.DateOnly

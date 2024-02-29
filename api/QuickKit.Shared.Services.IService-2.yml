@@ -1,0 +1,460 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Shared.Services.IService`2
+  commentId: T:QuickKit.Shared.Services.IService`2
+  id: IService`2
+  parent: QuickKit.Shared.Services
+  children:
+  - QuickKit.Shared.Services.IService`2.AddAsync(`0)
+  - QuickKit.Shared.Services.IService`2.DeleteAsync(`1)
+  - QuickKit.Shared.Services.IService`2.GetAllAsync
+  - QuickKit.Shared.Services.IService`2.GetByIdAsync(`1)
+  - QuickKit.Shared.Services.IService`2.UpdateAsync(`0)
+  langs:
+  - csharp
+  - vb
+  name: IService<TEntity, TKey>
+  nameWithType: IService<TEntity, TKey>
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>
+  type: Interface
+  source:
+    remote:
+      path: QuickKit.Shared/Services/IService.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: IService
+    path: QuickKit.Shared/Services/IService.cs
+    startLine: 7
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Services
+  summary: Represents a generic service interface for performing CRUD operations on entities.
+  example: []
+  syntax:
+    content: public interface IService<TEntity, TKey>
+    typeParameters:
+    - id: TEntity
+      description: The type of the entity.
+    - id: TKey
+      description: The type of the entity's primary key.
+    content.vb: Public Interface IService(Of TEntity, TKey)
+  nameWithType.vb: IService(Of TEntity, TKey)
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey)
+  name.vb: IService(Of TEntity, TKey)
+- uid: QuickKit.Shared.Services.IService`2.GetAllAsync
+  commentId: M:QuickKit.Shared.Services.IService`2.GetAllAsync
+  id: GetAllAsync
+  parent: QuickKit.Shared.Services.IService`2
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync()
+  nameWithType: IService<TEntity, TKey>.GetAllAsync()
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.GetAllAsync()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Services/IService.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: GetAllAsync
+    path: QuickKit.Shared/Services/IService.cs
+    startLine: 13
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Services
+  summary: Retrieves all entities asynchronously.
+  example: []
+  syntax:
+    content: Task<IEnumerable<TEntity>> GetAllAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TEntity}}}
+      description: A task that represents the asynchronous operation. The task result contains the collection of entities.
+    content.vb: Function GetAllAsync() As Task(Of IEnumerable(Of TEntity))
+  overload: QuickKit.Shared.Services.IService`2.GetAllAsync*
+  nameWithType.vb: IService(Of TEntity, TKey).GetAllAsync()
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).GetAllAsync()
+- uid: QuickKit.Shared.Services.IService`2.GetByIdAsync(`1)
+  commentId: M:QuickKit.Shared.Services.IService`2.GetByIdAsync(`1)
+  id: GetByIdAsync(`1)
+  parent: QuickKit.Shared.Services.IService`2
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(TKey)
+  nameWithType: IService<TEntity, TKey>.GetByIdAsync(TKey)
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.GetByIdAsync(TKey)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Services/IService.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: GetByIdAsync
+    path: QuickKit.Shared/Services/IService.cs
+    startLine: 20
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Services
+  summary: Retrieves an entity by its primary key asynchronously.
+  example: []
+  syntax:
+    content: Task<TEntity> GetByIdAsync(TKey id)
+    parameters:
+    - id: id
+      type: '{TKey}'
+      description: The primary key of the entity.
+    return:
+      type: System.Threading.Tasks.Task{{TEntity}}
+      description: A task that represents the asynchronous operation. The task result contains the entity.
+    content.vb: Function GetByIdAsync(id As TKey) As Task(Of TEntity)
+  overload: QuickKit.Shared.Services.IService`2.GetByIdAsync*
+  nameWithType.vb: IService(Of TEntity, TKey).GetByIdAsync(TKey)
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).GetByIdAsync(TKey)
+- uid: QuickKit.Shared.Services.IService`2.AddAsync(`0)
+  commentId: M:QuickKit.Shared.Services.IService`2.AddAsync(`0)
+  id: AddAsync(`0)
+  parent: QuickKit.Shared.Services.IService`2
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(TEntity)
+  nameWithType: IService<TEntity, TKey>.AddAsync(TEntity)
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.AddAsync(TEntity)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Services/IService.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: AddAsync
+    path: QuickKit.Shared/Services/IService.cs
+    startLine: 27
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Services
+  summary: Adds a new entity asynchronously.
+  example: []
+  syntax:
+    content: Task AddAsync(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+      description: The entity to add.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Function AddAsync(entity As TEntity) As Task
+  overload: QuickKit.Shared.Services.IService`2.AddAsync*
+  nameWithType.vb: IService(Of TEntity, TKey).AddAsync(TEntity)
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).AddAsync(TEntity)
+- uid: QuickKit.Shared.Services.IService`2.UpdateAsync(`0)
+  commentId: M:QuickKit.Shared.Services.IService`2.UpdateAsync(`0)
+  id: UpdateAsync(`0)
+  parent: QuickKit.Shared.Services.IService`2
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(TEntity)
+  nameWithType: IService<TEntity, TKey>.UpdateAsync(TEntity)
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.UpdateAsync(TEntity)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Services/IService.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: UpdateAsync
+    path: QuickKit.Shared/Services/IService.cs
+    startLine: 34
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Services
+  summary: Updates an existing entity asynchronously.
+  example: []
+  syntax:
+    content: Task UpdateAsync(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+      description: The entity to update.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Function UpdateAsync(entity As TEntity) As Task
+  overload: QuickKit.Shared.Services.IService`2.UpdateAsync*
+  nameWithType.vb: IService(Of TEntity, TKey).UpdateAsync(TEntity)
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).UpdateAsync(TEntity)
+- uid: QuickKit.Shared.Services.IService`2.DeleteAsync(`1)
+  commentId: M:QuickKit.Shared.Services.IService`2.DeleteAsync(`1)
+  id: DeleteAsync(`1)
+  parent: QuickKit.Shared.Services.IService`2
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(TKey)
+  nameWithType: IService<TEntity, TKey>.DeleteAsync(TKey)
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.DeleteAsync(TKey)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Shared/Services/IService.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit
+    id: DeleteAsync
+    path: QuickKit.Shared/Services/IService.cs
+    startLine: 41
+  assemblies:
+  - QuickKit.Shared
+  namespace: QuickKit.Shared.Services
+  summary: Deletes an entity by its primary key asynchronously.
+  example: []
+  syntax:
+    content: Task DeleteAsync(TKey id)
+    parameters:
+    - id: id
+      type: '{TKey}'
+      description: The primary key of the entity to delete.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Function DeleteAsync(id As TKey) As Task
+  overload: QuickKit.Shared.Services.IService`2.DeleteAsync*
+  nameWithType.vb: IService(Of TEntity, TKey).DeleteAsync(TKey)
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).DeleteAsync(TKey)
+references:
+- uid: QuickKit.Shared.Services
+  commentId: N:QuickKit.Shared.Services
+  href: QuickKit.html
+  name: QuickKit.Shared.Services
+  nameWithType: QuickKit.Shared.Services
+  fullName: QuickKit.Shared.Services
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Shared
+    name: Shared
+    href: QuickKit.Shared.html
+  - name: .
+  - uid: QuickKit.Shared.Services
+    name: Services
+    href: QuickKit.Shared.Services.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Shared
+    name: Shared
+    href: QuickKit.Shared.html
+  - name: .
+  - uid: QuickKit.Shared.Services
+    name: Services
+    href: QuickKit.Shared.Services.html
+- uid: QuickKit.Shared.Services.IService`2.GetAllAsync*
+  commentId: Overload:QuickKit.Shared.Services.IService`2.GetAllAsync
+  href: QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_GetAllAsync
+  name: GetAllAsync
+  nameWithType: IService<TEntity, TKey>.GetAllAsync
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.GetAllAsync
+  nameWithType.vb: IService(Of TEntity, TKey).GetAllAsync
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).GetAllAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TEntity}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<TEntity>>
+  nameWithType: Task<IEnumerable<TEntity>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<TEntity>>
+  nameWithType.vb: Task(Of IEnumerable(Of TEntity))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of TEntity))
+  name.vb: Task(Of IEnumerable(Of TEntity))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: QuickKit.Shared.Services.IService`2.GetByIdAsync*
+  commentId: Overload:QuickKit.Shared.Services.IService`2.GetByIdAsync
+  href: QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_GetByIdAsync__1_
+  name: GetByIdAsync
+  nameWithType: IService<TEntity, TKey>.GetByIdAsync
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.GetByIdAsync
+  nameWithType.vb: IService(Of TEntity, TKey).GetByIdAsync
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).GetByIdAsync
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: System.Threading.Tasks.Task{{TEntity}}
+  commentId: T:System.Threading.Tasks.Task{`0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TEntity>
+  nameWithType: Task<TEntity>
+  fullName: System.Threading.Tasks.Task<TEntity>
+  nameWithType.vb: Task(Of TEntity)
+  fullName.vb: System.Threading.Tasks.Task(Of TEntity)
+  name.vb: Task(Of TEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: QuickKit.Shared.Services.IService`2.AddAsync*
+  commentId: Overload:QuickKit.Shared.Services.IService`2.AddAsync
+  href: QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_AddAsync__0_
+  name: AddAsync
+  nameWithType: IService<TEntity, TKey>.AddAsync
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.AddAsync
+  nameWithType.vb: IService(Of TEntity, TKey).AddAsync
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).AddAsync
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: QuickKit.Shared.Services.IService`2.UpdateAsync*
+  commentId: Overload:QuickKit.Shared.Services.IService`2.UpdateAsync
+  href: QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_UpdateAsync__0_
+  name: UpdateAsync
+  nameWithType: IService<TEntity, TKey>.UpdateAsync
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.UpdateAsync
+  nameWithType.vb: IService(Of TEntity, TKey).UpdateAsync
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).UpdateAsync
+- uid: QuickKit.Shared.Services.IService`2.DeleteAsync*
+  commentId: Overload:QuickKit.Shared.Services.IService`2.DeleteAsync
+  href: QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_DeleteAsync__1_
+  name: DeleteAsync
+  nameWithType: IService<TEntity, TKey>.DeleteAsync
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.DeleteAsync
+  nameWithType.vb: IService(Of TEntity, TKey).DeleteAsync
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).DeleteAsync
