@@ -1,0 +1,756 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Cmd.Consoler
+  commentId: T:QuickKit.Cmd.Consoler
+  id: Consoler
+  parent: QuickKit.Cmd
+  children:
+  - QuickKit.Cmd.Consoler.Read
+  - QuickKit.Cmd.Consoler.ReadAs``1(System.String,System.String,QuickKit.Cmd.Enums.AlertType)
+  - QuickKit.Cmd.Consoler.ReadKey
+  - QuickKit.Cmd.Consoler.ReadKeyInfo
+  - QuickKit.Cmd.Consoler.ReadLine
+  - QuickKit.Cmd.Consoler.ReadLine(System.String,QuickKit.Cmd.Enums.AlertType)
+  - QuickKit.Cmd.Consoler.Write(System.String)
+  - QuickKit.Cmd.Consoler.Write(System.String,QuickKit.Cmd.Enums.AlertType)
+  - QuickKit.Cmd.Consoler.WriteLine(System.String)
+  - QuickKit.Cmd.Consoler.WriteLine(System.String,QuickKit.Cmd.Enums.AlertType)
+  langs:
+  - csharp
+  - vb
+  name: Consoler
+  nameWithType: Consoler
+  fullName: QuickKit.Cmd.Consoler
+  type: Class
+  source:
+    remote:
+      path: QuickKit.Console/Consoler.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: Consoler
+    path: QuickKit.Console/Consoler.cs
+    startLine: 4
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd
+  syntax:
+    content: public class Consoler
+    content.vb: Public Class Consoler
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: QuickKit.Cmd.Consoler.Write(System.String)
+  commentId: M:QuickKit.Cmd.Consoler.Write(System.String)
+  id: Write(System.String)
+  parent: QuickKit.Cmd.Consoler
+  langs:
+  - csharp
+  - vb
+  name: Write(string)
+  nameWithType: Consoler.Write(string)
+  fullName: QuickKit.Cmd.Consoler.Write(string)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Consoler.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: Write
+    path: QuickKit.Console/Consoler.cs
+    startLine: 7
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd
+  syntax:
+    content: public static void Write(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Shared Sub Write(message As String)
+  overload: QuickKit.Cmd.Consoler.Write*
+  nameWithType.vb: Consoler.Write(String)
+  fullName.vb: QuickKit.Cmd.Consoler.Write(String)
+  name.vb: Write(String)
+- uid: QuickKit.Cmd.Consoler.Write(System.String,QuickKit.Cmd.Enums.AlertType)
+  commentId: M:QuickKit.Cmd.Consoler.Write(System.String,QuickKit.Cmd.Enums.AlertType)
+  id: Write(System.String,QuickKit.Cmd.Enums.AlertType)
+  parent: QuickKit.Cmd.Consoler
+  langs:
+  - csharp
+  - vb
+  name: Write(string, AlertType)
+  nameWithType: Consoler.Write(string, AlertType)
+  fullName: QuickKit.Cmd.Consoler.Write(string, QuickKit.Cmd.Enums.AlertType)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Consoler.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: Write
+    path: QuickKit.Console/Consoler.cs
+    startLine: 8
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd
+  syntax:
+    content: public static void Write(string message, AlertType type)
+    parameters:
+    - id: message
+      type: System.String
+    - id: type
+      type: QuickKit.Cmd.Enums.AlertType
+    content.vb: Public Shared Sub Write(message As String, type As AlertType)
+  overload: QuickKit.Cmd.Consoler.Write*
+  nameWithType.vb: Consoler.Write(String, AlertType)
+  fullName.vb: QuickKit.Cmd.Consoler.Write(String, QuickKit.Cmd.Enums.AlertType)
+  name.vb: Write(String, AlertType)
+- uid: QuickKit.Cmd.Consoler.WriteLine(System.String)
+  commentId: M:QuickKit.Cmd.Consoler.WriteLine(System.String)
+  id: WriteLine(System.String)
+  parent: QuickKit.Cmd.Consoler
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string)
+  nameWithType: Consoler.WriteLine(string)
+  fullName: QuickKit.Cmd.Consoler.WriteLine(string)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Consoler.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: WriteLine
+    path: QuickKit.Console/Consoler.cs
+    startLine: 9
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd
+  syntax:
+    content: public static void WriteLine(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Shared Sub WriteLine(message As String)
+  overload: QuickKit.Cmd.Consoler.WriteLine*
+  nameWithType.vb: Consoler.WriteLine(String)
+  fullName.vb: QuickKit.Cmd.Consoler.WriteLine(String)
+  name.vb: WriteLine(String)
+- uid: QuickKit.Cmd.Consoler.WriteLine(System.String,QuickKit.Cmd.Enums.AlertType)
+  commentId: M:QuickKit.Cmd.Consoler.WriteLine(System.String,QuickKit.Cmd.Enums.AlertType)
+  id: WriteLine(System.String,QuickKit.Cmd.Enums.AlertType)
+  parent: QuickKit.Cmd.Consoler
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string, AlertType)
+  nameWithType: Consoler.WriteLine(string, AlertType)
+  fullName: QuickKit.Cmd.Consoler.WriteLine(string, QuickKit.Cmd.Enums.AlertType)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Consoler.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: WriteLine
+    path: QuickKit.Console/Consoler.cs
+    startLine: 10
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd
+  syntax:
+    content: public static void WriteLine(string message, AlertType type)
+    parameters:
+    - id: message
+      type: System.String
+    - id: type
+      type: QuickKit.Cmd.Enums.AlertType
+    content.vb: Public Shared Sub WriteLine(message As String, type As AlertType)
+  overload: QuickKit.Cmd.Consoler.WriteLine*
+  nameWithType.vb: Consoler.WriteLine(String, AlertType)
+  fullName.vb: QuickKit.Cmd.Consoler.WriteLine(String, QuickKit.Cmd.Enums.AlertType)
+  name.vb: WriteLine(String, AlertType)
+- uid: QuickKit.Cmd.Consoler.Read
+  commentId: M:QuickKit.Cmd.Consoler.Read
+  id: Read
+  parent: QuickKit.Cmd.Consoler
+  langs:
+  - csharp
+  - vb
+  name: Read()
+  nameWithType: Consoler.Read()
+  fullName: QuickKit.Cmd.Consoler.Read()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Consoler.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: Read
+    path: QuickKit.Console/Consoler.cs
+    startLine: 14
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd
+  syntax:
+    content: public static int Read()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Read() As Integer
+  overload: QuickKit.Cmd.Consoler.Read*
+- uid: QuickKit.Cmd.Consoler.ReadLine
+  commentId: M:QuickKit.Cmd.Consoler.ReadLine
+  id: ReadLine
+  parent: QuickKit.Cmd.Consoler
+  langs:
+  - csharp
+  - vb
+  name: ReadLine()
+  nameWithType: Consoler.ReadLine()
+  fullName: QuickKit.Cmd.Consoler.ReadLine()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Consoler.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: ReadLine
+    path: QuickKit.Console/Consoler.cs
+    startLine: 16
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd
+  syntax:
+    content: public static string? ReadLine()
+    return:
+      type: System.String
+    content.vb: Public Shared Function ReadLine() As String
+  overload: QuickKit.Cmd.Consoler.ReadLine*
+- uid: QuickKit.Cmd.Consoler.ReadLine(System.String,QuickKit.Cmd.Enums.AlertType)
+  commentId: M:QuickKit.Cmd.Consoler.ReadLine(System.String,QuickKit.Cmd.Enums.AlertType)
+  id: ReadLine(System.String,QuickKit.Cmd.Enums.AlertType)
+  parent: QuickKit.Cmd.Consoler
+  langs:
+  - csharp
+  - vb
+  name: ReadLine(string, AlertType)
+  nameWithType: Consoler.ReadLine(string, AlertType)
+  fullName: QuickKit.Cmd.Consoler.ReadLine(string, QuickKit.Cmd.Enums.AlertType)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Consoler.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: ReadLine
+    path: QuickKit.Console/Consoler.cs
+    startLine: 18
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd
+  syntax:
+    content: public static string ReadLine(string notNullAlertMessage, AlertType alertType = AlertType.Warning)
+    parameters:
+    - id: notNullAlertMessage
+      type: System.String
+    - id: alertType
+      type: QuickKit.Cmd.Enums.AlertType
+    return:
+      type: System.String
+    content.vb: Public Shared Function ReadLine(notNullAlertMessage As String, alertType As AlertType = AlertType.Warning) As String
+  overload: QuickKit.Cmd.Consoler.ReadLine*
+  nameWithType.vb: Consoler.ReadLine(String, AlertType)
+  fullName.vb: QuickKit.Cmd.Consoler.ReadLine(String, QuickKit.Cmd.Enums.AlertType)
+  name.vb: ReadLine(String, AlertType)
+- uid: QuickKit.Cmd.Consoler.ReadKey
+  commentId: M:QuickKit.Cmd.Consoler.ReadKey
+  id: ReadKey
+  parent: QuickKit.Cmd.Consoler
+  langs:
+  - csharp
+  - vb
+  name: ReadKey()
+  nameWithType: Consoler.ReadKey()
+  fullName: QuickKit.Cmd.Consoler.ReadKey()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Consoler.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: ReadKey
+    path: QuickKit.Console/Consoler.cs
+    startLine: 23
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd
+  syntax:
+    content: public static ConsoleKey ReadKey()
+    return:
+      type: System.ConsoleKey
+    content.vb: Public Shared Function ReadKey() As ConsoleKey
+  overload: QuickKit.Cmd.Consoler.ReadKey*
+- uid: QuickKit.Cmd.Consoler.ReadKeyInfo
+  commentId: M:QuickKit.Cmd.Consoler.ReadKeyInfo
+  id: ReadKeyInfo
+  parent: QuickKit.Cmd.Consoler
+  langs:
+  - csharp
+  - vb
+  name: ReadKeyInfo()
+  nameWithType: Consoler.ReadKeyInfo()
+  fullName: QuickKit.Cmd.Consoler.ReadKeyInfo()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Consoler.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: ReadKeyInfo
+    path: QuickKit.Console/Consoler.cs
+    startLine: 25
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd
+  syntax:
+    content: public static ConsoleKeyInfo ReadKeyInfo()
+    return:
+      type: System.ConsoleKeyInfo
+    content.vb: Public Shared Function ReadKeyInfo() As ConsoleKeyInfo
+  overload: QuickKit.Cmd.Consoler.ReadKeyInfo*
+- uid: QuickKit.Cmd.Consoler.ReadAs``1(System.String,System.String,QuickKit.Cmd.Enums.AlertType)
+  commentId: M:QuickKit.Cmd.Consoler.ReadAs``1(System.String,System.String,QuickKit.Cmd.Enums.AlertType)
+  id: ReadAs``1(System.String,System.String,QuickKit.Cmd.Enums.AlertType)
+  parent: QuickKit.Cmd.Consoler
+  langs:
+  - csharp
+  - vb
+  name: ReadAs<T>(string, string, AlertType)
+  nameWithType: Consoler.ReadAs<T>(string, string, AlertType)
+  fullName: QuickKit.Cmd.Consoler.ReadAs<T>(string, string, QuickKit.Cmd.Enums.AlertType)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Consoler.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: ReadAs
+    path: QuickKit.Console/Consoler.cs
+    startLine: 29
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd
+  syntax:
+    content: 'public static T ReadAs<T>(string notNullAlertMessage, string convertFailedMessage, AlertType alertType = AlertType.Warning) where T : struct'
+    parameters:
+    - id: notNullAlertMessage
+      type: System.String
+    - id: convertFailedMessage
+      type: System.String
+    - id: alertType
+      type: QuickKit.Cmd.Enums.AlertType
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function ReadAs(Of T As Structure)(notNullAlertMessage As String, convertFailedMessage As String, alertType As AlertType = AlertType.Warning) As T
+  overload: QuickKit.Cmd.Consoler.ReadAs*
+  nameWithType.vb: Consoler.ReadAs(Of T)(String, String, AlertType)
+  fullName.vb: QuickKit.Cmd.Consoler.ReadAs(Of T)(String, String, QuickKit.Cmd.Enums.AlertType)
+  name.vb: ReadAs(Of T)(String, String, AlertType)
+references:
+- uid: QuickKit.Cmd
+  commentId: N:QuickKit.Cmd
+  href: QuickKit.html
+  name: QuickKit.Cmd
+  nameWithType: QuickKit.Cmd
+  fullName: QuickKit.Cmd
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: QuickKit.Cmd.Consoler.Write*
+  commentId: Overload:QuickKit.Cmd.Consoler.Write
+  href: QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_Write_System_String_
+  name: Write
+  nameWithType: Consoler.Write
+  fullName: QuickKit.Cmd.Consoler.Write
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: QuickKit.Cmd.Enums.AlertType
+  commentId: T:QuickKit.Cmd.Enums.AlertType
+  parent: QuickKit.Cmd.Enums
+  href: QuickKit.Cmd.Enums.AlertType.html
+  name: AlertType
+  nameWithType: AlertType
+  fullName: QuickKit.Cmd.Enums.AlertType
+- uid: QuickKit.Cmd.Enums
+  commentId: N:QuickKit.Cmd.Enums
+  href: QuickKit.html
+  name: QuickKit.Cmd.Enums
+  nameWithType: QuickKit.Cmd.Enums
+  fullName: QuickKit.Cmd.Enums
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Enums
+    name: Enums
+    href: QuickKit.Cmd.Enums.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Enums
+    name: Enums
+    href: QuickKit.Cmd.Enums.html
+- uid: QuickKit.Cmd.Consoler.WriteLine*
+  commentId: Overload:QuickKit.Cmd.Consoler.WriteLine
+  href: QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_WriteLine_System_String_
+  name: WriteLine
+  nameWithType: Consoler.WriteLine
+  fullName: QuickKit.Cmd.Consoler.WriteLine
+- uid: QuickKit.Cmd.Consoler.Read*
+  commentId: Overload:QuickKit.Cmd.Consoler.Read
+  href: QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_Read
+  name: Read
+  nameWithType: Consoler.Read
+  fullName: QuickKit.Cmd.Consoler.Read
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: QuickKit.Cmd.Consoler.ReadLine*
+  commentId: Overload:QuickKit.Cmd.Consoler.ReadLine
+  href: QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_ReadLine
+  name: ReadLine
+  nameWithType: Consoler.ReadLine
+  fullName: QuickKit.Cmd.Consoler.ReadLine
+- uid: QuickKit.Cmd.Consoler.ReadKey*
+  commentId: Overload:QuickKit.Cmd.Consoler.ReadKey
+  href: QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_ReadKey
+  name: ReadKey
+  nameWithType: Consoler.ReadKey
+  fullName: QuickKit.Cmd.Consoler.ReadKey
+- uid: System.ConsoleKey
+  commentId: T:System.ConsoleKey
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.consolekey
+  name: ConsoleKey
+  nameWithType: ConsoleKey
+  fullName: System.ConsoleKey
+- uid: QuickKit.Cmd.Consoler.ReadKeyInfo*
+  commentId: Overload:QuickKit.Cmd.Consoler.ReadKeyInfo
+  href: QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_ReadKeyInfo
+  name: ReadKeyInfo
+  nameWithType: Consoler.ReadKeyInfo
+  fullName: QuickKit.Cmd.Consoler.ReadKeyInfo
+- uid: System.ConsoleKeyInfo
+  commentId: T:System.ConsoleKeyInfo
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.consolekeyinfo
+  name: ConsoleKeyInfo
+  nameWithType: ConsoleKeyInfo
+  fullName: System.ConsoleKeyInfo
+- uid: QuickKit.Cmd.Consoler.ReadAs*
+  commentId: Overload:QuickKit.Cmd.Consoler.ReadAs
+  href: QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_ReadAs__1_System_String_System_String_QuickKit_Cmd_Enums_AlertType_
+  name: ReadAs
+  nameWithType: Consoler.ReadAs
+  fullName: QuickKit.Cmd.Consoler.ReadAs
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  commentId: '!:T'
+  name: T
+  nameWithType: T
+  fullName: T

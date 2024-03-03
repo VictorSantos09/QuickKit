@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Shared.Builders
+  commentId: N:QuickKit.Shared.Builders
+  id: QuickKit.Shared.Builders
+  children:
+  - QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+  - QuickKit.Shared.Builders.ViewNameEntityBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: QuickKit.Shared.Builders
+  nameWithType: QuickKit.Shared.Builders
+  fullName: QuickKit.Shared.Builders
+  type: Namespace
+  assemblies:
+  - QuickKit
+references:
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+  commentId: T:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+  href: QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html
+  name: ProcedureNameEntityBuilder<TEntity>
+  nameWithType: ProcedureNameEntityBuilder<TEntity>
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity)
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity)
+  name.vb: ProcedureNameEntityBuilder(Of TEntity)
+  spec.csharp:
+  - uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+    name: ProcedureNameEntityBuilder
+    href: QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+    name: ProcedureNameEntityBuilder
+    href: QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: QuickKit.Shared.Builders.ViewNameEntityBuilder`1
+  commentId: T:QuickKit.Shared.Builders.ViewNameEntityBuilder`1
+  href: QuickKit.Shared.Builders.ViewNameEntityBuilder-1.html
+  name: ViewNameEntityBuilder<TEntity>
+  nameWithType: ViewNameEntityBuilder<TEntity>
+  fullName: QuickKit.Shared.Builders.ViewNameEntityBuilder<TEntity>
+  nameWithType.vb: ViewNameEntityBuilder(Of TEntity)
+  fullName.vb: QuickKit.Shared.Builders.ViewNameEntityBuilder(Of TEntity)
+  name.vb: ViewNameEntityBuilder(Of TEntity)
+  spec.csharp:
+  - uid: QuickKit.Shared.Builders.ViewNameEntityBuilder`1
+    name: ViewNameEntityBuilder
+    href: QuickKit.Shared.Builders.ViewNameEntityBuilder-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: QuickKit.Shared.Builders.ViewNameEntityBuilder`1
+    name: ViewNameEntityBuilder
+    href: QuickKit.Shared.Builders.ViewNameEntityBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )

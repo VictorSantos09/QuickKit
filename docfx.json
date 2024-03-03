@@ -7,13 +7,13 @@
           "files": ["**/*.csproj"]
         }
       ],
-      "dest": "api"
+      "dest": "./docs/api"
     }
   ],
   "build": {
     "content": [
       {
-        "files": ["**/*.{md,yml}"],
+        "files": ["**/*.{md,yml,xml}"],
         "exclude": [
           "_site/**",
           "QuickKit.Sample.API",
@@ -27,7 +27,7 @@
         "files": ["images/**"]
       }
     ],
-    "output": "docs",
+    "output": "./docs",
     "template": ["default", "modern"],
     "globalMetadata": {
       "_appName": "QuickKit",

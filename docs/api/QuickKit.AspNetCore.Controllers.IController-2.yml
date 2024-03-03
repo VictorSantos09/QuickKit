@@ -1,0 +1,502 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.AspNetCore.Controllers.IController`2
+  commentId: T:QuickKit.AspNetCore.Controllers.IController`2
+  id: IController`2
+  parent: QuickKit.AspNetCore.Controllers
+  children:
+  - QuickKit.AspNetCore.Controllers.IController`2.AddAsync(`0)
+  - QuickKit.AspNetCore.Controllers.IController`2.DeleteAsync(`1)
+  - QuickKit.AspNetCore.Controllers.IController`2.GetAllAsync
+  - QuickKit.AspNetCore.Controllers.IController`2.GetByIdAsync(`1)
+  - QuickKit.AspNetCore.Controllers.IController`2.TestEndPoint
+  - QuickKit.AspNetCore.Controllers.IController`2.UpdateAsync(`0)
+  langs:
+  - csharp
+  - vb
+  name: IController<TEntity, TKey>
+  nameWithType: IController<TEntity, TKey>
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>
+  type: Interface
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Controllers/Controller.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: IController
+    path: QuickKit.AspNetCore/Controllers/Controller.cs
+    startLine: 11
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Controllers
+  summary: Represents a generic controller interface for CRUD operations on entities.
+  example: []
+  syntax:
+    content: 'public interface IController<TEntity, TKey> where TEntity : IEntity where TKey : IConvertible'
+    typeParameters:
+    - id: TEntity
+      description: The type of the entity.
+    - id: TKey
+      description: The type of the entity's primary key.
+    content.vb: Public Interface IController(Of TEntity As IEntity, TKey As IConvertible)
+  nameWithType.vb: IController(Of TEntity, TKey)
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey)
+  name.vb: IController(Of TEntity, TKey)
+- uid: QuickKit.AspNetCore.Controllers.IController`2.TestEndPoint
+  commentId: M:QuickKit.AspNetCore.Controllers.IController`2.TestEndPoint
+  id: TestEndPoint
+  parent: QuickKit.AspNetCore.Controllers.IController`2
+  langs:
+  - csharp
+  - vb
+  name: TestEndPoint()
+  nameWithType: IController<TEntity, TKey>.TestEndPoint()
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.TestEndPoint()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Controllers/Controller.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: TestEndPoint
+    path: QuickKit.AspNetCore/Controllers/Controller.cs
+    startLine: 19
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Controllers
+  summary: Tests the endpoint of the controller.
+  example: []
+  syntax:
+    content: IActionResult TestEndPoint()
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+      description: An <xref href="Microsoft.AspNetCore.Mvc.IActionResult" data-throw-if-not-resolved="false"></xref> representing the result of the test.
+    content.vb: Function TestEndPoint() As IActionResult
+  overload: QuickKit.AspNetCore.Controllers.IController`2.TestEndPoint*
+  nameWithType.vb: IController(Of TEntity, TKey).TestEndPoint()
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).TestEndPoint()
+- uid: QuickKit.AspNetCore.Controllers.IController`2.GetAllAsync
+  commentId: M:QuickKit.AspNetCore.Controllers.IController`2.GetAllAsync
+  id: GetAllAsync
+  parent: QuickKit.AspNetCore.Controllers.IController`2
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync()
+  nameWithType: IController<TEntity, TKey>.GetAllAsync()
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.GetAllAsync()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Controllers/Controller.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: GetAllAsync
+    path: QuickKit.AspNetCore/Controllers/Controller.cs
+    startLine: 25
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Controllers
+  summary: Retrieves all entities asynchronously.
+  example: []
+  syntax:
+    content: Task<IActionResult> GetAllAsync()
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: A <xref href="System.Threading.Tasks.Task%601" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation, containing an <xref href="Microsoft.AspNetCore.Mvc.IActionResult" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Function GetAllAsync() As Task(Of IActionResult)
+  overload: QuickKit.AspNetCore.Controllers.IController`2.GetAllAsync*
+  nameWithType.vb: IController(Of TEntity, TKey).GetAllAsync()
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).GetAllAsync()
+- uid: QuickKit.AspNetCore.Controllers.IController`2.GetByIdAsync(`1)
+  commentId: M:QuickKit.AspNetCore.Controllers.IController`2.GetByIdAsync(`1)
+  id: GetByIdAsync(`1)
+  parent: QuickKit.AspNetCore.Controllers.IController`2
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(TKey)
+  nameWithType: IController<TEntity, TKey>.GetByIdAsync(TKey)
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.GetByIdAsync(TKey)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Controllers/Controller.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: GetByIdAsync
+    path: QuickKit.AspNetCore/Controllers/Controller.cs
+    startLine: 32
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Controllers
+  summary: Retrieves an entity by its ID asynchronously.
+  example: []
+  syntax:
+    content: Task<IActionResult> GetByIdAsync(TKey id)
+    parameters:
+    - id: id
+      type: '{TKey}'
+      description: The ID of the entity.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: A <xref href="System.Threading.Tasks.Task%601" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation, containing an <xref href="Microsoft.AspNetCore.Mvc.IActionResult" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Function GetByIdAsync(id As TKey) As Task(Of IActionResult)
+  overload: QuickKit.AspNetCore.Controllers.IController`2.GetByIdAsync*
+  nameWithType.vb: IController(Of TEntity, TKey).GetByIdAsync(TKey)
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).GetByIdAsync(TKey)
+- uid: QuickKit.AspNetCore.Controllers.IController`2.AddAsync(`0)
+  commentId: M:QuickKit.AspNetCore.Controllers.IController`2.AddAsync(`0)
+  id: AddAsync(`0)
+  parent: QuickKit.AspNetCore.Controllers.IController`2
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(TEntity)
+  nameWithType: IController<TEntity, TKey>.AddAsync(TEntity)
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.AddAsync(TEntity)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Controllers/Controller.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: AddAsync
+    path: QuickKit.AspNetCore/Controllers/Controller.cs
+    startLine: 39
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Controllers
+  summary: Adds a new entity asynchronously.
+  example: []
+  syntax:
+    content: Task<IActionResult> AddAsync(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+      description: The entity to add.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: A <xref href="System.Threading.Tasks.Task%601" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation, containing an <xref href="Microsoft.AspNetCore.Mvc.IActionResult" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Function AddAsync(entity As TEntity) As Task(Of IActionResult)
+  overload: QuickKit.AspNetCore.Controllers.IController`2.AddAsync*
+  nameWithType.vb: IController(Of TEntity, TKey).AddAsync(TEntity)
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).AddAsync(TEntity)
+- uid: QuickKit.AspNetCore.Controllers.IController`2.UpdateAsync(`0)
+  commentId: M:QuickKit.AspNetCore.Controllers.IController`2.UpdateAsync(`0)
+  id: UpdateAsync(`0)
+  parent: QuickKit.AspNetCore.Controllers.IController`2
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(TEntity)
+  nameWithType: IController<TEntity, TKey>.UpdateAsync(TEntity)
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.UpdateAsync(TEntity)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Controllers/Controller.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: UpdateAsync
+    path: QuickKit.AspNetCore/Controllers/Controller.cs
+    startLine: 46
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Controllers
+  summary: Updates an existing entity asynchronously.
+  example: []
+  syntax:
+    content: Task<IActionResult> UpdateAsync(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+      description: The entity to update.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: A <xref href="System.Threading.Tasks.Task%601" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation, containing an <xref href="Microsoft.AspNetCore.Mvc.IActionResult" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Function UpdateAsync(entity As TEntity) As Task(Of IActionResult)
+  overload: QuickKit.AspNetCore.Controllers.IController`2.UpdateAsync*
+  nameWithType.vb: IController(Of TEntity, TKey).UpdateAsync(TEntity)
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).UpdateAsync(TEntity)
+- uid: QuickKit.AspNetCore.Controllers.IController`2.DeleteAsync(`1)
+  commentId: M:QuickKit.AspNetCore.Controllers.IController`2.DeleteAsync(`1)
+  id: DeleteAsync(`1)
+  parent: QuickKit.AspNetCore.Controllers.IController`2
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(TKey)
+  nameWithType: IController<TEntity, TKey>.DeleteAsync(TKey)
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.DeleteAsync(TKey)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.AspNetCore/Controllers/Controller.cs
+      branch: docs
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: DeleteAsync
+    path: QuickKit.AspNetCore/Controllers/Controller.cs
+    startLine: 53
+  assemblies:
+  - QuickKit.AspNetCore
+  namespace: QuickKit.AspNetCore.Controllers
+  summary: Deletes an entity by its ID asynchronously.
+  example: []
+  syntax:
+    content: Task<IActionResult> DeleteAsync(TKey id)
+    parameters:
+    - id: id
+      type: '{TKey}'
+      description: The ID of the entity to delete.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: A <xref href="System.Threading.Tasks.Task%601" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation, containing an <xref href="Microsoft.AspNetCore.Mvc.IActionResult" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Function DeleteAsync(id As TKey) As Task(Of IActionResult)
+  overload: QuickKit.AspNetCore.Controllers.IController`2.DeleteAsync*
+  nameWithType.vb: IController(Of TEntity, TKey).DeleteAsync(TKey)
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).DeleteAsync(TKey)
+references:
+- uid: QuickKit.AspNetCore.Controllers
+  commentId: N:QuickKit.AspNetCore.Controllers
+  href: QuickKit.html
+  name: QuickKit.AspNetCore.Controllers
+  nameWithType: QuickKit.AspNetCore.Controllers
+  fullName: QuickKit.AspNetCore.Controllers
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.AspNetCore
+    name: AspNetCore
+    href: QuickKit.AspNetCore.html
+  - name: .
+  - uid: QuickKit.AspNetCore.Controllers
+    name: Controllers
+    href: QuickKit.AspNetCore.Controllers.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.AspNetCore
+    name: AspNetCore
+    href: QuickKit.AspNetCore.html
+  - name: .
+  - uid: QuickKit.AspNetCore.Controllers
+    name: Controllers
+    href: QuickKit.AspNetCore.Controllers.html
+- uid: Microsoft.AspNetCore.Mvc.IActionResult
+  commentId: T:Microsoft.AspNetCore.Mvc.IActionResult
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
+  name: IActionResult
+  nameWithType: IActionResult
+  fullName: Microsoft.AspNetCore.Mvc.IActionResult
+- uid: QuickKit.AspNetCore.Controllers.IController`2.TestEndPoint*
+  commentId: Overload:QuickKit.AspNetCore.Controllers.IController`2.TestEndPoint
+  href: QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_TestEndPoint
+  name: TestEndPoint
+  nameWithType: IController<TEntity, TKey>.TestEndPoint
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.TestEndPoint
+  nameWithType.vb: IController(Of TEntity, TKey).TestEndPoint
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).TestEndPoint
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: QuickKit.AspNetCore.Controllers.IController`2.GetAllAsync*
+  commentId: Overload:QuickKit.AspNetCore.Controllers.IController`2.GetAllAsync
+  href: QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_GetAllAsync
+  name: GetAllAsync
+  nameWithType: IController<TEntity, TKey>.GetAllAsync
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.GetAllAsync
+  nameWithType.vb: IController(Of TEntity, TKey).GetAllAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).GetAllAsync
+- uid: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IActionResult>
+  nameWithType: Task<IActionResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.IActionResult>
+  nameWithType.vb: Task(Of IActionResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.AspNetCore.Mvc.IActionResult)
+  name.vb: Task(Of IActionResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: QuickKit.AspNetCore.Controllers.IController`2.GetByIdAsync*
+  commentId: Overload:QuickKit.AspNetCore.Controllers.IController`2.GetByIdAsync
+  href: QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_GetByIdAsync__1_
+  name: GetByIdAsync
+  nameWithType: IController<TEntity, TKey>.GetByIdAsync
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.GetByIdAsync
+  nameWithType.vb: IController(Of TEntity, TKey).GetByIdAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).GetByIdAsync
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: QuickKit.AspNetCore.Controllers.IController`2.AddAsync*
+  commentId: Overload:QuickKit.AspNetCore.Controllers.IController`2.AddAsync
+  href: QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_AddAsync__0_
+  name: AddAsync
+  nameWithType: IController<TEntity, TKey>.AddAsync
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.AddAsync
+  nameWithType.vb: IController(Of TEntity, TKey).AddAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).AddAsync
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: QuickKit.AspNetCore.Controllers.IController`2.UpdateAsync*
+  commentId: Overload:QuickKit.AspNetCore.Controllers.IController`2.UpdateAsync
+  href: QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_UpdateAsync__0_
+  name: UpdateAsync
+  nameWithType: IController<TEntity, TKey>.UpdateAsync
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.UpdateAsync
+  nameWithType.vb: IController(Of TEntity, TKey).UpdateAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).UpdateAsync
+- uid: QuickKit.AspNetCore.Controllers.IController`2.DeleteAsync*
+  commentId: Overload:QuickKit.AspNetCore.Controllers.IController`2.DeleteAsync
+  href: QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_DeleteAsync__1_
+  name: DeleteAsync
+  nameWithType: IController<TEntity, TKey>.DeleteAsync
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.DeleteAsync
+  nameWithType.vb: IController(Of TEntity, TKey).DeleteAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).DeleteAsync
