@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit/Configuration/KitConfiguration.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: KitConfiguration
     path: QuickKit/Configuration/KitConfiguration.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: QuickKit/Configuration/KitConfiguration.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: AddQuickKit
     path: QuickKit/Configuration/KitConfiguration.cs

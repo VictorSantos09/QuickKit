@@ -1,0 +1,2750 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: QuickKit.AspNetCore.Attributes
+  name: QuickKit.AspNetCore.Attributes
+  href: api/QuickKit.AspNetCore.Attributes.html
+  commentId: N:QuickKit.AspNetCore.Attributes
+  fullName: QuickKit.AspNetCore.Attributes
+  nameWithType: QuickKit.AspNetCore.Attributes
+- uid: QuickKit.AspNetCore.Attributes.HttpAddKit
+  name: HttpAddKit
+  href: api/QuickKit.AspNetCore.Attributes.HttpAddKit.html
+  commentId: T:QuickKit.AspNetCore.Attributes.HttpAddKit
+  fullName: QuickKit.AspNetCore.Attributes.HttpAddKit
+  nameWithType: HttpAddKit
+- uid: QuickKit.AspNetCore.Attributes.HttpAddKit.#ctor(System.String)
+  name: HttpAddKit(string)
+  href: api/QuickKit.AspNetCore.Attributes.HttpAddKit.html#QuickKit_AspNetCore_Attributes_HttpAddKit__ctor_System_String_
+  commentId: M:QuickKit.AspNetCore.Attributes.HttpAddKit.#ctor(System.String)
+  name.vb: New(String)
+  fullName: QuickKit.AspNetCore.Attributes.HttpAddKit.HttpAddKit(string)
+  fullName.vb: QuickKit.AspNetCore.Attributes.HttpAddKit.New(String)
+  nameWithType: HttpAddKit.HttpAddKit(string)
+  nameWithType.vb: HttpAddKit.New(String)
+- uid: QuickKit.AspNetCore.Attributes.HttpAddKit.#ctor*
+  name: HttpAddKit
+  href: api/QuickKit.AspNetCore.Attributes.HttpAddKit.html#QuickKit_AspNetCore_Attributes_HttpAddKit__ctor_
+  commentId: Overload:QuickKit.AspNetCore.Attributes.HttpAddKit.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.AspNetCore.Attributes.HttpAddKit.HttpAddKit
+  fullName.vb: QuickKit.AspNetCore.Attributes.HttpAddKit.New
+  nameWithType: HttpAddKit.HttpAddKit
+  nameWithType.vb: HttpAddKit.New
+- uid: QuickKit.AspNetCore.Attributes.HttpDeleteKit
+  name: HttpDeleteKit
+  href: api/QuickKit.AspNetCore.Attributes.HttpDeleteKit.html
+  commentId: T:QuickKit.AspNetCore.Attributes.HttpDeleteKit
+  fullName: QuickKit.AspNetCore.Attributes.HttpDeleteKit
+  nameWithType: HttpDeleteKit
+- uid: QuickKit.AspNetCore.Attributes.HttpDeleteKit.#ctor(System.String)
+  name: HttpDeleteKit(string)
+  href: api/QuickKit.AspNetCore.Attributes.HttpDeleteKit.html#QuickKit_AspNetCore_Attributes_HttpDeleteKit__ctor_System_String_
+  commentId: M:QuickKit.AspNetCore.Attributes.HttpDeleteKit.#ctor(System.String)
+  name.vb: New(String)
+  fullName: QuickKit.AspNetCore.Attributes.HttpDeleteKit.HttpDeleteKit(string)
+  fullName.vb: QuickKit.AspNetCore.Attributes.HttpDeleteKit.New(String)
+  nameWithType: HttpDeleteKit.HttpDeleteKit(string)
+  nameWithType.vb: HttpDeleteKit.New(String)
+- uid: QuickKit.AspNetCore.Attributes.HttpDeleteKit.#ctor*
+  name: HttpDeleteKit
+  href: api/QuickKit.AspNetCore.Attributes.HttpDeleteKit.html#QuickKit_AspNetCore_Attributes_HttpDeleteKit__ctor_
+  commentId: Overload:QuickKit.AspNetCore.Attributes.HttpDeleteKit.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.AspNetCore.Attributes.HttpDeleteKit.HttpDeleteKit
+  fullName.vb: QuickKit.AspNetCore.Attributes.HttpDeleteKit.New
+  nameWithType: HttpDeleteKit.HttpDeleteKit
+  nameWithType.vb: HttpDeleteKit.New
+- uid: QuickKit.AspNetCore.Attributes.HttpGetAllKit
+  name: HttpGetAllKit
+  href: api/QuickKit.AspNetCore.Attributes.HttpGetAllKit.html
+  commentId: T:QuickKit.AspNetCore.Attributes.HttpGetAllKit
+  fullName: QuickKit.AspNetCore.Attributes.HttpGetAllKit
+  nameWithType: HttpGetAllKit
+- uid: QuickKit.AspNetCore.Attributes.HttpGetAllKit.#ctor(System.String)
+  name: HttpGetAllKit(string)
+  href: api/QuickKit.AspNetCore.Attributes.HttpGetAllKit.html#QuickKit_AspNetCore_Attributes_HttpGetAllKit__ctor_System_String_
+  commentId: M:QuickKit.AspNetCore.Attributes.HttpGetAllKit.#ctor(System.String)
+  name.vb: New(String)
+  fullName: QuickKit.AspNetCore.Attributes.HttpGetAllKit.HttpGetAllKit(string)
+  fullName.vb: QuickKit.AspNetCore.Attributes.HttpGetAllKit.New(String)
+  nameWithType: HttpGetAllKit.HttpGetAllKit(string)
+  nameWithType.vb: HttpGetAllKit.New(String)
+- uid: QuickKit.AspNetCore.Attributes.HttpGetAllKit.#ctor*
+  name: HttpGetAllKit
+  href: api/QuickKit.AspNetCore.Attributes.HttpGetAllKit.html#QuickKit_AspNetCore_Attributes_HttpGetAllKit__ctor_
+  commentId: Overload:QuickKit.AspNetCore.Attributes.HttpGetAllKit.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.AspNetCore.Attributes.HttpGetAllKit.HttpGetAllKit
+  fullName.vb: QuickKit.AspNetCore.Attributes.HttpGetAllKit.New
+  nameWithType: HttpGetAllKit.HttpGetAllKit
+  nameWithType.vb: HttpGetAllKit.New
+- uid: QuickKit.AspNetCore.Attributes.HttpGetByIdKit
+  name: HttpGetByIdKit
+  href: api/QuickKit.AspNetCore.Attributes.HttpGetByIdKit.html
+  commentId: T:QuickKit.AspNetCore.Attributes.HttpGetByIdKit
+  fullName: QuickKit.AspNetCore.Attributes.HttpGetByIdKit
+  nameWithType: HttpGetByIdKit
+- uid: QuickKit.AspNetCore.Attributes.HttpGetByIdKit.#ctor(System.String)
+  name: HttpGetByIdKit(string)
+  href: api/QuickKit.AspNetCore.Attributes.HttpGetByIdKit.html#QuickKit_AspNetCore_Attributes_HttpGetByIdKit__ctor_System_String_
+  commentId: M:QuickKit.AspNetCore.Attributes.HttpGetByIdKit.#ctor(System.String)
+  name.vb: New(String)
+  fullName: QuickKit.AspNetCore.Attributes.HttpGetByIdKit.HttpGetByIdKit(string)
+  fullName.vb: QuickKit.AspNetCore.Attributes.HttpGetByIdKit.New(String)
+  nameWithType: HttpGetByIdKit.HttpGetByIdKit(string)
+  nameWithType.vb: HttpGetByIdKit.New(String)
+- uid: QuickKit.AspNetCore.Attributes.HttpGetByIdKit.#ctor*
+  name: HttpGetByIdKit
+  href: api/QuickKit.AspNetCore.Attributes.HttpGetByIdKit.html#QuickKit_AspNetCore_Attributes_HttpGetByIdKit__ctor_
+  commentId: Overload:QuickKit.AspNetCore.Attributes.HttpGetByIdKit.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.AspNetCore.Attributes.HttpGetByIdKit.HttpGetByIdKit
+  fullName.vb: QuickKit.AspNetCore.Attributes.HttpGetByIdKit.New
+  nameWithType: HttpGetByIdKit.HttpGetByIdKit
+  nameWithType.vb: HttpGetByIdKit.New
+- uid: QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit
+  name: HttpGetTestEndPointKit
+  href: api/QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit.html
+  commentId: T:QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit
+  fullName: QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit
+  nameWithType: HttpGetTestEndPointKit
+- uid: QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit.#ctor(System.String)
+  name: HttpGetTestEndPointKit(string)
+  href: api/QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit.html#QuickKit_AspNetCore_Attributes_HttpGetTestEndPointKit__ctor_System_String_
+  commentId: M:QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit.#ctor(System.String)
+  name.vb: New(String)
+  fullName: QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit.HttpGetTestEndPointKit(string)
+  fullName.vb: QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit.New(String)
+  nameWithType: HttpGetTestEndPointKit.HttpGetTestEndPointKit(string)
+  nameWithType.vb: HttpGetTestEndPointKit.New(String)
+- uid: QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit.#ctor*
+  name: HttpGetTestEndPointKit
+  href: api/QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit.html#QuickKit_AspNetCore_Attributes_HttpGetTestEndPointKit__ctor_
+  commentId: Overload:QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit.HttpGetTestEndPointKit
+  fullName.vb: QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit.New
+  nameWithType: HttpGetTestEndPointKit.HttpGetTestEndPointKit
+  nameWithType.vb: HttpGetTestEndPointKit.New
+- uid: QuickKit.AspNetCore.Attributes.HttpUpdateKit
+  name: HttpUpdateKit
+  href: api/QuickKit.AspNetCore.Attributes.HttpUpdateKit.html
+  commentId: T:QuickKit.AspNetCore.Attributes.HttpUpdateKit
+  fullName: QuickKit.AspNetCore.Attributes.HttpUpdateKit
+  nameWithType: HttpUpdateKit
+- uid: QuickKit.AspNetCore.Attributes.HttpUpdateKit.#ctor(System.String)
+  name: HttpUpdateKit(string)
+  href: api/QuickKit.AspNetCore.Attributes.HttpUpdateKit.html#QuickKit_AspNetCore_Attributes_HttpUpdateKit__ctor_System_String_
+  commentId: M:QuickKit.AspNetCore.Attributes.HttpUpdateKit.#ctor(System.String)
+  name.vb: New(String)
+  fullName: QuickKit.AspNetCore.Attributes.HttpUpdateKit.HttpUpdateKit(string)
+  fullName.vb: QuickKit.AspNetCore.Attributes.HttpUpdateKit.New(String)
+  nameWithType: HttpUpdateKit.HttpUpdateKit(string)
+  nameWithType.vb: HttpUpdateKit.New(String)
+- uid: QuickKit.AspNetCore.Attributes.HttpUpdateKit.#ctor*
+  name: HttpUpdateKit
+  href: api/QuickKit.AspNetCore.Attributes.HttpUpdateKit.html#QuickKit_AspNetCore_Attributes_HttpUpdateKit__ctor_
+  commentId: Overload:QuickKit.AspNetCore.Attributes.HttpUpdateKit.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.AspNetCore.Attributes.HttpUpdateKit.HttpUpdateKit
+  fullName.vb: QuickKit.AspNetCore.Attributes.HttpUpdateKit.New
+  nameWithType: HttpUpdateKit.HttpUpdateKit
+  nameWithType.vb: HttpUpdateKit.New
+- uid: QuickKit.AspNetCore.Configuration
+  name: QuickKit.AspNetCore.Configuration
+  href: api/QuickKit.AspNetCore.Configuration.html
+  commentId: N:QuickKit.AspNetCore.Configuration
+  fullName: QuickKit.AspNetCore.Configuration
+  nameWithType: QuickKit.AspNetCore.Configuration
+- uid: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration
+  name: AspNetCoreConfiguration
+  href: api/QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.html
+  commentId: T:QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration
+  fullName: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration
+  nameWithType: AspNetCoreConfiguration
+- uid: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddCustomGlobalExceptionMiddleware*
+  name: AddCustomGlobalExceptionMiddleware
+  href: api/QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.html#QuickKit_AspNetCore_Configuration_AspNetCoreConfiguration_AddCustomGlobalExceptionMiddleware_
+  commentId: Overload:QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddCustomGlobalExceptionMiddleware
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddCustomGlobalExceptionMiddleware
+  nameWithType: AspNetCoreConfiguration.AddCustomGlobalExceptionMiddleware
+- uid: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddCustomGlobalExceptionMiddleware``1(Microsoft.AspNetCore.Builder.IApplicationBuilder,QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest{``0})
+  name: AddCustomGlobalExceptionMiddleware<TException>(IApplicationBuilder, GlobalExceptionMiddlewareConfigurationRequest<TException>)
+  href: api/QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.html#QuickKit_AspNetCore_Configuration_AspNetCoreConfiguration_AddCustomGlobalExceptionMiddleware__1_Microsoft_AspNetCore_Builder_IApplicationBuilder_QuickKit_AspNetCore_Middlewares_Requests_GlobalExceptionMiddlewareConfigurationRequest___0__
+  commentId: M:QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddCustomGlobalExceptionMiddleware``1(Microsoft.AspNetCore.Builder.IApplicationBuilder,QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest{``0})
+  name.vb: AddCustomGlobalExceptionMiddleware(Of TException)(IApplicationBuilder, GlobalExceptionMiddlewareConfigurationRequest(Of TException))
+  fullName: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddCustomGlobalExceptionMiddleware<TException>(Microsoft.AspNetCore.Builder.IApplicationBuilder, QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest<TException>)
+  fullName.vb: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddCustomGlobalExceptionMiddleware(Of TException)(Microsoft.AspNetCore.Builder.IApplicationBuilder, QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest(Of TException))
+  nameWithType: AspNetCoreConfiguration.AddCustomGlobalExceptionMiddleware<TException>(IApplicationBuilder, GlobalExceptionMiddlewareConfigurationRequest<TException>)
+  nameWithType.vb: AspNetCoreConfiguration.AddCustomGlobalExceptionMiddleware(Of TException)(IApplicationBuilder, GlobalExceptionMiddlewareConfigurationRequest(Of TException))
+- uid: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddDefaultGlobalExceptionMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.Boolean)
+  name: AddDefaultGlobalExceptionMiddleware(IApplicationBuilder, string, bool)
+  href: api/QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.html#QuickKit_AspNetCore_Configuration_AspNetCoreConfiguration_AddDefaultGlobalExceptionMiddleware_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_String_System_Boolean_
+  commentId: M:QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddDefaultGlobalExceptionMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.Boolean)
+  name.vb: AddDefaultGlobalExceptionMiddleware(IApplicationBuilder, String, Boolean)
+  fullName: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddDefaultGlobalExceptionMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder, string, bool)
+  fullName.vb: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddDefaultGlobalExceptionMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder, String, Boolean)
+  nameWithType: AspNetCoreConfiguration.AddDefaultGlobalExceptionMiddleware(IApplicationBuilder, string, bool)
+  nameWithType.vb: AspNetCoreConfiguration.AddDefaultGlobalExceptionMiddleware(IApplicationBuilder, String, Boolean)
+- uid: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddDefaultGlobalExceptionMiddleware*
+  name: AddDefaultGlobalExceptionMiddleware
+  href: api/QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.html#QuickKit_AspNetCore_Configuration_AspNetCoreConfiguration_AddDefaultGlobalExceptionMiddleware_
+  commentId: Overload:QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddDefaultGlobalExceptionMiddleware
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.AddDefaultGlobalExceptionMiddleware
+  nameWithType: AspNetCoreConfiguration.AddDefaultGlobalExceptionMiddleware
+- uid: QuickKit.AspNetCore.Constants
+  name: QuickKit.AspNetCore.Constants
+  href: api/QuickKit.AspNetCore.Constants.html
+  commentId: N:QuickKit.AspNetCore.Constants
+  fullName: QuickKit.AspNetCore.Constants
+  nameWithType: QuickKit.AspNetCore.Constants
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  name: ENDPOINT_NAME_CNT_KIT
+  href: api/QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.html
+  commentId: T:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT
+  nameWithType: ENDPOINT_NAME_CNT_KIT
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.ADD
+  name: ADD
+  href: api/QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.html#QuickKit_AspNetCore_Constants_ENDPOINT_NAME_CNT_KIT_ADD
+  commentId: F:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.ADD
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.ADD
+  nameWithType: ENDPOINT_NAME_CNT_KIT.ADD
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.DELETE
+  name: DELETE
+  href: api/QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.html#QuickKit_AspNetCore_Constants_ENDPOINT_NAME_CNT_KIT_DELETE
+  commentId: F:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.DELETE
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.DELETE
+  nameWithType: ENDPOINT_NAME_CNT_KIT.DELETE
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_ALL
+  name: GET_ALL
+  href: api/QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.html#QuickKit_AspNetCore_Constants_ENDPOINT_NAME_CNT_KIT_GET_ALL
+  commentId: F:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_ALL
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_ALL
+  nameWithType: ENDPOINT_NAME_CNT_KIT.GET_ALL
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_BY_ID
+  name: GET_BY_ID
+  href: api/QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.html#QuickKit_AspNetCore_Constants_ENDPOINT_NAME_CNT_KIT_GET_BY_ID
+  commentId: F:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_BY_ID
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.GET_BY_ID
+  nameWithType: ENDPOINT_NAME_CNT_KIT.GET_BY_ID
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.TEST
+  name: TEST
+  href: api/QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.html#QuickKit_AspNetCore_Constants_ENDPOINT_NAME_CNT_KIT_TEST
+  commentId: F:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.TEST
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.TEST
+  nameWithType: ENDPOINT_NAME_CNT_KIT.TEST
+- uid: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.UPDATE
+  name: UPDATE
+  href: api/QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.html#QuickKit_AspNetCore_Constants_ENDPOINT_NAME_CNT_KIT_UPDATE
+  commentId: F:QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.UPDATE
+  fullName: QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.UPDATE
+  nameWithType: ENDPOINT_NAME_CNT_KIT.UPDATE
+- uid: QuickKit.AspNetCore.Controllers
+  name: QuickKit.AspNetCore.Controllers
+  href: api/QuickKit.AspNetCore.Controllers.html
+  commentId: N:QuickKit.AspNetCore.Controllers
+  fullName: QuickKit.AspNetCore.Controllers
+  nameWithType: QuickKit.AspNetCore.Controllers
+- uid: QuickKit.AspNetCore.Controllers.Controller`2
+  name: Controller<TEntity, TKey>
+  href: api/QuickKit.AspNetCore.Controllers.Controller-2.html
+  commentId: T:QuickKit.AspNetCore.Controllers.Controller`2
+  name.vb: Controller(Of TEntity, TKey)
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey)
+  nameWithType: Controller<TEntity, TKey>
+  nameWithType.vb: Controller(Of TEntity, TKey)
+- uid: QuickKit.AspNetCore.Controllers.Controller`2.AddAsync(`0)
+  name: AddAsync(TEntity)
+  href: api/QuickKit.AspNetCore.Controllers.Controller-2.html#QuickKit_AspNetCore_Controllers_Controller_2_AddAsync__0_
+  commentId: M:QuickKit.AspNetCore.Controllers.Controller`2.AddAsync(`0)
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>.AddAsync(TEntity)
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey).AddAsync(TEntity)
+  nameWithType: Controller<TEntity, TKey>.AddAsync(TEntity)
+  nameWithType.vb: Controller(Of TEntity, TKey).AddAsync(TEntity)
+- uid: QuickKit.AspNetCore.Controllers.Controller`2.AddAsync*
+  name: AddAsync
+  href: api/QuickKit.AspNetCore.Controllers.Controller-2.html#QuickKit_AspNetCore_Controllers_Controller_2_AddAsync_
+  commentId: Overload:QuickKit.AspNetCore.Controllers.Controller`2.AddAsync
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>.AddAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey).AddAsync
+  nameWithType: Controller<TEntity, TKey>.AddAsync
+  nameWithType.vb: Controller(Of TEntity, TKey).AddAsync
+- uid: QuickKit.AspNetCore.Controllers.Controller`2.DeleteAsync(`1)
+  name: DeleteAsync(TKey)
+  href: api/QuickKit.AspNetCore.Controllers.Controller-2.html#QuickKit_AspNetCore_Controllers_Controller_2_DeleteAsync__1_
+  commentId: M:QuickKit.AspNetCore.Controllers.Controller`2.DeleteAsync(`1)
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>.DeleteAsync(TKey)
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey).DeleteAsync(TKey)
+  nameWithType: Controller<TEntity, TKey>.DeleteAsync(TKey)
+  nameWithType.vb: Controller(Of TEntity, TKey).DeleteAsync(TKey)
+- uid: QuickKit.AspNetCore.Controllers.Controller`2.DeleteAsync*
+  name: DeleteAsync
+  href: api/QuickKit.AspNetCore.Controllers.Controller-2.html#QuickKit_AspNetCore_Controllers_Controller_2_DeleteAsync_
+  commentId: Overload:QuickKit.AspNetCore.Controllers.Controller`2.DeleteAsync
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>.DeleteAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey).DeleteAsync
+  nameWithType: Controller<TEntity, TKey>.DeleteAsync
+  nameWithType.vb: Controller(Of TEntity, TKey).DeleteAsync
+- uid: QuickKit.AspNetCore.Controllers.Controller`2.GetAllAsync
+  name: GetAllAsync()
+  href: api/QuickKit.AspNetCore.Controllers.Controller-2.html#QuickKit_AspNetCore_Controllers_Controller_2_GetAllAsync
+  commentId: M:QuickKit.AspNetCore.Controllers.Controller`2.GetAllAsync
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>.GetAllAsync()
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey).GetAllAsync()
+  nameWithType: Controller<TEntity, TKey>.GetAllAsync()
+  nameWithType.vb: Controller(Of TEntity, TKey).GetAllAsync()
+- uid: QuickKit.AspNetCore.Controllers.Controller`2.GetAllAsync*
+  name: GetAllAsync
+  href: api/QuickKit.AspNetCore.Controllers.Controller-2.html#QuickKit_AspNetCore_Controllers_Controller_2_GetAllAsync_
+  commentId: Overload:QuickKit.AspNetCore.Controllers.Controller`2.GetAllAsync
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>.GetAllAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey).GetAllAsync
+  nameWithType: Controller<TEntity, TKey>.GetAllAsync
+  nameWithType.vb: Controller(Of TEntity, TKey).GetAllAsync
+- uid: QuickKit.AspNetCore.Controllers.Controller`2.GetByIdAsync(`1)
+  name: GetByIdAsync(TKey)
+  href: api/QuickKit.AspNetCore.Controllers.Controller-2.html#QuickKit_AspNetCore_Controllers_Controller_2_GetByIdAsync__1_
+  commentId: M:QuickKit.AspNetCore.Controllers.Controller`2.GetByIdAsync(`1)
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>.GetByIdAsync(TKey)
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey).GetByIdAsync(TKey)
+  nameWithType: Controller<TEntity, TKey>.GetByIdAsync(TKey)
+  nameWithType.vb: Controller(Of TEntity, TKey).GetByIdAsync(TKey)
+- uid: QuickKit.AspNetCore.Controllers.Controller`2.GetByIdAsync*
+  name: GetByIdAsync
+  href: api/QuickKit.AspNetCore.Controllers.Controller-2.html#QuickKit_AspNetCore_Controllers_Controller_2_GetByIdAsync_
+  commentId: Overload:QuickKit.AspNetCore.Controllers.Controller`2.GetByIdAsync
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>.GetByIdAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey).GetByIdAsync
+  nameWithType: Controller<TEntity, TKey>.GetByIdAsync
+  nameWithType.vb: Controller(Of TEntity, TKey).GetByIdAsync
+- uid: QuickKit.AspNetCore.Controllers.Controller`2.TestEndPoint
+  name: TestEndPoint()
+  href: api/QuickKit.AspNetCore.Controllers.Controller-2.html#QuickKit_AspNetCore_Controllers_Controller_2_TestEndPoint
+  commentId: M:QuickKit.AspNetCore.Controllers.Controller`2.TestEndPoint
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>.TestEndPoint()
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey).TestEndPoint()
+  nameWithType: Controller<TEntity, TKey>.TestEndPoint()
+  nameWithType.vb: Controller(Of TEntity, TKey).TestEndPoint()
+- uid: QuickKit.AspNetCore.Controllers.Controller`2.TestEndPoint*
+  name: TestEndPoint
+  href: api/QuickKit.AspNetCore.Controllers.Controller-2.html#QuickKit_AspNetCore_Controllers_Controller_2_TestEndPoint_
+  commentId: Overload:QuickKit.AspNetCore.Controllers.Controller`2.TestEndPoint
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>.TestEndPoint
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey).TestEndPoint
+  nameWithType: Controller<TEntity, TKey>.TestEndPoint
+  nameWithType.vb: Controller(Of TEntity, TKey).TestEndPoint
+- uid: QuickKit.AspNetCore.Controllers.Controller`2.UpdateAsync(`0)
+  name: UpdateAsync(TEntity)
+  href: api/QuickKit.AspNetCore.Controllers.Controller-2.html#QuickKit_AspNetCore_Controllers_Controller_2_UpdateAsync__0_
+  commentId: M:QuickKit.AspNetCore.Controllers.Controller`2.UpdateAsync(`0)
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>.UpdateAsync(TEntity)
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey).UpdateAsync(TEntity)
+  nameWithType: Controller<TEntity, TKey>.UpdateAsync(TEntity)
+  nameWithType.vb: Controller(Of TEntity, TKey).UpdateAsync(TEntity)
+- uid: QuickKit.AspNetCore.Controllers.Controller`2.UpdateAsync*
+  name: UpdateAsync
+  href: api/QuickKit.AspNetCore.Controllers.Controller-2.html#QuickKit_AspNetCore_Controllers_Controller_2_UpdateAsync_
+  commentId: Overload:QuickKit.AspNetCore.Controllers.Controller`2.UpdateAsync
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Controllers.Controller<TEntity, TKey>.UpdateAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.Controller(Of TEntity, TKey).UpdateAsync
+  nameWithType: Controller<TEntity, TKey>.UpdateAsync
+  nameWithType.vb: Controller(Of TEntity, TKey).UpdateAsync
+- uid: QuickKit.AspNetCore.Controllers.IController`2
+  name: IController<TEntity, TKey>
+  href: api/QuickKit.AspNetCore.Controllers.IController-2.html
+  commentId: T:QuickKit.AspNetCore.Controllers.IController`2
+  name.vb: IController(Of TEntity, TKey)
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey)
+  nameWithType: IController<TEntity, TKey>
+  nameWithType.vb: IController(Of TEntity, TKey)
+- uid: QuickKit.AspNetCore.Controllers.IController`2.AddAsync(`0)
+  name: AddAsync(TEntity)
+  href: api/QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_AddAsync__0_
+  commentId: M:QuickKit.AspNetCore.Controllers.IController`2.AddAsync(`0)
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.AddAsync(TEntity)
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).AddAsync(TEntity)
+  nameWithType: IController<TEntity, TKey>.AddAsync(TEntity)
+  nameWithType.vb: IController(Of TEntity, TKey).AddAsync(TEntity)
+- uid: QuickKit.AspNetCore.Controllers.IController`2.AddAsync*
+  name: AddAsync
+  href: api/QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_AddAsync_
+  commentId: Overload:QuickKit.AspNetCore.Controllers.IController`2.AddAsync
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.AddAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).AddAsync
+  nameWithType: IController<TEntity, TKey>.AddAsync
+  nameWithType.vb: IController(Of TEntity, TKey).AddAsync
+- uid: QuickKit.AspNetCore.Controllers.IController`2.DeleteAsync(`1)
+  name: DeleteAsync(TKey)
+  href: api/QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_DeleteAsync__1_
+  commentId: M:QuickKit.AspNetCore.Controllers.IController`2.DeleteAsync(`1)
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.DeleteAsync(TKey)
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).DeleteAsync(TKey)
+  nameWithType: IController<TEntity, TKey>.DeleteAsync(TKey)
+  nameWithType.vb: IController(Of TEntity, TKey).DeleteAsync(TKey)
+- uid: QuickKit.AspNetCore.Controllers.IController`2.DeleteAsync*
+  name: DeleteAsync
+  href: api/QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_DeleteAsync_
+  commentId: Overload:QuickKit.AspNetCore.Controllers.IController`2.DeleteAsync
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.DeleteAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).DeleteAsync
+  nameWithType: IController<TEntity, TKey>.DeleteAsync
+  nameWithType.vb: IController(Of TEntity, TKey).DeleteAsync
+- uid: QuickKit.AspNetCore.Controllers.IController`2.GetAllAsync
+  name: GetAllAsync()
+  href: api/QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_GetAllAsync
+  commentId: M:QuickKit.AspNetCore.Controllers.IController`2.GetAllAsync
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.GetAllAsync()
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).GetAllAsync()
+  nameWithType: IController<TEntity, TKey>.GetAllAsync()
+  nameWithType.vb: IController(Of TEntity, TKey).GetAllAsync()
+- uid: QuickKit.AspNetCore.Controllers.IController`2.GetAllAsync*
+  name: GetAllAsync
+  href: api/QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_GetAllAsync_
+  commentId: Overload:QuickKit.AspNetCore.Controllers.IController`2.GetAllAsync
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.GetAllAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).GetAllAsync
+  nameWithType: IController<TEntity, TKey>.GetAllAsync
+  nameWithType.vb: IController(Of TEntity, TKey).GetAllAsync
+- uid: QuickKit.AspNetCore.Controllers.IController`2.GetByIdAsync(`1)
+  name: GetByIdAsync(TKey)
+  href: api/QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_GetByIdAsync__1_
+  commentId: M:QuickKit.AspNetCore.Controllers.IController`2.GetByIdAsync(`1)
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.GetByIdAsync(TKey)
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).GetByIdAsync(TKey)
+  nameWithType: IController<TEntity, TKey>.GetByIdAsync(TKey)
+  nameWithType.vb: IController(Of TEntity, TKey).GetByIdAsync(TKey)
+- uid: QuickKit.AspNetCore.Controllers.IController`2.GetByIdAsync*
+  name: GetByIdAsync
+  href: api/QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_GetByIdAsync_
+  commentId: Overload:QuickKit.AspNetCore.Controllers.IController`2.GetByIdAsync
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.GetByIdAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).GetByIdAsync
+  nameWithType: IController<TEntity, TKey>.GetByIdAsync
+  nameWithType.vb: IController(Of TEntity, TKey).GetByIdAsync
+- uid: QuickKit.AspNetCore.Controllers.IController`2.TestEndPoint
+  name: TestEndPoint()
+  href: api/QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_TestEndPoint
+  commentId: M:QuickKit.AspNetCore.Controllers.IController`2.TestEndPoint
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.TestEndPoint()
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).TestEndPoint()
+  nameWithType: IController<TEntity, TKey>.TestEndPoint()
+  nameWithType.vb: IController(Of TEntity, TKey).TestEndPoint()
+- uid: QuickKit.AspNetCore.Controllers.IController`2.TestEndPoint*
+  name: TestEndPoint
+  href: api/QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_TestEndPoint_
+  commentId: Overload:QuickKit.AspNetCore.Controllers.IController`2.TestEndPoint
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.TestEndPoint
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).TestEndPoint
+  nameWithType: IController<TEntity, TKey>.TestEndPoint
+  nameWithType.vb: IController(Of TEntity, TKey).TestEndPoint
+- uid: QuickKit.AspNetCore.Controllers.IController`2.UpdateAsync(`0)
+  name: UpdateAsync(TEntity)
+  href: api/QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_UpdateAsync__0_
+  commentId: M:QuickKit.AspNetCore.Controllers.IController`2.UpdateAsync(`0)
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.UpdateAsync(TEntity)
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).UpdateAsync(TEntity)
+  nameWithType: IController<TEntity, TKey>.UpdateAsync(TEntity)
+  nameWithType.vb: IController(Of TEntity, TKey).UpdateAsync(TEntity)
+- uid: QuickKit.AspNetCore.Controllers.IController`2.UpdateAsync*
+  name: UpdateAsync
+  href: api/QuickKit.AspNetCore.Controllers.IController-2.html#QuickKit_AspNetCore_Controllers_IController_2_UpdateAsync_
+  commentId: Overload:QuickKit.AspNetCore.Controllers.IController`2.UpdateAsync
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Controllers.IController<TEntity, TKey>.UpdateAsync
+  fullName.vb: QuickKit.AspNetCore.Controllers.IController(Of TEntity, TKey).UpdateAsync
+  nameWithType: IController<TEntity, TKey>.UpdateAsync
+  nameWithType.vb: IController(Of TEntity, TKey).UpdateAsync
+- uid: QuickKit.AspNetCore.Middlewares.Requests
+  name: QuickKit.AspNetCore.Middlewares.Requests
+  href: api/QuickKit.AspNetCore.Middlewares.Requests.html
+  commentId: N:QuickKit.AspNetCore.Middlewares.Requests
+  fullName: QuickKit.AspNetCore.Middlewares.Requests
+  nameWithType: QuickKit.AspNetCore.Middlewares.Requests
+- uid: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1
+  name: GlobalExceptionMiddlewareConfigurationRequest<TException>
+  href: api/QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.html
+  commentId: T:QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1
+  name.vb: GlobalExceptionMiddlewareConfigurationRequest(Of TException)
+  fullName: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest<TException>
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest(Of TException)
+  nameWithType: GlobalExceptionMiddlewareConfigurationRequest<TException>
+  nameWithType.vb: GlobalExceptionMiddlewareConfigurationRequest(Of TException)
+- uid: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,`0,System.Func{Microsoft.AspNetCore.Http.HttpContext,`0,System.Threading.Tasks.Task})
+  name: GlobalExceptionMiddlewareConfigurationRequest(RequestDelegate, TException, Func<HttpContext, TException, Task>)
+  href: api/QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.html#QuickKit_AspNetCore_Middlewares_Requests_GlobalExceptionMiddlewareConfigurationRequest_1__ctor_Microsoft_AspNetCore_Http_RequestDelegate__0_System_Func_Microsoft_AspNetCore_Http_HttpContext__0_System_Threading_Tasks_Task__
+  commentId: M:QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,`0,System.Func{Microsoft.AspNetCore.Http.HttpContext,`0,System.Threading.Tasks.Task})
+  name.vb: New(RequestDelegate, TException, Func(Of HttpContext, TException, Task))
+  fullName: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest<TException>.GlobalExceptionMiddlewareConfigurationRequest(Microsoft.AspNetCore.Http.RequestDelegate, TException, System.Func<Microsoft.AspNetCore.Http.HttpContext, TException, System.Threading.Tasks.Task>)
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest(Of TException).New(Microsoft.AspNetCore.Http.RequestDelegate, TException, System.Func(Of Microsoft.AspNetCore.Http.HttpContext, TException, System.Threading.Tasks.Task))
+  nameWithType: GlobalExceptionMiddlewareConfigurationRequest<TException>.GlobalExceptionMiddlewareConfigurationRequest(RequestDelegate, TException, Func<HttpContext, TException, Task>)
+  nameWithType.vb: GlobalExceptionMiddlewareConfigurationRequest(Of TException).New(RequestDelegate, TException, Func(Of HttpContext, TException, Task))
+- uid: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.#ctor*
+  name: GlobalExceptionMiddlewareConfigurationRequest
+  href: api/QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.html#QuickKit_AspNetCore_Middlewares_Requests_GlobalExceptionMiddlewareConfigurationRequest_1__ctor_
+  commentId: Overload:QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest<TException>.GlobalExceptionMiddlewareConfigurationRequest
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest(Of TException).New
+  nameWithType: GlobalExceptionMiddlewareConfigurationRequest<TException>.GlobalExceptionMiddlewareConfigurationRequest
+  nameWithType.vb: GlobalExceptionMiddlewareConfigurationRequest(Of TException).New
+- uid: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.Exception
+  name: Exception
+  href: api/QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.html#QuickKit_AspNetCore_Middlewares_Requests_GlobalExceptionMiddlewareConfigurationRequest_1_Exception
+  commentId: P:QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.Exception
+  fullName: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest<TException>.Exception
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest(Of TException).Exception
+  nameWithType: GlobalExceptionMiddlewareConfigurationRequest<TException>.Exception
+  nameWithType.vb: GlobalExceptionMiddlewareConfigurationRequest(Of TException).Exception
+- uid: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.Exception*
+  name: Exception
+  href: api/QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.html#QuickKit_AspNetCore_Middlewares_Requests_GlobalExceptionMiddlewareConfigurationRequest_1_Exception_
+  commentId: Overload:QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.Exception
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest<TException>.Exception
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest(Of TException).Exception
+  nameWithType: GlobalExceptionMiddlewareConfigurationRequest<TException>.Exception
+  nameWithType.vb: GlobalExceptionMiddlewareConfigurationRequest(Of TException).Exception
+- uid: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.ExceptionHandlerAsync
+  name: ExceptionHandlerAsync
+  href: api/QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.html#QuickKit_AspNetCore_Middlewares_Requests_GlobalExceptionMiddlewareConfigurationRequest_1_ExceptionHandlerAsync
+  commentId: P:QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.ExceptionHandlerAsync
+  fullName: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest<TException>.ExceptionHandlerAsync
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest(Of TException).ExceptionHandlerAsync
+  nameWithType: GlobalExceptionMiddlewareConfigurationRequest<TException>.ExceptionHandlerAsync
+  nameWithType.vb: GlobalExceptionMiddlewareConfigurationRequest(Of TException).ExceptionHandlerAsync
+- uid: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.ExceptionHandlerAsync*
+  name: ExceptionHandlerAsync
+  href: api/QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.html#QuickKit_AspNetCore_Middlewares_Requests_GlobalExceptionMiddlewareConfigurationRequest_1_ExceptionHandlerAsync_
+  commentId: Overload:QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.ExceptionHandlerAsync
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest<TException>.ExceptionHandlerAsync
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest(Of TException).ExceptionHandlerAsync
+  nameWithType: GlobalExceptionMiddlewareConfigurationRequest<TException>.ExceptionHandlerAsync
+  nameWithType.vb: GlobalExceptionMiddlewareConfigurationRequest(Of TException).ExceptionHandlerAsync
+- uid: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.Next
+  name: Next
+  href: api/QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.html#QuickKit_AspNetCore_Middlewares_Requests_GlobalExceptionMiddlewareConfigurationRequest_1_Next
+  commentId: P:QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.Next
+  fullName: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest<TException>.Next
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest(Of TException).Next
+  nameWithType: GlobalExceptionMiddlewareConfigurationRequest<TException>.Next
+  nameWithType.vb: GlobalExceptionMiddlewareConfigurationRequest(Of TException).Next
+- uid: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.Next*
+  name: Next
+  href: api/QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.html#QuickKit_AspNetCore_Middlewares_Requests_GlobalExceptionMiddlewareConfigurationRequest_1_Next_
+  commentId: Overload:QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest`1.Next
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest<TException>.Next
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest(Of TException).Next
+  nameWithType: GlobalExceptionMiddlewareConfigurationRequest<TException>.Next
+  nameWithType.vb: GlobalExceptionMiddlewareConfigurationRequest(Of TException).Next
+- uid: QuickKit.AspNetCore.Middlewares.Types
+  name: QuickKit.AspNetCore.Middlewares.Types
+  href: api/QuickKit.AspNetCore.Middlewares.Types.html
+  commentId: N:QuickKit.AspNetCore.Middlewares.Types
+  fullName: QuickKit.AspNetCore.Middlewares.Types
+  nameWithType: QuickKit.AspNetCore.Middlewares.Types
+- uid: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom`1
+  name: GlobalExceptiomMiddlewareCustom<TException>
+  href: api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom-1.html
+  commentId: T:QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom`1
+  name.vb: GlobalExceptiomMiddlewareCustom(Of TException)
+  fullName: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom<TException>
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom(Of TException)
+  nameWithType: GlobalExceptiomMiddlewareCustom<TException>
+  nameWithType.vb: GlobalExceptiomMiddlewareCustom(Of TException)
+- uid: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom`1.#ctor(QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest{`0})
+  name: GlobalExceptiomMiddlewareCustom(GlobalExceptionMiddlewareConfigurationRequest<TException>)
+  href: api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom-1.html#QuickKit_AspNetCore_Middlewares_Types_GlobalExceptiomMiddlewareCustom_1__ctor_QuickKit_AspNetCore_Middlewares_Requests_GlobalExceptionMiddlewareConfigurationRequest__0__
+  commentId: M:QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom`1.#ctor(QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest{`0})
+  name.vb: New(GlobalExceptionMiddlewareConfigurationRequest(Of TException))
+  fullName: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom<TException>.GlobalExceptiomMiddlewareCustom(QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest<TException>)
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom(Of TException).New(QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest(Of TException))
+  nameWithType: GlobalExceptiomMiddlewareCustom<TException>.GlobalExceptiomMiddlewareCustom(GlobalExceptionMiddlewareConfigurationRequest<TException>)
+  nameWithType.vb: GlobalExceptiomMiddlewareCustom(Of TException).New(GlobalExceptionMiddlewareConfigurationRequest(Of TException))
+- uid: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom`1.#ctor*
+  name: GlobalExceptiomMiddlewareCustom
+  href: api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom-1.html#QuickKit_AspNetCore_Middlewares_Types_GlobalExceptiomMiddlewareCustom_1__ctor_
+  commentId: Overload:QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom<TException>.GlobalExceptiomMiddlewareCustom
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom(Of TException).New
+  nameWithType: GlobalExceptiomMiddlewareCustom<TException>.GlobalExceptiomMiddlewareCustom
+  nameWithType.vb: GlobalExceptiomMiddlewareCustom(Of TException).New
+- uid: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom`1.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)
+  name: InvokeAsync(HttpContext)
+  href: api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom-1.html#QuickKit_AspNetCore_Middlewares_Types_GlobalExceptiomMiddlewareCustom_1_InvokeAsync_Microsoft_AspNetCore_Http_HttpContext_
+  commentId: M:QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom`1.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)
+  fullName: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom<TException>.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom(Of TException).InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)
+  nameWithType: GlobalExceptiomMiddlewareCustom<TException>.InvokeAsync(HttpContext)
+  nameWithType.vb: GlobalExceptiomMiddlewareCustom(Of TException).InvokeAsync(HttpContext)
+- uid: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom`1.InvokeAsync*
+  name: InvokeAsync
+  href: api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom-1.html#QuickKit_AspNetCore_Middlewares_Types_GlobalExceptiomMiddlewareCustom_1_InvokeAsync_
+  commentId: Overload:QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom`1.InvokeAsync
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom<TException>.InvokeAsync
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom(Of TException).InvokeAsync
+  nameWithType: GlobalExceptiomMiddlewareCustom<TException>.InvokeAsync
+  nameWithType.vb: GlobalExceptiomMiddlewareCustom(Of TException).InvokeAsync
+- uid: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault
+  name: GlobalExceptionMiddlewareDefault
+  href: api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.html
+  commentId: T:QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault
+  fullName: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault
+  nameWithType: GlobalExceptionMiddlewareDefault
+- uid: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,System.String,System.Boolean)
+  name: GlobalExceptionMiddlewareDefault(RequestDelegate, string, bool)
+  href: api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.html#QuickKit_AspNetCore_Middlewares_Types_GlobalExceptionMiddlewareDefault__ctor_Microsoft_AspNetCore_Http_RequestDelegate_System_String_System_Boolean_
+  commentId: M:QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,System.String,System.Boolean)
+  name.vb: New(RequestDelegate, String, Boolean)
+  fullName: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.GlobalExceptionMiddlewareDefault(Microsoft.AspNetCore.Http.RequestDelegate, string, bool)
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.New(Microsoft.AspNetCore.Http.RequestDelegate, String, Boolean)
+  nameWithType: GlobalExceptionMiddlewareDefault.GlobalExceptionMiddlewareDefault(RequestDelegate, string, bool)
+  nameWithType.vb: GlobalExceptionMiddlewareDefault.New(RequestDelegate, String, Boolean)
+- uid: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.#ctor*
+  name: GlobalExceptionMiddlewareDefault
+  href: api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.html#QuickKit_AspNetCore_Middlewares_Types_GlobalExceptionMiddlewareDefault__ctor_
+  commentId: Overload:QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.GlobalExceptionMiddlewareDefault
+  fullName.vb: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.New
+  nameWithType: GlobalExceptionMiddlewareDefault.GlobalExceptionMiddlewareDefault
+  nameWithType.vb: GlobalExceptionMiddlewareDefault.New
+- uid: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)
+  name: InvokeAsync(HttpContext)
+  href: api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.html#QuickKit_AspNetCore_Middlewares_Types_GlobalExceptionMiddlewareDefault_InvokeAsync_Microsoft_AspNetCore_Http_HttpContext_
+  commentId: M:QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)
+  fullName: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)
+  nameWithType: GlobalExceptionMiddlewareDefault.InvokeAsync(HttpContext)
+- uid: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.InvokeAsync*
+  name: InvokeAsync
+  href: api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.html#QuickKit_AspNetCore_Middlewares_Types_GlobalExceptionMiddlewareDefault_InvokeAsync_
+  commentId: Overload:QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.InvokeAsync
+  isSpec: "True"
+  fullName: QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.InvokeAsync
+  nameWithType: GlobalExceptionMiddlewareDefault.InvokeAsync
+- uid: QuickKit.Cmd
+  name: QuickKit.Cmd
+  href: api/QuickKit.Cmd.html
+  commentId: N:QuickKit.Cmd
+  fullName: QuickKit.Cmd
+  nameWithType: QuickKit.Cmd
+- uid: QuickKit.Cmd.Consoler
+  name: Consoler
+  href: api/QuickKit.Cmd.Consoler.html
+  commentId: T:QuickKit.Cmd.Consoler
+  fullName: QuickKit.Cmd.Consoler
+  nameWithType: Consoler
+- uid: QuickKit.Cmd.Consoler.Read
+  name: Read()
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_Read
+  commentId: M:QuickKit.Cmd.Consoler.Read
+  fullName: QuickKit.Cmd.Consoler.Read()
+  nameWithType: Consoler.Read()
+- uid: QuickKit.Cmd.Consoler.Read*
+  name: Read
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_Read_
+  commentId: Overload:QuickKit.Cmd.Consoler.Read
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Consoler.Read
+  nameWithType: Consoler.Read
+- uid: QuickKit.Cmd.Consoler.ReadAs*
+  name: ReadAs
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_ReadAs_
+  commentId: Overload:QuickKit.Cmd.Consoler.ReadAs
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Consoler.ReadAs
+  nameWithType: Consoler.ReadAs
+- uid: QuickKit.Cmd.Consoler.ReadAs``1(System.String,System.String,QuickKit.Cmd.Enums.AlertType)
+  name: ReadAs<T>(string, string, AlertType)
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_ReadAs__1_System_String_System_String_QuickKit_Cmd_Enums_AlertType_
+  commentId: M:QuickKit.Cmd.Consoler.ReadAs``1(System.String,System.String,QuickKit.Cmd.Enums.AlertType)
+  name.vb: ReadAs(Of T)(String, String, AlertType)
+  fullName: QuickKit.Cmd.Consoler.ReadAs<T>(string, string, QuickKit.Cmd.Enums.AlertType)
+  fullName.vb: QuickKit.Cmd.Consoler.ReadAs(Of T)(String, String, QuickKit.Cmd.Enums.AlertType)
+  nameWithType: Consoler.ReadAs<T>(string, string, AlertType)
+  nameWithType.vb: Consoler.ReadAs(Of T)(String, String, AlertType)
+- uid: QuickKit.Cmd.Consoler.ReadKey
+  name: ReadKey()
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_ReadKey
+  commentId: M:QuickKit.Cmd.Consoler.ReadKey
+  fullName: QuickKit.Cmd.Consoler.ReadKey()
+  nameWithType: Consoler.ReadKey()
+- uid: QuickKit.Cmd.Consoler.ReadKey*
+  name: ReadKey
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_ReadKey_
+  commentId: Overload:QuickKit.Cmd.Consoler.ReadKey
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Consoler.ReadKey
+  nameWithType: Consoler.ReadKey
+- uid: QuickKit.Cmd.Consoler.ReadKeyInfo
+  name: ReadKeyInfo()
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_ReadKeyInfo
+  commentId: M:QuickKit.Cmd.Consoler.ReadKeyInfo
+  fullName: QuickKit.Cmd.Consoler.ReadKeyInfo()
+  nameWithType: Consoler.ReadKeyInfo()
+- uid: QuickKit.Cmd.Consoler.ReadKeyInfo*
+  name: ReadKeyInfo
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_ReadKeyInfo_
+  commentId: Overload:QuickKit.Cmd.Consoler.ReadKeyInfo
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Consoler.ReadKeyInfo
+  nameWithType: Consoler.ReadKeyInfo
+- uid: QuickKit.Cmd.Consoler.ReadLine
+  name: ReadLine()
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_ReadLine
+  commentId: M:QuickKit.Cmd.Consoler.ReadLine
+  fullName: QuickKit.Cmd.Consoler.ReadLine()
+  nameWithType: Consoler.ReadLine()
+- uid: QuickKit.Cmd.Consoler.ReadLine(System.String,QuickKit.Cmd.Enums.AlertType)
+  name: ReadLine(string, AlertType)
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_ReadLine_System_String_QuickKit_Cmd_Enums_AlertType_
+  commentId: M:QuickKit.Cmd.Consoler.ReadLine(System.String,QuickKit.Cmd.Enums.AlertType)
+  name.vb: ReadLine(String, AlertType)
+  fullName: QuickKit.Cmd.Consoler.ReadLine(string, QuickKit.Cmd.Enums.AlertType)
+  fullName.vb: QuickKit.Cmd.Consoler.ReadLine(String, QuickKit.Cmd.Enums.AlertType)
+  nameWithType: Consoler.ReadLine(string, AlertType)
+  nameWithType.vb: Consoler.ReadLine(String, AlertType)
+- uid: QuickKit.Cmd.Consoler.ReadLine*
+  name: ReadLine
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_ReadLine_
+  commentId: Overload:QuickKit.Cmd.Consoler.ReadLine
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Consoler.ReadLine
+  nameWithType: Consoler.ReadLine
+- uid: QuickKit.Cmd.Consoler.Write(System.String)
+  name: Write(string)
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_Write_System_String_
+  commentId: M:QuickKit.Cmd.Consoler.Write(System.String)
+  name.vb: Write(String)
+  fullName: QuickKit.Cmd.Consoler.Write(string)
+  fullName.vb: QuickKit.Cmd.Consoler.Write(String)
+  nameWithType: Consoler.Write(string)
+  nameWithType.vb: Consoler.Write(String)
+- uid: QuickKit.Cmd.Consoler.Write(System.String,QuickKit.Cmd.Enums.AlertType)
+  name: Write(string, AlertType)
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_Write_System_String_QuickKit_Cmd_Enums_AlertType_
+  commentId: M:QuickKit.Cmd.Consoler.Write(System.String,QuickKit.Cmd.Enums.AlertType)
+  name.vb: Write(String, AlertType)
+  fullName: QuickKit.Cmd.Consoler.Write(string, QuickKit.Cmd.Enums.AlertType)
+  fullName.vb: QuickKit.Cmd.Consoler.Write(String, QuickKit.Cmd.Enums.AlertType)
+  nameWithType: Consoler.Write(string, AlertType)
+  nameWithType.vb: Consoler.Write(String, AlertType)
+- uid: QuickKit.Cmd.Consoler.Write*
+  name: Write
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_Write_
+  commentId: Overload:QuickKit.Cmd.Consoler.Write
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Consoler.Write
+  nameWithType: Consoler.Write
+- uid: QuickKit.Cmd.Consoler.WriteLine(System.String)
+  name: WriteLine(string)
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_WriteLine_System_String_
+  commentId: M:QuickKit.Cmd.Consoler.WriteLine(System.String)
+  name.vb: WriteLine(String)
+  fullName: QuickKit.Cmd.Consoler.WriteLine(string)
+  fullName.vb: QuickKit.Cmd.Consoler.WriteLine(String)
+  nameWithType: Consoler.WriteLine(string)
+  nameWithType.vb: Consoler.WriteLine(String)
+- uid: QuickKit.Cmd.Consoler.WriteLine(System.String,QuickKit.Cmd.Enums.AlertType)
+  name: WriteLine(string, AlertType)
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_WriteLine_System_String_QuickKit_Cmd_Enums_AlertType_
+  commentId: M:QuickKit.Cmd.Consoler.WriteLine(System.String,QuickKit.Cmd.Enums.AlertType)
+  name.vb: WriteLine(String, AlertType)
+  fullName: QuickKit.Cmd.Consoler.WriteLine(string, QuickKit.Cmd.Enums.AlertType)
+  fullName.vb: QuickKit.Cmd.Consoler.WriteLine(String, QuickKit.Cmd.Enums.AlertType)
+  nameWithType: Consoler.WriteLine(string, AlertType)
+  nameWithType.vb: Consoler.WriteLine(String, AlertType)
+- uid: QuickKit.Cmd.Consoler.WriteLine*
+  name: WriteLine
+  href: api/QuickKit.Cmd.Consoler.html#QuickKit_Cmd_Consoler_WriteLine_
+  commentId: Overload:QuickKit.Cmd.Consoler.WriteLine
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Consoler.WriteLine
+  nameWithType: Consoler.WriteLine
+- uid: QuickKit.Cmd.Enums
+  name: QuickKit.Cmd.Enums
+  href: api/QuickKit.Cmd.Enums.html
+  commentId: N:QuickKit.Cmd.Enums
+  fullName: QuickKit.Cmd.Enums
+  nameWithType: QuickKit.Cmd.Enums
+- uid: QuickKit.Cmd.Enums.AlertType
+  name: AlertType
+  href: api/QuickKit.Cmd.Enums.AlertType.html
+  commentId: T:QuickKit.Cmd.Enums.AlertType
+  fullName: QuickKit.Cmd.Enums.AlertType
+  nameWithType: AlertType
+- uid: QuickKit.Cmd.Enums.AlertType.Error
+  name: Error
+  href: api/QuickKit.Cmd.Enums.AlertType.html#QuickKit_Cmd_Enums_AlertType_Error
+  commentId: F:QuickKit.Cmd.Enums.AlertType.Error
+  fullName: QuickKit.Cmd.Enums.AlertType.Error
+  nameWithType: AlertType.Error
+- uid: QuickKit.Cmd.Enums.AlertType.None
+  name: None
+  href: api/QuickKit.Cmd.Enums.AlertType.html#QuickKit_Cmd_Enums_AlertType_None
+  commentId: F:QuickKit.Cmd.Enums.AlertType.None
+  fullName: QuickKit.Cmd.Enums.AlertType.None
+  nameWithType: AlertType.None
+- uid: QuickKit.Cmd.Enums.AlertType.Success
+  name: Success
+  href: api/QuickKit.Cmd.Enums.AlertType.html#QuickKit_Cmd_Enums_AlertType_Success
+  commentId: F:QuickKit.Cmd.Enums.AlertType.Success
+  fullName: QuickKit.Cmd.Enums.AlertType.Success
+  nameWithType: AlertType.Success
+- uid: QuickKit.Cmd.Enums.AlertType.Warning
+  name: Warning
+  href: api/QuickKit.Cmd.Enums.AlertType.html#QuickKit_Cmd_Enums_AlertType_Warning
+  commentId: F:QuickKit.Cmd.Enums.AlertType.Warning
+  fullName: QuickKit.Cmd.Enums.AlertType.Warning
+  nameWithType: AlertType.Warning
+- uid: QuickKit.Cmd.Menu
+  name: QuickKit.Cmd.Menu
+  href: api/QuickKit.Cmd.Menu.html
+  commentId: N:QuickKit.Cmd.Menu
+  fullName: QuickKit.Cmd.Menu
+  nameWithType: QuickKit.Cmd.Menu
+- uid: QuickKit.Cmd.Menu.Interfaces
+  name: QuickKit.Cmd.Menu.Interfaces
+  href: api/QuickKit.Cmd.Menu.Interfaces.html
+  commentId: N:QuickKit.Cmd.Menu.Interfaces
+  fullName: QuickKit.Cmd.Menu.Interfaces
+  nameWithType: QuickKit.Cmd.Menu.Interfaces
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu
+  name: IMenu
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenu.html
+  commentId: T:QuickKit.Cmd.Menu.Interfaces.IMenu
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu
+  nameWithType: IMenu
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+  name: GoToOption(int)
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_GoToOption_System_Int32_
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+  name.vb: GoToOption(Integer)
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(int)
+  fullName.vb: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(Integer)
+  nameWithType: IMenu.GoToOption(int)
+  nameWithType.vb: IMenu.GoToOption(Integer)
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption*
+  name: GoToOption
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_GoToOption_
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption
+  nameWithType: IMenu.GoToOption
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+  name: SelectOption()
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_SelectOption
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption()
+  nameWithType: IMenu.SelectOption()
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption*
+  name: SelectOption
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_SelectOption_
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+  nameWithType: IMenu.SelectOption
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+  name: Show()
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_Show
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.Show()
+  nameWithType: IMenu.Show()
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.Show*
+  name: Show
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_Show_
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+  nameWithType: IMenu.Show
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  name: ShowInvalidOptionMessage(string, AlertType)
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowInvalidOptionMessage_System_String_QuickKit_Cmd_Enums_AlertType_
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  name.vb: ShowInvalidOptionMessage(String, AlertType)
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(string, QuickKit.Cmd.Enums.AlertType)
+  fullName.vb: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(String, QuickKit.Cmd.Enums.AlertType)
+  nameWithType: IMenu.ShowInvalidOptionMessage(string, AlertType)
+  nameWithType.vb: IMenu.ShowInvalidOptionMessage(String, AlertType)
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage*
+  name: ShowInvalidOptionMessage
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowInvalidOptionMessage_
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage
+  nameWithType: IMenu.ShowInvalidOptionMessage
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+  name: ShowOptions()
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowOptions
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions()
+  nameWithType: IMenu.ShowOptions()
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions*
+  name: ShowOptions
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowOptions_
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+  nameWithType: IMenu.ShowOptions
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuMain
+  name: IMenuMain
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenuMain.html
+  commentId: T:QuickKit.Cmd.Menu.Interfaces.IMenuMain
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuMain
+  nameWithType: IMenuMain
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit
+  name: Exit()
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenuMain.html#QuickKit_Cmd_Menu_Interfaces_IMenuMain_Exit
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit()
+  nameWithType: IMenuMain.Exit()
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit*
+  name: Exit
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenuMain.html#QuickKit_Cmd_Menu_Interfaces_IMenuMain_Exit_
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit
+  nameWithType: IMenuMain.Exit
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption
+  name: IMenuNoOption
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.html
+  commentId: T:QuickKit.Cmd.Menu.Interfaces.IMenuNoOption
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption
+  nameWithType: IMenuNoOption
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show
+  name: Show()
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.html#QuickKit_Cmd_Menu_Interfaces_IMenuNoOption_Show
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show()
+  nameWithType: IMenuNoOption.Show()
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show*
+  name: Show
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.html#QuickKit_Cmd_Menu_Interfaces_IMenuNoOption_Show_
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.Show
+  nameWithType: IMenuNoOption.Show
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuSub
+  name: IMenuSub
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenuSub.html
+  commentId: T:QuickKit.Cmd.Menu.Interfaces.IMenuSub
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuSub
+  nameWithType: IMenuSub
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuSub.Back
+  name: Back()
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenuSub.html#QuickKit_Cmd_Menu_Interfaces_IMenuSub_Back
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenuSub.Back
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuSub.Back()
+  nameWithType: IMenuSub.Back()
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuSub.Back*
+  name: Back
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenuSub.html#QuickKit_Cmd_Menu_Interfaces_IMenuSub_Back_
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenuSub.Back
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuSub.Back
+  nameWithType: IMenuSub.Back
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuSub.ShowPreviousOption
+  name: ShowPreviousOption()
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenuSub.html#QuickKit_Cmd_Menu_Interfaces_IMenuSub_ShowPreviousOption
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenuSub.ShowPreviousOption
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuSub.ShowPreviousOption()
+  nameWithType: IMenuSub.ShowPreviousOption()
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuSub.ShowPreviousOption*
+  name: ShowPreviousOption
+  href: api/QuickKit.Cmd.Menu.Interfaces.IMenuSub.html#QuickKit_Cmd_Menu_Interfaces_IMenuSub_ShowPreviousOption_
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenuSub.ShowPreviousOption
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuSub.ShowPreviousOption
+  nameWithType: IMenuSub.ShowPreviousOption
+- uid: QuickKit.Cmd.Menu.MenuMain
+  name: MenuMain
+  href: api/QuickKit.Cmd.Menu.MenuMain.html
+  commentId: T:QuickKit.Cmd.Menu.MenuMain
+  fullName: QuickKit.Cmd.Menu.MenuMain
+  nameWithType: MenuMain
+- uid: QuickKit.Cmd.Menu.MenuMain.Exit
+  name: Exit()
+  href: api/QuickKit.Cmd.Menu.MenuMain.html#QuickKit_Cmd_Menu_MenuMain_Exit
+  commentId: M:QuickKit.Cmd.Menu.MenuMain.Exit
+  fullName: QuickKit.Cmd.Menu.MenuMain.Exit()
+  nameWithType: MenuMain.Exit()
+- uid: QuickKit.Cmd.Menu.MenuMain.Exit*
+  name: Exit
+  href: api/QuickKit.Cmd.Menu.MenuMain.html#QuickKit_Cmd_Menu_MenuMain_Exit_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuMain.Exit
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuMain.Exit
+  nameWithType: MenuMain.Exit
+- uid: QuickKit.Cmd.Menu.MenuMain.GoToOption(System.Int32)
+  name: GoToOption(int)
+  href: api/QuickKit.Cmd.Menu.MenuMain.html#QuickKit_Cmd_Menu_MenuMain_GoToOption_System_Int32_
+  commentId: M:QuickKit.Cmd.Menu.MenuMain.GoToOption(System.Int32)
+  name.vb: GoToOption(Integer)
+  fullName: QuickKit.Cmd.Menu.MenuMain.GoToOption(int)
+  fullName.vb: QuickKit.Cmd.Menu.MenuMain.GoToOption(Integer)
+  nameWithType: MenuMain.GoToOption(int)
+  nameWithType.vb: MenuMain.GoToOption(Integer)
+- uid: QuickKit.Cmd.Menu.MenuMain.GoToOption*
+  name: GoToOption
+  href: api/QuickKit.Cmd.Menu.MenuMain.html#QuickKit_Cmd_Menu_MenuMain_GoToOption_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuMain.GoToOption
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuMain.GoToOption
+  nameWithType: MenuMain.GoToOption
+- uid: QuickKit.Cmd.Menu.MenuMain.SelectOption
+  name: SelectOption()
+  href: api/QuickKit.Cmd.Menu.MenuMain.html#QuickKit_Cmd_Menu_MenuMain_SelectOption
+  commentId: M:QuickKit.Cmd.Menu.MenuMain.SelectOption
+  fullName: QuickKit.Cmd.Menu.MenuMain.SelectOption()
+  nameWithType: MenuMain.SelectOption()
+- uid: QuickKit.Cmd.Menu.MenuMain.SelectOption*
+  name: SelectOption
+  href: api/QuickKit.Cmd.Menu.MenuMain.html#QuickKit_Cmd_Menu_MenuMain_SelectOption_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuMain.SelectOption
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuMain.SelectOption
+  nameWithType: MenuMain.SelectOption
+- uid: QuickKit.Cmd.Menu.MenuMain.Show
+  name: Show()
+  href: api/QuickKit.Cmd.Menu.MenuMain.html#QuickKit_Cmd_Menu_MenuMain_Show
+  commentId: M:QuickKit.Cmd.Menu.MenuMain.Show
+  fullName: QuickKit.Cmd.Menu.MenuMain.Show()
+  nameWithType: MenuMain.Show()
+- uid: QuickKit.Cmd.Menu.MenuMain.Show*
+  name: Show
+  href: api/QuickKit.Cmd.Menu.MenuMain.html#QuickKit_Cmd_Menu_MenuMain_Show_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuMain.Show
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuMain.Show
+  nameWithType: MenuMain.Show
+- uid: QuickKit.Cmd.Menu.MenuMain.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  name: ShowInvalidOptionMessage(string, AlertType)
+  href: api/QuickKit.Cmd.Menu.MenuMain.html#QuickKit_Cmd_Menu_MenuMain_ShowInvalidOptionMessage_System_String_QuickKit_Cmd_Enums_AlertType_
+  commentId: M:QuickKit.Cmd.Menu.MenuMain.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  name.vb: ShowInvalidOptionMessage(String, AlertType)
+  fullName: QuickKit.Cmd.Menu.MenuMain.ShowInvalidOptionMessage(string, QuickKit.Cmd.Enums.AlertType)
+  fullName.vb: QuickKit.Cmd.Menu.MenuMain.ShowInvalidOptionMessage(String, QuickKit.Cmd.Enums.AlertType)
+  nameWithType: MenuMain.ShowInvalidOptionMessage(string, AlertType)
+  nameWithType.vb: MenuMain.ShowInvalidOptionMessage(String, AlertType)
+- uid: QuickKit.Cmd.Menu.MenuMain.ShowInvalidOptionMessage*
+  name: ShowInvalidOptionMessage
+  href: api/QuickKit.Cmd.Menu.MenuMain.html#QuickKit_Cmd_Menu_MenuMain_ShowInvalidOptionMessage_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuMain.ShowInvalidOptionMessage
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuMain.ShowInvalidOptionMessage
+  nameWithType: MenuMain.ShowInvalidOptionMessage
+- uid: QuickKit.Cmd.Menu.MenuMain.ShowOptions
+  name: ShowOptions()
+  href: api/QuickKit.Cmd.Menu.MenuMain.html#QuickKit_Cmd_Menu_MenuMain_ShowOptions
+  commentId: M:QuickKit.Cmd.Menu.MenuMain.ShowOptions
+  fullName: QuickKit.Cmd.Menu.MenuMain.ShowOptions()
+  nameWithType: MenuMain.ShowOptions()
+- uid: QuickKit.Cmd.Menu.MenuMain.ShowOptions*
+  name: ShowOptions
+  href: api/QuickKit.Cmd.Menu.MenuMain.html#QuickKit_Cmd_Menu_MenuMain_ShowOptions_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuMain.ShowOptions
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuMain.ShowOptions
+  nameWithType: MenuMain.ShowOptions
+- uid: QuickKit.Cmd.Menu.MenuNoOption
+  name: MenuNoOption
+  href: api/QuickKit.Cmd.Menu.MenuNoOption.html
+  commentId: T:QuickKit.Cmd.Menu.MenuNoOption
+  fullName: QuickKit.Cmd.Menu.MenuNoOption
+  nameWithType: MenuNoOption
+- uid: QuickKit.Cmd.Menu.MenuNoOption.Show
+  name: Show()
+  href: api/QuickKit.Cmd.Menu.MenuNoOption.html#QuickKit_Cmd_Menu_MenuNoOption_Show
+  commentId: M:QuickKit.Cmd.Menu.MenuNoOption.Show
+  fullName: QuickKit.Cmd.Menu.MenuNoOption.Show()
+  nameWithType: MenuNoOption.Show()
+- uid: QuickKit.Cmd.Menu.MenuNoOption.Show*
+  name: Show
+  href: api/QuickKit.Cmd.Menu.MenuNoOption.html#QuickKit_Cmd_Menu_MenuNoOption_Show_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuNoOption.Show
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuNoOption.Show
+  nameWithType: MenuNoOption.Show
+- uid: QuickKit.Cmd.Menu.MenuSub
+  name: MenuSub
+  href: api/QuickKit.Cmd.Menu.MenuSub.html
+  commentId: T:QuickKit.Cmd.Menu.MenuSub
+  fullName: QuickKit.Cmd.Menu.MenuSub
+  nameWithType: MenuSub
+- uid: QuickKit.Cmd.Menu.MenuSub.Back
+  name: Back()
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_Back
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.Back
+  fullName: QuickKit.Cmd.Menu.MenuSub.Back()
+  nameWithType: MenuSub.Back()
+- uid: QuickKit.Cmd.Menu.MenuSub.Back*
+  name: Back
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_Back_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.Back
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuSub.Back
+  nameWithType: MenuSub.Back
+- uid: QuickKit.Cmd.Menu.MenuSub.GoToOption(System.Int32)
+  name: GoToOption(int)
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_GoToOption_System_Int32_
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.GoToOption(System.Int32)
+  name.vb: GoToOption(Integer)
+  fullName: QuickKit.Cmd.Menu.MenuSub.GoToOption(int)
+  fullName.vb: QuickKit.Cmd.Menu.MenuSub.GoToOption(Integer)
+  nameWithType: MenuSub.GoToOption(int)
+  nameWithType.vb: MenuSub.GoToOption(Integer)
+- uid: QuickKit.Cmd.Menu.MenuSub.GoToOption*
+  name: GoToOption
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_GoToOption_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.GoToOption
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuSub.GoToOption
+  nameWithType: MenuSub.GoToOption
+- uid: QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage
+  name: NotNullAlertMessage
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_NotNullAlertMessage
+  commentId: P:QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage
+  fullName: QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage
+  nameWithType: MenuSub.NotNullAlertMessage
+- uid: QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage*
+  name: NotNullAlertMessage
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_NotNullAlertMessage_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuSub.NotNullAlertMessage
+  nameWithType: MenuSub.NotNullAlertMessage
+- uid: QuickKit.Cmd.Menu.MenuSub.SelectOption
+  name: SelectOption()
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_SelectOption
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.SelectOption
+  fullName: QuickKit.Cmd.Menu.MenuSub.SelectOption()
+  nameWithType: MenuSub.SelectOption()
+- uid: QuickKit.Cmd.Menu.MenuSub.SelectOption*
+  name: SelectOption
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_SelectOption_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.SelectOption
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuSub.SelectOption
+  nameWithType: MenuSub.SelectOption
+- uid: QuickKit.Cmd.Menu.MenuSub.Show
+  name: Show()
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_Show
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.Show
+  fullName: QuickKit.Cmd.Menu.MenuSub.Show()
+  nameWithType: MenuSub.Show()
+- uid: QuickKit.Cmd.Menu.MenuSub.Show*
+  name: Show
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_Show_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.Show
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuSub.Show
+  nameWithType: MenuSub.Show
+- uid: QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  name: ShowInvalidOptionMessage(string, AlertType)
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_ShowInvalidOptionMessage_System_String_QuickKit_Cmd_Enums_AlertType_
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  name.vb: ShowInvalidOptionMessage(String, AlertType)
+  fullName: QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage(string, QuickKit.Cmd.Enums.AlertType)
+  fullName.vb: QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage(String, QuickKit.Cmd.Enums.AlertType)
+  nameWithType: MenuSub.ShowInvalidOptionMessage(string, AlertType)
+  nameWithType.vb: MenuSub.ShowInvalidOptionMessage(String, AlertType)
+- uid: QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage*
+  name: ShowInvalidOptionMessage
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_ShowInvalidOptionMessage_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuSub.ShowInvalidOptionMessage
+  nameWithType: MenuSub.ShowInvalidOptionMessage
+- uid: QuickKit.Cmd.Menu.MenuSub.ShowOptions
+  name: ShowOptions()
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_ShowOptions
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.ShowOptions
+  fullName: QuickKit.Cmd.Menu.MenuSub.ShowOptions()
+  nameWithType: MenuSub.ShowOptions()
+- uid: QuickKit.Cmd.Menu.MenuSub.ShowOptions*
+  name: ShowOptions
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_ShowOptions_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.ShowOptions
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuSub.ShowOptions
+  nameWithType: MenuSub.ShowOptions
+- uid: QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption
+  name: ShowPreviousOption()
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_ShowPreviousOption
+  commentId: M:QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption
+  fullName: QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption()
+  nameWithType: MenuSub.ShowPreviousOption()
+- uid: QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption*
+  name: ShowPreviousOption
+  href: api/QuickKit.Cmd.Menu.MenuSub.html#QuickKit_Cmd_Menu_MenuSub_ShowPreviousOption_
+  commentId: Overload:QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Menu.MenuSub.ShowPreviousOption
+  nameWithType: MenuSub.ShowPreviousOption
+- uid: QuickKit.Cmd.Shared
+  name: QuickKit.Cmd.Shared
+  href: api/QuickKit.Cmd.Shared.html
+  commentId: N:QuickKit.Cmd.Shared
+  fullName: QuickKit.Cmd.Shared
+  nameWithType: QuickKit.Cmd.Shared
+- uid: QuickKit.Cmd.Shared.Alerter
+  name: Alerter
+  href: api/QuickKit.Cmd.Shared.Alerter.html
+  commentId: T:QuickKit.Cmd.Shared.Alerter
+  fullName: QuickKit.Cmd.Shared.Alerter
+  nameWithType: Alerter
+- uid: QuickKit.Cmd.Shared.Alerter.Alert(System.String,System.ConsoleColor)
+  name: Alert(string, ConsoleColor)
+  href: api/QuickKit.Cmd.Shared.Alerter.html#QuickKit_Cmd_Shared_Alerter_Alert_System_String_System_ConsoleColor_
+  commentId: M:QuickKit.Cmd.Shared.Alerter.Alert(System.String,System.ConsoleColor)
+  name.vb: Alert(String, ConsoleColor)
+  fullName: QuickKit.Cmd.Shared.Alerter.Alert(string, System.ConsoleColor)
+  fullName.vb: QuickKit.Cmd.Shared.Alerter.Alert(String, System.ConsoleColor)
+  nameWithType: Alerter.Alert(string, ConsoleColor)
+  nameWithType.vb: Alerter.Alert(String, ConsoleColor)
+- uid: QuickKit.Cmd.Shared.Alerter.Alert*
+  name: Alert
+  href: api/QuickKit.Cmd.Shared.Alerter.html#QuickKit_Cmd_Shared_Alerter_Alert_
+  commentId: Overload:QuickKit.Cmd.Shared.Alerter.Alert
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Shared.Alerter.Alert
+  nameWithType: Alerter.Alert
+- uid: QuickKit.Cmd.Shared.Alerter.Error(System.String)
+  name: Error(string)
+  href: api/QuickKit.Cmd.Shared.Alerter.html#QuickKit_Cmd_Shared_Alerter_Error_System_String_
+  commentId: M:QuickKit.Cmd.Shared.Alerter.Error(System.String)
+  name.vb: Error(String)
+  fullName: QuickKit.Cmd.Shared.Alerter.Error(string)
+  fullName.vb: QuickKit.Cmd.Shared.Alerter.Error(String)
+  nameWithType: Alerter.Error(string)
+  nameWithType.vb: Alerter.Error(String)
+- uid: QuickKit.Cmd.Shared.Alerter.Error*
+  name: Error
+  href: api/QuickKit.Cmd.Shared.Alerter.html#QuickKit_Cmd_Shared_Alerter_Error_
+  commentId: Overload:QuickKit.Cmd.Shared.Alerter.Error
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Shared.Alerter.Error
+  nameWithType: Alerter.Error
+- uid: QuickKit.Cmd.Shared.Alerter.ShowAlert(System.String,QuickKit.Cmd.Enums.AlertType)
+  name: ShowAlert(string, AlertType)
+  href: api/QuickKit.Cmd.Shared.Alerter.html#QuickKit_Cmd_Shared_Alerter_ShowAlert_System_String_QuickKit_Cmd_Enums_AlertType_
+  commentId: M:QuickKit.Cmd.Shared.Alerter.ShowAlert(System.String,QuickKit.Cmd.Enums.AlertType)
+  name.vb: ShowAlert(String, AlertType)
+  fullName: QuickKit.Cmd.Shared.Alerter.ShowAlert(string, QuickKit.Cmd.Enums.AlertType)
+  fullName.vb: QuickKit.Cmd.Shared.Alerter.ShowAlert(String, QuickKit.Cmd.Enums.AlertType)
+  nameWithType: Alerter.ShowAlert(string, AlertType)
+  nameWithType.vb: Alerter.ShowAlert(String, AlertType)
+- uid: QuickKit.Cmd.Shared.Alerter.ShowAlert*
+  name: ShowAlert
+  href: api/QuickKit.Cmd.Shared.Alerter.html#QuickKit_Cmd_Shared_Alerter_ShowAlert_
+  commentId: Overload:QuickKit.Cmd.Shared.Alerter.ShowAlert
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Shared.Alerter.ShowAlert
+  nameWithType: Alerter.ShowAlert
+- uid: QuickKit.Cmd.Shared.Alerter.Success(System.String)
+  name: Success(string)
+  href: api/QuickKit.Cmd.Shared.Alerter.html#QuickKit_Cmd_Shared_Alerter_Success_System_String_
+  commentId: M:QuickKit.Cmd.Shared.Alerter.Success(System.String)
+  name.vb: Success(String)
+  fullName: QuickKit.Cmd.Shared.Alerter.Success(string)
+  fullName.vb: QuickKit.Cmd.Shared.Alerter.Success(String)
+  nameWithType: Alerter.Success(string)
+  nameWithType.vb: Alerter.Success(String)
+- uid: QuickKit.Cmd.Shared.Alerter.Success*
+  name: Success
+  href: api/QuickKit.Cmd.Shared.Alerter.html#QuickKit_Cmd_Shared_Alerter_Success_
+  commentId: Overload:QuickKit.Cmd.Shared.Alerter.Success
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Shared.Alerter.Success
+  nameWithType: Alerter.Success
+- uid: QuickKit.Cmd.Shared.Alerter.Warning(System.String)
+  name: Warning(string)
+  href: api/QuickKit.Cmd.Shared.Alerter.html#QuickKit_Cmd_Shared_Alerter_Warning_System_String_
+  commentId: M:QuickKit.Cmd.Shared.Alerter.Warning(System.String)
+  name.vb: Warning(String)
+  fullName: QuickKit.Cmd.Shared.Alerter.Warning(string)
+  fullName.vb: QuickKit.Cmd.Shared.Alerter.Warning(String)
+  nameWithType: Alerter.Warning(string)
+  nameWithType.vb: Alerter.Warning(String)
+- uid: QuickKit.Cmd.Shared.Alerter.Warning*
+  name: Warning
+  href: api/QuickKit.Cmd.Shared.Alerter.html#QuickKit_Cmd_Shared_Alerter_Warning_
+  commentId: Overload:QuickKit.Cmd.Shared.Alerter.Warning
+  isSpec: "True"
+  fullName: QuickKit.Cmd.Shared.Alerter.Warning
+  nameWithType: Alerter.Warning
+- uid: QuickKit.Configuration
+  name: QuickKit.Configuration
+  href: api/QuickKit.Configuration.html
+  commentId: N:QuickKit.Configuration
+  fullName: QuickKit.Configuration
+  nameWithType: QuickKit.Configuration
+- uid: QuickKit.Configuration.KitConfiguration
+  name: KitConfiguration
+  href: api/QuickKit.Configuration.KitConfiguration.html
+  commentId: T:QuickKit.Configuration.KitConfiguration
+  fullName: QuickKit.Configuration.KitConfiguration
+  nameWithType: KitConfiguration
+- uid: QuickKit.Configuration.KitConfiguration.AddQuickKit(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Func{QuickKit.Shared.Handlers.IDatabaseConnectionHandler})
+  name: AddQuickKit(IServiceCollection, string, Func<IDatabaseConnectionHandler>?)
+  href: api/QuickKit.Configuration.KitConfiguration.html#QuickKit_Configuration_KitConfiguration_AddQuickKit_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_String_System_Func_QuickKit_Shared_Handlers_IDatabaseConnectionHandler__
+  commentId: M:QuickKit.Configuration.KitConfiguration.AddQuickKit(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Func{QuickKit.Shared.Handlers.IDatabaseConnectionHandler})
+  name.vb: AddQuickKit(IServiceCollection, String, Func(Of IDatabaseConnectionHandler))
+  fullName: QuickKit.Configuration.KitConfiguration.AddQuickKit(Microsoft.Extensions.DependencyInjection.IServiceCollection, string, System.Func<QuickKit.Shared.Handlers.IDatabaseConnectionHandler>?)
+  fullName.vb: QuickKit.Configuration.KitConfiguration.AddQuickKit(Microsoft.Extensions.DependencyInjection.IServiceCollection, String, System.Func(Of QuickKit.Shared.Handlers.IDatabaseConnectionHandler))
+  nameWithType: KitConfiguration.AddQuickKit(IServiceCollection, string, Func<IDatabaseConnectionHandler>?)
+  nameWithType.vb: KitConfiguration.AddQuickKit(IServiceCollection, String, Func(Of IDatabaseConnectionHandler))
+- uid: QuickKit.Configuration.KitConfiguration.AddQuickKit*
+  name: AddQuickKit
+  href: api/QuickKit.Configuration.KitConfiguration.html#QuickKit_Configuration_KitConfiguration_AddQuickKit_
+  commentId: Overload:QuickKit.Configuration.KitConfiguration.AddQuickKit
+  isSpec: "True"
+  fullName: QuickKit.Configuration.KitConfiguration.AddQuickKit
+  nameWithType: KitConfiguration.AddQuickKit
+- uid: QuickKit.Repositories.Base
+  name: QuickKit.Repositories.Base
+  href: api/QuickKit.Repositories.Base.html
+  commentId: N:QuickKit.Repositories.Base
+  fullName: QuickKit.Repositories.Base
+  nameWithType: QuickKit.Repositories.Base
+- uid: QuickKit.Repositories.Base.IRepository`2
+  name: IRepository<TEntity, TKey>
+  href: api/QuickKit.Repositories.Base.IRepository-2.html
+  commentId: T:QuickKit.Repositories.Base.IRepository`2
+  name.vb: IRepository(Of TEntity, TKey)
+  fullName: QuickKit.Repositories.Base.IRepository<TEntity, TKey>
+  fullName.vb: QuickKit.Repositories.Base.IRepository(Of TEntity, TKey)
+  nameWithType: IRepository<TEntity, TKey>
+  nameWithType.vb: IRepository(Of TEntity, TKey)
+- uid: QuickKit.Repositories.Base.IRepository`2.AddAsync(`0)
+  name: AddAsync(TEntity)
+  href: api/QuickKit.Repositories.Base.IRepository-2.html#QuickKit_Repositories_Base_IRepository_2_AddAsync__0_
+  commentId: M:QuickKit.Repositories.Base.IRepository`2.AddAsync(`0)
+  fullName: QuickKit.Repositories.Base.IRepository<TEntity, TKey>.AddAsync(TEntity)
+  fullName.vb: QuickKit.Repositories.Base.IRepository(Of TEntity, TKey).AddAsync(TEntity)
+  nameWithType: IRepository<TEntity, TKey>.AddAsync(TEntity)
+  nameWithType.vb: IRepository(Of TEntity, TKey).AddAsync(TEntity)
+- uid: QuickKit.Repositories.Base.IRepository`2.AddAsync*
+  name: AddAsync
+  href: api/QuickKit.Repositories.Base.IRepository-2.html#QuickKit_Repositories_Base_IRepository_2_AddAsync_
+  commentId: Overload:QuickKit.Repositories.Base.IRepository`2.AddAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.IRepository<TEntity, TKey>.AddAsync
+  fullName.vb: QuickKit.Repositories.Base.IRepository(Of TEntity, TKey).AddAsync
+  nameWithType: IRepository<TEntity, TKey>.AddAsync
+  nameWithType.vb: IRepository(Of TEntity, TKey).AddAsync
+- uid: QuickKit.Repositories.Base.IRepository`2.DeleteAsync(`1)
+  name: DeleteAsync(TKey)
+  href: api/QuickKit.Repositories.Base.IRepository-2.html#QuickKit_Repositories_Base_IRepository_2_DeleteAsync__1_
+  commentId: M:QuickKit.Repositories.Base.IRepository`2.DeleteAsync(`1)
+  fullName: QuickKit.Repositories.Base.IRepository<TEntity, TKey>.DeleteAsync(TKey)
+  fullName.vb: QuickKit.Repositories.Base.IRepository(Of TEntity, TKey).DeleteAsync(TKey)
+  nameWithType: IRepository<TEntity, TKey>.DeleteAsync(TKey)
+  nameWithType.vb: IRepository(Of TEntity, TKey).DeleteAsync(TKey)
+- uid: QuickKit.Repositories.Base.IRepository`2.DeleteAsync*
+  name: DeleteAsync
+  href: api/QuickKit.Repositories.Base.IRepository-2.html#QuickKit_Repositories_Base_IRepository_2_DeleteAsync_
+  commentId: Overload:QuickKit.Repositories.Base.IRepository`2.DeleteAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.IRepository<TEntity, TKey>.DeleteAsync
+  fullName.vb: QuickKit.Repositories.Base.IRepository(Of TEntity, TKey).DeleteAsync
+  nameWithType: IRepository<TEntity, TKey>.DeleteAsync
+  nameWithType.vb: IRepository(Of TEntity, TKey).DeleteAsync
+- uid: QuickKit.Repositories.Base.IRepository`2.GetAllAsync
+  name: GetAllAsync()
+  href: api/QuickKit.Repositories.Base.IRepository-2.html#QuickKit_Repositories_Base_IRepository_2_GetAllAsync
+  commentId: M:QuickKit.Repositories.Base.IRepository`2.GetAllAsync
+  fullName: QuickKit.Repositories.Base.IRepository<TEntity, TKey>.GetAllAsync()
+  fullName.vb: QuickKit.Repositories.Base.IRepository(Of TEntity, TKey).GetAllAsync()
+  nameWithType: IRepository<TEntity, TKey>.GetAllAsync()
+  nameWithType.vb: IRepository(Of TEntity, TKey).GetAllAsync()
+- uid: QuickKit.Repositories.Base.IRepository`2.GetAllAsync*
+  name: GetAllAsync
+  href: api/QuickKit.Repositories.Base.IRepository-2.html#QuickKit_Repositories_Base_IRepository_2_GetAllAsync_
+  commentId: Overload:QuickKit.Repositories.Base.IRepository`2.GetAllAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.IRepository<TEntity, TKey>.GetAllAsync
+  fullName.vb: QuickKit.Repositories.Base.IRepository(Of TEntity, TKey).GetAllAsync
+  nameWithType: IRepository<TEntity, TKey>.GetAllAsync
+  nameWithType.vb: IRepository(Of TEntity, TKey).GetAllAsync
+- uid: QuickKit.Repositories.Base.IRepository`2.GetByIdAsync(`1)
+  name: GetByIdAsync(TKey)
+  href: api/QuickKit.Repositories.Base.IRepository-2.html#QuickKit_Repositories_Base_IRepository_2_GetByIdAsync__1_
+  commentId: M:QuickKit.Repositories.Base.IRepository`2.GetByIdAsync(`1)
+  fullName: QuickKit.Repositories.Base.IRepository<TEntity, TKey>.GetByIdAsync(TKey)
+  fullName.vb: QuickKit.Repositories.Base.IRepository(Of TEntity, TKey).GetByIdAsync(TKey)
+  nameWithType: IRepository<TEntity, TKey>.GetByIdAsync(TKey)
+  nameWithType.vb: IRepository(Of TEntity, TKey).GetByIdAsync(TKey)
+- uid: QuickKit.Repositories.Base.IRepository`2.GetByIdAsync*
+  name: GetByIdAsync
+  href: api/QuickKit.Repositories.Base.IRepository-2.html#QuickKit_Repositories_Base_IRepository_2_GetByIdAsync_
+  commentId: Overload:QuickKit.Repositories.Base.IRepository`2.GetByIdAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.IRepository<TEntity, TKey>.GetByIdAsync
+  fullName.vb: QuickKit.Repositories.Base.IRepository(Of TEntity, TKey).GetByIdAsync
+  nameWithType: IRepository<TEntity, TKey>.GetByIdAsync
+  nameWithType.vb: IRepository(Of TEntity, TKey).GetByIdAsync
+- uid: QuickKit.Repositories.Base.IRepository`2.GetByIdThrowAsync(`1,System.String)
+  name: GetByIdThrowAsync(TKey, string)
+  href: api/QuickKit.Repositories.Base.IRepository-2.html#QuickKit_Repositories_Base_IRepository_2_GetByIdThrowAsync__1_System_String_
+  commentId: M:QuickKit.Repositories.Base.IRepository`2.GetByIdThrowAsync(`1,System.String)
+  name.vb: GetByIdThrowAsync(TKey, String)
+  fullName: QuickKit.Repositories.Base.IRepository<TEntity, TKey>.GetByIdThrowAsync(TKey, string)
+  fullName.vb: QuickKit.Repositories.Base.IRepository(Of TEntity, TKey).GetByIdThrowAsync(TKey, String)
+  nameWithType: IRepository<TEntity, TKey>.GetByIdThrowAsync(TKey, string)
+  nameWithType.vb: IRepository(Of TEntity, TKey).GetByIdThrowAsync(TKey, String)
+- uid: QuickKit.Repositories.Base.IRepository`2.GetByIdThrowAsync*
+  name: GetByIdThrowAsync
+  href: api/QuickKit.Repositories.Base.IRepository-2.html#QuickKit_Repositories_Base_IRepository_2_GetByIdThrowAsync_
+  commentId: Overload:QuickKit.Repositories.Base.IRepository`2.GetByIdThrowAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.IRepository<TEntity, TKey>.GetByIdThrowAsync
+  fullName.vb: QuickKit.Repositories.Base.IRepository(Of TEntity, TKey).GetByIdThrowAsync
+  nameWithType: IRepository<TEntity, TKey>.GetByIdThrowAsync
+  nameWithType.vb: IRepository(Of TEntity, TKey).GetByIdThrowAsync
+- uid: QuickKit.Repositories.Base.IRepository`2.UpdateAsync(`0)
+  name: UpdateAsync(TEntity)
+  href: api/QuickKit.Repositories.Base.IRepository-2.html#QuickKit_Repositories_Base_IRepository_2_UpdateAsync__0_
+  commentId: M:QuickKit.Repositories.Base.IRepository`2.UpdateAsync(`0)
+  fullName: QuickKit.Repositories.Base.IRepository<TEntity, TKey>.UpdateAsync(TEntity)
+  fullName.vb: QuickKit.Repositories.Base.IRepository(Of TEntity, TKey).UpdateAsync(TEntity)
+  nameWithType: IRepository<TEntity, TKey>.UpdateAsync(TEntity)
+  nameWithType.vb: IRepository(Of TEntity, TKey).UpdateAsync(TEntity)
+- uid: QuickKit.Repositories.Base.IRepository`2.UpdateAsync*
+  name: UpdateAsync
+  href: api/QuickKit.Repositories.Base.IRepository-2.html#QuickKit_Repositories_Base_IRepository_2_UpdateAsync_
+  commentId: Overload:QuickKit.Repositories.Base.IRepository`2.UpdateAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.IRepository<TEntity, TKey>.UpdateAsync
+  fullName.vb: QuickKit.Repositories.Base.IRepository(Of TEntity, TKey).UpdateAsync
+  nameWithType: IRepository<TEntity, TKey>.UpdateAsync
+  nameWithType.vb: IRepository(Of TEntity, TKey).UpdateAsync
+- uid: QuickKit.Repositories.Base.Repository`2
+  name: Repository<TEntity, TKey>
+  href: api/QuickKit.Repositories.Base.Repository-2.html
+  commentId: T:QuickKit.Repositories.Base.Repository`2
+  name.vb: Repository(Of TEntity, TKey)
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey)
+  nameWithType: Repository<TEntity, TKey>
+  nameWithType.vb: Repository(Of TEntity, TKey)
+- uid: QuickKit.Repositories.Base.Repository`2.#ctor(FluentValidation.IValidator{`0},QuickKit.Shared.Handlers.IDatabaseConnectionHandler)
+  name: Repository(IValidator<TEntity>, IDatabaseConnectionHandler)
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2__ctor_FluentValidation_IValidator__0__QuickKit_Shared_Handlers_IDatabaseConnectionHandler_
+  commentId: M:QuickKit.Repositories.Base.Repository`2.#ctor(FluentValidation.IValidator{`0},QuickKit.Shared.Handlers.IDatabaseConnectionHandler)
+  name.vb: New(IValidator(Of TEntity), IDatabaseConnectionHandler)
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.Repository(FluentValidation.IValidator<TEntity>, QuickKit.Shared.Handlers.IDatabaseConnectionHandler)
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).New(FluentValidation.IValidator(Of TEntity), QuickKit.Shared.Handlers.IDatabaseConnectionHandler)
+  nameWithType: Repository<TEntity, TKey>.Repository(IValidator<TEntity>, IDatabaseConnectionHandler)
+  nameWithType.vb: Repository(Of TEntity, TKey).New(IValidator(Of TEntity), IDatabaseConnectionHandler)
+- uid: QuickKit.Repositories.Base.Repository`2.#ctor*
+  name: Repository
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2__ctor_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.Repository
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).New
+  nameWithType: Repository<TEntity, TKey>.Repository
+  nameWithType.vb: Repository(Of TEntity, TKey).New
+- uid: QuickKit.Repositories.Base.Repository`2.AddAsync(`0)
+  name: AddAsync(TEntity)
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_AddAsync__0_
+  commentId: M:QuickKit.Repositories.Base.Repository`2.AddAsync(`0)
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.AddAsync(TEntity)
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).AddAsync(TEntity)
+  nameWithType: Repository<TEntity, TKey>.AddAsync(TEntity)
+  nameWithType.vb: Repository(Of TEntity, TKey).AddAsync(TEntity)
+- uid: QuickKit.Repositories.Base.Repository`2.AddAsync*
+  name: AddAsync
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_AddAsync_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.AddAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.AddAsync
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).AddAsync
+  nameWithType: Repository<TEntity, TKey>.AddAsync
+  nameWithType.vb: Repository(Of TEntity, TKey).AddAsync
+- uid: QuickKit.Repositories.Base.Repository`2.ConnectToDatabase
+  name: ConnectToDatabase()
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ConnectToDatabase
+  commentId: M:QuickKit.Repositories.Base.Repository`2.ConnectToDatabase
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ConnectToDatabase()
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ConnectToDatabase()
+  nameWithType: Repository<TEntity, TKey>.ConnectToDatabase()
+  nameWithType.vb: Repository(Of TEntity, TKey).ConnectToDatabase()
+- uid: QuickKit.Repositories.Base.Repository`2.ConnectToDatabase*
+  name: ConnectToDatabase
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ConnectToDatabase_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.ConnectToDatabase
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ConnectToDatabase
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ConnectToDatabase
+  nameWithType: Repository<TEntity, TKey>.ConnectToDatabase
+  nameWithType.vb: Repository(Of TEntity, TKey).ConnectToDatabase
+- uid: QuickKit.Repositories.Base.Repository`2.DeleteAsync(`1)
+  name: DeleteAsync(TKey)
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_DeleteAsync__1_
+  commentId: M:QuickKit.Repositories.Base.Repository`2.DeleteAsync(`1)
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.DeleteAsync(TKey)
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).DeleteAsync(TKey)
+  nameWithType: Repository<TEntity, TKey>.DeleteAsync(TKey)
+  nameWithType.vb: Repository(Of TEntity, TKey).DeleteAsync(TKey)
+- uid: QuickKit.Repositories.Base.Repository`2.DeleteAsync*
+  name: DeleteAsync
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_DeleteAsync_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.DeleteAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.DeleteAsync
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).DeleteAsync
+  nameWithType: Repository<TEntity, TKey>.DeleteAsync
+  nameWithType.vb: Repository(Of TEntity, TKey).DeleteAsync
+- uid: QuickKit.Repositories.Base.Repository`2.ExecuteAsync(`0,Dapper.CommandDefinition,System.String)
+  name: ExecuteAsync(TEntity, CommandDefinition, string)
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ExecuteAsync__0_Dapper_CommandDefinition_System_String_
+  commentId: M:QuickKit.Repositories.Base.Repository`2.ExecuteAsync(`0,Dapper.CommandDefinition,System.String)
+  name.vb: ExecuteAsync(TEntity, CommandDefinition, String)
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ExecuteAsync(TEntity, Dapper.CommandDefinition, string)
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ExecuteAsync(TEntity, Dapper.CommandDefinition, String)
+  nameWithType: Repository<TEntity, TKey>.ExecuteAsync(TEntity, CommandDefinition, string)
+  nameWithType.vb: Repository(Of TEntity, TKey).ExecuteAsync(TEntity, CommandDefinition, String)
+- uid: QuickKit.Repositories.Base.Repository`2.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ExecuteAsync_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.ExecuteAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ExecuteAsync
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ExecuteAsync
+  nameWithType: Repository<TEntity, TKey>.ExecuteAsync
+  nameWithType.vb: Repository(Of TEntity, TKey).ExecuteAsync
+- uid: QuickKit.Repositories.Base.Repository`2.ExecuteOnDatabaseAsync(Dapper.CommandDefinition)
+  name: ExecuteOnDatabaseAsync(CommandDefinition)
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ExecuteOnDatabaseAsync_Dapper_CommandDefinition_
+  commentId: M:QuickKit.Repositories.Base.Repository`2.ExecuteOnDatabaseAsync(Dapper.CommandDefinition)
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ExecuteOnDatabaseAsync(Dapper.CommandDefinition)
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ExecuteOnDatabaseAsync(Dapper.CommandDefinition)
+  nameWithType: Repository<TEntity, TKey>.ExecuteOnDatabaseAsync(CommandDefinition)
+  nameWithType.vb: Repository(Of TEntity, TKey).ExecuteOnDatabaseAsync(CommandDefinition)
+- uid: QuickKit.Repositories.Base.Repository`2.ExecuteOnDatabaseAsync*
+  name: ExecuteOnDatabaseAsync
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ExecuteOnDatabaseAsync_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.ExecuteOnDatabaseAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ExecuteOnDatabaseAsync
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ExecuteOnDatabaseAsync
+  nameWithType: Repository<TEntity, TKey>.ExecuteOnDatabaseAsync
+  nameWithType.vb: Repository(Of TEntity, TKey).ExecuteOnDatabaseAsync
+- uid: QuickKit.Repositories.Base.Repository`2.ExecuteOnTransactionAsync*
+  name: ExecuteOnTransactionAsync
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ExecuteOnTransactionAsync_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.ExecuteOnTransactionAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ExecuteOnTransactionAsync
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ExecuteOnTransactionAsync
+  nameWithType: Repository<TEntity, TKey>.ExecuteOnTransactionAsync
+  nameWithType.vb: Repository(Of TEntity, TKey).ExecuteOnTransactionAsync
+- uid: QuickKit.Repositories.Base.Repository`2.ExecuteOnTransactionAsync``1(System.Data.IDbConnection,System.Func{System.Threading.Tasks.Task{``0}})
+  name: ExecuteOnTransactionAsync<TResult>(IDbConnection, Func<Task<TResult>>)
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ExecuteOnTransactionAsync__1_System_Data_IDbConnection_System_Func_System_Threading_Tasks_Task___0___
+  commentId: M:QuickKit.Repositories.Base.Repository`2.ExecuteOnTransactionAsync``1(System.Data.IDbConnection,System.Func{System.Threading.Tasks.Task{``0}})
+  name.vb: ExecuteOnTransactionAsync(Of TResult)(IDbConnection, Func(Of Task(Of TResult)))
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ExecuteOnTransactionAsync<TResult>(System.Data.IDbConnection, System.Func<System.Threading.Tasks.Task<TResult>>)
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ExecuteOnTransactionAsync(Of TResult)(System.Data.IDbConnection, System.Func(Of System.Threading.Tasks.Task(Of TResult)))
+  nameWithType: Repository<TEntity, TKey>.ExecuteOnTransactionAsync<TResult>(IDbConnection, Func<Task<TResult>>)
+  nameWithType.vb: Repository(Of TEntity, TKey).ExecuteOnTransactionAsync(Of TResult)(IDbConnection, Func(Of Task(Of TResult)))
+- uid: QuickKit.Repositories.Base.Repository`2.ExistsAsync(Dapper.CommandDefinition)
+  name: ExistsAsync(CommandDefinition)
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ExistsAsync_Dapper_CommandDefinition_
+  commentId: M:QuickKit.Repositories.Base.Repository`2.ExistsAsync(Dapper.CommandDefinition)
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ExistsAsync(Dapper.CommandDefinition)
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ExistsAsync(Dapper.CommandDefinition)
+  nameWithType: Repository<TEntity, TKey>.ExistsAsync(CommandDefinition)
+  nameWithType.vb: Repository(Of TEntity, TKey).ExistsAsync(CommandDefinition)
+- uid: QuickKit.Repositories.Base.Repository`2.ExistsAsync*
+  name: ExistsAsync
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ExistsAsync_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.ExistsAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ExistsAsync
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ExistsAsync
+  nameWithType: Repository<TEntity, TKey>.ExistsAsync
+  nameWithType.vb: Repository(Of TEntity, TKey).ExistsAsync
+- uid: QuickKit.Repositories.Base.Repository`2.GetAllAsync
+  name: GetAllAsync()
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_GetAllAsync
+  commentId: M:QuickKit.Repositories.Base.Repository`2.GetAllAsync
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.GetAllAsync()
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).GetAllAsync()
+  nameWithType: Repository<TEntity, TKey>.GetAllAsync()
+  nameWithType.vb: Repository(Of TEntity, TKey).GetAllAsync()
+- uid: QuickKit.Repositories.Base.Repository`2.GetAllAsync*
+  name: GetAllAsync
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_GetAllAsync_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.GetAllAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.GetAllAsync
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).GetAllAsync
+  nameWithType: Repository<TEntity, TKey>.GetAllAsync
+  nameWithType.vb: Repository(Of TEntity, TKey).GetAllAsync
+- uid: QuickKit.Repositories.Base.Repository`2.GetByIdAsync(`1)
+  name: GetByIdAsync(TKey)
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_GetByIdAsync__1_
+  commentId: M:QuickKit.Repositories.Base.Repository`2.GetByIdAsync(`1)
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.GetByIdAsync(TKey)
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).GetByIdAsync(TKey)
+  nameWithType: Repository<TEntity, TKey>.GetByIdAsync(TKey)
+  nameWithType.vb: Repository(Of TEntity, TKey).GetByIdAsync(TKey)
+- uid: QuickKit.Repositories.Base.Repository`2.GetByIdAsync*
+  name: GetByIdAsync
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_GetByIdAsync_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.GetByIdAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.GetByIdAsync
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).GetByIdAsync
+  nameWithType: Repository<TEntity, TKey>.GetByIdAsync
+  nameWithType.vb: Repository(Of TEntity, TKey).GetByIdAsync
+- uid: QuickKit.Repositories.Base.Repository`2.GetByIdThrowAsync(`1,System.String)
+  name: GetByIdThrowAsync(TKey, string)
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_GetByIdThrowAsync__1_System_String_
+  commentId: M:QuickKit.Repositories.Base.Repository`2.GetByIdThrowAsync(`1,System.String)
+  name.vb: GetByIdThrowAsync(TKey, String)
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.GetByIdThrowAsync(TKey, string)
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).GetByIdThrowAsync(TKey, String)
+  nameWithType: Repository<TEntity, TKey>.GetByIdThrowAsync(TKey, string)
+  nameWithType.vb: Repository(Of TEntity, TKey).GetByIdThrowAsync(TKey, String)
+- uid: QuickKit.Repositories.Base.Repository`2.GetByIdThrowAsync*
+  name: GetByIdThrowAsync
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_GetByIdThrowAsync_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.GetByIdThrowAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.GetByIdThrowAsync
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).GetByIdThrowAsync
+  nameWithType: Repository<TEntity, TKey>.GetByIdThrowAsync
+  nameWithType.vb: Repository(Of TEntity, TKey).GetByIdThrowAsync
+- uid: QuickKit.Repositories.Base.Repository`2.ProcedureNameAdd
+  name: ProcedureNameAdd
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ProcedureNameAdd
+  commentId: F:QuickKit.Repositories.Base.Repository`2.ProcedureNameAdd
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ProcedureNameAdd
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ProcedureNameAdd
+  nameWithType: Repository<TEntity, TKey>.ProcedureNameAdd
+  nameWithType.vb: Repository(Of TEntity, TKey).ProcedureNameAdd
+- uid: QuickKit.Repositories.Base.Repository`2.ProcedureNameDelete
+  name: ProcedureNameDelete
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ProcedureNameDelete
+  commentId: F:QuickKit.Repositories.Base.Repository`2.ProcedureNameDelete
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ProcedureNameDelete
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ProcedureNameDelete
+  nameWithType: Repository<TEntity, TKey>.ProcedureNameDelete
+  nameWithType.vb: Repository(Of TEntity, TKey).ProcedureNameDelete
+- uid: QuickKit.Repositories.Base.Repository`2.ProcedureNameGetAll
+  name: ProcedureNameGetAll
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ProcedureNameGetAll
+  commentId: F:QuickKit.Repositories.Base.Repository`2.ProcedureNameGetAll
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ProcedureNameGetAll
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ProcedureNameGetAll
+  nameWithType: Repository<TEntity, TKey>.ProcedureNameGetAll
+  nameWithType.vb: Repository(Of TEntity, TKey).ProcedureNameGetAll
+- uid: QuickKit.Repositories.Base.Repository`2.ProcedureNameGetById
+  name: ProcedureNameGetById
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ProcedureNameGetById
+  commentId: F:QuickKit.Repositories.Base.Repository`2.ProcedureNameGetById
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ProcedureNameGetById
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ProcedureNameGetById
+  nameWithType: Repository<TEntity, TKey>.ProcedureNameGetById
+  nameWithType.vb: Repository(Of TEntity, TKey).ProcedureNameGetById
+- uid: QuickKit.Repositories.Base.Repository`2.ProcedureNameUpdate
+  name: ProcedureNameUpdate
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_ProcedureNameUpdate
+  commentId: F:QuickKit.Repositories.Base.Repository`2.ProcedureNameUpdate
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.ProcedureNameUpdate
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).ProcedureNameUpdate
+  nameWithType: Repository<TEntity, TKey>.ProcedureNameUpdate
+  nameWithType.vb: Repository(Of TEntity, TKey).ProcedureNameUpdate
+- uid: QuickKit.Repositories.Base.Repository`2.QueryAsync*
+  name: QueryAsync
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_QueryAsync_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.QueryAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.QueryAsync
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).QueryAsync
+  nameWithType: Repository<TEntity, TKey>.QueryAsync
+  nameWithType.vb: Repository(Of TEntity, TKey).QueryAsync
+- uid: QuickKit.Repositories.Base.Repository`2.QueryAsync``1(Dapper.CommandDefinition)
+  name: QueryAsync<TResult>(CommandDefinition)
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_QueryAsync__1_Dapper_CommandDefinition_
+  commentId: M:QuickKit.Repositories.Base.Repository`2.QueryAsync``1(Dapper.CommandDefinition)
+  name.vb: QueryAsync(Of TResult)(CommandDefinition)
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.QueryAsync<TResult>(Dapper.CommandDefinition)
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).QueryAsync(Of TResult)(Dapper.CommandDefinition)
+  nameWithType: Repository<TEntity, TKey>.QueryAsync<TResult>(CommandDefinition)
+  nameWithType.vb: Repository(Of TEntity, TKey).QueryAsync(Of TResult)(CommandDefinition)
+- uid: QuickKit.Repositories.Base.Repository`2.QuerySingleOrDefaultAsync*
+  name: QuerySingleOrDefaultAsync
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_QuerySingleOrDefaultAsync_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.QuerySingleOrDefaultAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.QuerySingleOrDefaultAsync
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).QuerySingleOrDefaultAsync
+  nameWithType: Repository<TEntity, TKey>.QuerySingleOrDefaultAsync
+  nameWithType.vb: Repository(Of TEntity, TKey).QuerySingleOrDefaultAsync
+- uid: QuickKit.Repositories.Base.Repository`2.QuerySingleOrDefaultAsync``1(Dapper.CommandDefinition)
+  name: QuerySingleOrDefaultAsync<TResult>(CommandDefinition)
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_QuerySingleOrDefaultAsync__1_Dapper_CommandDefinition_
+  commentId: M:QuickKit.Repositories.Base.Repository`2.QuerySingleOrDefaultAsync``1(Dapper.CommandDefinition)
+  name.vb: QuerySingleOrDefaultAsync(Of TResult)(CommandDefinition)
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.QuerySingleOrDefaultAsync<TResult>(Dapper.CommandDefinition)
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).QuerySingleOrDefaultAsync(Of TResult)(Dapper.CommandDefinition)
+  nameWithType: Repository<TEntity, TKey>.QuerySingleOrDefaultAsync<TResult>(CommandDefinition)
+  nameWithType.vb: Repository(Of TEntity, TKey).QuerySingleOrDefaultAsync(Of TResult)(CommandDefinition)
+- uid: QuickKit.Repositories.Base.Repository`2.UpdateAsync(`0)
+  name: UpdateAsync(TEntity)
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_UpdateAsync__0_
+  commentId: M:QuickKit.Repositories.Base.Repository`2.UpdateAsync(`0)
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.UpdateAsync(TEntity)
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).UpdateAsync(TEntity)
+  nameWithType: Repository<TEntity, TKey>.UpdateAsync(TEntity)
+  nameWithType.vb: Repository(Of TEntity, TKey).UpdateAsync(TEntity)
+- uid: QuickKit.Repositories.Base.Repository`2.UpdateAsync*
+  name: UpdateAsync
+  href: api/QuickKit.Repositories.Base.Repository-2.html#QuickKit_Repositories_Base_Repository_2_UpdateAsync_
+  commentId: Overload:QuickKit.Repositories.Base.Repository`2.UpdateAsync
+  isSpec: "True"
+  fullName: QuickKit.Repositories.Base.Repository<TEntity, TKey>.UpdateAsync
+  fullName.vb: QuickKit.Repositories.Base.Repository(Of TEntity, TKey).UpdateAsync
+  nameWithType: Repository<TEntity, TKey>.UpdateAsync
+  nameWithType.vb: Repository(Of TEntity, TKey).UpdateAsync
+- uid: QuickKit.Security.Configuration
+  name: QuickKit.Security.Configuration
+  href: api/QuickKit.Security.Configuration.html
+  commentId: N:QuickKit.Security.Configuration
+  fullName: QuickKit.Security.Configuration
+  nameWithType: QuickKit.Security.Configuration
+- uid: QuickKit.Security.Configuration.Jwt
+  name: QuickKit.Security.Configuration.Jwt
+  href: api/QuickKit.Security.Configuration.Jwt.html
+  commentId: N:QuickKit.Security.Configuration.Jwt
+  fullName: QuickKit.Security.Configuration.Jwt
+  nameWithType: QuickKit.Security.Configuration.Jwt
+- uid: QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration
+  name: JwtBearerConfiguration
+  href: api/QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration.html
+  commentId: T:QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration
+  fullName: QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration
+  nameWithType: JwtBearerConfiguration
+- uid: QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration.Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Byte[],System.String,System.String)
+  name: Configure(IServiceCollection, byte[], string, string)
+  href: api/QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration.html#QuickKit_Security_Configuration_Jwt_JwtBearerConfiguration_Configure_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Byte___System_String_System_String_
+  commentId: M:QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration.Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Byte[],System.String,System.String)
+  name.vb: Configure(IServiceCollection, Byte(), String, String)
+  fullName: QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration.Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection, byte[], string, string)
+  fullName.vb: QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration.Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection, Byte(), String, String)
+  nameWithType: JwtBearerConfiguration.Configure(IServiceCollection, byte[], string, string)
+  nameWithType.vb: JwtBearerConfiguration.Configure(IServiceCollection, Byte(), String, String)
+- uid: QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration.Configure*
+  name: Configure
+  href: api/QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration.html#QuickKit_Security_Configuration_Jwt_JwtBearerConfiguration_Configure_
+  commentId: Overload:QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration.Configure
+  isSpec: "True"
+  fullName: QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration.Configure
+  nameWithType: JwtBearerConfiguration.Configure
+- uid: QuickKit.Security.Configuration.SecurityConfiguration
+  name: SecurityConfiguration
+  href: api/QuickKit.Security.Configuration.SecurityConfiguration.html
+  commentId: T:QuickKit.Security.Configuration.SecurityConfiguration
+  fullName: QuickKit.Security.Configuration.SecurityConfiguration
+  nameWithType: SecurityConfiguration
+- uid: QuickKit.Security.Configuration.SecurityConfiguration.AddJwtBearerKit(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Byte[],System.String,System.String)
+  name: AddJwtBearerKit(IServiceCollection, byte[], string, string)
+  href: api/QuickKit.Security.Configuration.SecurityConfiguration.html#QuickKit_Security_Configuration_SecurityConfiguration_AddJwtBearerKit_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Byte___System_String_System_String_
+  commentId: M:QuickKit.Security.Configuration.SecurityConfiguration.AddJwtBearerKit(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Byte[],System.String,System.String)
+  name.vb: AddJwtBearerKit(IServiceCollection, Byte(), String, String)
+  fullName: QuickKit.Security.Configuration.SecurityConfiguration.AddJwtBearerKit(Microsoft.Extensions.DependencyInjection.IServiceCollection, byte[], string, string)
+  fullName.vb: QuickKit.Security.Configuration.SecurityConfiguration.AddJwtBearerKit(Microsoft.Extensions.DependencyInjection.IServiceCollection, Byte(), String, String)
+  nameWithType: SecurityConfiguration.AddJwtBearerKit(IServiceCollection, byte[], string, string)
+  nameWithType.vb: SecurityConfiguration.AddJwtBearerKit(IServiceCollection, Byte(), String, String)
+- uid: QuickKit.Security.Configuration.SecurityConfiguration.AddJwtBearerKit*
+  name: AddJwtBearerKit
+  href: api/QuickKit.Security.Configuration.SecurityConfiguration.html#QuickKit_Security_Configuration_SecurityConfiguration_AddJwtBearerKit_
+  commentId: Overload:QuickKit.Security.Configuration.SecurityConfiguration.AddJwtBearerKit
+  isSpec: "True"
+  fullName: QuickKit.Security.Configuration.SecurityConfiguration.AddJwtBearerKit
+  nameWithType: SecurityConfiguration.AddJwtBearerKit
+- uid: QuickKit.Security.Jwt
+  name: QuickKit.Security.Jwt
+  href: api/QuickKit.Security.Jwt.html
+  commentId: N:QuickKit.Security.Jwt
+  fullName: QuickKit.Security.Jwt
+  nameWithType: QuickKit.Security.Jwt
+- uid: QuickKit.Security.Jwt.IJwtTokenGenerator
+  name: IJwtTokenGenerator
+  href: api/QuickKit.Security.Jwt.IJwtTokenGenerator.html
+  commentId: T:QuickKit.Security.Jwt.IJwtTokenGenerator
+  fullName: QuickKit.Security.Jwt.IJwtTokenGenerator
+  nameWithType: IJwtTokenGenerator
+- uid: QuickKit.Security.Jwt.IJwtTokenGenerator.Generate(QuickKit.Security.Jwt.JwtTokenRequest)
+  name: Generate(JwtTokenRequest)
+  href: api/QuickKit.Security.Jwt.IJwtTokenGenerator.html#QuickKit_Security_Jwt_IJwtTokenGenerator_Generate_QuickKit_Security_Jwt_JwtTokenRequest_
+  commentId: M:QuickKit.Security.Jwt.IJwtTokenGenerator.Generate(QuickKit.Security.Jwt.JwtTokenRequest)
+  fullName: QuickKit.Security.Jwt.IJwtTokenGenerator.Generate(QuickKit.Security.Jwt.JwtTokenRequest)
+  nameWithType: IJwtTokenGenerator.Generate(JwtTokenRequest)
+- uid: QuickKit.Security.Jwt.IJwtTokenGenerator.Generate*
+  name: Generate
+  href: api/QuickKit.Security.Jwt.IJwtTokenGenerator.html#QuickKit_Security_Jwt_IJwtTokenGenerator_Generate_
+  commentId: Overload:QuickKit.Security.Jwt.IJwtTokenGenerator.Generate
+  isSpec: "True"
+  fullName: QuickKit.Security.Jwt.IJwtTokenGenerator.Generate
+  nameWithType: IJwtTokenGenerator.Generate
+- uid: QuickKit.Security.Jwt.JwtTokenRequest
+  name: JwtTokenRequest
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html
+  commentId: T:QuickKit.Security.Jwt.JwtTokenRequest
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest
+  nameWithType: JwtTokenRequest
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.DateTime,System.String,System.String,System.String,System.Nullable{System.DateTime},System.String)
+  name: JwtTokenRequest(IEnumerable<Claim>, DateTime, string, string, string, DateTime?, string)
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest__ctor_System_Collections_Generic_IEnumerable_System_Security_Claims_Claim__System_DateTime_System_String_System_String_System_String_System_Nullable_System_DateTime__System_String_
+  commentId: M:QuickKit.Security.Jwt.JwtTokenRequest.#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.DateTime,System.String,System.String,System.String,System.Nullable{System.DateTime},System.String)
+  name.vb: New(IEnumerable(Of Claim), Date, String, String, String, Date?, String)
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.JwtTokenRequest(System.Collections.Generic.IEnumerable<System.Security.Claims.Claim>, System.DateTime, string, string, string, System.DateTime?, string)
+  fullName.vb: QuickKit.Security.Jwt.JwtTokenRequest.New(System.Collections.Generic.IEnumerable(Of System.Security.Claims.Claim), Date, String, String, String, Date?, String)
+  nameWithType: JwtTokenRequest.JwtTokenRequest(IEnumerable<Claim>, DateTime, string, string, string, DateTime?, string)
+  nameWithType.vb: JwtTokenRequest.New(IEnumerable(Of Claim), Date, String, String, String, Date?, String)
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.#ctor*
+  name: JwtTokenRequest
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest__ctor_
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.JwtTokenRequest
+  fullName.vb: QuickKit.Security.Jwt.JwtTokenRequest.New
+  nameWithType: JwtTokenRequest.JwtTokenRequest
+  nameWithType.vb: JwtTokenRequest.New
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Algorithm
+  name: Algorithm
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Algorithm
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.Algorithm
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Algorithm
+  nameWithType: JwtTokenRequest.Algorithm
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Algorithm*
+  name: Algorithm
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Algorithm_
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.Algorithm
+  isSpec: "True"
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Algorithm
+  nameWithType: JwtTokenRequest.Algorithm
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Audience
+  name: Audience
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Audience
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.Audience
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Audience
+  nameWithType: JwtTokenRequest.Audience
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Audience*
+  name: Audience
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Audience_
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.Audience
+  isSpec: "True"
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Audience
+  nameWithType: JwtTokenRequest.Audience
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Claims
+  name: Claims
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Claims
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.Claims
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Claims
+  nameWithType: JwtTokenRequest.Claims
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Claims*
+  name: Claims
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Claims_
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.Claims
+  isSpec: "True"
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Claims
+  nameWithType: JwtTokenRequest.Claims
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Expires
+  name: Expires
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Expires
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.Expires
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Expires
+  nameWithType: JwtTokenRequest.Expires
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Expires*
+  name: Expires
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Expires_
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.Expires
+  isSpec: "True"
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Expires
+  nameWithType: JwtTokenRequest.Expires
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Issuer
+  name: Issuer
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Issuer
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.Issuer
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Issuer
+  nameWithType: JwtTokenRequest.Issuer
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.Issuer*
+  name: Issuer
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_Issuer_
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.Issuer
+  isSpec: "True"
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.Issuer
+  nameWithType: JwtTokenRequest.Issuer
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.NotBefore
+  name: NotBefore
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_NotBefore
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.NotBefore
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.NotBefore
+  nameWithType: JwtTokenRequest.NotBefore
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.NotBefore*
+  name: NotBefore
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_NotBefore_
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.NotBefore
+  isSpec: "True"
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.NotBefore
+  nameWithType: JwtTokenRequest.NotBefore
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.TokenKey
+  name: TokenKey
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_TokenKey
+  commentId: P:QuickKit.Security.Jwt.JwtTokenRequest.TokenKey
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.TokenKey
+  nameWithType: JwtTokenRequest.TokenKey
+- uid: QuickKit.Security.Jwt.JwtTokenRequest.TokenKey*
+  name: TokenKey
+  href: api/QuickKit.Security.Jwt.JwtTokenRequest.html#QuickKit_Security_Jwt_JwtTokenRequest_TokenKey_
+  commentId: Overload:QuickKit.Security.Jwt.JwtTokenRequest.TokenKey
+  isSpec: "True"
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest.TokenKey
+  nameWithType: JwtTokenRequest.TokenKey
+- uid: QuickKit.Shared.Builders
+  name: QuickKit.Shared.Builders
+  href: api/QuickKit.Shared.Builders.html
+  commentId: N:QuickKit.Shared.Builders
+  fullName: QuickKit.Shared.Builders
+  nameWithType: QuickKit.Shared.Builders
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+  name: ProcedureNameEntityBuilder<TEntity>
+  href: api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html
+  commentId: T:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1
+  name.vb: ProcedureNameEntityBuilder(Of TEntity)
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity)
+  nameWithType: ProcedureNameEntityBuilder<TEntity>
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity)
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Add
+  name: Add
+  href: api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_Add
+  commentId: P:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Add
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.Add
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).Add
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.Add
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).Add
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Add*
+  name: Add
+  href: api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_Add_
+  commentId: Overload:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Add
+  isSpec: "True"
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.Add
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).Add
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.Add
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).Add
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Delete
+  name: Delete
+  href: api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_Delete
+  commentId: P:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Delete
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.Delete
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).Delete
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.Delete
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).Delete
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Delete*
+  name: Delete
+  href: api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_Delete_
+  commentId: Overload:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Delete
+  isSpec: "True"
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.Delete
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).Delete
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.Delete
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).Delete
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.ExistsById
+  name: ExistsById()
+  href: api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_ExistsById
+  commentId: M:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.ExistsById
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.ExistsById()
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).ExistsById()
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.ExistsById()
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).ExistsById()
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.ExistsById*
+  name: ExistsById
+  href: api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_ExistsById_
+  commentId: Overload:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.ExistsById
+  isSpec: "True"
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.ExistsById
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).ExistsById
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.ExistsById
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).ExistsById
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetAll
+  name: GetAll
+  href: api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_GetAll
+  commentId: P:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetAll
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.GetAll
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).GetAll
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.GetAll
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).GetAll
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetAll*
+  name: GetAll
+  href: api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_GetAll_
+  commentId: Overload:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetAll
+  isSpec: "True"
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.GetAll
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).GetAll
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.GetAll
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).GetAll
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetById
+  name: GetById
+  href: api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_GetById
+  commentId: P:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetById
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.GetById
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).GetById
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.GetById
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).GetById
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetById*
+  name: GetById
+  href: api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_GetById_
+  commentId: Overload:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.GetById
+  isSpec: "True"
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.GetById
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).GetById
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.GetById
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).GetById
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Update
+  name: Update
+  href: api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_Update
+  commentId: P:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Update
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.Update
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).Update
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.Update
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).Update
+- uid: QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Update*
+  name: Update
+  href: api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html#QuickKit_Shared_Builders_ProcedureNameEntityBuilder_1_Update_
+  commentId: Overload:QuickKit.Shared.Builders.ProcedureNameEntityBuilder`1.Update
+  isSpec: "True"
+  fullName: QuickKit.Shared.Builders.ProcedureNameEntityBuilder<TEntity>.Update
+  fullName.vb: QuickKit.Shared.Builders.ProcedureNameEntityBuilder(Of TEntity).Update
+  nameWithType: ProcedureNameEntityBuilder<TEntity>.Update
+  nameWithType.vb: ProcedureNameEntityBuilder(Of TEntity).Update
+- uid: QuickKit.Shared.Builders.ViewNameEntityBuilder`1
+  name: ViewNameEntityBuilder<TEntity>
+  href: api/QuickKit.Shared.Builders.ViewNameEntityBuilder-1.html
+  commentId: T:QuickKit.Shared.Builders.ViewNameEntityBuilder`1
+  name.vb: ViewNameEntityBuilder(Of TEntity)
+  fullName: QuickKit.Shared.Builders.ViewNameEntityBuilder<TEntity>
+  fullName.vb: QuickKit.Shared.Builders.ViewNameEntityBuilder(Of TEntity)
+  nameWithType: ViewNameEntityBuilder<TEntity>
+  nameWithType.vb: ViewNameEntityBuilder(Of TEntity)
+- uid: QuickKit.Shared.Builders.ViewNameEntityBuilder`1.All
+  name: All
+  href: api/QuickKit.Shared.Builders.ViewNameEntityBuilder-1.html#QuickKit_Shared_Builders_ViewNameEntityBuilder_1_All
+  commentId: P:QuickKit.Shared.Builders.ViewNameEntityBuilder`1.All
+  fullName: QuickKit.Shared.Builders.ViewNameEntityBuilder<TEntity>.All
+  fullName.vb: QuickKit.Shared.Builders.ViewNameEntityBuilder(Of TEntity).All
+  nameWithType: ViewNameEntityBuilder<TEntity>.All
+  nameWithType.vb: ViewNameEntityBuilder(Of TEntity).All
+- uid: QuickKit.Shared.Builders.ViewNameEntityBuilder`1.All*
+  name: All
+  href: api/QuickKit.Shared.Builders.ViewNameEntityBuilder-1.html#QuickKit_Shared_Builders_ViewNameEntityBuilder_1_All_
+  commentId: Overload:QuickKit.Shared.Builders.ViewNameEntityBuilder`1.All
+  isSpec: "True"
+  fullName: QuickKit.Shared.Builders.ViewNameEntityBuilder<TEntity>.All
+  fullName.vb: QuickKit.Shared.Builders.ViewNameEntityBuilder(Of TEntity).All
+  nameWithType: ViewNameEntityBuilder<TEntity>.All
+  nameWithType.vb: ViewNameEntityBuilder(Of TEntity).All
+- uid: QuickKit.Shared.Entities
+  name: QuickKit.Shared.Entities
+  href: api/QuickKit.Shared.Entities.html
+  commentId: N:QuickKit.Shared.Entities
+  fullName: QuickKit.Shared.Entities
+  nameWithType: QuickKit.Shared.Entities
+- uid: QuickKit.Shared.Entities.IEntity
+  name: IEntity
+  href: api/QuickKit.Shared.Entities.IEntity.html
+  commentId: T:QuickKit.Shared.Entities.IEntity
+  fullName: QuickKit.Shared.Entities.IEntity
+  nameWithType: IEntity
+- uid: QuickKit.Shared.Entities.IEntity`1
+  name: IEntity<TKey>
+  href: api/QuickKit.Shared.Entities.IEntity-1.html
+  commentId: T:QuickKit.Shared.Entities.IEntity`1
+  name.vb: IEntity(Of TKey)
+  fullName: QuickKit.Shared.Entities.IEntity<TKey>
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TKey)
+  nameWithType: IEntity<TKey>
+  nameWithType.vb: IEntity(Of TKey)
+- uid: QuickKit.Shared.Entities.IEntity`1.Id
+  name: Id
+  href: api/QuickKit.Shared.Entities.IEntity-1.html#QuickKit_Shared_Entities_IEntity_1_Id
+  commentId: P:QuickKit.Shared.Entities.IEntity`1.Id
+  fullName: QuickKit.Shared.Entities.IEntity<TKey>.Id
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TKey).Id
+  nameWithType: IEntity<TKey>.Id
+  nameWithType.vb: IEntity(Of TKey).Id
+- uid: QuickKit.Shared.Entities.IEntity`1.Id*
+  name: Id
+  href: api/QuickKit.Shared.Entities.IEntity-1.html#QuickKit_Shared_Entities_IEntity_1_Id_
+  commentId: Overload:QuickKit.Shared.Entities.IEntity`1.Id
+  isSpec: "True"
+  fullName: QuickKit.Shared.Entities.IEntity<TKey>.Id
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TKey).Id
+  nameWithType: IEntity<TKey>.Id
+  nameWithType.vb: IEntity(Of TKey).Id
+- uid: QuickKit.Shared.Entities.IEntity`3
+  name: IEntity<TEntity, TSnapshot, TKey>
+  href: api/QuickKit.Shared.Entities.IEntity-3.html
+  commentId: T:QuickKit.Shared.Entities.IEntity`3
+  name.vb: IEntity(Of TEntity, TSnapshot, TKey)
+  fullName: QuickKit.Shared.Entities.IEntity<TEntity, TSnapshot, TKey>
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TEntity, TSnapshot, TKey)
+  nameWithType: IEntity<TEntity, TSnapshot, TKey>
+  nameWithType.vb: IEntity(Of TEntity, TSnapshot, TKey)
+- uid: QuickKit.Shared.Entities.IEntity`3.FromSnapshot(`1)
+  name: FromSnapshot(TSnapshot)
+  href: api/QuickKit.Shared.Entities.IEntity-3.html#QuickKit_Shared_Entities_IEntity_3_FromSnapshot__1_
+  commentId: M:QuickKit.Shared.Entities.IEntity`3.FromSnapshot(`1)
+  fullName: QuickKit.Shared.Entities.IEntity<TEntity, TSnapshot, TKey>.FromSnapshot(TSnapshot)
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TEntity, TSnapshot, TKey).FromSnapshot(TSnapshot)
+  nameWithType: IEntity<TEntity, TSnapshot, TKey>.FromSnapshot(TSnapshot)
+  nameWithType.vb: IEntity(Of TEntity, TSnapshot, TKey).FromSnapshot(TSnapshot)
+- uid: QuickKit.Shared.Entities.IEntity`3.FromSnapshot*
+  name: FromSnapshot
+  href: api/QuickKit.Shared.Entities.IEntity-3.html#QuickKit_Shared_Entities_IEntity_3_FromSnapshot_
+  commentId: Overload:QuickKit.Shared.Entities.IEntity`3.FromSnapshot
+  isSpec: "True"
+  fullName: QuickKit.Shared.Entities.IEntity<TEntity, TSnapshot, TKey>.FromSnapshot
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TEntity, TSnapshot, TKey).FromSnapshot
+  nameWithType: IEntity<TEntity, TSnapshot, TKey>.FromSnapshot
+  nameWithType.vb: IEntity(Of TEntity, TSnapshot, TKey).FromSnapshot
+- uid: QuickKit.Shared.Entities.IEntity`3.ToSnapshot
+  name: ToSnapshot()
+  href: api/QuickKit.Shared.Entities.IEntity-3.html#QuickKit_Shared_Entities_IEntity_3_ToSnapshot
+  commentId: M:QuickKit.Shared.Entities.IEntity`3.ToSnapshot
+  fullName: QuickKit.Shared.Entities.IEntity<TEntity, TSnapshot, TKey>.ToSnapshot()
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TEntity, TSnapshot, TKey).ToSnapshot()
+  nameWithType: IEntity<TEntity, TSnapshot, TKey>.ToSnapshot()
+  nameWithType.vb: IEntity(Of TEntity, TSnapshot, TKey).ToSnapshot()
+- uid: QuickKit.Shared.Entities.IEntity`3.ToSnapshot*
+  name: ToSnapshot
+  href: api/QuickKit.Shared.Entities.IEntity-3.html#QuickKit_Shared_Entities_IEntity_3_ToSnapshot_
+  commentId: Overload:QuickKit.Shared.Entities.IEntity`3.ToSnapshot
+  isSpec: "True"
+  fullName: QuickKit.Shared.Entities.IEntity<TEntity, TSnapshot, TKey>.ToSnapshot
+  fullName.vb: QuickKit.Shared.Entities.IEntity(Of TEntity, TSnapshot, TKey).ToSnapshot
+  nameWithType: IEntity<TEntity, TSnapshot, TKey>.ToSnapshot
+  nameWithType.vb: IEntity(Of TEntity, TSnapshot, TKey).ToSnapshot
+- uid: QuickKit.Shared.Exceptions
+  name: QuickKit.Shared.Exceptions
+  href: api/QuickKit.Shared.Exceptions.html
+  commentId: N:QuickKit.Shared.Exceptions
+  fullName: QuickKit.Shared.Exceptions
+  nameWithType: QuickKit.Shared.Exceptions
+- uid: QuickKit.Shared.Exceptions.EntityNotFoundException
+  name: EntityNotFoundException
+  href: api/QuickKit.Shared.Exceptions.EntityNotFoundException.html
+  commentId: T:QuickKit.Shared.Exceptions.EntityNotFoundException
+  fullName: QuickKit.Shared.Exceptions.EntityNotFoundException
+  nameWithType: EntityNotFoundException
+- uid: QuickKit.Shared.Exceptions.EntityNotFoundException.#ctor(System.String)
+  name: EntityNotFoundException(string?)
+  href: api/QuickKit.Shared.Exceptions.EntityNotFoundException.html#QuickKit_Shared_Exceptions_EntityNotFoundException__ctor_System_String_
+  commentId: M:QuickKit.Shared.Exceptions.EntityNotFoundException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: QuickKit.Shared.Exceptions.EntityNotFoundException.EntityNotFoundException(string?)
+  fullName.vb: QuickKit.Shared.Exceptions.EntityNotFoundException.New(String)
+  nameWithType: EntityNotFoundException.EntityNotFoundException(string?)
+  nameWithType.vb: EntityNotFoundException.New(String)
+- uid: QuickKit.Shared.Exceptions.EntityNotFoundException.#ctor*
+  name: EntityNotFoundException
+  href: api/QuickKit.Shared.Exceptions.EntityNotFoundException.html#QuickKit_Shared_Exceptions_EntityNotFoundException__ctor_
+  commentId: Overload:QuickKit.Shared.Exceptions.EntityNotFoundException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.Shared.Exceptions.EntityNotFoundException.EntityNotFoundException
+  fullName.vb: QuickKit.Shared.Exceptions.EntityNotFoundException.New
+  nameWithType: EntityNotFoundException.EntityNotFoundException
+  nameWithType.vb: EntityNotFoundException.New
+- uid: QuickKit.Shared.Exceptions.NotFoundException
+  name: NotFoundException
+  href: api/QuickKit.Shared.Exceptions.NotFoundException.html
+  commentId: T:QuickKit.Shared.Exceptions.NotFoundException
+  fullName: QuickKit.Shared.Exceptions.NotFoundException
+  nameWithType: NotFoundException
+- uid: QuickKit.Shared.Exceptions.NotFoundException.#ctor(System.String)
+  name: NotFoundException(string)
+  href: api/QuickKit.Shared.Exceptions.NotFoundException.html#QuickKit_Shared_Exceptions_NotFoundException__ctor_System_String_
+  commentId: M:QuickKit.Shared.Exceptions.NotFoundException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: QuickKit.Shared.Exceptions.NotFoundException.NotFoundException(string)
+  fullName.vb: QuickKit.Shared.Exceptions.NotFoundException.New(String)
+  nameWithType: NotFoundException.NotFoundException(string)
+  nameWithType.vb: NotFoundException.New(String)
+- uid: QuickKit.Shared.Exceptions.NotFoundException.#ctor*
+  name: NotFoundException
+  href: api/QuickKit.Shared.Exceptions.NotFoundException.html#QuickKit_Shared_Exceptions_NotFoundException__ctor_
+  commentId: Overload:QuickKit.Shared.Exceptions.NotFoundException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.Shared.Exceptions.NotFoundException.NotFoundException
+  fullName.vb: QuickKit.Shared.Exceptions.NotFoundException.New
+  nameWithType: NotFoundException.NotFoundException
+  nameWithType.vb: NotFoundException.New
+- uid: QuickKit.Shared.Exceptions.SnapshotNullException
+  name: SnapshotNullException
+  href: api/QuickKit.Shared.Exceptions.SnapshotNullException.html
+  commentId: T:QuickKit.Shared.Exceptions.SnapshotNullException
+  fullName: QuickKit.Shared.Exceptions.SnapshotNullException
+  nameWithType: SnapshotNullException
+- uid: QuickKit.Shared.Exceptions.SnapshotNullException.#ctor(System.String)
+  name: SnapshotNullException(string)
+  href: api/QuickKit.Shared.Exceptions.SnapshotNullException.html#QuickKit_Shared_Exceptions_SnapshotNullException__ctor_System_String_
+  commentId: M:QuickKit.Shared.Exceptions.SnapshotNullException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: QuickKit.Shared.Exceptions.SnapshotNullException.SnapshotNullException(string)
+  fullName.vb: QuickKit.Shared.Exceptions.SnapshotNullException.New(String)
+  nameWithType: SnapshotNullException.SnapshotNullException(string)
+  nameWithType.vb: SnapshotNullException.New(String)
+- uid: QuickKit.Shared.Exceptions.SnapshotNullException.#ctor*
+  name: SnapshotNullException
+  href: api/QuickKit.Shared.Exceptions.SnapshotNullException.html#QuickKit_Shared_Exceptions_SnapshotNullException__ctor_
+  commentId: Overload:QuickKit.Shared.Exceptions.SnapshotNullException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.Shared.Exceptions.SnapshotNullException.SnapshotNullException
+  fullName.vb: QuickKit.Shared.Exceptions.SnapshotNullException.New
+  nameWithType: SnapshotNullException.SnapshotNullException
+  nameWithType.vb: SnapshotNullException.New
+- uid: QuickKit.Shared.Exceptions.ValidationFailureException
+  name: ValidationFailureException
+  href: api/QuickKit.Shared.Exceptions.ValidationFailureException.html
+  commentId: T:QuickKit.Shared.Exceptions.ValidationFailureException
+  fullName: QuickKit.Shared.Exceptions.ValidationFailureException
+  nameWithType: ValidationFailureException
+- uid: QuickKit.Shared.Exceptions.ValidationFailureException.#ctor(FluentValidation.Results.ValidationResult,System.String)
+  name: ValidationFailureException(ValidationResult, string?)
+  href: api/QuickKit.Shared.Exceptions.ValidationFailureException.html#QuickKit_Shared_Exceptions_ValidationFailureException__ctor_FluentValidation_Results_ValidationResult_System_String_
+  commentId: M:QuickKit.Shared.Exceptions.ValidationFailureException.#ctor(FluentValidation.Results.ValidationResult,System.String)
+  name.vb: New(ValidationResult, String)
+  fullName: QuickKit.Shared.Exceptions.ValidationFailureException.ValidationFailureException(FluentValidation.Results.ValidationResult, string?)
+  fullName.vb: QuickKit.Shared.Exceptions.ValidationFailureException.New(FluentValidation.Results.ValidationResult, String)
+  nameWithType: ValidationFailureException.ValidationFailureException(ValidationResult, string?)
+  nameWithType.vb: ValidationFailureException.New(ValidationResult, String)
+- uid: QuickKit.Shared.Exceptions.ValidationFailureException.#ctor*
+  name: ValidationFailureException
+  href: api/QuickKit.Shared.Exceptions.ValidationFailureException.html#QuickKit_Shared_Exceptions_ValidationFailureException__ctor_
+  commentId: Overload:QuickKit.Shared.Exceptions.ValidationFailureException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: QuickKit.Shared.Exceptions.ValidationFailureException.ValidationFailureException
+  fullName.vb: QuickKit.Shared.Exceptions.ValidationFailureException.New
+  nameWithType: ValidationFailureException.ValidationFailureException
+  nameWithType.vb: ValidationFailureException.New
+- uid: QuickKit.Shared.Exceptions.ValidationFailureException.Result
+  name: Result
+  href: api/QuickKit.Shared.Exceptions.ValidationFailureException.html#QuickKit_Shared_Exceptions_ValidationFailureException_Result
+  commentId: P:QuickKit.Shared.Exceptions.ValidationFailureException.Result
+  fullName: QuickKit.Shared.Exceptions.ValidationFailureException.Result
+  nameWithType: ValidationFailureException.Result
+- uid: QuickKit.Shared.Exceptions.ValidationFailureException.Result*
+  name: Result
+  href: api/QuickKit.Shared.Exceptions.ValidationFailureException.html#QuickKit_Shared_Exceptions_ValidationFailureException_Result_
+  commentId: Overload:QuickKit.Shared.Exceptions.ValidationFailureException.Result
+  isSpec: "True"
+  fullName: QuickKit.Shared.Exceptions.ValidationFailureException.Result
+  nameWithType: ValidationFailureException.Result
+- uid: QuickKit.Shared.Extensions
+  name: QuickKit.Shared.Extensions
+  href: api/QuickKit.Shared.Extensions.html
+  commentId: N:QuickKit.Shared.Extensions
+  fullName: QuickKit.Shared.Extensions
+  nameWithType: QuickKit.Shared.Extensions
+- uid: QuickKit.Shared.Extensions.StringExtensions
+  name: StringExtensions
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html
+  commentId: T:QuickKit.Shared.Extensions.StringExtensions
+  fullName: QuickKit.Shared.Extensions.StringExtensions
+  nameWithType: StringExtensions
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsEmpty(System.String)
+  name: IsEmpty(string?)
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsEmpty_System_String_
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.IsEmpty(System.String)
+  name.vb: IsEmpty(String)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsEmpty(string?)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.IsEmpty(String)
+  nameWithType: StringExtensions.IsEmpty(string?)
+  nameWithType.vb: StringExtensions.IsEmpty(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsEmpty*
+  name: IsEmpty
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsEmpty_
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.IsEmpty
+  isSpec: "True"
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsEmpty
+  nameWithType: StringExtensions.IsEmpty
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan(System.String,System.Int32)
+  name: IsHigherOrEqualThan(string?, int)
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsHigherOrEqualThan_System_String_System_Int32_
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan(System.String,System.Int32)
+  name.vb: IsHigherOrEqualThan(String, Integer)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan(string?, int)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan(String, Integer)
+  nameWithType: StringExtensions.IsHigherOrEqualThan(string?, int)
+  nameWithType.vb: StringExtensions.IsHigherOrEqualThan(String, Integer)
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan*
+  name: IsHigherOrEqualThan
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsHigherOrEqualThan_
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan
+  isSpec: "True"
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan
+  nameWithType: StringExtensions.IsHigherOrEqualThan
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsHigherThan(System.String,System.Int32)
+  name: IsHigherThan(string?, int)
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsHigherThan_System_String_System_Int32_
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.IsHigherThan(System.String,System.Int32)
+  name.vb: IsHigherThan(String, Integer)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsHigherThan(string?, int)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.IsHigherThan(String, Integer)
+  nameWithType: StringExtensions.IsHigherThan(string?, int)
+  nameWithType.vb: StringExtensions.IsHigherThan(String, Integer)
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsHigherThan*
+  name: IsHigherThan
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsHigherThan_
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.IsHigherThan
+  isSpec: "True"
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsHigherThan
+  nameWithType: StringExtensions.IsHigherThan
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan(System.String,System.Int32)
+  name: IsLowerOrEqualThan(string?, int)
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsLowerOrEqualThan_System_String_System_Int32_
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan(System.String,System.Int32)
+  name.vb: IsLowerOrEqualThan(String, Integer)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan(string?, int)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan(String, Integer)
+  nameWithType: StringExtensions.IsLowerOrEqualThan(string?, int)
+  nameWithType.vb: StringExtensions.IsLowerOrEqualThan(String, Integer)
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan*
+  name: IsLowerOrEqualThan
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsLowerOrEqualThan_
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan
+  isSpec: "True"
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan
+  nameWithType: StringExtensions.IsLowerOrEqualThan
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsLowerThan(System.String,System.Int32)
+  name: IsLowerThan(string?, int)
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsLowerThan_System_String_System_Int32_
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.IsLowerThan(System.String,System.Int32)
+  name.vb: IsLowerThan(String, Integer)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsLowerThan(string?, int)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.IsLowerThan(String, Integer)
+  nameWithType: StringExtensions.IsLowerThan(string?, int)
+  nameWithType.vb: StringExtensions.IsLowerThan(String, Integer)
+- uid: QuickKit.Shared.Extensions.StringExtensions.IsLowerThan*
+  name: IsLowerThan
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_IsLowerThan_
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.IsLowerThan
+  isSpec: "True"
+  fullName: QuickKit.Shared.Extensions.StringExtensions.IsLowerThan
+  nameWithType: StringExtensions.IsLowerThan
+- uid: QuickKit.Shared.Extensions.StringExtensions.To*
+  name: To
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_To_
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.To
+  isSpec: "True"
+  fullName: QuickKit.Shared.Extensions.StringExtensions.To
+  nameWithType: StringExtensions.To
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToBool(System.String)
+  name: ToBool(string)
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToBool_System_String_
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.ToBool(System.String)
+  name.vb: ToBool(String)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToBool(string)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.ToBool(String)
+  nameWithType: StringExtensions.ToBool(string)
+  nameWithType.vb: StringExtensions.ToBool(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToBool*
+  name: ToBool
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToBool_
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.ToBool
+  isSpec: "True"
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToBool
+  nameWithType: StringExtensions.ToBool
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDateOnly(System.String)
+  name: ToDateOnly(string)
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToDateOnly_System_String_
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.ToDateOnly(System.String)
+  name.vb: ToDateOnly(String)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDateOnly(string)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.ToDateOnly(String)
+  nameWithType: StringExtensions.ToDateOnly(string)
+  nameWithType.vb: StringExtensions.ToDateOnly(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDateOnly*
+  name: ToDateOnly
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToDateOnly_
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.ToDateOnly
+  isSpec: "True"
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDateOnly
+  nameWithType: StringExtensions.ToDateOnly
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDateTime(System.String)
+  name: ToDateTime(string)
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToDateTime_System_String_
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.ToDateTime(System.String)
+  name.vb: ToDateTime(String)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDateTime(string)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.ToDateTime(String)
+  nameWithType: StringExtensions.ToDateTime(string)
+  nameWithType.vb: StringExtensions.ToDateTime(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDateTime*
+  name: ToDateTime
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToDateTime_
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.ToDateTime
+  isSpec: "True"
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDateTime
+  nameWithType: StringExtensions.ToDateTime
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDecimal(System.String)
+  name: ToDecimal(string)
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToDecimal_System_String_
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.ToDecimal(System.String)
+  name.vb: ToDecimal(String)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDecimal(string)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.ToDecimal(String)
+  nameWithType: StringExtensions.ToDecimal(string)
+  nameWithType.vb: StringExtensions.ToDecimal(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDecimal*
+  name: ToDecimal
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToDecimal_
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.ToDecimal
+  isSpec: "True"
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDecimal
+  nameWithType: StringExtensions.ToDecimal
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDouble(System.String)
+  name: ToDouble(string)
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToDouble_System_String_
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.ToDouble(System.String)
+  name.vb: ToDouble(String)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDouble(string)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.ToDouble(String)
+  nameWithType: StringExtensions.ToDouble(string)
+  nameWithType.vb: StringExtensions.ToDouble(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToDouble*
+  name: ToDouble
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToDouble_
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.ToDouble
+  isSpec: "True"
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToDouble
+  nameWithType: StringExtensions.ToDouble
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToInt(System.String)
+  name: ToInt(string)
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToInt_System_String_
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.ToInt(System.String)
+  name.vb: ToInt(String)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToInt(string)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.ToInt(String)
+  nameWithType: StringExtensions.ToInt(string)
+  nameWithType.vb: StringExtensions.ToInt(String)
+- uid: QuickKit.Shared.Extensions.StringExtensions.ToInt*
+  name: ToInt
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_ToInt_
+  commentId: Overload:QuickKit.Shared.Extensions.StringExtensions.ToInt
+  isSpec: "True"
+  fullName: QuickKit.Shared.Extensions.StringExtensions.ToInt
+  nameWithType: StringExtensions.ToInt
+- uid: QuickKit.Shared.Extensions.StringExtensions.To``1(System.String)
+  name: To<TType>(string)
+  href: api/QuickKit.Shared.Extensions.StringExtensions.html#QuickKit_Shared_Extensions_StringExtensions_To__1_System_String_
+  commentId: M:QuickKit.Shared.Extensions.StringExtensions.To``1(System.String)
+  name.vb: To(Of TType)(String)
+  fullName: QuickKit.Shared.Extensions.StringExtensions.To<TType>(string)
+  fullName.vb: QuickKit.Shared.Extensions.StringExtensions.To(Of TType)(String)
+  nameWithType: StringExtensions.To<TType>(string)
+  nameWithType.vb: StringExtensions.To(Of TType)(String)
+- uid: QuickKit.Shared.Handlers
+  name: QuickKit.Shared.Handlers
+  href: api/QuickKit.Shared.Handlers.html
+  commentId: N:QuickKit.Shared.Handlers
+  fullName: QuickKit.Shared.Handlers
+  nameWithType: QuickKit.Shared.Handlers
+- uid: QuickKit.Shared.Handlers.IDatabaseConnectionHandler
+  name: IDatabaseConnectionHandler
+  href: api/QuickKit.Shared.Handlers.IDatabaseConnectionHandler.html
+  commentId: T:QuickKit.Shared.Handlers.IDatabaseConnectionHandler
+  fullName: QuickKit.Shared.Handlers.IDatabaseConnectionHandler
+  nameWithType: IDatabaseConnectionHandler
+- uid: QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect
+  name: Connect()
+  href: api/QuickKit.Shared.Handlers.IDatabaseConnectionHandler.html#QuickKit_Shared_Handlers_IDatabaseConnectionHandler_Connect
+  commentId: M:QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect
+  fullName: QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect()
+  nameWithType: IDatabaseConnectionHandler.Connect()
+- uid: QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect*
+  name: Connect
+  href: api/QuickKit.Shared.Handlers.IDatabaseConnectionHandler.html#QuickKit_Shared_Handlers_IDatabaseConnectionHandler_Connect_
+  commentId: Overload:QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect
+  isSpec: "True"
+  fullName: QuickKit.Shared.Handlers.IDatabaseConnectionHandler.Connect
+  nameWithType: IDatabaseConnectionHandler.Connect
+- uid: QuickKit.Shared.Services
+  name: QuickKit.Shared.Services
+  href: api/QuickKit.Shared.Services.html
+  commentId: N:QuickKit.Shared.Services
+  fullName: QuickKit.Shared.Services
+  nameWithType: QuickKit.Shared.Services
+- uid: QuickKit.Shared.Services.IService`2
+  name: IService<TEntity, TKey>
+  href: api/QuickKit.Shared.Services.IService-2.html
+  commentId: T:QuickKit.Shared.Services.IService`2
+  name.vb: IService(Of TEntity, TKey)
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey)
+  nameWithType: IService<TEntity, TKey>
+  nameWithType.vb: IService(Of TEntity, TKey)
+- uid: QuickKit.Shared.Services.IService`2.AddAsync(`0)
+  name: AddAsync(TEntity)
+  href: api/QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_AddAsync__0_
+  commentId: M:QuickKit.Shared.Services.IService`2.AddAsync(`0)
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.AddAsync(TEntity)
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).AddAsync(TEntity)
+  nameWithType: IService<TEntity, TKey>.AddAsync(TEntity)
+  nameWithType.vb: IService(Of TEntity, TKey).AddAsync(TEntity)
+- uid: QuickKit.Shared.Services.IService`2.AddAsync*
+  name: AddAsync
+  href: api/QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_AddAsync_
+  commentId: Overload:QuickKit.Shared.Services.IService`2.AddAsync
+  isSpec: "True"
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.AddAsync
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).AddAsync
+  nameWithType: IService<TEntity, TKey>.AddAsync
+  nameWithType.vb: IService(Of TEntity, TKey).AddAsync
+- uid: QuickKit.Shared.Services.IService`2.DeleteAsync(`1)
+  name: DeleteAsync(TKey)
+  href: api/QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_DeleteAsync__1_
+  commentId: M:QuickKit.Shared.Services.IService`2.DeleteAsync(`1)
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.DeleteAsync(TKey)
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).DeleteAsync(TKey)
+  nameWithType: IService<TEntity, TKey>.DeleteAsync(TKey)
+  nameWithType.vb: IService(Of TEntity, TKey).DeleteAsync(TKey)
+- uid: QuickKit.Shared.Services.IService`2.DeleteAsync*
+  name: DeleteAsync
+  href: api/QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_DeleteAsync_
+  commentId: Overload:QuickKit.Shared.Services.IService`2.DeleteAsync
+  isSpec: "True"
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.DeleteAsync
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).DeleteAsync
+  nameWithType: IService<TEntity, TKey>.DeleteAsync
+  nameWithType.vb: IService(Of TEntity, TKey).DeleteAsync
+- uid: QuickKit.Shared.Services.IService`2.GetAllAsync
+  name: GetAllAsync()
+  href: api/QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_GetAllAsync
+  commentId: M:QuickKit.Shared.Services.IService`2.GetAllAsync
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.GetAllAsync()
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).GetAllAsync()
+  nameWithType: IService<TEntity, TKey>.GetAllAsync()
+  nameWithType.vb: IService(Of TEntity, TKey).GetAllAsync()
+- uid: QuickKit.Shared.Services.IService`2.GetAllAsync*
+  name: GetAllAsync
+  href: api/QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_GetAllAsync_
+  commentId: Overload:QuickKit.Shared.Services.IService`2.GetAllAsync
+  isSpec: "True"
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.GetAllAsync
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).GetAllAsync
+  nameWithType: IService<TEntity, TKey>.GetAllAsync
+  nameWithType.vb: IService(Of TEntity, TKey).GetAllAsync
+- uid: QuickKit.Shared.Services.IService`2.GetByIdAsync(`1)
+  name: GetByIdAsync(TKey)
+  href: api/QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_GetByIdAsync__1_
+  commentId: M:QuickKit.Shared.Services.IService`2.GetByIdAsync(`1)
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.GetByIdAsync(TKey)
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).GetByIdAsync(TKey)
+  nameWithType: IService<TEntity, TKey>.GetByIdAsync(TKey)
+  nameWithType.vb: IService(Of TEntity, TKey).GetByIdAsync(TKey)
+- uid: QuickKit.Shared.Services.IService`2.GetByIdAsync*
+  name: GetByIdAsync
+  href: api/QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_GetByIdAsync_
+  commentId: Overload:QuickKit.Shared.Services.IService`2.GetByIdAsync
+  isSpec: "True"
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.GetByIdAsync
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).GetByIdAsync
+  nameWithType: IService<TEntity, TKey>.GetByIdAsync
+  nameWithType.vb: IService(Of TEntity, TKey).GetByIdAsync
+- uid: QuickKit.Shared.Services.IService`2.UpdateAsync(`0)
+  name: UpdateAsync(TEntity)
+  href: api/QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_UpdateAsync__0_
+  commentId: M:QuickKit.Shared.Services.IService`2.UpdateAsync(`0)
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.UpdateAsync(TEntity)
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).UpdateAsync(TEntity)
+  nameWithType: IService<TEntity, TKey>.UpdateAsync(TEntity)
+  nameWithType.vb: IService(Of TEntity, TKey).UpdateAsync(TEntity)
+- uid: QuickKit.Shared.Services.IService`2.UpdateAsync*
+  name: UpdateAsync
+  href: api/QuickKit.Shared.Services.IService-2.html#QuickKit_Shared_Services_IService_2_UpdateAsync_
+  commentId: Overload:QuickKit.Shared.Services.IService`2.UpdateAsync
+  isSpec: "True"
+  fullName: QuickKit.Shared.Services.IService<TEntity, TKey>.UpdateAsync
+  fullName.vb: QuickKit.Shared.Services.IService(Of TEntity, TKey).UpdateAsync
+  nameWithType: IService<TEntity, TKey>.UpdateAsync
+  nameWithType.vb: IService(Of TEntity, TKey).UpdateAsync
+- uid: QuickKit.Shared.Validations.Common
+  name: QuickKit.Shared.Validations.Common
+  href: api/QuickKit.Shared.Validations.Common.html
+  commentId: N:QuickKit.Shared.Validations.Common
+  fullName: QuickKit.Shared.Validations.Common
+  nameWithType: QuickKit.Shared.Validations.Common
+- uid: QuickKit.Shared.Validations.Common.Validator`1
+  name: Validator<TEntity>
+  href: api/QuickKit.Shared.Validations.Common.Validator-1.html
+  commentId: T:QuickKit.Shared.Validations.Common.Validator`1
+  name.vb: Validator(Of TEntity)
+  fullName: QuickKit.Shared.Validations.Common.Validator<TEntity>
+  fullName.vb: QuickKit.Shared.Validations.Common.Validator(Of TEntity)
+  nameWithType: Validator<TEntity>
+  nameWithType.vb: Validator(Of TEntity)
+- uid: QuickKit.Shared.Validations.Extensions
+  name: QuickKit.Shared.Validations.Extensions
+  href: api/QuickKit.Shared.Validations.Extensions.html
+  commentId: N:QuickKit.Shared.Validations.Extensions
+  fullName: QuickKit.Shared.Validations.Extensions
+  nameWithType: QuickKit.Shared.Validations.Extensions
+- uid: QuickKit.Shared.Validations.Extensions.FluentValidationExtension
+  name: FluentValidationExtension
+  href: api/QuickKit.Shared.Validations.Extensions.FluentValidationExtension.html
+  commentId: T:QuickKit.Shared.Validations.Extensions.FluentValidationExtension
+  fullName: QuickKit.Shared.Validations.Extensions.FluentValidationExtension
+  nameWithType: FluentValidationExtension
+- uid: QuickKit.Shared.Validations.Extensions.FluentValidationExtension.ValidateThrowAsync*
+  name: ValidateThrowAsync
+  href: api/QuickKit.Shared.Validations.Extensions.FluentValidationExtension.html#QuickKit_Shared_Validations_Extensions_FluentValidationExtension_ValidateThrowAsync_
+  commentId: Overload:QuickKit.Shared.Validations.Extensions.FluentValidationExtension.ValidateThrowAsync
+  isSpec: "True"
+  fullName: QuickKit.Shared.Validations.Extensions.FluentValidationExtension.ValidateThrowAsync
+  nameWithType: FluentValidationExtension.ValidateThrowAsync
+- uid: QuickKit.Shared.Validations.Extensions.FluentValidationExtension.ValidateThrowAsync``1(FluentValidation.IValidator{``0},``0,System.String)
+  name: ValidateThrowAsync<TEntity>(IValidator<TEntity>, TEntity, string)
+  href: api/QuickKit.Shared.Validations.Extensions.FluentValidationExtension.html#QuickKit_Shared_Validations_Extensions_FluentValidationExtension_ValidateThrowAsync__1_FluentValidation_IValidator___0____0_System_String_
+  commentId: M:QuickKit.Shared.Validations.Extensions.FluentValidationExtension.ValidateThrowAsync``1(FluentValidation.IValidator{``0},``0,System.String)
+  name.vb: ValidateThrowAsync(Of TEntity)(IValidator(Of TEntity), TEntity, String)
+  fullName: QuickKit.Shared.Validations.Extensions.FluentValidationExtension.ValidateThrowAsync<TEntity>(FluentValidation.IValidator<TEntity>, TEntity, string)
+  fullName.vb: QuickKit.Shared.Validations.Extensions.FluentValidationExtension.ValidateThrowAsync(Of TEntity)(FluentValidation.IValidator(Of TEntity), TEntity, String)
+  nameWithType: FluentValidationExtension.ValidateThrowAsync<TEntity>(IValidator<TEntity>, TEntity, string)
+  nameWithType.vb: FluentValidationExtension.ValidateThrowAsync(Of TEntity)(IValidator(Of TEntity), TEntity, String)
+- uid: QuickKit.Tests.Repositories
+  name: QuickKit.Tests.Repositories
+  href: api/QuickKit.Tests.Repositories.html
+  commentId: N:QuickKit.Tests.Repositories
+  fullName: QuickKit.Tests.Repositories
+  nameWithType: QuickKit.Tests.Repositories
+- uid: QuickKit.Tests.Repositories.RepositoryBaseTests
+  name: RepositoryBaseTests
+  href: api/QuickKit.Tests.Repositories.RepositoryBaseTests.html
+  commentId: T:QuickKit.Tests.Repositories.RepositoryBaseTests
+  fullName: QuickKit.Tests.Repositories.RepositoryBaseTests
+  nameWithType: RepositoryBaseTests
+- uid: QuickKit.Tests.Repositories.RepositoryBaseTests.Add_ShouldComplete
+  name: Add_ShouldComplete()
+  href: api/QuickKit.Tests.Repositories.RepositoryBaseTests.html#QuickKit_Tests_Repositories_RepositoryBaseTests_Add_ShouldComplete
+  commentId: M:QuickKit.Tests.Repositories.RepositoryBaseTests.Add_ShouldComplete
+  fullName: QuickKit.Tests.Repositories.RepositoryBaseTests.Add_ShouldComplete()
+  nameWithType: RepositoryBaseTests.Add_ShouldComplete()
+- uid: QuickKit.Tests.Repositories.RepositoryBaseTests.Add_ShouldComplete*
+  name: Add_ShouldComplete
+  href: api/QuickKit.Tests.Repositories.RepositoryBaseTests.html#QuickKit_Tests_Repositories_RepositoryBaseTests_Add_ShouldComplete_
+  commentId: Overload:QuickKit.Tests.Repositories.RepositoryBaseTests.Add_ShouldComplete
+  isSpec: "True"
+  fullName: QuickKit.Tests.Repositories.RepositoryBaseTests.Add_ShouldComplete
+  nameWithType: RepositoryBaseTests.Add_ShouldComplete
+- uid: QuickKit.Tests.Repositories.TestEntities
+  name: QuickKit.Tests.Repositories.TestEntities
+  href: api/QuickKit.Tests.Repositories.TestEntities.html
+  commentId: N:QuickKit.Tests.Repositories.TestEntities
+  fullName: QuickKit.Tests.Repositories.TestEntities
+  nameWithType: QuickKit.Tests.Repositories.TestEntities
+- uid: QuickKit.Tests.Repositories.TestEntities.PersonEntity
+  name: PersonEntity
+  href: api/QuickKit.Tests.Repositories.TestEntities.PersonEntity.html
+  commentId: T:QuickKit.Tests.Repositories.TestEntities.PersonEntity
+  fullName: QuickKit.Tests.Repositories.TestEntities.PersonEntity
+  nameWithType: PersonEntity
+- uid: QuickKit.Tests.Repositories.TestEntities.PersonEntity.Id
+  name: Id
+  href: api/QuickKit.Tests.Repositories.TestEntities.PersonEntity.html#QuickKit_Tests_Repositories_TestEntities_PersonEntity_Id
+  commentId: P:QuickKit.Tests.Repositories.TestEntities.PersonEntity.Id
+  fullName: QuickKit.Tests.Repositories.TestEntities.PersonEntity.Id
+  nameWithType: PersonEntity.Id
+- uid: QuickKit.Tests.Repositories.TestEntities.PersonEntity.Id*
+  name: Id
+  href: api/QuickKit.Tests.Repositories.TestEntities.PersonEntity.html#QuickKit_Tests_Repositories_TestEntities_PersonEntity_Id_
+  commentId: Overload:QuickKit.Tests.Repositories.TestEntities.PersonEntity.Id
+  isSpec: "True"
+  fullName: QuickKit.Tests.Repositories.TestEntities.PersonEntity.Id
+  nameWithType: PersonEntity.Id
+- uid: QuickKit.Tests.Shared.Builders
+  name: QuickKit.Tests.Shared.Builders
+  href: api/QuickKit.Tests.Shared.Builders.html
+  commentId: N:QuickKit.Tests.Shared.Builders
+  fullName: QuickKit.Tests.Shared.Builders
+  nameWithType: QuickKit.Tests.Shared.Builders
+- uid: QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests
+  name: ProcedureNameEntityBuilderTests
+  href: api/QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.html
+  commentId: T:QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests
+  fullName: QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests
+  nameWithType: ProcedureNameEntityBuilderTests
+- uid: QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity
+  name: Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity()
+  href: api/QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.html#QuickKit_Tests_Shared_Builders_ProcedureNameEntityBuilderTests_Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity
+  commentId: M:QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity
+  fullName: QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity()
+  nameWithType: ProcedureNameEntityBuilderTests.Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity()
+- uid: QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity*
+  name: Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity
+  href: api/QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.html#QuickKit_Tests_Shared_Builders_ProcedureNameEntityBuilderTests_Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity_
+  commentId: Overload:QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity
+  isSpec: "True"
+  fullName: QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity
+  nameWithType: ProcedureNameEntityBuilderTests.Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity
+- uid: QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests
+  name: ViewNameEntityBuilderTests
+  href: api/QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.html
+  commentId: T:QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests
+  fullName: QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests
+  nameWithType: ViewNameEntityBuilderTests
+- uid: QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.Build_shouldReturnViewNameWithoutEntity
+  name: Build_shouldReturnViewNameWithoutEntity()
+  href: api/QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.html#QuickKit_Tests_Shared_Builders_ViewNameEntityBuilderTests_Build_shouldReturnViewNameWithoutEntity
+  commentId: M:QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.Build_shouldReturnViewNameWithoutEntity
+  fullName: QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.Build_shouldReturnViewNameWithoutEntity()
+  nameWithType: ViewNameEntityBuilderTests.Build_shouldReturnViewNameWithoutEntity()
+- uid: QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.Build_shouldReturnViewNameWithoutEntity*
+  name: Build_shouldReturnViewNameWithoutEntity
+  href: api/QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.html#QuickKit_Tests_Shared_Builders_ViewNameEntityBuilderTests_Build_shouldReturnViewNameWithoutEntity_
+  commentId: Overload:QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.Build_shouldReturnViewNameWithoutEntity
+  isSpec: "True"
+  fullName: QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.Build_shouldReturnViewNameWithoutEntity
+  nameWithType: ViewNameEntityBuilderTests.Build_shouldReturnViewNameWithoutEntity

@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Exceptions/EntityNotFoundException.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: EntityNotFoundException
     path: QuickKit.Shared/Exceptions/EntityNotFoundException.cs
@@ -67,7 +67,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Exceptions/EntityNotFoundException.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: .ctor
     path: QuickKit.Shared/Exceptions/EntityNotFoundException.cs

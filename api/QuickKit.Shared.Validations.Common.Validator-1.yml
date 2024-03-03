@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Validations/Common/Validator.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Validator
     path: QuickKit.Shared/Validations/Common/Validator.cs

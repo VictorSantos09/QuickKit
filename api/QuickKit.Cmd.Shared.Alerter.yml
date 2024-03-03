@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Shared/Alerter.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Alerter
     path: QuickKit.Console/Shared/Alerter.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Shared/Alerter.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Error
     path: QuickKit.Console/Shared/Alerter.cs
@@ -87,7 +87,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Shared/Alerter.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Success
     path: QuickKit.Console/Shared/Alerter.cs
@@ -119,7 +119,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Shared/Alerter.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Warning
     path: QuickKit.Console/Shared/Alerter.cs
@@ -151,7 +151,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Shared/Alerter.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ShowAlert
     path: QuickKit.Console/Shared/Alerter.cs
@@ -185,7 +185,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Shared/Alerter.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Alert
     path: QuickKit.Console/Shared/Alerter.cs

@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/Interfaces/IMenuSub.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IMenuSub
     path: QuickKit.Console/Menu/Interfaces/IMenuSub.cs
@@ -48,7 +48,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/Interfaces/IMenuSub.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ShowPreviousOption
     path: QuickKit.Console/Menu/Interfaces/IMenuSub.cs
@@ -74,7 +74,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/Interfaces/IMenuSub.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Back
     path: QuickKit.Console/Menu/Interfaces/IMenuSub.cs

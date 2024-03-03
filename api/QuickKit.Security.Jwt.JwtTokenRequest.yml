@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: QuickKit.Security/Jwt/JwtTokenRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: JwtTokenRequest
     path: QuickKit.Security/Jwt/JwtTokenRequest.cs
@@ -57,7 +57,7 @@ items:
   source:
     remote:
       path: QuickKit.Security/Jwt/JwtTokenRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Claims
     path: QuickKit.Security/Jwt/JwtTokenRequest.cs
@@ -86,7 +86,7 @@ items:
   source:
     remote:
       path: QuickKit.Security/Jwt/JwtTokenRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Expires
     path: QuickKit.Security/Jwt/JwtTokenRequest.cs
@@ -115,7 +115,7 @@ items:
   source:
     remote:
       path: QuickKit.Security/Jwt/JwtTokenRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: TokenKey
     path: QuickKit.Security/Jwt/JwtTokenRequest.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: QuickKit.Security/Jwt/JwtTokenRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Issuer
     path: QuickKit.Security/Jwt/JwtTokenRequest.cs
@@ -173,7 +173,7 @@ items:
   source:
     remote:
       path: QuickKit.Security/Jwt/JwtTokenRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Audience
     path: QuickKit.Security/Jwt/JwtTokenRequest.cs
@@ -202,7 +202,7 @@ items:
   source:
     remote:
       path: QuickKit.Security/Jwt/JwtTokenRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: NotBefore
     path: QuickKit.Security/Jwt/JwtTokenRequest.cs
@@ -231,7 +231,7 @@ items:
   source:
     remote:
       path: QuickKit.Security/Jwt/JwtTokenRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Algorithm
     path: QuickKit.Security/Jwt/JwtTokenRequest.cs
@@ -260,7 +260,7 @@ items:
   source:
     remote:
       path: QuickKit.Security/Jwt/JwtTokenRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: .ctor
     path: QuickKit.Security/Jwt/JwtTokenRequest.cs

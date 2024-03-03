@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuNoOption.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: MenuNoOption
     path: QuickKit.Console/Menu/MenuNoOption.cs
@@ -53,7 +53,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuNoOption.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Show
     path: QuickKit.Console/Menu/MenuNoOption.cs

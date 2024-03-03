@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Exceptions/ValidationFailureException.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ValidationFailureException
     path: QuickKit.Shared/Exceptions/ValidationFailureException.cs
@@ -68,7 +68,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Exceptions/ValidationFailureException.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Result
     path: QuickKit.Shared/Exceptions/ValidationFailureException.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Exceptions/ValidationFailureException.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: .ctor
     path: QuickKit.Shared/Exceptions/ValidationFailureException.cs

@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Services/IService.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IService
     path: QuickKit.Shared/Services/IService.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Services/IService.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GetAllAsync
     path: QuickKit.Shared/Services/IService.cs
@@ -88,7 +88,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Services/IService.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GetByIdAsync
     path: QuickKit.Shared/Services/IService.cs
@@ -125,7 +125,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Services/IService.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: AddAsync
     path: QuickKit.Shared/Services/IService.cs
@@ -162,7 +162,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Services/IService.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: UpdateAsync
     path: QuickKit.Shared/Services/IService.cs
@@ -199,7 +199,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Services/IService.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: DeleteAsync
     path: QuickKit.Shared/Services/IService.cs

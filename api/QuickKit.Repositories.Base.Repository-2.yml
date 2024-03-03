@@ -34,7 +34,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Repository
     path: QuickKit/Repositories/Base/Repository.cs
@@ -79,7 +79,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ProcedureNameAdd
     path: QuickKit/Repositories/Base/Repository.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ProcedureNameDelete
     path: QuickKit/Repositories/Base/Repository.cs
@@ -137,7 +137,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ProcedureNameUpdate
     path: QuickKit/Repositories/Base/Repository.cs
@@ -166,7 +166,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ProcedureNameGetAll
     path: QuickKit/Repositories/Base/Repository.cs
@@ -195,7 +195,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ProcedureNameGetById
     path: QuickKit/Repositories/Base/Repository.cs
@@ -224,7 +224,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: .ctor
     path: QuickKit/Repositories/Base/Repository.cs
@@ -262,7 +262,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GetAllAsync
     path: QuickKit/Repositories/Base/Repository.cs
@@ -293,7 +293,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: AddAsync
     path: QuickKit/Repositories/Base/Repository.cs
@@ -327,7 +327,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: UpdateAsync
     path: QuickKit/Repositories/Base/Repository.cs
@@ -361,7 +361,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: DeleteAsync
     path: QuickKit/Repositories/Base/Repository.cs
@@ -395,7 +395,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GetByIdAsync
     path: QuickKit/Repositories/Base/Repository.cs
@@ -429,7 +429,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GetByIdThrowAsync
     path: QuickKit/Repositories/Base/Repository.cs
@@ -466,7 +466,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ExistsAsync
     path: QuickKit/Repositories/Base/Repository.cs
@@ -503,7 +503,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ConnectToDatabase
     path: QuickKit/Repositories/Base/Repository.cs
@@ -536,7 +536,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ExecuteOnDatabaseAsync
     path: QuickKit/Repositories/Base/Repository.cs
@@ -573,7 +573,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ExecuteOnTransactionAsync
     path: QuickKit/Repositories/Base/Repository.cs
@@ -617,7 +617,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ExecuteAsync
     path: QuickKit/Repositories/Base/Repository.cs
@@ -661,7 +661,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: QueryAsync
     path: QuickKit/Repositories/Base/Repository.cs
@@ -702,7 +702,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/Repository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: QuerySingleOrDefaultAsync
     path: QuickKit/Repositories/Base/Repository.cs

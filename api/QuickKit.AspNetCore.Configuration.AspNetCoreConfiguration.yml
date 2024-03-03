@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Configuration/AspNetCoreConfiguration.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: AspNetCoreConfiguration
     path: QuickKit.AspNetCore/Configuration/AspNetCoreConfiguration.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Configuration/AspNetCoreConfiguration.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: AddDefaultGlobalExceptionMiddleware
     path: QuickKit.AspNetCore/Configuration/AspNetCoreConfiguration.cs
@@ -100,7 +100,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Configuration/AspNetCoreConfiguration.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: AddCustomGlobalExceptionMiddleware
     path: QuickKit.AspNetCore/Configuration/AspNetCoreConfiguration.cs

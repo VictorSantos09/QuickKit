@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Middlewares/Requests/GlobalExceptionMiddlewareConfigurationRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GlobalExceptionMiddlewareConfigurationRequest
     path: QuickKit.AspNetCore/Middlewares/Requests/GlobalExceptionMiddlewareConfigurationRequest.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Middlewares/Requests/GlobalExceptionMiddlewareConfigurationRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Next
     path: QuickKit.AspNetCore/Middlewares/Requests/GlobalExceptionMiddlewareConfigurationRequest.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Middlewares/Requests/GlobalExceptionMiddlewareConfigurationRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Exception
     path: QuickKit.AspNetCore/Middlewares/Requests/GlobalExceptionMiddlewareConfigurationRequest.cs
@@ -125,7 +125,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Middlewares/Requests/GlobalExceptionMiddlewareConfigurationRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ExceptionHandlerAsync
     path: QuickKit.AspNetCore/Middlewares/Requests/GlobalExceptionMiddlewareConfigurationRequest.cs
@@ -158,7 +158,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Middlewares/Requests/GlobalExceptionMiddlewareConfigurationRequest.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: .ctor
     path: QuickKit.AspNetCore/Middlewares/Requests/GlobalExceptionMiddlewareConfigurationRequest.cs

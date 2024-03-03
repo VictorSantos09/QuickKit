@@ -25,7 +25,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Consoler.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Consoler
     path: QuickKit.Console/Consoler.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Consoler.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Write
     path: QuickKit.Console/Consoler.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Consoler.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Write
     path: QuickKit.Console/Consoler.cs
@@ -126,7 +126,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Consoler.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: WriteLine
     path: QuickKit.Console/Consoler.cs
@@ -158,7 +158,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Consoler.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: WriteLine
     path: QuickKit.Console/Consoler.cs
@@ -192,7 +192,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Consoler.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Read
     path: QuickKit.Console/Consoler.cs
@@ -220,7 +220,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Consoler.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ReadLine
     path: QuickKit.Console/Consoler.cs
@@ -248,7 +248,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Consoler.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ReadLine
     path: QuickKit.Console/Consoler.cs
@@ -284,7 +284,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Consoler.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ReadKey
     path: QuickKit.Console/Consoler.cs
@@ -312,7 +312,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Consoler.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ReadKeyInfo
     path: QuickKit.Console/Consoler.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Consoler.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ReadAs
     path: QuickKit.Console/Consoler.cs

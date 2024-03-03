@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Validations/Extensions/FluentValidationExtension.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: FluentValidationExtension
     path: QuickKit.Shared/Validations/Extensions/FluentValidationExtension.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Validations/Extensions/FluentValidationExtension.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ValidateThrowAsync
     path: QuickKit.Shared/Validations/Extensions/FluentValidationExtension.cs

@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit/Shared/Handlers/IDatabaseConnectionHandler.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IDatabaseConnectionHandler
     path: QuickKit/Shared/Handlers/IDatabaseConnectionHandler.cs
@@ -43,7 +43,7 @@ items:
   source:
     remote:
       path: QuickKit/Shared/Handlers/IDatabaseConnectionHandler.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Connect
     path: QuickKit/Shared/Handlers/IDatabaseConnectionHandler.cs

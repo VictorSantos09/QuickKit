@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit.Tests/Repositories/RepositoryBaseTests.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: RepositoryBaseTests
     path: QuickKit.Tests/Repositories/RepositoryBaseTests.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: QuickKit.Tests/Repositories/RepositoryBaseTests.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Add_ShouldComplete
     path: QuickKit.Tests/Repositories/RepositoryBaseTests.cs

@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Exceptions/NotFoundException.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: NotFoundException
     path: QuickKit.Shared/Exceptions/NotFoundException.cs
@@ -67,7 +67,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Exceptions/NotFoundException.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: .ctor
     path: QuickKit.Shared/Exceptions/NotFoundException.cs

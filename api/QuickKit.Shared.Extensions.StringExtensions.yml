@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Extensions/StringExtensions.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: StringExtensions
     path: QuickKit.Shared/Extensions/StringExtensions.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Extensions/StringExtensions.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IsEmpty
     path: QuickKit.Shared/Extensions/StringExtensions.cs
@@ -102,7 +102,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Extensions/StringExtensions.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IsHigherThan
     path: QuickKit.Shared/Extensions/StringExtensions.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Extensions/StringExtensions.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IsHigherOrEqualThan
     path: QuickKit.Shared/Extensions/StringExtensions.cs
@@ -186,7 +186,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Extensions/StringExtensions.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IsLowerThan
     path: QuickKit.Shared/Extensions/StringExtensions.cs
@@ -228,7 +228,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Extensions/StringExtensions.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IsLowerOrEqualThan
     path: QuickKit.Shared/Extensions/StringExtensions.cs
@@ -270,7 +270,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Extensions/StringExtensions.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: To
     path: QuickKit.Shared/Extensions/StringExtensions.cs
@@ -312,7 +312,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Extensions/StringExtensions.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ToInt
     path: QuickKit.Shared/Extensions/StringExtensions.cs
@@ -351,7 +351,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Extensions/StringExtensions.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ToDouble
     path: QuickKit.Shared/Extensions/StringExtensions.cs
@@ -390,7 +390,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Extensions/StringExtensions.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ToDecimal
     path: QuickKit.Shared/Extensions/StringExtensions.cs
@@ -429,7 +429,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Extensions/StringExtensions.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ToBool
     path: QuickKit.Shared/Extensions/StringExtensions.cs
@@ -468,7 +468,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Extensions/StringExtensions.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ToDateTime
     path: QuickKit.Shared/Extensions/StringExtensions.cs
@@ -507,7 +507,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Extensions/StringExtensions.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ToDateOnly
     path: QuickKit.Shared/Extensions/StringExtensions.cs

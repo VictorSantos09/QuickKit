@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit.Tests/Shared/Builders/ProcedureNameEntityBuilderTests.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ProcedureNameEntityBuilderTests
     path: QuickKit.Tests/Shared/Builders/ProcedureNameEntityBuilderTests.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: QuickKit.Tests/Shared/Builders/ProcedureNameEntityBuilderTests.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity
     path: QuickKit.Tests/Shared/Builders/ProcedureNameEntityBuilderTests.cs

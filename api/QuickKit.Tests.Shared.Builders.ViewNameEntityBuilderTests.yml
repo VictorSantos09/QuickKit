@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit.Tests/Shared/Builders/ViewNameEntityBuilderTests.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ViewNameEntityBuilderTests
     path: QuickKit.Tests/Shared/Builders/ViewNameEntityBuilderTests.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: QuickKit.Tests/Shared/Builders/ViewNameEntityBuilderTests.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Build_shouldReturnViewNameWithoutEntity
     path: QuickKit.Tests/Shared/Builders/ViewNameEntityBuilderTests.cs

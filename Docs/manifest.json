@@ -1,0 +1,838 @@
+{
+  "source_base_path": "C:/Users/victo/OneDrive/Área de Trabalho/QuickKit",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "Docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "Docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "Docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Attributes.HttpAddKit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Attributes.HttpAddKit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Attributes.HttpDeleteKit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Attributes.HttpDeleteKit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Attributes.HttpGetAllKit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Attributes.HttpGetAllKit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Attributes.HttpGetByIdKit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Attributes.HttpGetByIdKit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Attributes.HttpGetTestEndPointKit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Attributes.HttpUpdateKit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Attributes.HttpUpdateKit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Attributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Configuration.AspNetCoreConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Constants.ENDPOINT_NAME_CNT_KIT.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Constants.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Controllers.Controller-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Controllers.Controller-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Controllers.IController-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Controllers.IController-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Controllers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Middlewares.Requests.GlobalExceptionMiddlewareConfigurationRequest-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Middlewares.Requests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Middlewares.Requests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptiomMiddlewareCustom-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Middlewares.Types.GlobalExceptionMiddlewareDefault.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.AspNetCore.Middlewares.Types.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.AspNetCore.Middlewares.Types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Consoler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Consoler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Enums.AlertType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Enums.AlertType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Enums.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Menu.Interfaces.IMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Menu.Interfaces.IMenu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Menu.Interfaces.IMenuMain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Menu.Interfaces.IMenuMain.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Menu.Interfaces.IMenuNoOption.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Menu.Interfaces.IMenuSub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Menu.Interfaces.IMenuSub.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Menu.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Menu.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Menu.MenuMain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Menu.MenuMain.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Menu.MenuNoOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Menu.MenuNoOption.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Menu.MenuSub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Menu.MenuSub.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Menu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Menu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Shared.Alerter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Shared.Alerter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.Shared.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.Shared.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Cmd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Cmd.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Configuration.KitConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Configuration.KitConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Repositories.Base.IRepository-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Repositories.Base.IRepository-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Repositories.Base.Repository-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Repositories.Base.Repository-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Repositories.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Repositories.Base.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Security.Configuration.Jwt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Security.Configuration.Jwt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Security.Configuration.SecurityConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Security.Configuration.SecurityConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Security.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Security.Configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Security.Jwt.IJwtTokenGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Security.Jwt.IJwtTokenGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Security.Jwt.JwtTokenRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Security.Jwt.JwtTokenRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Security.Jwt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Security.Jwt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Builders.ProcedureNameEntityBuilder-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Builders.ViewNameEntityBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Builders.ViewNameEntityBuilder-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Builders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Builders.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Entities.IEntity-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Entities.IEntity-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Entities.IEntity-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Entities.IEntity-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Entities.IEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Entities.IEntity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Entities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Exceptions.EntityNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Exceptions.EntityNotFoundException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Exceptions.NotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Exceptions.NotFoundException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Exceptions.SnapshotNullException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Exceptions.SnapshotNullException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Exceptions.ValidationFailureException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Exceptions.ValidationFailureException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Exceptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Extensions.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Extensions.StringExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Handlers.IDatabaseConnectionHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Handlers.IDatabaseConnectionHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Handlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Handlers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Services.IService-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Services.IService-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Validations.Common.Validator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Validations.Common.Validator-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Validations.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Validations.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Validations.Extensions.FluentValidationExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Validations.Extensions.FluentValidationExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Shared.Validations.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Shared.Validations.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Repositories.RepositoryBaseTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Repositories.RepositoryBaseTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Repositories.TestEntities.PersonEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Repositories.TestEntities.PersonEntity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Repositories.TestEntities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Repositories.TestEntities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Repositories.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Shared.Builders.ProcedureNameEntityBuilderTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Shared.Builders.ViewNameEntityBuilderTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/QuickKit.Tests.Shared.Builders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/QuickKit.Tests.Shared.Builders.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Controllers/Controller.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IController
     path: QuickKit.AspNetCore/Controllers/Controller.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Controllers/Controller.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: TestEndPoint
     path: QuickKit.AspNetCore/Controllers/Controller.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Controllers/Controller.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GetAllAsync
     path: QuickKit.AspNetCore/Controllers/Controller.cs
@@ -122,7 +122,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Controllers/Controller.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GetByIdAsync
     path: QuickKit.AspNetCore/Controllers/Controller.cs
@@ -159,7 +159,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Controllers/Controller.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: AddAsync
     path: QuickKit.AspNetCore/Controllers/Controller.cs
@@ -196,7 +196,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Controllers/Controller.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: UpdateAsync
     path: QuickKit.AspNetCore/Controllers/Controller.cs
@@ -233,7 +233,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Controllers/Controller.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: DeleteAsync
     path: QuickKit.AspNetCore/Controllers/Controller.cs

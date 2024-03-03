@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuMain.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: MenuMain
     path: QuickKit.Console/Menu/MenuMain.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuMain.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Exit
     path: QuickKit.Console/Menu/MenuMain.cs
@@ -88,7 +88,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuMain.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GoToOption
     path: QuickKit.Console/Menu/MenuMain.cs
@@ -123,7 +123,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuMain.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: SelectOption
     path: QuickKit.Console/Menu/MenuMain.cs
@@ -154,7 +154,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuMain.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ShowOptions
     path: QuickKit.Console/Menu/MenuMain.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuMain.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Show
     path: QuickKit.Console/Menu/MenuMain.cs
@@ -212,7 +212,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuMain.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ShowInvalidOptionMessage
     path: QuickKit.Console/Menu/MenuMain.cs

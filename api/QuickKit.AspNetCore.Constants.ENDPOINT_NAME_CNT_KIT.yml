@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ENDPOINT_NAME_CNT_KIT
     path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: DELETE
     path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
@@ -84,7 +84,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ADD
     path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
@@ -113,7 +113,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: UPDATE
     path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
@@ -142,7 +142,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GET_ALL
     path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
@@ -171,7 +171,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GET_BY_ID
     path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
@@ -200,7 +200,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: TEST
     path: QuickKit.AspNetCore/Constants/ENDPOINT_NAME_CNT_KIT.cs

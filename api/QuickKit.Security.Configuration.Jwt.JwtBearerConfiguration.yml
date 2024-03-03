@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit.Security/Configuration/Jwt/JwtBearerConfiguration.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: JwtBearerConfiguration
     path: QuickKit.Security/Configuration/Jwt/JwtBearerConfiguration.cs
@@ -53,7 +53,7 @@ items:
   source:
     remote:
       path: QuickKit.Security/Configuration/Jwt/JwtBearerConfiguration.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Configure
     path: QuickKit.Security/Configuration/Jwt/JwtBearerConfiguration.cs

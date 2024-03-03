@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/IRepository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IRepository
     path: QuickKit/Repositories/Base/IRepository.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/IRepository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GetAllAsync
     path: QuickKit/Repositories/Base/IRepository.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/IRepository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GetByIdAsync
     path: QuickKit/Repositories/Base/IRepository.cs
@@ -126,7 +126,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/IRepository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GetByIdThrowAsync
     path: QuickKit/Repositories/Base/IRepository.cs
@@ -167,7 +167,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/IRepository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: AddAsync
     path: QuickKit/Repositories/Base/IRepository.cs
@@ -204,7 +204,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/IRepository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: UpdateAsync
     path: QuickKit/Repositories/Base/IRepository.cs
@@ -241,7 +241,7 @@ items:
   source:
     remote:
       path: QuickKit/Repositories/Base/IRepository.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: DeleteAsync
     path: QuickKit/Repositories/Base/IRepository.cs

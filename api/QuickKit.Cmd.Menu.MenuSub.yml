@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuSub.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: MenuSub
     path: QuickKit.Console/Menu/MenuSub.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuSub.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: NotNullAlertMessage
     path: QuickKit.Console/Menu/MenuSub.cs
@@ -90,7 +90,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuSub.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Back
     path: QuickKit.Console/Menu/MenuSub.cs
@@ -119,7 +119,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuSub.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: GoToOption
     path: QuickKit.Console/Menu/MenuSub.cs
@@ -154,7 +154,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuSub.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: SelectOption
     path: QuickKit.Console/Menu/MenuSub.cs
@@ -185,7 +185,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuSub.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Show
     path: QuickKit.Console/Menu/MenuSub.cs
@@ -214,7 +214,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuSub.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ShowOptions
     path: QuickKit.Console/Menu/MenuSub.cs
@@ -243,7 +243,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuSub.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ShowPreviousOption
     path: QuickKit.Console/Menu/MenuSub.cs
@@ -272,7 +272,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/MenuSub.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ShowInvalidOptionMessage
     path: QuickKit.Console/Menu/MenuSub.cs

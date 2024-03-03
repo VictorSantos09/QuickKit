@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit.Security/Jwt/IJwtTokenGenerator.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IJwtTokenGenerator
     path: QuickKit.Security/Jwt/IJwtTokenGenerator.cs
@@ -43,7 +43,7 @@ items:
   source:
     remote:
       path: QuickKit.Security/Jwt/IJwtTokenGenerator.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Generate
     path: QuickKit.Security/Jwt/IJwtTokenGenerator.cs

@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Attributes/HttpAttributes.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: HttpGetByIdKit
     path: QuickKit.AspNetCore/Attributes/HttpAttributes.cs
@@ -117,7 +117,7 @@ items:
   source:
     remote:
       path: QuickKit.AspNetCore/Attributes/HttpAttributes.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: .ctor
     path: QuickKit.AspNetCore/Attributes/HttpAttributes.cs

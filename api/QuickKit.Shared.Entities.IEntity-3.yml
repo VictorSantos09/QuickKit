@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Entities/EntityTypes.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IEntity
     path: QuickKit.Shared/Entities/EntityTypes.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Entities/EntityTypes.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: FromSnapshot
     path: QuickKit.Shared/Entities/EntityTypes.cs
@@ -93,7 +93,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Entities/EntityTypes.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: ToSnapshot
     path: QuickKit.Shared/Entities/EntityTypes.cs

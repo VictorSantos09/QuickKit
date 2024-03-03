@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/Interfaces/IMenuMain.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IMenuMain
     path: QuickKit.Console/Menu/Interfaces/IMenuMain.cs
@@ -47,7 +47,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/Interfaces/IMenuMain.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Exit
     path: QuickKit.Console/Menu/Interfaces/IMenuMain.cs

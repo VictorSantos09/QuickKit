@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: QuickKit.Shared/Entities/EntityTypes.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IEntity
     path: QuickKit.Shared/Entities/EntityTypes.cs

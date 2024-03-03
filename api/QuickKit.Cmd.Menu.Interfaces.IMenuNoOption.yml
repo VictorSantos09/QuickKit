@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/Interfaces/IMenuNoOption.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: IMenuNoOption
     path: QuickKit.Console/Menu/Interfaces/IMenuNoOption.cs
@@ -41,7 +41,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Menu/Interfaces/IMenuNoOption.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Show
     path: QuickKit.Console/Menu/Interfaces/IMenuNoOption.cs

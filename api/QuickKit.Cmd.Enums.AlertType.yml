@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Enums/AlertType.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: AlertType
     path: QuickKit.Console/Enums/AlertType.cs
@@ -44,7 +44,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Enums/AlertType.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: None
     path: QuickKit.Console/Enums/AlertType.cs
@@ -70,7 +70,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Enums/AlertType.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Warning
     path: QuickKit.Console/Enums/AlertType.cs
@@ -96,7 +96,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Enums/AlertType.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Error
     path: QuickKit.Console/Enums/AlertType.cs
@@ -122,7 +122,7 @@ items:
   source:
     remote:
       path: QuickKit.Console/Enums/AlertType.cs
-      branch: main
+      branch: docs
       repo: https://github.com/VictorSantos09/QuickKit.git
     id: Success
     path: QuickKit.Console/Enums/AlertType.cs
