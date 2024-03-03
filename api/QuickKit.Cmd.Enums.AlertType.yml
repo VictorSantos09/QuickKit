@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Cmd.Enums.AlertType
+  commentId: T:QuickKit.Cmd.Enums.AlertType
+  id: AlertType
+  parent: QuickKit.Cmd.Enums
+  children:
+  - QuickKit.Cmd.Enums.AlertType.Error
+  - QuickKit.Cmd.Enums.AlertType.None
+  - QuickKit.Cmd.Enums.AlertType.Success
+  - QuickKit.Cmd.Enums.AlertType.Warning
+  langs:
+  - csharp
+  - vb
+  name: AlertType
+  nameWithType: AlertType
+  fullName: QuickKit.Cmd.Enums.AlertType
+  type: Enum
+  source:
+    remote:
+      path: QuickKit.Console/Enums/AlertType.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: AlertType
+    path: QuickKit.Console/Enums/AlertType.cs
+    startLine: 2
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Enums
+  syntax:
+    content: public enum AlertType
+    content.vb: Public Enum AlertType
+- uid: QuickKit.Cmd.Enums.AlertType.None
+  commentId: F:QuickKit.Cmd.Enums.AlertType.None
+  id: None
+  parent: QuickKit.Cmd.Enums.AlertType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: AlertType.None
+  fullName: QuickKit.Cmd.Enums.AlertType.None
+  type: Field
+  source:
+    remote:
+      path: QuickKit.Console/Enums/AlertType.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: None
+    path: QuickKit.Console/Enums/AlertType.cs
+    startLine: 4
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Enums
+  syntax:
+    content: None = 0
+    return:
+      type: QuickKit.Cmd.Enums.AlertType
+- uid: QuickKit.Cmd.Enums.AlertType.Warning
+  commentId: F:QuickKit.Cmd.Enums.AlertType.Warning
+  id: Warning
+  parent: QuickKit.Cmd.Enums.AlertType
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: AlertType.Warning
+  fullName: QuickKit.Cmd.Enums.AlertType.Warning
+  type: Field
+  source:
+    remote:
+      path: QuickKit.Console/Enums/AlertType.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: Warning
+    path: QuickKit.Console/Enums/AlertType.cs
+    startLine: 5
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Enums
+  syntax:
+    content: Warning = 1
+    return:
+      type: QuickKit.Cmd.Enums.AlertType
+- uid: QuickKit.Cmd.Enums.AlertType.Error
+  commentId: F:QuickKit.Cmd.Enums.AlertType.Error
+  id: Error
+  parent: QuickKit.Cmd.Enums.AlertType
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: AlertType.Error
+  fullName: QuickKit.Cmd.Enums.AlertType.Error
+  type: Field
+  source:
+    remote:
+      path: QuickKit.Console/Enums/AlertType.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: Error
+    path: QuickKit.Console/Enums/AlertType.cs
+    startLine: 6
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Enums
+  syntax:
+    content: Error = 2
+    return:
+      type: QuickKit.Cmd.Enums.AlertType
+- uid: QuickKit.Cmd.Enums.AlertType.Success
+  commentId: F:QuickKit.Cmd.Enums.AlertType.Success
+  id: Success
+  parent: QuickKit.Cmd.Enums.AlertType
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: AlertType.Success
+  fullName: QuickKit.Cmd.Enums.AlertType.Success
+  type: Field
+  source:
+    remote:
+      path: QuickKit.Console/Enums/AlertType.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: Success
+    path: QuickKit.Console/Enums/AlertType.cs
+    startLine: 7
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Enums
+  syntax:
+    content: Success = 3
+    return:
+      type: QuickKit.Cmd.Enums.AlertType
+references:
+- uid: QuickKit.Cmd.Enums
+  commentId: N:QuickKit.Cmd.Enums
+  href: QuickKit.html
+  name: QuickKit.Cmd.Enums
+  nameWithType: QuickKit.Cmd.Enums
+  fullName: QuickKit.Cmd.Enums
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Enums
+    name: Enums
+    href: QuickKit.Cmd.Enums.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Enums
+    name: Enums
+    href: QuickKit.Cmd.Enums.html
+- uid: QuickKit.Cmd.Enums.AlertType
+  commentId: T:QuickKit.Cmd.Enums.AlertType
+  parent: QuickKit.Cmd.Enums
+  href: QuickKit.Cmd.Enums.AlertType.html
+  name: AlertType
+  nameWithType: AlertType
+  fullName: QuickKit.Cmd.Enums.AlertType

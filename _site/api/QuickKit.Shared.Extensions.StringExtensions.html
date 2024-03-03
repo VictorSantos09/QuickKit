@@ -1,0 +1,666 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class StringExtensions | QuickKit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StringExtensions | QuickKit ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/VictorSantos09/QuickKit/new/main/apiSpec/new?filename=QuickKit_Shared_Extensions_StringExtensions.md&amp;value=---%0Auid%3A%20QuickKit.Shared.Extensions.StringExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="QuickKit">
+            QuickKit
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="QuickKit.Shared.Extensions.StringExtensions">
+
+
+
+  <h1 id="QuickKit_Shared_Extensions_StringExtensions" data-uid="QuickKit.Shared.Extensions.StringExtensions" class="text-break">
+Class StringExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L3"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="QuickKit.html">QuickKit</a>.<a class="xref" href="QuickKit.Shared.html">Shared</a>.<a class="xref" href="QuickKit.Shared.Extensions.html">Extensions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>QuickKit.Shared.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class StringExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">StringExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="QuickKit_Shared_Extensions_StringExtensions_IsEmpty_" data-uid="QuickKit.Shared.Extensions.StringExtensions.IsEmpty*"></a>
+
+  <h3 id="QuickKit_Shared_Extensions_StringExtensions_IsEmpty_System_String_" data-uid="QuickKit.Shared.Extensions.StringExtensions.IsEmpty(System.String)">
+  IsEmpty(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified string is empty, null, or consists only of white-space characters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this string? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the string is empty, null, or consists only of white-space characters; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="QuickKit_Shared_Extensions_StringExtensions_IsHigherOrEqualThan_" data-uid="QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan*"></a>
+
+  <h3 id="QuickKit_Shared_Extensions_StringExtensions_IsHigherOrEqualThan_System_String_System_Int32_" data-uid="QuickKit.Shared.Extensions.StringExtensions.IsHigherOrEqualThan(System.String,System.Int32)">
+  IsHigherOrEqualThan(string?, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the length of the specified string is higher than or equal to the specified length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsHigherOrEqualThan(this string? value, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to check.</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The length to compare against.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the length of the string is higher than or equal to the specified length; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="QuickKit_Shared_Extensions_StringExtensions_IsHigherThan_" data-uid="QuickKit.Shared.Extensions.StringExtensions.IsHigherThan*"></a>
+
+  <h3 id="QuickKit_Shared_Extensions_StringExtensions_IsHigherThan_System_String_System_Int32_" data-uid="QuickKit.Shared.Extensions.StringExtensions.IsHigherThan(System.String,System.Int32)">
+  IsHigherThan(string?, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the length of the specified string is higher than the specified length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsHigherThan(this string? value, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to check.</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The length to compare against.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the length of the string is higher than the specified length; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="QuickKit_Shared_Extensions_StringExtensions_IsLowerOrEqualThan_" data-uid="QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan*"></a>
+
+  <h3 id="QuickKit_Shared_Extensions_StringExtensions_IsLowerOrEqualThan_System_String_System_Int32_" data-uid="QuickKit.Shared.Extensions.StringExtensions.IsLowerOrEqualThan(System.String,System.Int32)">
+  IsLowerOrEqualThan(string?, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the length of the specified string is lower than or equal to the specified length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLowerOrEqualThan(this string? value, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to check.</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The length to compare against.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the length of the string is lower than or equal to the specified length; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="QuickKit_Shared_Extensions_StringExtensions_IsLowerThan_" data-uid="QuickKit.Shared.Extensions.StringExtensions.IsLowerThan*"></a>
+
+  <h3 id="QuickKit_Shared_Extensions_StringExtensions_IsLowerThan_System_String_System_Int32_" data-uid="QuickKit.Shared.Extensions.StringExtensions.IsLowerThan(System.String,System.Int32)">
+  IsLowerThan(string?, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the length of the specified string is lower than the specified length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLowerThan(this string? value, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to check.</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The length to compare against.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the length of the string is lower than the specified length; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="QuickKit_Shared_Extensions_StringExtensions_ToBool_" data-uid="QuickKit.Shared.Extensions.StringExtensions.ToBool*"></a>
+
+  <h3 id="QuickKit_Shared_Extensions_StringExtensions_ToBool_System_String_" data-uid="QuickKit.Shared.Extensions.StringExtensions.ToBool(System.String)">
+  ToBool(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the specified string to a boolean.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ToBool(this string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The converted boolean value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="QuickKit_Shared_Extensions_StringExtensions_ToDateOnly_" data-uid="QuickKit.Shared.Extensions.StringExtensions.ToDateOnly*"></a>
+
+  <h3 id="QuickKit_Shared_Extensions_StringExtensions_ToDateOnly_System_String_" data-uid="QuickKit.Shared.Extensions.StringExtensions.ToDateOnly(System.String)">
+  ToDateOnly(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the specified string to a DateOnly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateOnly ToDateOnly(this string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dateonly">DateOnly</a></dt>
+    <dd><p>The converted DateOnly value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="QuickKit_Shared_Extensions_StringExtensions_ToDateTime_" data-uid="QuickKit.Shared.Extensions.StringExtensions.ToDateTime*"></a>
+
+  <h3 id="QuickKit_Shared_Extensions_StringExtensions_ToDateTime_System_String_" data-uid="QuickKit.Shared.Extensions.StringExtensions.ToDateTime(System.String)">
+  ToDateTime(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the specified string to a DateTime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime ToDateTime(this string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The converted DateTime value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="QuickKit_Shared_Extensions_StringExtensions_ToDecimal_" data-uid="QuickKit.Shared.Extensions.StringExtensions.ToDecimal*"></a>
+
+  <h3 id="QuickKit_Shared_Extensions_StringExtensions_ToDecimal_System_String_" data-uid="QuickKit.Shared.Extensions.StringExtensions.ToDecimal(System.String)">
+  ToDecimal(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the specified string to a decimal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static decimal ToDecimal(this string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The converted decimal value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="QuickKit_Shared_Extensions_StringExtensions_ToDouble_" data-uid="QuickKit.Shared.Extensions.StringExtensions.ToDouble*"></a>
+
+  <h3 id="QuickKit_Shared_Extensions_StringExtensions_ToDouble_System_String_" data-uid="QuickKit.Shared.Extensions.StringExtensions.ToDouble(System.String)">
+  ToDouble(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the specified string to a double.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ToDouble(this string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The converted double value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="QuickKit_Shared_Extensions_StringExtensions_ToInt_" data-uid="QuickKit.Shared.Extensions.StringExtensions.ToInt*"></a>
+
+  <h3 id="QuickKit_Shared_Extensions_StringExtensions_ToInt_System_String_" data-uid="QuickKit.Shared.Extensions.StringExtensions.ToInt(System.String)">
+  ToInt(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the specified string to an integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ToInt(this string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The converted integer value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="QuickKit_Shared_Extensions_StringExtensions_To_" data-uid="QuickKit.Shared.Extensions.StringExtensions.To*"></a>
+
+  <h3 id="QuickKit_Shared_Extensions_StringExtensions_To__1_System_String_" data-uid="QuickKit.Shared.Extensions.StringExtensions.To``1(System.String)">
+  To&lt;TType&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the specified string to the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TType To&lt;TType&gt;(this string value) where TType : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TType</span></dt>
+    <dd><p>The converted value of the specified type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TType</code></dt>
+    <dd><p>The type to convert the string to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/VictorSantos09/QuickKit/blob/main/QuickKit.Shared/Extensions/StringExtensions.cs/#L3" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

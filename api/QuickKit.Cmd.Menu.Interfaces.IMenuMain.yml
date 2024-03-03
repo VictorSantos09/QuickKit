@@ -1,0 +1,242 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuMain
+  commentId: T:QuickKit.Cmd.Menu.Interfaces.IMenuMain
+  id: IMenuMain
+  parent: QuickKit.Cmd.Menu.Interfaces
+  children:
+  - QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit
+  langs:
+  - csharp
+  - vb
+  name: IMenuMain
+  nameWithType: IMenuMain
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuMain
+  type: Interface
+  source:
+    remote:
+      path: QuickKit.Console/Menu/Interfaces/IMenuMain.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: IMenuMain
+    path: QuickKit.Console/Menu/Interfaces/IMenuMain.cs
+    startLine: 2
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu.Interfaces
+  syntax:
+    content: 'public interface IMenuMain : IMenu'
+    content.vb: Public Interface IMenuMain Inherits IMenu
+  inheritedMembers:
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit
+  id: Exit
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenuMain
+  langs:
+  - csharp
+  - vb
+  name: Exit()
+  nameWithType: IMenuMain.Exit()
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/Interfaces/IMenuMain.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: Exit
+    path: QuickKit.Console/Menu/Interfaces/IMenuMain.cs
+    startLine: 4
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu.Interfaces
+  syntax:
+    content: void Exit()
+    content.vb: Sub [Exit]()
+  overload: QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit*
+references:
+- uid: QuickKit.Cmd.Menu.Interfaces
+  commentId: N:QuickKit.Cmd.Menu.Interfaces
+  href: QuickKit.html
+  name: QuickKit.Cmd.Menu.Interfaces
+  nameWithType: QuickKit.Cmd.Menu.Interfaces
+  fullName: QuickKit.Cmd.Menu.Interfaces
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu
+    name: Menu
+    href: QuickKit.Cmd.Menu.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu.Interfaces
+    name: Interfaces
+    href: QuickKit.Cmd.Menu.Interfaces.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu
+    name: Menu
+    href: QuickKit.Cmd.Menu.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu.Interfaces
+    name: Interfaces
+    href: QuickKit.Cmd.Menu.Interfaces.html
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_Show
+  name: Show()
+  nameWithType: IMenu.Show()
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.Show()
+  spec.csharp:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+    name: Show
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_Show
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+    name: Show
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_Show
+  - name: (
+  - name: )
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowOptions
+  name: ShowOptions()
+  nameWithType: IMenu.ShowOptions()
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions()
+  spec.csharp:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+    name: ShowOptions
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowOptions
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+    name: ShowOptions
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowOptions
+  - name: (
+  - name: )
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  isExternal: true
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowInvalidOptionMessage_System_String_QuickKit_Cmd_Enums_AlertType_
+  name: ShowInvalidOptionMessage(string, AlertType)
+  nameWithType: IMenu.ShowInvalidOptionMessage(string, AlertType)
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(string, QuickKit.Cmd.Enums.AlertType)
+  nameWithType.vb: IMenu.ShowInvalidOptionMessage(String, AlertType)
+  fullName.vb: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(String, QuickKit.Cmd.Enums.AlertType)
+  name.vb: ShowInvalidOptionMessage(String, AlertType)
+  spec.csharp:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+    name: ShowInvalidOptionMessage
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowInvalidOptionMessage_System_String_QuickKit_Cmd_Enums_AlertType_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: QuickKit.Cmd.Enums.AlertType
+    name: AlertType
+    href: QuickKit.Cmd.Enums.AlertType.html
+  - name: )
+  spec.vb:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+    name: ShowInvalidOptionMessage
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowInvalidOptionMessage_System_String_QuickKit_Cmd_Enums_AlertType_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: QuickKit.Cmd.Enums.AlertType
+    name: AlertType
+    href: QuickKit.Cmd.Enums.AlertType.html
+  - name: )
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_SelectOption
+  name: SelectOption()
+  nameWithType: IMenu.SelectOption()
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption()
+  spec.csharp:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+    name: SelectOption
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_SelectOption
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+    name: SelectOption
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_SelectOption
+  - name: (
+  - name: )
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  isExternal: true
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_GoToOption_System_Int32_
+  name: GoToOption(int)
+  nameWithType: IMenu.GoToOption(int)
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(int)
+  nameWithType.vb: IMenu.GoToOption(Integer)
+  fullName.vb: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(Integer)
+  name.vb: GoToOption(Integer)
+  spec.csharp:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+    name: GoToOption
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_GoToOption_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+    name: GoToOption
+    href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_GoToOption_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu
+  commentId: T:QuickKit.Cmd.Menu.Interfaces.IMenu
+  parent: QuickKit.Cmd.Menu.Interfaces
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html
+  name: IMenu
+  nameWithType: IMenu
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit*
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit
+  href: QuickKit.Cmd.Menu.Interfaces.IMenuMain.html#QuickKit_Cmd_Menu_Interfaces_IMenuMain_Exit
+  name: Exit
+  nameWithType: IMenuMain.Exit
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenuMain.Exit

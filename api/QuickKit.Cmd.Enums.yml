@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Cmd.Enums
+  commentId: N:QuickKit.Cmd.Enums
+  id: QuickKit.Cmd.Enums
+  children:
+  - QuickKit.Cmd.Enums.AlertType
+  langs:
+  - csharp
+  - vb
+  name: QuickKit.Cmd.Enums
+  nameWithType: QuickKit.Cmd.Enums
+  fullName: QuickKit.Cmd.Enums
+  type: Namespace
+  assemblies:
+  - QuickKit.Cmd
+references:
+- uid: QuickKit.Cmd.Enums.AlertType
+  commentId: T:QuickKit.Cmd.Enums.AlertType
+  parent: QuickKit.Cmd.Enums
+  href: QuickKit.Cmd.Enums.AlertType.html
+  name: AlertType
+  nameWithType: AlertType
+  fullName: QuickKit.Cmd.Enums.AlertType
+- uid: QuickKit.Cmd.Enums
+  commentId: N:QuickKit.Cmd.Enums
+  href: QuickKit.html
+  name: QuickKit.Cmd.Enums
+  nameWithType: QuickKit.Cmd.Enums
+  fullName: QuickKit.Cmd.Enums
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Enums
+    name: Enums
+    href: QuickKit.Cmd.Enums.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Enums
+    name: Enums
+    href: QuickKit.Cmd.Enums.html

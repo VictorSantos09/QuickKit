@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Security.Jwt.IJwtTokenGenerator
+  commentId: T:QuickKit.Security.Jwt.IJwtTokenGenerator
+  id: IJwtTokenGenerator
+  parent: QuickKit.Security.Jwt
+  children:
+  - QuickKit.Security.Jwt.IJwtTokenGenerator.Generate(QuickKit.Security.Jwt.JwtTokenRequest)
+  langs:
+  - csharp
+  - vb
+  name: IJwtTokenGenerator
+  nameWithType: IJwtTokenGenerator
+  fullName: QuickKit.Security.Jwt.IJwtTokenGenerator
+  type: Interface
+  source:
+    remote:
+      path: QuickKit.Security/Jwt/IJwtTokenGenerator.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: IJwtTokenGenerator
+    path: QuickKit.Security/Jwt/IJwtTokenGenerator.cs
+    startLine: 5
+  assemblies:
+  - QuickKit.Security
+  namespace: QuickKit.Security.Jwt
+  summary: Represents an interface for generating JWT tokens.
+  example: []
+  syntax:
+    content: public interface IJwtTokenGenerator
+    content.vb: Public Interface IJwtTokenGenerator
+- uid: QuickKit.Security.Jwt.IJwtTokenGenerator.Generate(QuickKit.Security.Jwt.JwtTokenRequest)
+  commentId: M:QuickKit.Security.Jwt.IJwtTokenGenerator.Generate(QuickKit.Security.Jwt.JwtTokenRequest)
+  id: Generate(QuickKit.Security.Jwt.JwtTokenRequest)
+  parent: QuickKit.Security.Jwt.IJwtTokenGenerator
+  langs:
+  - csharp
+  - vb
+  name: Generate(JwtTokenRequest)
+  nameWithType: IJwtTokenGenerator.Generate(JwtTokenRequest)
+  fullName: QuickKit.Security.Jwt.IJwtTokenGenerator.Generate(QuickKit.Security.Jwt.JwtTokenRequest)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Security/Jwt/IJwtTokenGenerator.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: Generate
+    path: QuickKit.Security/Jwt/IJwtTokenGenerator.cs
+    startLine: 12
+  assemblies:
+  - QuickKit.Security
+  namespace: QuickKit.Security.Jwt
+  summary: Generates a JWT token based on the provided request.
+  example: []
+  syntax:
+    content: string Generate(JwtTokenRequest request)
+    parameters:
+    - id: request
+      type: QuickKit.Security.Jwt.JwtTokenRequest
+      description: The request containing the necessary information for token generation.
+    return:
+      type: System.String
+      description: The generated JWT token.
+    content.vb: Function Generate(request As JwtTokenRequest) As String
+  overload: QuickKit.Security.Jwt.IJwtTokenGenerator.Generate*
+references:
+- uid: QuickKit.Security.Jwt
+  commentId: N:QuickKit.Security.Jwt
+  href: QuickKit.html
+  name: QuickKit.Security.Jwt
+  nameWithType: QuickKit.Security.Jwt
+  fullName: QuickKit.Security.Jwt
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Security
+    name: Security
+    href: QuickKit.Security.html
+  - name: .
+  - uid: QuickKit.Security.Jwt
+    name: Jwt
+    href: QuickKit.Security.Jwt.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Security
+    name: Security
+    href: QuickKit.Security.html
+  - name: .
+  - uid: QuickKit.Security.Jwt
+    name: Jwt
+    href: QuickKit.Security.Jwt.html
+- uid: QuickKit.Security.Jwt.IJwtTokenGenerator.Generate*
+  commentId: Overload:QuickKit.Security.Jwt.IJwtTokenGenerator.Generate
+  href: QuickKit.Security.Jwt.IJwtTokenGenerator.html#QuickKit_Security_Jwt_IJwtTokenGenerator_Generate_QuickKit_Security_Jwt_JwtTokenRequest_
+  name: Generate
+  nameWithType: IJwtTokenGenerator.Generate
+  fullName: QuickKit.Security.Jwt.IJwtTokenGenerator.Generate
+- uid: QuickKit.Security.Jwt.JwtTokenRequest
+  commentId: T:QuickKit.Security.Jwt.JwtTokenRequest
+  parent: QuickKit.Security.Jwt
+  href: QuickKit.Security.Jwt.JwtTokenRequest.html
+  name: JwtTokenRequest
+  nameWithType: JwtTokenRequest
+  fullName: QuickKit.Security.Jwt.JwtTokenRequest
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

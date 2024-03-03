@@ -1,0 +1,314 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu
+  commentId: T:QuickKit.Cmd.Menu.Interfaces.IMenu
+  id: IMenu
+  parent: QuickKit.Cmd.Menu.Interfaces
+  children:
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  - QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+  langs:
+  - csharp
+  - vb
+  name: IMenu
+  nameWithType: IMenu
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu
+  type: Interface
+  source:
+    remote:
+      path: QuickKit.Console/Menu/Interfaces/IMenu.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: IMenu
+    path: QuickKit.Console/Menu/Interfaces/IMenu.cs
+    startLine: 3
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu.Interfaces
+  syntax:
+    content: public interface IMenu
+    content.vb: Public Interface IMenu
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+  id: Show
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  langs:
+  - csharp
+  - vb
+  name: Show()
+  nameWithType: IMenu.Show()
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.Show()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/Interfaces/IMenu.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: Show
+    path: QuickKit.Console/Menu/Interfaces/IMenu.cs
+    startLine: 5
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu.Interfaces
+  syntax:
+    content: void Show()
+    content.vb: Sub Show()
+  overload: QuickKit.Cmd.Menu.Interfaces.IMenu.Show*
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+  id: ShowOptions
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  langs:
+  - csharp
+  - vb
+  name: ShowOptions()
+  nameWithType: IMenu.ShowOptions()
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/Interfaces/IMenu.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: ShowOptions
+    path: QuickKit.Console/Menu/Interfaces/IMenu.cs
+    startLine: 6
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu.Interfaces
+  syntax:
+    content: void ShowOptions()
+    content.vb: Sub ShowOptions()
+  overload: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions*
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  id: ShowInvalidOptionMessage(System.String,QuickKit.Cmd.Enums.AlertType)
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  langs:
+  - csharp
+  - vb
+  name: ShowInvalidOptionMessage(string, AlertType)
+  nameWithType: IMenu.ShowInvalidOptionMessage(string, AlertType)
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(string, QuickKit.Cmd.Enums.AlertType)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/Interfaces/IMenu.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: ShowInvalidOptionMessage
+    path: QuickKit.Console/Menu/Interfaces/IMenu.cs
+    startLine: 7
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu.Interfaces
+  syntax:
+    content: void ShowInvalidOptionMessage(string message, AlertType alertType = AlertType.Warning)
+    parameters:
+    - id: message
+      type: System.String
+    - id: alertType
+      type: QuickKit.Cmd.Enums.AlertType
+    content.vb: Sub ShowInvalidOptionMessage(message As String, alertType As AlertType = AlertType.Warning)
+  overload: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage*
+  nameWithType.vb: IMenu.ShowInvalidOptionMessage(String, AlertType)
+  fullName.vb: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage(String, QuickKit.Cmd.Enums.AlertType)
+  name.vb: ShowInvalidOptionMessage(String, AlertType)
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+  id: SelectOption
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  langs:
+  - csharp
+  - vb
+  name: SelectOption()
+  nameWithType: IMenu.SelectOption()
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption()
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/Interfaces/IMenu.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: SelectOption
+    path: QuickKit.Console/Menu/Interfaces/IMenu.cs
+    startLine: 8
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu.Interfaces
+  syntax:
+    content: int SelectOption()
+    return:
+      type: System.Int32
+    content.vb: Function SelectOption() As Integer
+  overload: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption*
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+  commentId: M:QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(System.Int32)
+  id: GoToOption(System.Int32)
+  parent: QuickKit.Cmd.Menu.Interfaces.IMenu
+  langs:
+  - csharp
+  - vb
+  name: GoToOption(int)
+  nameWithType: IMenu.GoToOption(int)
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(int)
+  type: Method
+  source:
+    remote:
+      path: QuickKit.Console/Menu/Interfaces/IMenu.cs
+      branch: main
+      repo: https://github.com/VictorSantos09/QuickKit.git
+    id: GoToOption
+    path: QuickKit.Console/Menu/Interfaces/IMenu.cs
+    startLine: 9
+  assemblies:
+  - QuickKit.Cmd
+  namespace: QuickKit.Cmd.Menu.Interfaces
+  syntax:
+    content: void GoToOption(int option)
+    parameters:
+    - id: option
+      type: System.Int32
+    content.vb: Sub GoToOption([option] As Integer)
+  overload: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption*
+  nameWithType.vb: IMenu.GoToOption(Integer)
+  fullName.vb: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption(Integer)
+  name.vb: GoToOption(Integer)
+references:
+- uid: QuickKit.Cmd.Menu.Interfaces
+  commentId: N:QuickKit.Cmd.Menu.Interfaces
+  href: QuickKit.html
+  name: QuickKit.Cmd.Menu.Interfaces
+  nameWithType: QuickKit.Cmd.Menu.Interfaces
+  fullName: QuickKit.Cmd.Menu.Interfaces
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu
+    name: Menu
+    href: QuickKit.Cmd.Menu.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu.Interfaces
+    name: Interfaces
+    href: QuickKit.Cmd.Menu.Interfaces.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu
+    name: Menu
+    href: QuickKit.Cmd.Menu.html
+  - name: .
+  - uid: QuickKit.Cmd.Menu.Interfaces
+    name: Interfaces
+    href: QuickKit.Cmd.Menu.Interfaces.html
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.Show*
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_Show
+  name: Show
+  nameWithType: IMenu.Show
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.Show
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions*
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowOptions
+  name: ShowOptions
+  nameWithType: IMenu.ShowOptions
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowOptions
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage*
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_ShowInvalidOptionMessage_System_String_QuickKit_Cmd_Enums_AlertType_
+  name: ShowInvalidOptionMessage
+  nameWithType: IMenu.ShowInvalidOptionMessage
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.ShowInvalidOptionMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: QuickKit.Cmd.Enums.AlertType
+  commentId: T:QuickKit.Cmd.Enums.AlertType
+  parent: QuickKit.Cmd.Enums
+  href: QuickKit.Cmd.Enums.AlertType.html
+  name: AlertType
+  nameWithType: AlertType
+  fullName: QuickKit.Cmd.Enums.AlertType
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: QuickKit.Cmd.Enums
+  commentId: N:QuickKit.Cmd.Enums
+  href: QuickKit.html
+  name: QuickKit.Cmd.Enums
+  nameWithType: QuickKit.Cmd.Enums
+  fullName: QuickKit.Cmd.Enums
+  spec.csharp:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Enums
+    name: Enums
+    href: QuickKit.Cmd.Enums.html
+  spec.vb:
+  - uid: QuickKit
+    name: QuickKit
+    href: QuickKit.html
+  - name: .
+  - uid: QuickKit.Cmd
+    name: Cmd
+    href: QuickKit.Cmd.html
+  - name: .
+  - uid: QuickKit.Cmd.Enums
+    name: Enums
+    href: QuickKit.Cmd.Enums.html
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption*
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_SelectOption
+  name: SelectOption
+  nameWithType: IMenu.SelectOption
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.SelectOption
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption*
+  commentId: Overload:QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption
+  href: QuickKit.Cmd.Menu.Interfaces.IMenu.html#QuickKit_Cmd_Menu_Interfaces_IMenu_GoToOption_System_Int32_
+  name: GoToOption
+  nameWithType: IMenu.GoToOption
+  fullName: QuickKit.Cmd.Menu.Interfaces.IMenu.GoToOption

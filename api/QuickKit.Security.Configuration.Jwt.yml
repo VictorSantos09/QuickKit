@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: QuickKit.Security.Configuration.Jwt
+  commentId: N:QuickKit.Security.Configuration.Jwt
+  id: QuickKit.Security.Configuration.Jwt
+  children:
+  - QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: QuickKit.Security.Configuration.Jwt
+  nameWithType: QuickKit.Security.Configuration.Jwt
+  fullName: QuickKit.Security.Configuration.Jwt
+  type: Namespace
+  assemblies:
+  - QuickKit.Security
+references:
+- uid: QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration
+  commentId: T:QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration
+  href: QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration.html
+  name: JwtBearerConfiguration
+  nameWithType: JwtBearerConfiguration
+  fullName: QuickKit.Security.Configuration.Jwt.JwtBearerConfiguration

@@ -1,0 +1,39 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "./",
+          "files": ["**/*.csproj"]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": ["**/*.{md,yml}"],
+        "exclude": [
+          "_site/**",
+          "QuickKit.Sample.API",
+          "QuickKit.Sample.Console",
+          "QuickKit.Tests"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": ["images/**"]
+      }
+    ],
+    "output": "_site",
+    "template": ["default", "modern"],
+    "globalMetadata": {
+      "_appName": "QuickKit",
+      "_appTitle": "QuickKit",
+      "_enableSearch": true,
+      "pdf": true
+    }
+  }
+}
