@@ -1,14 +1,4 @@
 {
-  "Docs/getting-started.html": {
-    "href": "Docs/getting-started.html",
-    "title": "Getting Started | QuickKit",
-    "keywords": "Getting Started"
-  },
-  "Docs/introduction.html": {
-    "href": "Docs/introduction.html",
-    "title": "Introduction | QuickKit",
-    "keywords": "Introduction"
-  },
   "api/QuickKit.AspNetCore.Attributes.HttpAddKit.html": {
     "href": "api/QuickKit.AspNetCore.Attributes.HttpAddKit.html",
     "title": "Class HttpAddKit | QuickKit",
