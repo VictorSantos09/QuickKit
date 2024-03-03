@@ -34,8 +34,10 @@ jobs:
       - run: dotnet tool update -g docfx
       - run: docfx docfx.json
 
-      - run: dir
-      - run: ls
+      - name: Verify Directory _site
+      - run: ls ../_site
+      - run: ls _site
+  
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
