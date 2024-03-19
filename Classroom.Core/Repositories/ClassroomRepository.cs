@@ -11,7 +11,7 @@ namespace Classroom.Core.Repositories
     {
     }
 
-    public class ClassroomRepository : Repository<ClassroomEntity, int>,  IClassroomRepository
+    public class ClassroomRepository : Repository<ClassroomEntity, int>, IClassroomRepository
     {
         public ClassroomRepository(IValidator<ClassroomEntity> validator,
             IDatabaseConnectionHandler handler) : base(validator, handler)
@@ -24,7 +24,7 @@ namespace Classroom.Core.Repositories
                 ProcedureNameAdd,
                 new
                 {
-                  classroom_name =  entity.ClassroomName
+                    classroom_name = entity.ClassroomName
                 },
                 commandType: CommandType.StoredProcedure);
 
@@ -74,8 +74,8 @@ namespace Classroom.Core.Repositories
                 ProcedureNameUpdate,
                 new
                 {
-                   idClassroom = entity.Id,
-                   classroomName = entity.ClassroomName
+                    idClassroom = entity.Id,
+                    classroomName = entity.ClassroomName
                 },
                 commandType: CommandType.StoredProcedure);
 

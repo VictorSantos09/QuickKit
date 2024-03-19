@@ -15,7 +15,7 @@ namespace Classroom.Core.Entities
 
         public ClassroomSnapshot()
         {
-                
+
         }
     }
 
@@ -31,7 +31,7 @@ namespace Classroom.Core.Entities
 
         public ClassroomEntity()
         {
-                
+
         }
 
         public static ClassroomEntity FromSnapshot(ClassroomSnapshot snapshot)

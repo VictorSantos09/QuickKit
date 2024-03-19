@@ -1,13 +1,11 @@
 ﻿using Classroom.Core.Entities;
 using Classroom.Core.Repositories;
-using QuickKit.ResultTypes.Services.Interfaces;
-using QuickKit.ResultTypes.ValueObjects;
 using QuickKit.Shared.Extensions;
 
 namespace Classroom.Core.Services
 {
     public interface IClassroomServiceValueObject : IServiceValueObject<ClassroomEntity, int> { }
-    
+
     public class ClassroomServiceValueObject : IClassroomServiceValueObject
     {
         private readonly IClassroomRepository _repository;
@@ -31,7 +29,7 @@ namespace Classroom.Core.Services
         public async Task<Result> DeleteAsync(int id)
         {
             if (id <= 0) return Result.Failure("classroom.invalidId", "id not valid");
-            
+
             var result = await _repository.DeleteAsync(id);
 
             if (result > 0) return Result.Success();

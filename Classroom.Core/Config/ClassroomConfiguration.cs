@@ -3,8 +3,6 @@ using Classroom.Core.Repositories;
 using Classroom.Core.Services;
 using FluentValidation;
 using QuickKit.Configuration;
-using QuickKit.ResultTypes.Configuration;
-using QuickKit.ResultTypes.ValueObjects.Exceptions;
 using QuickKit.Security.Configuration;
 using QuickKit.Shared.Exceptions;
 using QuickKit.Shared.Exceptions.Base;

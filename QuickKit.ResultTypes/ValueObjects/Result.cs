@@ -26,17 +26,17 @@
     {
         #region Success
         public static Result Success() => new(true, Error.None);
-        
+
         public static Result<TType> Success<TType>(TType data) => new(true, Error.None, data);
         #endregion
 
         #region Failure
         public static Result Failure(Error error) => new(false, error);
-        
-        public static Result Failure(string code, string message) 
+
+        public static Result Failure(string code, string message)
             => new(false, Error.Create(code, message));
-        
-        public static Result<TType> Failure<TType>(TType data, string code, string message) 
+
+        public static Result<TType> Failure<TType>(TType data, string code, string message)
             => new(false, Error.Create(code, message), data);
         #endregion
 
