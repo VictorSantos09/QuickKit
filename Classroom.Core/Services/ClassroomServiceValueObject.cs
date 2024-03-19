@@ -1,5 +1,7 @@
 ﻿using Classroom.Core.Entities;
 using Classroom.Core.Repositories;
+using QuickKit.ResultTypes.Services.Interfaces;
+using QuickKit.ResultTypes.ValueObjects;
 using QuickKit.Shared.Extensions;
 
 namespace Classroom.Core.Services

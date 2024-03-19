@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\QuickKit.AspNetCore\QuickKit.AspNetCore.csproj" />
+    <ProjectReference Include="..\QuickKit.ResultTypes\QuickKit.ResultTypes.csproj" />
     <ProjectReference Include="..\QuickKit.Result\QuickKit.ResultTypes.csproj" />
     <ProjectReference Include="..\QuickKit.Security\QuickKit.Security.csproj" />
     <ProjectReference Include="..\QuickKit\QuickKit.csproj" />
