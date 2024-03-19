@@ -10,4 +10,12 @@
     <PackageReference Include="FluentValidation" Version="11.9.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\victor.santos8\Desktop\QuickKit\QuickKit.Shared\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\victor.santos8\Desktop\QuickKit\QuickKit.Shared\.editorconfig" />
+  </ItemGroup>
+
 </Project>

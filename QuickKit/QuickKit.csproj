@@ -7,6 +7,10 @@
     <Title>QuickKit</Title>
       <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\QuickKit.Shared\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
  
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.28" />
@@ -18,14 +22,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\QuickKit.Shared\QuickKit.Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EditorConfigFiles Remove="C:\Users\victo\OneDrive\Área de Trabalho\QuickKit\QuickKit\.editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="C:\Users\victo\OneDrive\Área de Trabalho\QuickKit\QuickKit\.editorconfig" />
   </ItemGroup>
 
 </Project>
