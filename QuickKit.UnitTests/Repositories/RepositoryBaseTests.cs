@@ -1,8 +1,8 @@
 ﻿using NSubstitute;
 using QuickKit.Repositories.Base;
-using QuickKit.Tests.Repositories.TestEntities;
+using QuickKit.UnitTests.Repositories.TestEntities;
 
-namespace QuickKit.Tests.Repositories;
+namespace QuickKit.UnitTests.Repositories;
 public class RepositoryBaseTests
 {
     private readonly IRepository<PersonEntity, int> _sut = Substitute.For<IRepository<PersonEntity, int>>();

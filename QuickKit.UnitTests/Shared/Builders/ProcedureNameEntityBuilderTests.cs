@@ -1,7 +1,7 @@
 ﻿using QuickKit.Shared.Builders;
-using QuickKit.Tests.Shared.TestsEntities;
+using QuickKit.UnitTests.Shared.TestsEntities;
 
-namespace QuickKit.Tests.Shared.Builders;
+namespace QuickKit.UnitTests.Shared.Builders;
 public class ProcedureNameEntityBuilderTests
 {
     private readonly string Update = ProcedureNameEntityBuilder<ValidNameTestEntity>.Update;

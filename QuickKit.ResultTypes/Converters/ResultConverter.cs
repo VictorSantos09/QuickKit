@@ -2,7 +2,7 @@
 using QuickKit.ResultTypes.ValueObjects;
 using System.Net;
 
-namespace QuickKit.AspNetCore.Controllers.Converters
+namespace QuickKit.ResultTypes.Converters
 {
     public static class ResultConverter
     {
@@ -20,8 +20,8 @@ namespace QuickKit.AspNetCore.Controllers.Converters
         #region Convert
         public static IActionResult Convert(this ResultBase result, HttpStatusCode failure, HttpStatusCode success = HttpStatusCode.OK)
         {
-            if (result.IsSuccess) return Build(result, success);
-            return Build(result, failure);
+            if (result.IsSuccess) return result.Build(success);
+            return result.Build(failure);
         }
 
         public static IActionResult Convert(this ResultBase result, Func<ResultBase, IActionResult> func)

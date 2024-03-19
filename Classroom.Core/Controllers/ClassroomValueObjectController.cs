@@ -3,7 +3,7 @@ using Classroom.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 using QuickKit.AspNetCore.Attributes;
 using QuickKit.AspNetCore.Controllers;
-using QuickKit.AspNetCore.Controllers.Converters;
+using QuickKit.ResultTypes.Converters;
 using System.Net;
 
 namespace Classroom.Core.Controllers
