@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using QuickKit.Shared.Exceptions;
+using QuickKit.Shared.Exceptions.Base;
 using System.Net;
 
 namespace QuickKit.AspNetCore.Middlewares.Types;

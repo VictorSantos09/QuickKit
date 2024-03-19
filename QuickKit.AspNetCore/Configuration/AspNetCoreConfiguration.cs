@@ -9,6 +9,8 @@ namespace QuickKit.AspNetCore.Configuration;
 /// </summary>
 public static class AspNetCoreConfiguration
 {
+    #region GlobalExceptionMiddleware
+
     /// <summary>
     /// Adds the default global exception middleware to the application pipeline.
     /// </summary>
@@ -38,4 +40,6 @@ public static class AspNetCoreConfiguration
         _ = app.UseMiddleware<GlobalExceptiomMiddlewareCustom<TException>>(config);
         return app;
     }
+
+    #endregion
 }

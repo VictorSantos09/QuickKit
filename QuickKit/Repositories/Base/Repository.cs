@@ -15,7 +15,7 @@ namespace QuickKit.Repositories.Base;
 /// </summary>
 /// <typeparam name="TEntity">The type of the entity.</typeparam>
 /// <typeparam name="TKey">The type of the entity's primary key.</typeparam>
-public abstract class Repository<TEntity, TKey>
+public abstract class Repository<TEntity, TKey> : IRepository<TEntity, TKey>
     where TEntity : IEntity
     where TKey : IConvertible
 {
@@ -61,7 +61,7 @@ public abstract class Repository<TEntity, TKey>
     /// <inheritdoc/>
     public virtual async Task<TEntity> GetByIdThrowAsync(TKey id, string notFoundExceptionMessage)
     {
-        return await GetByIdAsync(id) ?? throw new NotFoundException(notFoundExceptionMessage);
+        return await GetByIdAsync(id) ?? throw new EntityNotFoundException(notFoundExceptionMessage);
     }
 
     /// <summary>
@@ -93,7 +93,7 @@ public abstract class Repository<TEntity, TKey>
     /// </summary>
     /// <param name="command">The command to execute.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the number of affected rows.</returns>
-    protected virtual async Task<int> ExecuteOnDatabaseAsync(CommandDefinition command)
+    protected virtual async Task<int> ExecuteAsync(CommandDefinition command)
     {
         using (IDbConnection conn = ConnectToDatabase())
         {
@@ -140,7 +140,7 @@ public abstract class Repository<TEntity, TKey>
     protected async Task<int> ExecuteAsync(TEntity entity, CommandDefinition command, string validationFailureMessage)
     {
         await _validator.ValidateThrowAsync(entity, validationFailureMessage);
-        return await ExecuteOnDatabaseAsync(command);
+        return await ExecuteAsync(command);
     }
 
     #endregion
