@@ -9,7 +9,7 @@ public abstract class KitException : Exception
     {
     }
 
-    private protected static string? GetMessageToShow(string? message, string? defaultMessage)
+    protected static string? GetMessageToShow(string? message, string? defaultMessage)
     {
         if (message.IsEmpty()) return defaultMessage;
         else return message;

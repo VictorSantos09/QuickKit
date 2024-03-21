@@ -25,6 +25,9 @@ public static class DefaultMessageConfiguration
             case Type exception when exception == typeof(InvalidArgumentResultException):
                 InvalidArgumentResultException.DefaultMessage = message;
                 break;
+            case Type exception when exception == typeof(ValidationFailureException):
+                ValidationFailureException.DefaultMessage = message;
+                break;
             default:
                 throw new InvalidOperationException("exception wasn't identified");
         }
