@@ -1,12 +1,10 @@
-﻿using QuickKit.ResultTypes.ValueObjects;
-
-namespace QuickKit.ResultTypes.Services.Interfaces;
+﻿namespace QuickKit.ResultTypes.Services.Interfaces;
 
 public interface IServiceValueObject<TEntity, TKey>
 {
-    public Task<Result<IEnumerable<TEntity>>> GetAllAsync();
-    public Task<Result<TEntity>> GetByIdAsync(TKey id);
-    public Task<Result> AddAsync(TEntity entity);
-    public Task<Result> UpdateAsync(TEntity entity);
-    public Task<Result> DeleteAsync(TKey id);
+    public Task<Final<IEnumerable<TEntity>>> GetAllAsync();
+    public Task<Final<TEntity>> GetByIdAsync(TKey id);
+    public Task<Final> AddAsync(TEntity entity);
+    public Task<Final> UpdateAsync(TEntity entity);
+    public Task<Final> DeleteAsync(TKey id);
 }

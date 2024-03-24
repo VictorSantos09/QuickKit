@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using QuickKit.ResultTypes.ValueObjects;
 using System.Net;
 
 namespace QuickKit.ResultTypes.Converters
@@ -7,7 +6,7 @@ namespace QuickKit.ResultTypes.Converters
     public static class ResultConverter
     {
         #region Build
-        private static ObjectResult Build(this ResultBase result, HttpStatusCode statusCode)
+        private static ObjectResult Build(this FinalBase result, HttpStatusCode statusCode)
         {
             return new ObjectResult(result)
             {
@@ -18,18 +17,18 @@ namespace QuickKit.ResultTypes.Converters
         #endregion
 
         #region Convert
-        public static IActionResult Convert(this ResultBase result, HttpStatusCode failure, HttpStatusCode success = HttpStatusCode.OK)
+        public static IActionResult Convert(this FinalBase result, HttpStatusCode failure, HttpStatusCode success = HttpStatusCode.OK)
         {
             if (result.IsSuccess) return result.Build(success);
             return result.Build(failure);
         }
 
-        public static IActionResult Convert(this ResultBase result, Func<ResultBase, IActionResult> func)
+        public static IActionResult Convert(this FinalBase result, Func<FinalBase, IActionResult> func)
         {
             return func(result);
         }
 
-        public static IActionResult Convert<TType>(this Result<TType> result, Func<Result<TType>, IActionResult> func)
+        public static IActionResult Convert<TType>(this Final<TType> result, Func<Final<TType>, IActionResult> func)
         {
             return func(result);
         }

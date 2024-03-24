@@ -1,4 +1,4 @@
-﻿namespace QuickKit.ResultTypes.ValueObjects
+﻿namespace QuickKit.ResultTypes
 {
     public record Error
     {
@@ -17,7 +17,7 @@
 
         }
 
-        public static implicit operator Result(Error error) => Result.Failure(error);
+        public static implicit operator Final(Error error) => Final.Failure(error);
         public static Error Create(string code, string message) => new(code, message);
     }
 }

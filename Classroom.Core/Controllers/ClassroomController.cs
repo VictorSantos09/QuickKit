@@ -17,6 +17,11 @@ namespace Classroom.Core.Controllers
             _classroomService = classroomService;
         }
 
+        /// <summary>
+        /// Create a entity
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns>Response</returns>
         [HttpAddKit]
         public override async Task<IActionResult> AddAsync(ClassroomEntity entity)
         {
@@ -24,6 +29,11 @@ namespace Classroom.Core.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Delete a entity
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDeleteKit]
         public override async Task<IActionResult> DeleteAsync(int id)
         {

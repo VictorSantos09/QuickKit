@@ -1,6 +1,6 @@
 ﻿using QuickKit.Shared.Exceptions.Base;
 
-namespace QuickKit.ResultTypes.ValueObjects.Exceptions
+namespace QuickKit.ResultTypes.Exceptions
 {
     public class InvalidArgumentResultException : KitException, IException
     {

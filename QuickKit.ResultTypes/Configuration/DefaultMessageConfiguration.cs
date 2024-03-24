@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using QuickKit.ResultTypes.ValueObjects.Exceptions;
+using QuickKit.ResultTypes.Exceptions;
 using QuickKit.Shared.Exceptions;
 using QuickKit.Shared.Exceptions.Base;
 

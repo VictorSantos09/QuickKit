@@ -9,6 +9,7 @@ namespace Classroom.Core.Repositories
 {
     public interface IClassroomRepository : IRepository<ClassroomEntity, int>
     {
+        Task<IQueryable<ClassroomEntity>> GetAllPagedAsync();
     }
 
     public class ClassroomRepository : Repository<ClassroomEntity, int>, IClassroomRepository
@@ -52,6 +53,16 @@ namespace Classroom.Core.Repositories
 
             var result = await QueryAsync<ClassroomSnapshot>(command);
             return result.Select(ClassroomEntity.FromSnapshot);
+        }
+
+        public async Task<IQueryable<ClassroomEntity>> GetAllPagedAsync()
+        {
+            CommandDefinition command = new(
+                ProcedureNameGetAll,
+                commandType: CommandType.StoredProcedure);
+
+            var result = await QueryAsync<ClassroomSnapshot>(command);
+            return result.Select(ClassroomEntity.FromSnapshot).AsQueryable();
         }
 
         public override async Task<ClassroomEntity?> GetByIdAsync(int id)

@@ -20,4 +20,8 @@
     <ProjectReference Include="..\QuickKit.Shared\QuickKit.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ValueObjects\" />
+  </ItemGroup>
+
 </Project>

@@ -1,7 +1,7 @@
 ﻿using Classroom.Core.Entities;
 using Classroom.Core.Repositories;
+using QuickKit.ResultTypes;
 using QuickKit.ResultTypes.Services.Interfaces;
-using QuickKit.ResultTypes.ValueObjects;
 using QuickKit.Shared.Extensions;
 
 namespace Classroom.Core.Services
@@ -17,54 +17,54 @@ namespace Classroom.Core.Services
             _repository = repository;
         }
 
-        public async Task<Result> AddAsync(ClassroomEntity entity)
+        public async Task<Final> AddAsync(ClassroomEntity entity)
         {
-            if (entity.IsNull()) return Result.Failure("classroom.Null", "classroom can't be null");
+            if (entity.IsNull()) return Final.Failure("classroom.Null", "classroom can't be null");
 
             var result = await _repository.AddAsync(entity);
 
-            if (result <= 0) return Result.Failure("classroom.Failure", "entity not saved");
+            if (result <= 0) return Final.Failure("classroom.Failure", "entity not saved");
 
-            return Result.Success();
+            return Final.Success();
         }
 
-        public async Task<Result> DeleteAsync(int id)
+        public async Task<Final> DeleteAsync(int id)
         {
-            if (id <= 0) return Result.Failure("classroom.invalidId", "id not valid");
+            if (id <= 0) return Final.Failure("classroom.invalidId", "id not valid");
 
             var result = await _repository.DeleteAsync(id);
 
-            if (result > 0) return Result.Success();
-            return Result.Failure("classroom.deleteFail", "delete fail");
+            if (result > 0) return Final.Success();
+            return Final.Failure("classroom.deleteFail", "delete fail");
         }
 
-        public async Task<Result<IEnumerable<ClassroomEntity>>> GetAllAsync()
+        public async Task<Final<IEnumerable<ClassroomEntity>>> GetAllAsync()
         {
             var classrooms = await _repository.GetAllAsync();
 
-            if (!classrooms.Any()) return Result.Failure(classrooms, "classroom.empty", "there is no classroom registred");
+            if (!classrooms.Any()) return Final.Failure(classrooms, "classroom.empty", "there is no classroom registred");
 
-            return Result.Success(classrooms);
+            return Final.Success(classrooms);
         }
 
-        public async Task<Result<ClassroomEntity>> GetByIdAsync(int id)
+        public async Task<Final<ClassroomEntity>> GetByIdAsync(int id)
         {
             ClassroomEntity classroom = await _repository.GetByIdAsync(id);
 
-            if (classroom is null) return Result.Failure(classroom, "classroom.notFound", "classroom not found")!;
+            if (classroom is null) return Final.Failure(classroom, "classroom.notFound", "classroom not found")!;
 
-            return Result.Success(classroom);
+            return Final.Success(classroom);
         }
 
-        public async Task<Result> UpdateAsync(ClassroomEntity entity)
+        public async Task<Final> UpdateAsync(ClassroomEntity entity)
         {
-            if (entity is null) return Result.Failure("classroom.Null", "classroom can't be null");
+            if (entity is null) return Final.Failure("classroom.Null", "classroom can't be null");
 
             var result = await _repository.UpdateAsync(entity);
 
-            if (result <= 0) return Result.Failure("classroom.Failure", "entity not updated");
+            if (result <= 0) return Final.Failure("classroom.Failure", "entity not updated");
 
-            return Result.Success();
+            return Final.Success();
         }
     }
 }

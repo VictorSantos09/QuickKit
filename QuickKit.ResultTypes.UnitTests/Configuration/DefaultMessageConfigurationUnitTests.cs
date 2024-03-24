@@ -2,11 +2,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using NSubstitute;
 using QuickKit.ResultTypes.Configuration;
-using QuickKit.ResultTypes.ValueObjects;
-using QuickKit.ResultTypes.ValueObjects.Exceptions;
+using QuickKit.ResultTypes.Exceptions;
 using QuickKit.Shared.Exceptions;
 using QuickKit.Shared.Exceptions.Base;
-using Xunit.Sdk;
 
 namespace QuickKit.ResultTypes.UnitTests.Configuration
 {
