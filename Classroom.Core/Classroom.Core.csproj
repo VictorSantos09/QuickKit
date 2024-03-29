@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.9.0" />
+    <PackageReference Include="HotChocolate.Data" Version="13.9.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.13" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuickKit.AspNetCore\QuickKit.AspNetCore.csproj" />
+    <ProjectReference Include="..\QuickKit.ResultTypes\QuickKit.ResultTypes.csproj" />
+    <ProjectReference Include="..\QuickKit.Security\QuickKit.Security.csproj" />
+    <ProjectReference Include="..\QuickKit\QuickKit.csproj" />
+  </ItemGroup>
+
+</Project>

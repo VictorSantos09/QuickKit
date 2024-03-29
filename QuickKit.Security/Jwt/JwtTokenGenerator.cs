@@ -1,4 +1,5 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+using QuickKit.Security.Jwt.Requests;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 

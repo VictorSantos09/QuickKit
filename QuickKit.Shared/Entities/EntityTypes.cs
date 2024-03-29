@@ -1,5 +1,6 @@
 ﻿namespace QuickKit.Shared.Entities;
 
+#region Default Internal
 /// <summary>
 /// Interface base for all entities used in the application.
 /// </summary>
@@ -8,7 +9,9 @@
 /// <para>It is only used to identity entities, you can use it to do the same.</para>
 /// </remarks>
 public interface IEntity { }
+#endregion
 
+#region Default with Key
 /// <summary>
 /// Represents an entity with a specified key.
 /// </summary>
@@ -21,7 +24,9 @@ public interface IEntity<TKey> : IEntity
     /// </summary>
     TKey Id { get; set; }
 }
+#endregion
 
+#region Default with Key and Snapshot
 /// <summary>
 /// Represents an entity with a specified key, along with methods to convert to and from a snapshot.
 /// </summary>
@@ -46,3 +51,4 @@ public interface IEntity<TEntity, TSnapshot, TKey> : IEntity<TKey>
     /// <returns>The snapshot representation of the entity.</returns>
     TSnapshot ToSnapshot();
 }
+#endregion

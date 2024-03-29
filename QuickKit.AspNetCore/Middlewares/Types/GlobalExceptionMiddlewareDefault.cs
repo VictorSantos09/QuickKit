@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using QuickKit.Shared.Exceptions;
+using QuickKit.Shared.Exceptions.Base;
 using System.Net;
 
 namespace QuickKit.AspNetCore.Middlewares.Types;
@@ -89,90 +90,30 @@ public class GlobalExceptionMiddlewareDefault
         }
         catch (EntityNotFoundException ex)
         {
-            await HandleEntityNotFoundExceptionAsync(context, ex);
+            await HandleExceptionAsync(context, ex,  HttpStatusCode.NotFound);
         }
         catch (NotFoundException ex)
         {
-            await HandleNotFoundExceptionAsync(context, ex);
+            await HandleExceptionAsync(context, ex, HttpStatusCode.NotFound);
         }
         catch (ValidationFailureException ex)
         {
-            await HandleValidationFailureExceptionAsync(context, ex);
+            await HandleExceptionAsync(context, ex, HttpStatusCode.BadRequest);
         }
         catch (SnapshotNullException ex)
         {
-            await SnapshotNullExceptionAsync(context, ex);
+            await HandleExceptionAsync(context, ex, HttpStatusCode.InternalServerError);
         }
         catch (Exception ex)
         {
-            await HandleExceptionAsync(context, ex);
+            await HandleExceptionAsync(context, ex, HttpStatusCode.InternalServerError);
         }
     }
 
-    #region Exceptions Handlers
-    /// <summary>
-    /// Handles the <see cref="EntityNotFoundException"/> exception.
-    /// </summary>
-    /// <param name="context">The HTTP context.</param>
-    /// <param name="ex">The exception.</param>
-    /// <returns>A task representing the asynchronous operation.</returns>
-    private Task HandleEntityNotFoundExceptionAsync(HttpContext context, EntityNotFoundException ex)
+    private Task HandleExceptionAsync(HttpContext context, Exception ex, HttpStatusCode statusCode)
     {
-        PrepareContextResponse(context, HttpStatusCode.NotFound);
+        PrepareContextResponse(context, statusCode);
         var response = BuildResponse(ex);
         return context.Response.WriteAsync(JsonConvert.SerializeObject(response));
     }
-
-    /// <summary>
-    /// Handles the generic <see cref="Exception"/> exception.
-    /// </summary>
-    /// <param name="context">The HTTP context.</param>
-    /// <param name="ex">The exception.</param>
-    /// <returns>A task representing the asynchronous operation.</returns>
-    private Task HandleExceptionAsync(HttpContext context, Exception ex)
-    {
-        PrepareContextResponse(context, HttpStatusCode.InternalServerError);
-        var response = BuildResponse(ex);
-        return context.Response.WriteAsync(JsonConvert.SerializeObject(response));
-    }
-
-    /// <summary>
-    /// Handles the <see cref="NotFoundException"/> exception.
-    /// </summary>
-    /// <param name="context">The HTTP context.</param>
-    /// <param name="ex">The exception.</param>
-    /// <returns>A task representing the asynchronous operation.</returns>
-    private Task HandleNotFoundExceptionAsync(HttpContext context, NotFoundException ex)
-    {
-        PrepareContextResponse(context, HttpStatusCode.NotFound);
-        var response = BuildResponse(ex);
-        return context.Response.WriteAsync(JsonConvert.SerializeObject(response));
-    }
-
-    /// <summary>
-    /// Handles the <see cref="ValidationFailureException"/> exception.
-    /// </summary>
-    /// <param name="context">The HTTP context.</param>
-    /// <param name="ex">The exception.</param>
-    /// <returns>A task representing the asynchronous operation.</returns>
-    private Task HandleValidationFailureExceptionAsync(HttpContext context, ValidationFailureException ex)
-    {
-        PrepareContextResponse(context, HttpStatusCode.BadRequest);
-        var response = BuildResponse(ex);
-        return context.Response.WriteAsync(JsonConvert.SerializeObject(response));
-    }
-
-    /// <summary>
-    /// Handles the <see cref="SnapshotNullException"/> exception.
-    /// </summary>
-    /// <param name="context">The HTTP context.</param>
-    /// <param name="ex">The exception.</param>
-    /// <returns>A task representing the asynchronous operation.</returns>
-    private Task SnapshotNullExceptionAsync(HttpContext context, SnapshotNullException ex)
-    {
-        PrepareContextResponse(context, HttpStatusCode.InternalServerError);
-        var response = BuildResponse(ex);
-        return context.Response.WriteAsync(JsonConvert.SerializeObject(response));
-    }
-    #endregion
 }
