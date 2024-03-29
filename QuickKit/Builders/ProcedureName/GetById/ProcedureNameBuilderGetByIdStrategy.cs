@@ -9,6 +9,6 @@ public class ProcedureNameBuilderGetByIdStrategy<TEntity> : IProcedureNameBuilde
     {
 
         string entityName = ProcedureNameBuilderTextRemover.RemoveEntity<TEntity>();
-        return $"sp_{entityName}_getById";
+        return $"SP_{entityName}_GETBYID".ToUpper();
     }
 }

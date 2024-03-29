@@ -28,10 +28,10 @@ public class ProcedureNameEntityBuilderTests
     public void Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity()
     {
         // Assert
-        Assert.Equal("sp_ValidNameTest_update", _procedureNameBuilderUpdateStrategy.Build());
-        Assert.Equal("sp_ValidNameTest_add", _procedureNameBuilderAddStrategy.Build());
-        Assert.Equal("sp_ValidNameTest_delete", _procedureNameBuilderDeleteStrategy.Build());
-        Assert.Equal("sp_ValidNameTest_getAll", _procedureNameBuilderGetAllStrategy.Build());
-        Assert.Equal("sp_ValidNameTest_getById", _procedureNameBuilderGetByStrategy.Build());
+        Assert.Equal("SP_VALIDNAMETEST_UPDATE", _procedureNameBuilderUpdateStrategy.Build());
+        Assert.Equal("SP_VALIDNAMETEST_ADD", _procedureNameBuilderAddStrategy.Build());
+        Assert.Equal("SP_VALIDNAMETEST_DELETE", _procedureNameBuilderDeleteStrategy.Build());
+        Assert.Equal("SP_VALIDNAMETEST_GETALL", _procedureNameBuilderGetAllStrategy.Build());
+        Assert.Equal("SP_VALIDNAMETEST_GETBYID", _procedureNameBuilderGetByStrategy.Build());
     }
 }

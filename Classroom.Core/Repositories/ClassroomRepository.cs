@@ -46,7 +46,7 @@ public class ClassroomRepository : IClassroomRepository
 
     protected static IDbConnection Connect()
     {
-        return new MySqlConnection("");
+        return new MySqlConnection("Server=localhost;Database=quickkit_demo;Uid=root;Pwd=root;");
     }
 
     public async Task<int> AddAsync(ClassroomEntity entity)

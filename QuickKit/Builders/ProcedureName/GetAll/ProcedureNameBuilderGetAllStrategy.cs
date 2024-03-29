@@ -8,6 +8,6 @@ public class ProcedureNameBuilderGetAllStrategy<TEntity> : IProcedureNameBuilder
     public string Build()
     {
         string entityName = ProcedureNameBuilderTextRemover.RemoveEntity<TEntity>();
-        return $"sp_{entityName}_getAll";
+        return $"SP_{entityName}_GETALL".ToUpper();
     }
 }

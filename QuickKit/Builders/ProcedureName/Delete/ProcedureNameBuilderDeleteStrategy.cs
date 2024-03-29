@@ -8,6 +8,6 @@ public class ProcedureNameBuilderDeleteStrategy<TEntity> : IProcedureNameBuilder
     public string Build()
     {
         string entityName = ProcedureNameBuilderTextRemover.RemoveEntity<TEntity>();
-        return $"sp_{entityName}_delete";
+        return $"SP_{entityName}_DELETE".ToUpper();
     }
 }

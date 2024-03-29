@@ -23,20 +23,18 @@ public static class DapperExecuteExtensions
 
     public static async Task<TResult> ExecuteOnTransactionAsync<TResult>(this IDbConnection conn, Func<Task<TResult>> commandToExecute)
     {
-        using (conn)
+        conn.Open();
+        using IDbTransaction trans = conn.BeginTransaction();
+        try
         {
-            using IDbTransaction trans = conn.BeginTransaction();
-            try
-            {
-                var result = await commandToExecute();
-                trans.Commit();
-                return result;
-            }
-            catch (Exception)
-            {
-                trans.Rollback();
-                throw;
-            }
+            var result = await commandToExecute();
+            trans.Commit();
+            return result;
+        }
+        catch (Exception)
+        {
+            trans.Rollback();
+            throw;
         }
     }
 
