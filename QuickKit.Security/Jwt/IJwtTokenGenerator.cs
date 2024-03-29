@@ -1,4 +1,6 @@
-﻿namespace QuickKit.Security.Jwt;
+﻿using QuickKit.Security.Jwt.Requests;
+
+namespace QuickKit.Security.Jwt;
 
 /// <summary>
 /// Represents an interface for generating JWT tokens.

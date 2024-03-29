@@ -1,10 +1,9 @@
-﻿namespace QuickKit.Shared.Extensions
+﻿namespace QuickKit.Shared.Extensions;
+
+public static class ObjectExtensions
 {
-    public static class ObjectExtensions
+    public static bool IsNull(this object obj)
     {
-        public static bool IsNull(this object obj)
-        {
-            return obj is null;
-        }
+        return obj is null;
     }
 }

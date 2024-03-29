@@ -10,7 +10,7 @@ namespace Classroom.Core.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ClassroomValueObjectController : Controller<ClassroomEntity, int>
+    public class ClassroomValueObjectController : ControllerBase, IController<ClassroomEntity, int>
     {
         private readonly IClassroomServiceValueObject _service;
 
@@ -19,42 +19,42 @@ namespace Classroom.Core.Controllers
             _service = service;
         }
 
-        [HttpAddKit]
-        public override async Task<IActionResult> AddAsync(ClassroomEntity entity)
+        [Add]
+        public async Task<IActionResult> AddAsync(ClassroomEntity entity)
         {
             var result = await _service.AddAsync(entity);
             return result.Convert(Ok);
         }
 
-        [HttpDeleteKit]
-        public override async Task<IActionResult> DeleteAsync(int id)
+        [Delete]
+        public async Task<IActionResult> DeleteAsync(int id)
         {
             var result = await _service.DeleteAsync(id);
             return result.Convert(Ok);
         }
 
-        [HttpGetAllKit]
-        public override async Task<IActionResult> GetAllAsync()
+        [GetAll]
+        public async Task<ActionResult<IEnumerable<ClassroomEntity>>> GetAllAsync()
         {
             var result = await _service.GetAllAsync();
             return Ok(result);
         }
 
-        [HttpGetByIdKit]
-        public override async Task<IActionResult> GetByIdAsync(int id)
+        [GetById]
+        public async Task<IActionResult> GetByIdAsync(int id)
         {
             var result = await _service.GetByIdAsync(id);
             return result.Convert(HttpStatusCode.BadRequest);
         }
 
-        [HttpGetTestEndPointKit]
-        public override IActionResult TestEndPoint()
+        [TestEndPoint]
+        public IActionResult TestEndPoint()
         {
             return Ok($"{nameof(ClassroomValueObjectController)} is working");
         }
 
-        [HttpUpdateKit]
-        public override async Task<IActionResult> UpdateAsync(ClassroomEntity entity)
+        [Update]
+        public   async Task<IActionResult> UpdateAsync(ClassroomEntity entity)
         {
             var result = await _service.UpdateAsync(entity);
 

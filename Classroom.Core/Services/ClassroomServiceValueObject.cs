@@ -1,12 +1,12 @@
 ﻿using Classroom.Core.Entities;
 using Classroom.Core.Repositories;
+using Classroom.Core.Services.Common;
 using QuickKit.ResultTypes;
-using QuickKit.ResultTypes.Services.Interfaces;
 using QuickKit.Shared.Extensions;
 
 namespace Classroom.Core.Services
 {
-    public interface IClassroomServiceValueObject : IServiceValueObject<ClassroomEntity, int> { }
+    public interface IClassroomServiceValueObject : IDomainSelfContainedValueObjectService<ClassroomEntity, int> { }
 
     public class ClassroomServiceValueObject : IClassroomServiceValueObject
     {

@@ -1,96 +1,136 @@
 ﻿using Classroom.Core.Entities;
+using Classroom.Core.Repositories.Common;
 using Dapper;
 using FluentValidation;
-using QuickKit.Repositories.Base;
-using QuickKit.Shared.Handlers;
+using MySql.Data.MySqlClient;
+using QuickKit.Builders.ProcedureName.Add;
+using QuickKit.Builders.ProcedureName.Delete;
+using QuickKit.Builders.ProcedureName.GetAll;
+using QuickKit.Builders.ProcedureName.GetById;
+using QuickKit.Builders.ProcedureName.Update;
+using QuickKit.Extensions;
+using QuickKit.Shared.Exceptions;
 using System.Data;
 
-namespace Classroom.Core.Repositories
+namespace Classroom.Core.Repositories;
+
+public interface IClassroomRepository : IDomainSelfContainedRepository<ClassroomEntity, int>
 {
-    public interface IClassroomRepository : IRepository<ClassroomEntity, int>
+    Task<IQueryable<ClassroomEntity>> GetAllPagedAsync();
+}
+
+public class ClassroomRepository : IClassroomRepository
+{
+    private readonly IValidator<ClassroomEntity> _validator;
+    private readonly IProcedureNameBuilderDeleteStrategy _procedureNameBuilderDeleteStrategy;
+    private readonly IProcedureNameBuilderAddStrategy _procedureNameBuilderAddStrategy;
+    private readonly IProcedureNameBuilderGetAllStrategy _procedureNameBuilderGetAllStrategy;
+    private readonly IProcedureNameBuilderGetByIdStrategy _procedureNameBuilderGetByStrategy;
+    private readonly IProcedureNameBuilderUpdateStrategy _procedureNameBuilderUpdateStrategy;
+
+    public ClassroomRepository(
+        IValidator<ClassroomEntity> validator,
+        IProcedureNameBuilderDeleteStrategy procedureNameBuilderDeleteStrategy,
+        IProcedureNameBuilderAddStrategy procedureNameBuilderAddStrategy,
+        IProcedureNameBuilderGetAllStrategy procedureNameBuilderGetAllStrategy,
+        IProcedureNameBuilderGetByIdStrategy procedureNameBuilderGetByStrategy,
+        IProcedureNameBuilderUpdateStrategy procedureNameBuilderUpdateStrategy)
     {
-        Task<IQueryable<ClassroomEntity>> GetAllPagedAsync();
+        _validator = validator;
+        _procedureNameBuilderDeleteStrategy = procedureNameBuilderDeleteStrategy;
+        _procedureNameBuilderAddStrategy = procedureNameBuilderAddStrategy;
+        _procedureNameBuilderGetAllStrategy = procedureNameBuilderGetAllStrategy;
+        _procedureNameBuilderGetByStrategy = procedureNameBuilderGetByStrategy;
+        _procedureNameBuilderUpdateStrategy = procedureNameBuilderUpdateStrategy;
     }
 
-    public class ClassroomRepository : Repository<ClassroomEntity, int>, IClassroomRepository
+    protected static IDbConnection Connect()
     {
-        public ClassroomRepository(IValidator<ClassroomEntity> validator,
-            IDatabaseConnectionHandler handler) : base(validator, handler)
-        {
-        }
+        return new MySqlConnection("");
+    }
 
-        public override async Task<int> AddAsync(ClassroomEntity entity)
-        {
-            CommandDefinition command = new(
-                ProcedureNameAdd,
-                new
-                {
-                    classroom_name = entity.ClassroomName
-                },
-                commandType: CommandType.StoredProcedure);
+    public async Task<int> AddAsync(ClassroomEntity entity)
+    {
+        CommandDefinition command = new(
+            _procedureNameBuilderAddStrategy.Build(),
+            new
+            {
+                classroom_name = entity.ClassroomName
+            },
+            commandType: CommandType.StoredProcedure);
 
-            return await ExecuteAsync(entity, command, $"{entity} is not valid");
-        }
+        using IDbConnection conn = Connect();
+        return await conn.ExecuteValidatingAsync(entity, _validator, "failure", command);
+    }
 
-        public override async Task<int> DeleteAsync(int id)
-        {
-            CommandDefinition command = new(
-                ProcedureNameDelete,
-                new
-                {
-                    idClassroom = id
-                },
-                commandType: CommandType.StoredProcedure);
+    public async Task<int> DeleteAsync(int id)
+    {
+        CommandDefinition command = new(
+            _procedureNameBuilderDeleteStrategy.Build(),
+            new
+            {
+                idClassroom = id
+            },
+            commandType: CommandType.StoredProcedure);
 
-            return await ExecuteAsync(command);
-        }
+        using IDbConnection conn = Connect();
+        return await conn.ExecuteOnTransactionAsync(command);
+    }
 
-        public override async Task<IEnumerable<ClassroomEntity>> GetAllAsync()
-        {
-            CommandDefinition command = new(
-                ProcedureNameGetAll,
-                commandType: CommandType.StoredProcedure);
+    public async Task<IEnumerable<ClassroomEntity>> GetAllAsync()
+    {
+        CommandDefinition command = new(
+            _procedureNameBuilderGetAllStrategy.Build(),
+            commandType: CommandType.StoredProcedure);
 
-            var result = await QueryAsync<ClassroomSnapshot>(command);
-            return result.Select(ClassroomEntity.FromSnapshot);
-        }
+        using IDbConnection conn = Connect();
+        var result = await conn.QueryAsync<ClassroomSnapshot>(command);
+        return result.Select(ClassroomEntity.FromSnapshot);
+    }
 
-        public async Task<IQueryable<ClassroomEntity>> GetAllPagedAsync()
-        {
-            CommandDefinition command = new(
-                ProcedureNameGetAll,
-                commandType: CommandType.StoredProcedure);
+    public async Task<IQueryable<ClassroomEntity>> GetAllPagedAsync()
+    {
+        CommandDefinition command = new(
+            _procedureNameBuilderGetAllStrategy.Build(),
+            commandType: CommandType.StoredProcedure);
 
-            var result = await QueryAsync<ClassroomSnapshot>(command);
-            return result.Select(ClassroomEntity.FromSnapshot).AsQueryable();
-        }
+        using IDbConnection conn = Connect();
+        var result = await conn.QueryAsync<ClassroomSnapshot>(command);
+        return result.Select(ClassroomEntity.FromSnapshot).AsQueryable();
+    }
 
-        public override async Task<ClassroomEntity?> GetByIdAsync(int id)
-        {
-            CommandDefinition command = new(
-                ProcedureNameGetById,
-                new
-                {
-                    id_classroom = id
-                },
-                commandType: CommandType.StoredProcedure);
+    public async Task<ClassroomEntity?> GetByIdAsync(int id)
+    {
+        CommandDefinition command = new(
+            _procedureNameBuilderGetByStrategy.Build(),
+            new
+            {
+                id_classroom = id
+            },
+            commandType: CommandType.StoredProcedure);
 
-            var result = await QuerySingleOrDefaultAsync<ClassroomSnapshot>(command);
-            return ClassroomEntity.FromSnapshot(result);
-        }
+        using IDbConnection conn = Connect();
+        var result = await conn.QuerySingleOrDefaultAsync<ClassroomSnapshot>(command);
+        return ClassroomEntity.FromSnapshot(result);
+    }
 
-        public override async Task<int> UpdateAsync(ClassroomEntity entity)
-        {
-            CommandDefinition command = new(
-                ProcedureNameUpdate,
-                new
-                {
-                    idClassroom = entity.Id,
-                    classroomName = entity.ClassroomName
-                },
-                commandType: CommandType.StoredProcedure);
+    public async Task<ClassroomEntity> GetByIdThrowAsync(int id, string notFoundExceptionMessage)
+    {
+        return await GetByIdAsync(id) ?? throw new EntityNotFoundException(notFoundExceptionMessage);
+    }
 
-            return await ExecuteAsync(command);
-        }
+    public async Task<int> UpdateAsync(ClassroomEntity entity)
+    {
+        CommandDefinition command = new(
+            _procedureNameBuilderUpdateStrategy.Build(),
+            new
+            {
+                idClassroom = entity.Id,
+                classroomName = entity.ClassroomName
+            },
+            commandType: CommandType.StoredProcedure);
+
+        using IDbConnection conn = Connect();
+        return await conn.ExecuteOnTransactionAsync(command);
     }
 }

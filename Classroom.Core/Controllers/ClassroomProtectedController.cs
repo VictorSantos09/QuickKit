@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using QuickKit.AspNetCore.Attributes;
 using QuickKit.Security.Jwt;
+using QuickKit.Security.Jwt.Requests;
 using System.Security.Claims;
 using System.Text;
 
@@ -19,7 +20,7 @@ namespace Classroom.Core.Controllers
             _tokenGenerator = tokenGenerator;
         }
 
-        [HttpGetTestEndPointKit]
+        [TestEndPoint]
         [Authorize]
         public IActionResult Test()
         {

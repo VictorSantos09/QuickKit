@@ -1,10 +1,10 @@
 ﻿using Classroom.Core.Entities;
 using Classroom.Core.Repositories;
-using QuickKit.Shared.Services;
+using Classroom.Core.Services.Common;
 
 namespace Classroom.Core.Services
 {
-    public interface IClassroomService : IService<ClassroomEntity, int>
+    public interface IClassroomService : IDomainSelfContainedService<ClassroomEntity, int>
     {
 
     }

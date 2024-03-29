@@ -26,7 +26,6 @@ public static class ClassroomConfiguration
 
         services.AddJwtBearerKit(TokenInfo.Key, TokenInfo.Issuer, TokenInfo.Audience);
 
-        services.AddQuickKit("Server=localhost;Database=quickkit_demo;Uid=root;Pwd=root;");
         return services;
     }
 

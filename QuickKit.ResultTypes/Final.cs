@@ -1,64 +1,38 @@
-﻿namespace QuickKit.ResultTypes
+﻿namespace QuickKit.ResultTypes;
+
+public record Final : FinalBase
 {
-    #region FinalBase
-    public abstract record FinalBase
-    {
-        public bool IsSuccess { get; }
-        public bool IsFailure => !IsSuccess;
-        public Error Error { get; }
+    #region Success
+    public static Final Success() => new(true, Error.None);
 
-        private protected FinalBase(bool isSuccess, Error error)
-        {
-            if (isSuccess && error != Error.None ||
-               !isSuccess && error == Error.None)
-            {
-                throw new ArgumentException("invalid argument for creating result");
-            }
-
-            IsSuccess = isSuccess;
-            Error = error;
-        }
-    }
+    public static Final<TType> Success<TType>(TType data) => new(true, Error.None, data);
     #endregion
 
-    #region Final
-    public record Final : FinalBase
-    {
-        #region Success
-        public static Final Success() => new(true, Error.None);
+    #region Failure
+    public static Final Failure(Error error) => new(false, error);
 
-        public static Final<TType> Success<TType>(TType data) => new(true, Error.None, data);
-        #endregion
+    public static Final Failure(string code, string message) => new(false, Error.Create(code, message));
 
-        #region Failure
-        public static Final Failure(Error error) => new(false, error);
-
-        public static Final Failure(string code, string message)
-            => new(false, Error.Create(code, message));
-
-        public static Final<TType> Failure<TType>(TType data, string code, string message)
-            => new(false, Error.Create(code, message), data);
-        #endregion
-
-        private Final(bool isSuccess, Error error) : base(isSuccess, error) { }
-    }
-
-    public record Final<TType> : FinalBase
-    {
-        public TType Data { get; }
-
-        public static Final<TType> Success(TType data) => new(true, Error.None, data);
-        public static Final<TType> Failure(Error error, TType data) => new(false, error, data);
-        public static Final<TType> Failure(string code, string message, TType data)
-        {
-            Error error = Error.Create(code, message);
-            return Failure(error, data);
-        }
-
-        public Final(bool isSuccess, Error error, TType data) : base(isSuccess, error)
-        {
-            Data = data;
-        }
-    }
+    public static Final<TType> Failure<TType>(TType data, string code, string message) => new(false, Error.Create(code, message), data);
     #endregion
+
+    private Final(bool isSuccess, Error error) : base(isSuccess, error) { }
+}
+
+public record Final<TType> : FinalBase
+{
+    public TType Data { get; }
+
+    public static Final<TType> Success(TType data) => new(true, Error.None, data);
+    public static Final<TType> Failure(Error error, TType data) => new(false, error, data);
+    public static Final<TType> Failure(string code, string message, TType data)
+    {
+        Error error = Error.Create(code, message);
+        return Failure(error, data);
+    }
+
+    public Final(bool isSuccess, Error error, TType data) : base(isSuccess, error)
+    {
+        Data = data;
+    }
 }

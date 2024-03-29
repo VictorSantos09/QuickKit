@@ -25,7 +25,7 @@ namespace QuickKit.ResultTypes.UnitTests.Configuration
             var expected = "test";
 
             // Act
-            DefaultMessageConfiguration.CustomDefaultMessageFor<EntityNotFoundException>(Arg.Any<IServiceCollection>(), expected);
+            DefaultMessageExceptionConfiguration.CustomDefaultMessageFor<EntityNotFoundException>(Arg.Any<IServiceCollection>(), expected);
             var actual = new EntityNotFoundException(Arg.Any<string>());
 
             // Assert
@@ -39,7 +39,7 @@ namespace QuickKit.ResultTypes.UnitTests.Configuration
             var expected = "test";
 
             // Act
-            DefaultMessageConfiguration.CustomDefaultMessageFor<NotFoundException>(Arg.Any<IServiceCollection>(), expected);
+            DefaultMessageExceptionConfiguration.CustomDefaultMessageFor<NotFoundException>(Arg.Any<IServiceCollection>(), expected);
             var actual = new NotFoundException(Arg.Any<string>());
 
             // Assert
@@ -53,7 +53,7 @@ namespace QuickKit.ResultTypes.UnitTests.Configuration
             var expected = "test";
 
             // Act
-            DefaultMessageConfiguration.CustomDefaultMessageFor<InvalidArgumentResultException>(Arg.Any<IServiceCollection>(), expected);
+            DefaultMessageExceptionConfiguration.CustomDefaultMessageFor<InvalidArgumentResultException>(Arg.Any<IServiceCollection>(), expected);
             var actual = new InvalidArgumentResultException(Arg.Any<string>());
 
             // Assert
@@ -67,7 +67,7 @@ namespace QuickKit.ResultTypes.UnitTests.Configuration
             var expected = "test";
 
             // Act
-            DefaultMessageConfiguration.CustomDefaultMessageFor<SnapshotNullException>(Arg.Any<IServiceCollection>(), expected);
+            DefaultMessageExceptionConfiguration.CustomDefaultMessageFor<SnapshotNullException>(Arg.Any<IServiceCollection>(), expected);
             var actual = new SnapshotNullException(Arg.Any<string>());
 
             // Assert
@@ -81,7 +81,7 @@ namespace QuickKit.ResultTypes.UnitTests.Configuration
             var expected = "test";
 
             // Act
-            DefaultMessageConfiguration.CustomDefaultMessageFor<ValidationFailureException>(Arg.Any<IServiceCollection>(), expected);
+            DefaultMessageExceptionConfiguration.CustomDefaultMessageFor<ValidationFailureException>(Arg.Any<IServiceCollection>(), expected);
             var actual = new ValidationFailureException(Arg.Any<ValidationResult>(),
                                                         Arg.Any<string>());
 
@@ -101,7 +101,7 @@ namespace QuickKit.ResultTypes.UnitTests.Configuration
             // Assert
             Assert.Throws<InvalidOperationException>(() =>
             {
-                DefaultMessageConfiguration.CustomDefaultMessageFor<InvalidExceptionForTest>(Arg.Any<IServiceCollection>(),
+                DefaultMessageExceptionConfiguration.CustomDefaultMessageFor<InvalidExceptionForTest>(Arg.Any<IServiceCollection>(),
                                                                                              Arg.Any<string>());
             });
 
