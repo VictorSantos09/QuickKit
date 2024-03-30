@@ -2,8 +2,9 @@
 
 namespace QuickKit.ResultTypes.Services.Contracts;
 
-public interface IAddValueObjectService<TEntity>
+public interface IGetAllService<TEntity>
     where TEntity : IEntity
 {
-    public Task<Final> AddAsync(TEntity entity);
+    public Task<Final<IEnumerable<TEntity>>> GetAllAsync();
+
 }

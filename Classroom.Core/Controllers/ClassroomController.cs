@@ -1,73 +1,64 @@
 ﻿using Classroom.Core.Entities;
-using Classroom.Core.Repositories;
 using Classroom.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 using QuickKit.AspNetCore.Attributes;
 using QuickKit.AspNetCore.Controllers;
-using QuickKit.AspNetCore.Controllers.Contracts;
+using QuickKit.ResultTypes.Converters;
+using System.Net;
 
-namespace Classroom.Core.Controllers;
-
-[ApiController]
-[Route("[controller]")]
-public class ClassroomController : ControllerBase,
-    IController<ClassroomEntity, int>
+namespace Classroom.Core.Controllers
 {
-    private readonly IClassroomService _classroomService;
-    private readonly IClassroomRepository _classroomRepository;
-
-    public ClassroomController(IClassroomService classroomService, IClassroomRepository classroomRepository)
+    [ApiController]
+    [Route("[controller]")]
+    public class ClassroomController : ControllerBase, IController<ClassroomEntity, int>
     {
-        _classroomService = classroomService;
-        _classroomRepository = classroomRepository;
-    }
+        private readonly IClassroomService _service;
 
-    /// <summary>
-    /// Create a entity
-    /// </summary>
-    /// <param name="entity"></param>
-    /// <returns>Response</returns>
-    [Add]
-    public async Task<IActionResult> AddAsync(ClassroomEntity entity)
-    {
-        await _classroomService.AddAsync(entity);
-        return Ok();
-    }
+        public ClassroomController(IClassroomService service)
+        {
+            _service = service;
+        }
 
-    /// <summary>
-    /// Delete a entity
-    /// </summary>
-    /// <param name="id"></param>
-    /// <returns></returns>
-    [Delete]
-    public async Task<IActionResult> DeleteAsync(int id)
-    {
-        await _classroomService.DeleteAsync(id);
-        return Ok();
-    }
+        [Add]
+        public async Task<IActionResult> AddAsync(ClassroomEntity entity)
+        {
+            var result = await _service.AddAsync(entity);
+            return result.Convert(Ok);
+        }
 
-    [GetAll]
-    public async Task<ActionResult<IEnumerable<ClassroomEntity>>> GetAllAsync()
-    {
-        return Ok(await _classroomService.GetAllAsync());
-    }
+        [Delete]
+        public async Task<IActionResult> DeleteAsync(int id)
+        {
+            var result = await _service.DeleteAsync(id);
+            return result.Convert(Ok);
+        }
 
-    [GetById]
-    public async Task<IActionResult> GetByIdAsync(int id)
-    {
-        return Ok(await _classroomService.GetByIdAsync(id));
-    }
+        [GetAll]
+        public async Task<ActionResult<IEnumerable<ClassroomEntity>>> GetAllAsync()
+        {
+            var result = await _service.GetAllAsync();
+            return Ok(result);
+        }
 
-    [TestEndPoint]
-    public IActionResult TestEndPoint()
-    {
-        return Ok($"{nameof(ClassroomController)} api working");
-    }
+        [GetById]
+        public async Task<IActionResult> GetByIdAsync(int id)
+        {
+            var result = await _service.GetByIdAsync(id);
+            return result.Convert(HttpStatusCode.BadRequest);
+        }
 
-    [Update]
-    public async Task<IActionResult> UpdateAsync(ClassroomEntity entity)
-    {
-        await _classroomService.UpdateAsync(entity);
-        return Ok();
+        [TestEndPoint]
+        public IActionResult TestEndPoint()
+        {
+            return Ok($"{nameof(ClassroomController)} is working");
+        }
+
+        [Update]
+        public   async Task<IActionResult> UpdateAsync(ClassroomEntity entity)
+        {
+            var result = await _service.UpdateAsync(entity);
+
+            return result.Convert(HttpStatusCode.BadRequest);
+        }
     }
 }

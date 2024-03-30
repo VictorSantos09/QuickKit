@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
-using QuickKit.Shared.Exceptions;
-using QuickKit.Shared.Exceptions.Base;
 using System.Net;
 
 namespace QuickKit.AspNetCore.Middlewares.Types;
@@ -87,22 +85,6 @@ public class GlobalExceptionMiddlewareDefault
         try
         {
             await _next(context);
-        }
-        catch (EntityNotFoundException ex)
-        {
-            await HandleExceptionAsync(context, ex,  HttpStatusCode.NotFound);
-        }
-        catch (NotFoundException ex)
-        {
-            await HandleExceptionAsync(context, ex, HttpStatusCode.NotFound);
-        }
-        catch (ValidationFailureException ex)
-        {
-            await HandleExceptionAsync(context, ex, HttpStatusCode.BadRequest);
-        }
-        catch (SnapshotNullException ex)
-        {
-            await HandleExceptionAsync(context, ex, HttpStatusCode.InternalServerError);
         }
         catch (Exception ex)
         {

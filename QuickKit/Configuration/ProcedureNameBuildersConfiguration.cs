@@ -5,13 +5,12 @@ using QuickKit.Builders.ProcedureName.GetAll;
 using QuickKit.Builders.ProcedureName.GetById;
 using QuickKit.Builders.ProcedureName.Update;
 using QuickKit.Shared.Entities;
-using QuickKit.Shared.Services;
 using System.Reflection;
 
 namespace QuickKit.Configuration;
 public static class ProcedureNameBuildersConfiguration
 {
-    public const ServiceLifetime DefaultLifetime = SERVICE_DESCRIPTOR.DEFAULT_LIFETIME;
+    public const ServiceLifetime DefaultLifetime = ServiceLifetime.Transient;
 
     public static IServiceCollection AddProcedureNameBuilders<TEntity>(this IServiceCollection services,
                                                                        TEntity entity,

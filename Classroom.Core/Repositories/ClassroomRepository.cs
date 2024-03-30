@@ -1,4 +1,5 @@
 ﻿using Classroom.Core.Entities;
+using Classroom.Core.Exceptions;
 using Classroom.Core.Repositories.Common;
 using Dapper;
 using FluentValidation;
@@ -9,7 +10,6 @@ using QuickKit.Builders.ProcedureName.GetAll;
 using QuickKit.Builders.ProcedureName.GetById;
 using QuickKit.Builders.ProcedureName.Update;
 using QuickKit.Extensions;
-using QuickKit.Shared.Exceptions;
 using System.Data;
 
 namespace Classroom.Core.Repositories;

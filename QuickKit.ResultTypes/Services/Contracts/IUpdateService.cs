@@ -2,9 +2,8 @@
 
 namespace QuickKit.ResultTypes.Services.Contracts;
 
-public interface IGetAllValueObjectService<TEntity>
+public interface IUpdateService<TEntity>
     where TEntity : IEntity
 {
-    public Task<Final<IEnumerable<TEntity>>> GetAllAsync();
-
+    public Task<Final> UpdateAsync(TEntity entity);
 }

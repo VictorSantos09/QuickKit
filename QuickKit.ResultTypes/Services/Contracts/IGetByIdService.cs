@@ -2,7 +2,7 @@
 
 namespace QuickKit.ResultTypes.Services.Contracts;
 
-public interface IGetByIdValueObjectService<TEntity, TKey>
+public interface IGetByIdService<TEntity, TKey>
     where TEntity : IEntity
     where TKey : IConvertible
 {

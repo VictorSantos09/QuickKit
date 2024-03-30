@@ -2,8 +2,8 @@
 
 namespace QuickKit.ResultTypes.Services.Contracts;
 
-public interface IUpdateValueObjectService<TEntity>
+public interface IAddService<TEntity>
     where TEntity : IEntity
 {
-    public Task<Final> UpdateAsync(TEntity entity);
+    public Task<Final> AddAsync(TEntity entity);
 }

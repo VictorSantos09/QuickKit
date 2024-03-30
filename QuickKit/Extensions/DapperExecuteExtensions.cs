@@ -1,7 +1,6 @@
 ﻿using Dapper;
 using FluentValidation;
 using QuickKit.Shared.Entities;
-using QuickKit.Shared.Validations.Extensions;
 using System.Data;
 
 namespace QuickKit.Extensions;
@@ -13,7 +12,11 @@ public static class DapperExecuteExtensions
                                                                   string validationFailureMessage,
                                                                   CommandDefinition command) where TEntity : IEntity
     {
-        await validator.ValidateThrowAsync(entity, validationFailureMessage);
+        var result = await validator.ValidateAsync(entity);
+        if (!result.IsValid)
+        {
+            throw new ValidationException(validationFailureMessage, result.Errors);
+        }
 
         return await conn.ExecuteOnTransactionAsync(async () =>
         {
