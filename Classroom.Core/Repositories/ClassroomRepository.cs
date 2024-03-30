@@ -52,7 +52,7 @@ public class ClassroomRepository : IClassroomRepository
     public async Task<int> AddAsync(ClassroomEntity entity)
     {
         CommandDefinition command = new(
-            _procedureNameBuilderAddStrategy.Build(),
+            _procedureNameBuilderAddStrategy.Build<ClassroomEntity>(),
             new
             {
                 classroom_name = entity.ClassroomName
@@ -66,7 +66,7 @@ public class ClassroomRepository : IClassroomRepository
     public async Task<int> DeleteAsync(int id)
     {
         CommandDefinition command = new(
-            _procedureNameBuilderDeleteStrategy.Build(),
+            _procedureNameBuilderDeleteStrategy.Build<ClassroomEntity>(),
             new
             {
                 idClassroom = id
@@ -80,7 +80,7 @@ public class ClassroomRepository : IClassroomRepository
     public async Task<IEnumerable<ClassroomEntity>> GetAllAsync()
     {
         CommandDefinition command = new(
-            _procedureNameBuilderGetAllStrategy.Build(),
+            _procedureNameBuilderGetAllStrategy.Build<ClassroomEntity>(),
             commandType: CommandType.StoredProcedure);
 
         using IDbConnection conn = Connect();
@@ -91,7 +91,7 @@ public class ClassroomRepository : IClassroomRepository
     public async Task<IQueryable<ClassroomEntity>> GetAllPagedAsync()
     {
         CommandDefinition command = new(
-            _procedureNameBuilderGetAllStrategy.Build(),
+            _procedureNameBuilderGetAllStrategy.Build<ClassroomEntity>(),
             commandType: CommandType.StoredProcedure);
 
         using IDbConnection conn = Connect();
@@ -102,7 +102,7 @@ public class ClassroomRepository : IClassroomRepository
     public async Task<ClassroomEntity?> GetByIdAsync(int id)
     {
         CommandDefinition command = new(
-            _procedureNameBuilderGetByStrategy.Build(),
+            _procedureNameBuilderGetByStrategy.Build<ClassroomEntity>(),
             new
             {
                 id_classroom = id
@@ -122,7 +122,7 @@ public class ClassroomRepository : IClassroomRepository
     public async Task<int> UpdateAsync(ClassroomEntity entity)
     {
         CommandDefinition command = new(
-            _procedureNameBuilderUpdateStrategy.Build(),
+            _procedureNameBuilderUpdateStrategy.Build<ClassroomEntity>(),
             new
             {
                 idClassroom = entity.Id,

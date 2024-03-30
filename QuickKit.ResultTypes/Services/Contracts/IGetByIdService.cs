@@ -16,5 +16,5 @@ public interface IGetByIdService<TEntity, TKey>
     /// </summary>
     /// <param name="id">The ID of the entity.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the entity.</returns>
-    public Task<Final<TEntity>> GetByIdAsync(TKey id);
+    public Task<Final<TEntity?>> GetByIdAsync(TKey id);
 }

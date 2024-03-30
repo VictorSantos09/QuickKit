@@ -19,23 +19,6 @@ public static class ProcedureNameBuildersConfiguration
     public const ServiceLifetime DefaultLifetime = ServiceLifetime.Transient;
 
     /// <summary>
-    /// Adds procedure name builders for the specified entity to the service collection.
-    /// </summary>
-    /// <typeparam name="TEntity">The type of the entity.</typeparam>
-    /// <param name="services">The service collection to add the procedure name builders to.</param>
-    /// <param name="entity">The entity type.</param>
-    /// <param name="lifetime">The lifetime of the registered services (default is <see cref="ServiceLifetime.Transient"/>).</param>
-    /// <returns>The modified service collection.</returns>
-    public static IServiceCollection AddProcedureNameBuilders<TEntity>(this IServiceCollection services,
-                                                                       TEntity entity,
-                                                                       ServiceLifetime lifetime = DefaultLifetime) where TEntity : Type, IEntity
-    {
-        List<ServiceDescriptor> descriptor = GetServiceDescriptors(entity, lifetime);
-        AddDescriptorToServices(services, descriptor);
-        return services;
-    }
-
-    /// <summary>
     /// Adds procedure name builders from the specified assembly to the service collection.
     /// </summary>
     /// <param name="services">The service collection to add the procedure name builders to.</param>
@@ -44,18 +27,11 @@ public static class ProcedureNameBuildersConfiguration
     /// <param name="lifetime">The lifetime of the registered services.</param>
     /// <returns>The modified service collection.</returns>
     public static IServiceCollection AddProcedureNameBuildersFromAssembly(this IServiceCollection services,
-                                                                                   Assembly assembly,
-                                                                                   bool onlyPublic = true,
                                                                                    ServiceLifetime lifetime = DefaultLifetime)
     {
-        IEnumerable<Type> entities = FindEntitiesOnAssembly(assembly, onlyPublic);
-
         List<ServiceDescriptor> descriptors = new();
 
-        foreach (Type entity in entities)
-        {
-            descriptors.AddRange(GetServiceDescriptors(entity, lifetime));
-        }
+        descriptors.AddRange(GetServiceDescriptors(lifetime));
 
         AddDescriptorToServices(services, descriptors);
 
@@ -80,15 +56,15 @@ public static class ProcedureNameBuildersConfiguration
         return types;
     }
 
-    private static List<ServiceDescriptor> GetServiceDescriptors<TEntity>(TEntity entity, ServiceLifetime lifetime) where TEntity : Type
+    private static List<ServiceDescriptor> GetServiceDescriptors(ServiceLifetime lifetime)
     {
         Dictionary<Type, Type> dictionary = new()
         {
-            { typeof(IProcedureNameBuilderAddStrategy), typeof(ProcedureNameBuilderAddStrategy<>).MakeGenericType(entity) },
-            { typeof(IProcedureNameBuilderDeleteStrategy), typeof(ProcedureNameBuilderDeleteStrategy<>).MakeGenericType(entity) },
-            { typeof(IProcedureNameBuilderGetAllStrategy), typeof(ProcedureNameBuilderGetAllStrategy<>).MakeGenericType(entity) },
-            { typeof(IProcedureNameBuilderGetByIdStrategy), typeof(ProcedureNameBuilderGetByIdStrategy<>).MakeGenericType(entity) },
-            { typeof(IProcedureNameBuilderUpdateStrategy), typeof(ProcedureNameBuilderUpdateStrategy<>).MakeGenericType(entity) }
+            { typeof(IProcedureNameBuilderAddStrategy), typeof(ProcedureNameBuilderAddStrategy) },
+            { typeof(IProcedureNameBuilderDeleteStrategy), typeof(ProcedureNameBuilderDeleteStrategy) },
+            { typeof(IProcedureNameBuilderGetAllStrategy), typeof(ProcedureNameBuilderGetAllStrategy)},
+            { typeof(IProcedureNameBuilderGetByIdStrategy), typeof(ProcedureNameBuilderGetByIdStrategy) },
+            { typeof(IProcedureNameBuilderUpdateStrategy), typeof(ProcedureNameBuilderUpdateStrategy) }
         };
 
         List<ServiceDescriptor> services = new();

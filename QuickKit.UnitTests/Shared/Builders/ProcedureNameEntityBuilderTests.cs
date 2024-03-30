@@ -8,11 +8,11 @@ using QuickKit.UnitTests.Shared.TestsEntities;
 namespace QuickKit.UnitTests.Shared.Builders;
 public class ProcedureNameEntityBuilderTests
 {
-    private readonly ProcedureNameBuilderUpdateStrategy<ValidNameTestEntity> _procedureNameBuilderUpdateStrategy;
-    private readonly ProcedureNameBuilderAddStrategy<ValidNameTestEntity> _procedureNameBuilderAddStrategy;
-    private readonly ProcedureNameBuilderDeleteStrategy<ValidNameTestEntity> _procedureNameBuilderDeleteStrategy;
-    private readonly ProcedureNameBuilderGetAllStrategy<ValidNameTestEntity> _procedureNameBuilderGetAllStrategy;
-    private readonly ProcedureNameBuilderGetByIdStrategy<ValidNameTestEntity> _procedureNameBuilderGetByStrategy;
+    private readonly ProcedureNameBuilderUpdateStrategy _procedureNameBuilderUpdateStrategy;
+    private readonly ProcedureNameBuilderAddStrategy _procedureNameBuilderAddStrategy;
+    private readonly ProcedureNameBuilderDeleteStrategy _procedureNameBuilderDeleteStrategy;
+    private readonly ProcedureNameBuilderGetAllStrategy _procedureNameBuilderGetAllStrategy;
+    private readonly ProcedureNameBuilderGetByIdStrategy _procedureNameBuilderGetByStrategy;
 
     public ProcedureNameEntityBuilderTests()
     {
@@ -28,10 +28,10 @@ public class ProcedureNameEntityBuilderTests
     public void Builder_WhenCalled_ShouldReturnProcedureNameWithoutEntity()
     {
         // Assert
-        Assert.Equal("SP_VALIDNAMETEST_UPDATE", _procedureNameBuilderUpdateStrategy.Build());
-        Assert.Equal("SP_VALIDNAMETEST_ADD", _procedureNameBuilderAddStrategy.Build());
-        Assert.Equal("SP_VALIDNAMETEST_DELETE", _procedureNameBuilderDeleteStrategy.Build());
-        Assert.Equal("SP_VALIDNAMETEST_GETALL", _procedureNameBuilderGetAllStrategy.Build());
-        Assert.Equal("SP_VALIDNAMETEST_GETBYID", _procedureNameBuilderGetByStrategy.Build());
+        Assert.Equal("SP_VALIDNAMETEST_UPDATE", _procedureNameBuilderUpdateStrategy.Build<ValidNameTestEntity>());
+        Assert.Equal("SP_VALIDNAMETEST_ADD", _procedureNameBuilderAddStrategy.Build<ValidNameTestEntity>());
+        Assert.Equal("SP_VALIDNAMETEST_DELETE", _procedureNameBuilderDeleteStrategy.Build<ValidNameTestEntity>());
+        Assert.Equal("SP_VALIDNAMETEST_GETALL", _procedureNameBuilderGetAllStrategy.Build<ValidNameTestEntity>());
+        Assert.Equal("SP_VALIDNAMETEST_GETBYID", _procedureNameBuilderGetByStrategy.Build<ValidNameTestEntity>());
     }
 }

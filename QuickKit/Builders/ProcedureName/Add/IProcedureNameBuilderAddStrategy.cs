@@ -2,7 +2,7 @@
 
 namespace QuickKit.Builders.ProcedureName.Add;
 /// <summary>
-/// Represents the strategy for adding a procedure name in the ProcedureNameBuilder.
+/// Represents a strategy for building the procedure name for the Add operation.
 /// </summary>
 public interface IProcedureNameBuilderAddStrategy : IProcedureNameBuilderStrategy
 {

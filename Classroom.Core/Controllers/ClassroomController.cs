@@ -2,6 +2,7 @@
 using Classroom.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 using QuickKit.AspNetCore.Attributes;
+using QuickKit.ResultTypes;
 using QuickKit.ResultTypes.Converters;
 using System.Net;
 
@@ -21,28 +22,28 @@ public class ClassroomController : ControllerBase, IController<ClassroomEntity, 
     [Add]
     public async Task<IActionResult> AddAsync(ClassroomEntity entity)
     {
-        QuickKit.ResultTypes.Final result = await _service.AddAsync(entity);
+        Final result = await _service.AddAsync(entity);
         return result.Convert(Ok);
     }
 
     [Delete]
     public async Task<IActionResult> DeleteAsync(int id)
     {
-        QuickKit.ResultTypes.Final result = await _service.DeleteAsync(id);
+        Final result = await _service.DeleteAsync(id);
         return result.Convert(Ok);
     }
 
     [GetAll]
     public async Task<ActionResult<IEnumerable<ClassroomEntity>>> GetAllAsync()
     {
-        QuickKit.ResultTypes.Final<IEnumerable<ClassroomEntity>> result = await _service.GetAllAsync();
+        Final<IEnumerable<ClassroomEntity>> result = await _service.GetAllAsync();
         return Ok(result);
     }
 
     [GetById]
-    public async Task<IActionResult> GetByIdAsync(int id)
+    public async Task<ActionResult<ClassroomEntity>> GetByIdAsync(int id)
     {
-        QuickKit.ResultTypes.Final<ClassroomEntity> result = await _service.GetByIdAsync(id);
+        Final<ClassroomEntity> result = await _service.GetByIdAsync(id);
         return result.Convert(HttpStatusCode.BadRequest);
     }
 
@@ -55,7 +56,7 @@ public class ClassroomController : ControllerBase, IController<ClassroomEntity, 
     [Update]
     public async Task<IActionResult> UpdateAsync(ClassroomEntity entity)
     {
-        QuickKit.ResultTypes.Final result = await _service.UpdateAsync(entity);
+        Final result = await _service.UpdateAsync(entity);
 
         return result.Convert(HttpStatusCode.BadRequest);
     }

@@ -43,7 +43,7 @@ public class ClassroomService : IClassroomService
 
     public async Task<Final<ClassroomEntity>> GetByIdAsync(int id)
     {
-        ClassroomEntity classroom = await _repository.GetByIdAsync(id);
+        ClassroomEntity? classroom = await _repository.GetByIdAsync(id);
 
         return classroom is null ? Final.Failure(classroom, "classroom.notFound", "classroom not found") : Final.Success(classroom);
     }

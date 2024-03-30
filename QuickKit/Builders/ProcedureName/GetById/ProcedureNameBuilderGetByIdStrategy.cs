@@ -6,11 +6,9 @@ namespace QuickKit.Builders.ProcedureName.GetById;
 /// <summary>
 /// Represents a strategy for building the procedure name for the GetById operation.
 /// </summary>
-/// <typeparam name="TEntity">The type of the entity.</typeparam>
-public class ProcedureNameBuilderGetByIdStrategy<TEntity> : IProcedureNameBuilderGetByIdStrategy where TEntity : IEntity
+public class ProcedureNameBuilderGetByIdStrategy: IProcedureNameBuilderGetByIdStrategy
 {
-    /// <inheritdoc/>
-    public string Build()
+    public string Build<TEntity>() where TEntity : IEntity
     {
         string entityName = ProcedureNameBuilderTextRemover.RemoveEntity<TEntity>();
         return $"SP_{entityName}_GETBYID".ToUpper();

@@ -1,10 +1,12 @@
 @echo off
-color 0
+
+REM Executando o build da solução
+echo Executando build da solução...
+dotnet build
 
 echo Criando output "dist"
 mkdir dist
 
-color 06
 echo.
 
 echo copiando QuickKit.dll

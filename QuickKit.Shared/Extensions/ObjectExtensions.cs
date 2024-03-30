@@ -10,7 +10,7 @@ public static class ObjectExtensions
     /// </summary>
     /// <param name="obj">The object to check.</param>
     /// <returns>true if the object is null; otherwise, false.</returns>
-    public static bool IsNull(this object obj)
+    public static bool IsNull(this object? obj)
     {
         return obj is null;
     }

@@ -6,11 +6,9 @@ namespace QuickKit.Builders.ProcedureName.GetAll;
 /// <summary>
 /// Represents a strategy for building the procedure name for getting all entities of a specific type.
 /// </summary>
-/// <typeparam name="TEntity">The type of the entity.</typeparam>
-public class ProcedureNameBuilderGetAllStrategy<TEntity> : IProcedureNameBuilderGetAllStrategy where TEntity : IEntity
+public class ProcedureNameBuilderGetAllStrategy: IProcedureNameBuilderGetAllStrategy
 {
-    /// <inheritdoc/>
-    public string Build()
+    public string Build<TEntity>() where TEntity : IEntity
     {
         string entityName = ProcedureNameBuilderTextRemover.RemoveEntity<TEntity>();
         return $"SP_{entityName}_GETALL".ToUpper();
