@@ -3,7 +3,11 @@ using QuickKit.Shared.Entities;
 
 namespace QuickKit.AspNetCore.Controllers.Contracts;
 
-public interface IControllerAdd<TEntity> where TEntity : IEntity
+/// <summary>
+/// Represents an interface for adding entities.
+/// </summary>
+/// <typeparam name="TEntity">The type of entity.</typeparam>
+public interface IAddController<TEntity> where TEntity : IEntity
 {
     /// <summary>
     /// Adds a new entity asynchronously.

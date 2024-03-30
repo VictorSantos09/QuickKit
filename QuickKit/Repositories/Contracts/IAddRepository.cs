@@ -2,6 +2,10 @@
 
 namespace QuickKit.Repositories.Contracts;
 
+/// <summary>
+/// Represents a repository contract for adding entities.
+/// </summary>
+/// <typeparam name="TEntity">The type of entity.</typeparam>
 public interface IAddRepository<TEntity>
     where TEntity : IEntity
 {

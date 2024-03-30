@@ -2,7 +2,11 @@
 
 namespace QuickKit.AspNetCore.Controllers.Contracts;
 
-public interface IControllerGetById<TKey> where TKey : IConvertible
+/// <summary>
+/// Represents an interface for retrieving an entity by its ID.
+/// </summary>
+/// <typeparam name="TKey">The type of the ID.</typeparam>
+public interface IGetByIdController<TKey> where TKey : IConvertible
 {
     /// <summary>
     /// Retrieves an entity by its ID asynchronously.

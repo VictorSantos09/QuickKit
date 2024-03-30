@@ -3,7 +3,11 @@ using QuickKit.Shared.Entities;
 
 namespace QuickKit.AspNetCore.Controllers.Contracts;
 
-public interface IControllerUpdate<TEntity> where TEntity : IEntity
+/// <summary>
+/// Represents an interface for updating entities in a controller.
+/// </summary>
+/// <typeparam name="TEntity">The type of entity to update.</typeparam>
+public interface IUpdateController<TEntity> where TEntity : IEntity
 {
     /// <summary>
     /// Updates an existing entity asynchronously.

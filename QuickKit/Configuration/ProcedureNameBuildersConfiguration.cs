@@ -8,10 +8,24 @@ using QuickKit.Shared.Entities;
 using System.Reflection;
 
 namespace QuickKit.Configuration;
+/// <summary>
+/// Provides configuration methods for adding procedure name builders to the service collection.
+/// </summary>
 public static class ProcedureNameBuildersConfiguration
 {
+    /// <summary>
+    /// The default lifetime for the service.
+    /// </summary>
     public const ServiceLifetime DefaultLifetime = ServiceLifetime.Transient;
 
+    /// <summary>
+    /// Adds procedure name builders for the specified entity to the service collection.
+    /// </summary>
+    /// <typeparam name="TEntity">The type of the entity.</typeparam>
+    /// <param name="services">The service collection to add the procedure name builders to.</param>
+    /// <param name="entity">The entity type.</param>
+    /// <param name="lifetime">The lifetime of the registered services (default is <see cref="ServiceLifetime.Transient"/>).</param>
+    /// <returns>The modified service collection.</returns>
     public static IServiceCollection AddProcedureNameBuilders<TEntity>(this IServiceCollection services,
                                                                        TEntity entity,
                                                                        ServiceLifetime lifetime = DefaultLifetime) where TEntity : Type, IEntity
@@ -21,6 +35,14 @@ public static class ProcedureNameBuildersConfiguration
         return services;
     }
 
+    /// <summary>
+    /// Adds procedure name builders from the specified assembly to the service collection.
+    /// </summary>
+    /// <param name="services">The service collection to add the procedure name builders to.</param>
+    /// <param name="assembly">The assembly containing the procedure name builders.</param>
+    /// <param name="onlyPublic">A flag indicating whether to include only public entities.</param>
+    /// <param name="lifetime">The lifetime of the registered services.</param>
+    /// <returns>The modified service collection.</returns>
     public static IServiceCollection AddProcedureNameBuildersFromAssembly(this IServiceCollection services,
                                                                                    Assembly assembly,
                                                                                    bool onlyPublic = true,

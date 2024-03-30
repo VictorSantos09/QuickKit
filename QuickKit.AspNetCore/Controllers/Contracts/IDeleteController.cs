@@ -2,7 +2,11 @@
 
 namespace QuickKit.AspNetCore.Controllers.Contracts;
 
-public interface IControllerDelete<TKey> where TKey : IConvertible
+/// <summary>
+/// Represents an interface for deleting entities by their ID.
+/// </summary>
+/// <typeparam name="TKey">The type of the entity ID.</typeparam>
+public interface IDeleteController<TKey> where TKey : IConvertible
 {
     /// <summary>
     /// Deletes an entity by its ID asynchronously.

@@ -3,9 +3,12 @@ using QuickKit.Shared.Entities;
 
 namespace QuickKit.AspNetCore.Controllers.Contracts;
 
-public interface IControllerGetAll<TEntity> where TEntity : IEntity
+/// <summary>
+/// Represents an interface for retrieving all entities asynchronously.
+/// </summary>
+/// <typeparam name="TEntity">The type of the entity.</typeparam>
+public interface IGetAllController<TEntity> where TEntity : IEntity
 {
-
     /// <summary>
     /// Retrieves all entities asynchronously.
     /// </summary>

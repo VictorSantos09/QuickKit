@@ -2,7 +2,10 @@
 
 namespace QuickKit.AspNetCore.Controllers.Contracts;
 
-public interface IControllerTestEndpoint
+/// <summary>
+/// Represents an interface for testing the endpoint of a controller.
+/// </summary>
+public interface ITestEndpointController
 {
     /// <summary>
     /// Tests the endpoint of the controller.
