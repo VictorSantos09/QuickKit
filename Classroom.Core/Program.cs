@@ -12,7 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerDocsFromXmlComments(Assembly.GetExecutingAssembly());
 builder.Services.AddClassroomAPI();
-builder.Services.AddProcedureNameBuildersFromAssembly(Assembly.GetExecutingAssembly());
+builder.Services.AddProcedureNameBuildersFromAssembly();
 
 WebApplication app = builder.Build();
 

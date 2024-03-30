@@ -18,42 +18,15 @@ public static class ProcedureNameBuildersConfiguration
     /// </summary>
     public const ServiceLifetime DefaultLifetime = ServiceLifetime.Transient;
 
-    /// <summary>
-    /// Adds procedure name builders from the specified assembly to the service collection.
-    /// </summary>
-    /// <param name="services">The service collection to add the procedure name builders to.</param>
-    /// <param name="assembly">The assembly containing the procedure name builders.</param>
-    /// <param name="onlyPublic">A flag indicating whether to include only public entities.</param>
-    /// <param name="lifetime">The lifetime of the registered services.</param>
-    /// <returns>The modified service collection.</returns>
+
     public static IServiceCollection AddProcedureNameBuildersFromAssembly(this IServiceCollection services,
                                                                                    ServiceLifetime lifetime = DefaultLifetime)
     {
-        List<ServiceDescriptor> descriptors = new();
-
-        descriptors.AddRange(GetServiceDescriptors(lifetime));
+        List<ServiceDescriptor> descriptors = GetServiceDescriptors(lifetime);
 
         AddDescriptorToServices(services, descriptors);
 
         return services;
-    }
-
-    private static IEnumerable<Type> FindEntitiesOnAssembly(Assembly assembly, bool onlyPublic)
-    {
-        Type entityInterfaceType = typeof(IEntity);
-
-        IEnumerable<Type> types = assembly.GetTypes().Where(type =>
-        type.IsClass &&
-        !type.IsAbstract &&
-        !type.IsInterface &&
-        entityInterfaceType.IsAssignableFrom(type));
-
-        if (onlyPublic)
-        {
-            types = types.Where(type => type.IsPublic);
-        }
-
-        return types;
     }
 
     private static List<ServiceDescriptor> GetServiceDescriptors(ServiceLifetime lifetime)
