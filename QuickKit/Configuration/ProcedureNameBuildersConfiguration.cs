@@ -16,7 +16,7 @@ public static class ProcedureNameBuildersConfiguration
                                                                        TEntity entity,
                                                                        ServiceLifetime lifetime = DefaultLifetime) where TEntity : Type, IEntity
     {
-        var descriptor = GetServiceDescriptors(entity, lifetime);
+        List<ServiceDescriptor> descriptor = GetServiceDescriptors(entity, lifetime);
         AddDescriptorToServices(services, descriptor);
         return services;
     }
@@ -26,11 +26,11 @@ public static class ProcedureNameBuildersConfiguration
                                                                                    bool onlyPublic = true,
                                                                                    ServiceLifetime lifetime = DefaultLifetime)
     {
-        var entities = FindEntitiesOnAssembly(assembly, onlyPublic);
+        IEnumerable<Type> entities = FindEntitiesOnAssembly(assembly, onlyPublic);
 
         List<ServiceDescriptor> descriptors = new();
 
-        foreach (var entity in entities)
+        foreach (Type entity in entities)
         {
             descriptors.AddRange(GetServiceDescriptors(entity, lifetime));
         }
@@ -42,9 +42,9 @@ public static class ProcedureNameBuildersConfiguration
 
     private static IEnumerable<Type> FindEntitiesOnAssembly(Assembly assembly, bool onlyPublic)
     {
-        var entityInterfaceType = typeof(IEntity);
+        Type entityInterfaceType = typeof(IEntity);
 
-        var types = assembly.GetTypes().Where(type =>
+        IEnumerable<Type> types = assembly.GetTypes().Where(type =>
         type.IsClass &&
         !type.IsAbstract &&
         !type.IsInterface &&
@@ -60,7 +60,7 @@ public static class ProcedureNameBuildersConfiguration
 
     private static List<ServiceDescriptor> GetServiceDescriptors<TEntity>(TEntity entity, ServiceLifetime lifetime) where TEntity : Type
     {
-        var dictionary = new Dictionary<Type, Type>
+        Dictionary<Type, Type> dictionary = new()
         {
             { typeof(IProcedureNameBuilderAddStrategy), typeof(ProcedureNameBuilderAddStrategy<>).MakeGenericType(entity) },
             { typeof(IProcedureNameBuilderDeleteStrategy), typeof(ProcedureNameBuilderDeleteStrategy<>).MakeGenericType(entity) },
@@ -69,9 +69,9 @@ public static class ProcedureNameBuildersConfiguration
             { typeof(IProcedureNameBuilderUpdateStrategy), typeof(ProcedureNameBuilderUpdateStrategy<>).MakeGenericType(entity) }
         };
 
-        var services = new List<ServiceDescriptor>();
+        List<ServiceDescriptor> services = new();
 
-        foreach (var type in dictionary)
+        foreach (KeyValuePair<Type, Type> type in dictionary)
         {
             ServiceDescriptor service = new(type.Key, type.Value, lifetime);
             services.Add(service);
@@ -82,7 +82,7 @@ public static class ProcedureNameBuildersConfiguration
 
     private static void AddDescriptorToServices(IServiceCollection services, IEnumerable<ServiceDescriptor> descriptors)
     {
-        foreach (var descriptor in descriptors)
+        foreach (ServiceDescriptor descriptor in descriptors)
         {
             services.Add(descriptor);
         }

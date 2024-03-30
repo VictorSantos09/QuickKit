@@ -17,10 +17,10 @@ internal class JwtTokenGenerator : IJwtTokenGenerator
     /// <returns>The generated JWT token.</returns>
     public string Generate(JwtTokenRequest request)
     {
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(request.TokenKey));
-        var signingCredentials = new SigningCredentials(key, request.Algorithm);
+        SymmetricSecurityKey key = new(Encoding.UTF8.GetBytes(request.TokenKey));
+        SigningCredentials signingCredentials = new(key, request.Algorithm);
 
-        var token = new JwtSecurityToken(
+        JwtSecurityToken token = new(
             request.Issuer,
             request.Audience,
             request.Claims,

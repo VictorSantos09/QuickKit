@@ -84,7 +84,7 @@ public class ClassroomRepository : IClassroomRepository
             commandType: CommandType.StoredProcedure);
 
         using IDbConnection conn = Connect();
-        var result = await conn.QueryAsync<ClassroomSnapshot>(command);
+        IEnumerable<ClassroomSnapshot> result = await conn.QueryAsync<ClassroomSnapshot>(command);
         return result.Select(ClassroomEntity.FromSnapshot);
     }
 
@@ -95,7 +95,7 @@ public class ClassroomRepository : IClassroomRepository
             commandType: CommandType.StoredProcedure);
 
         using IDbConnection conn = Connect();
-        var result = await conn.QueryAsync<ClassroomSnapshot>(command);
+        IEnumerable<ClassroomSnapshot> result = await conn.QueryAsync<ClassroomSnapshot>(command);
         return result.Select(ClassroomEntity.FromSnapshot).AsQueryable();
     }
 
@@ -110,7 +110,7 @@ public class ClassroomRepository : IClassroomRepository
             commandType: CommandType.StoredProcedure);
 
         using IDbConnection conn = Connect();
-        var result = await conn.QuerySingleOrDefaultAsync<ClassroomSnapshot>(command);
+        ClassroomSnapshot? result = await conn.QuerySingleOrDefaultAsync<ClassroomSnapshot>(command);
         return ClassroomEntity.FromSnapshot(result);
     }
 

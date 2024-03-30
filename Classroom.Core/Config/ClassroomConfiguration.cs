@@ -13,24 +13,24 @@ public static class ClassroomConfiguration
 {
     public static IServiceCollection AddClassroomAPI(this IServiceCollection services)
     {
-        services.AddValidatorsFromAssemblyContaining<Program>();
+        _ = services.AddValidatorsFromAssemblyContaining<Program>();
         ConfigureDbContext(services);
         ConfigureGraphQL(services);
         ConfigureServices(services);
 
-        services.AddJwtBearerKit(TokenInfo.Key, TokenInfo.Issuer, TokenInfo.Audience);
+        _ = services.AddJwtBearerKit(TokenInfo.Key, TokenInfo.Issuer, TokenInfo.Audience);
 
         return services;
     }
 
     private static void ConfigureDbContext(IServiceCollection services)
     {
-        services.AddDbContext<AppDbContext>();
+        _ = services.AddDbContext<AppDbContext>();
     }
 
     private static void ConfigureGraphQL(IServiceCollection services)
     {
-        services.AddGraphQLServer()
+        _ = services.AddGraphQLServer()
             .AddQueryType<Query>()
             .AddTypeExtension<ClassroomQuery>()
             .AddTypeExtension<TeacherQuery>()
@@ -40,7 +40,7 @@ public static class ClassroomConfiguration
 
     private static void ConfigureServices(IServiceCollection services)
     {
-        services.AddTransient<IClassroomService, ClassroomService>();
-        services.AddTransient<IClassroomRepository, ClassroomRepository>();
+        _ = services.AddTransient<IClassroomService, ClassroomService>();
+        _ = services.AddTransient<IClassroomRepository, ClassroomRepository>();
     }
 }

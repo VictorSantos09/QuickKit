@@ -19,8 +19,7 @@ public static class FinalConverter
     #region Convert
     public static IActionResult Convert(this FinalBase final, HttpStatusCode failure, HttpStatusCode success = HttpStatusCode.OK)
     {
-        if (final.IsSuccess) return final.Build(success);
-        return final.Build(failure);
+        return final.IsSuccess ? final.Build(success) : (IActionResult)final.Build(failure);
     }
 
     public static IActionResult Convert(this FinalBase final, Func<FinalBase, IActionResult> func)

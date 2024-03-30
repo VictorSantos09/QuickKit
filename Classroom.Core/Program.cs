@@ -5,7 +5,7 @@ using QuickKit.AspNetCore.Swagger.Configuration.Requests;
 using QuickKit.Configuration;
 using System.Reflection;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -14,17 +14,17 @@ builder.Services.AddSwaggerDocsFromXmlComments(Assembly.GetExecutingAssembly());
 builder.Services.AddClassroomAPI();
 builder.Services.AddProcedureNameBuildersFromAssembly(Assembly.GetExecutingAssembly());
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 app.UseAuthorization();
 
 if (app.Environment.IsProduction())
 {
     SwaggerBasicAuthRequest request = new("/swagger", "swagger", "swagger");
-    app.UseSwaggerAuthorizationMiddleware(request);
+    _ = app.UseSwaggerAuthorizationMiddleware(request);
 
-    app.UseSwagger();
-    app.UseSwaggerUI(x =>
+    _ = app.UseSwagger();
+    _ = app.UseSwaggerUI(x =>
     {
         x.SwaggerEndpoint("/swagger/v1/swagger.json", "Secure Swagger v1");
         x.DocumentTitle = "ClassroomCore";
@@ -33,8 +33,8 @@ if (app.Environment.IsProduction())
 }
 else
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    _ = app.UseSwagger();
+    _ = app.UseSwaggerUI();
 }
 
 app.MapGraphQL();

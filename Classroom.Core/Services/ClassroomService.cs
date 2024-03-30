@@ -3,65 +3,57 @@ using Classroom.Core.Repositories;
 using QuickKit.ResultTypes;
 using QuickKit.Shared.Extensions;
 
-namespace Classroom.Core.Services
+namespace Classroom.Core.Services;
+
+public class ClassroomService : IClassroomService
 {
-    public class ClassroomService : IClassroomService
+    private readonly IClassroomRepository _repository;
+
+    public ClassroomService(IClassroomRepository repository)
     {
-        private readonly IClassroomRepository _repository;
+        _repository = repository;
+    }
 
-        public ClassroomService(IClassroomRepository repository)
-        {
-            _repository = repository;
-        }
+    public async Task<Final> AddAsync(ClassroomEntity entity)
+    {
+        if (entity.IsNull()) return Final.Failure("classroom.Null", "classroom can't be null");
 
-        public async Task<Final> AddAsync(ClassroomEntity entity)
-        {
-            if (entity.IsNull()) return Final.Failure("classroom.Null", "classroom can't be null");
+        int result = await _repository.AddAsync(entity);
 
-            var result = await _repository.AddAsync(entity);
+        return result <= 0 ? Final.Failure("classroom.Failure", "entity not saved") : Final.Success();
+    }
 
-            if (result <= 0) return Final.Failure("classroom.Failure", "entity not saved");
+    public async Task<Final> DeleteAsync(int id)
+    {
+        if (id <= 0) return Final.Failure("classroom.invalidId", "id not valid");
 
-            return Final.Success();
-        }
+        int result = await _repository.DeleteAsync(id);
 
-        public async Task<Final> DeleteAsync(int id)
-        {
-            if (id <= 0) return Final.Failure("classroom.invalidId", "id not valid");
+        return result > 0 ? Final.Success() : Final.Failure("classroom.deleteFail", "delete fail");
+    }
 
-            var result = await _repository.DeleteAsync(id);
+    public async Task<Final<IEnumerable<ClassroomEntity>>> GetAllAsync()
+    {
+        IEnumerable<ClassroomEntity> classrooms = await _repository.GetAllAsync();
 
-            if (result > 0) return Final.Success();
-            return Final.Failure("classroom.deleteFail", "delete fail");
-        }
+        return !classrooms.Any()
+            ? Final.Failure(classrooms, "classroom.empty", "there is no classroom registred")
+            : Final.Success(classrooms);
+    }
 
-        public async Task<Final<IEnumerable<ClassroomEntity>>> GetAllAsync()
-        {
-            var classrooms = await _repository.GetAllAsync();
+    public async Task<Final<ClassroomEntity>> GetByIdAsync(int id)
+    {
+        ClassroomEntity classroom = await _repository.GetByIdAsync(id);
 
-            if (!classrooms.Any()) return Final.Failure(classrooms, "classroom.empty", "there is no classroom registred");
+        return classroom is null ? Final.Failure(classroom, "classroom.notFound", "classroom not found") : Final.Success(classroom);
+    }
 
-            return Final.Success(classrooms);
-        }
+    public async Task<Final> UpdateAsync(ClassroomEntity entity)
+    {
+        if (entity is null) return Final.Failure("classroom.Null", "classroom can't be null");
 
-        public async Task<Final<ClassroomEntity>> GetByIdAsync(int id)
-        {
-            ClassroomEntity classroom = await _repository.GetByIdAsync(id);
+        int result = await _repository.UpdateAsync(entity);
 
-            if (classroom is null) return Final.Failure(classroom, "classroom.notFound", "classroom not found")!;
-
-            return Final.Success(classroom);
-        }
-
-        public async Task<Final> UpdateAsync(ClassroomEntity entity)
-        {
-            if (entity is null) return Final.Failure("classroom.Null", "classroom can't be null");
-
-            var result = await _repository.UpdateAsync(entity);
-
-            if (result <= 0) return Final.Failure("classroom.Failure", "entity not updated");
-
-            return Final.Success();
-        }
+        return result <= 0 ? Final.Failure("classroom.Failure", "entity not updated") : Final.Success();
     }
 }

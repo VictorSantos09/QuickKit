@@ -51,11 +51,11 @@ internal class Reader
                               string convertFailedMessage,
                               AlertType alertType = AlertType.Warning) where T : struct
     {
-        var result = ReadLine(notNullAlertMessage, alertType);
+        string result = ReadLine(notNullAlertMessage, alertType);
 
         try
         {
-            var output = (T)Convert.ChangeType(result, typeof(T));
+            T output = (T)Convert.ChangeType(result, typeof(T));
             return output;
         }
         catch (InvalidCastException)

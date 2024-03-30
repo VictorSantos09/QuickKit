@@ -23,7 +23,7 @@ public abstract class MenuMain : IMenuMain
     public virtual void Show()
     {
         ShowOptions();
-        var option = SelectOption();
+        int option = SelectOption();
         GoToOption(option);
     }
 

@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using FluentValidation;
+using FluentValidation.Results;
 using QuickKit.Shared.Entities;
 using System.Data;
 
@@ -12,13 +13,10 @@ public static class DapperExecuteExtensions
                                                                   string validationFailureMessage,
                                                                   CommandDefinition command) where TEntity : IEntity
     {
-        var result = await validator.ValidateAsync(entity);
-        if (!result.IsValid)
-        {
-            throw new ValidationException(validationFailureMessage, result.Errors);
-        }
-
-        return await conn.ExecuteOnTransactionAsync(async () =>
+        ValidationResult result = await validator.ValidateAsync(entity);
+        return !result.IsValid
+            ? throw new ValidationException(validationFailureMessage, result.Errors)
+            : await conn.ExecuteOnTransactionAsync(async () =>
         {
             return await conn.ExecuteAsync(command);
         });
@@ -30,7 +28,7 @@ public static class DapperExecuteExtensions
         using IDbTransaction trans = conn.BeginTransaction();
         try
         {
-            var result = await commandToExecute();
+            TResult? result = await commandToExecute();
             trans.Commit();
             return result;
         }

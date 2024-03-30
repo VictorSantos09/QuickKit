@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using System.Net.Http.Headers;
-using System.Net;
-using System.Text;
+﻿using Microsoft.AspNetCore.Http;
 using QuickKit.AspNetCore.Swagger.Configuration.Requests;
+using System.Net;
+using System.Net.Http.Headers;
+using System.Text;
 
 namespace QuickKit.AspNetCore.Swagger.Middlewares;
 
@@ -25,13 +24,13 @@ public class SwaggerBasicAuthMiddleware
             string authHeader = context.Request.Headers["Authorization"];
             if (authHeader != null && authHeader.StartsWith("Basic "))
             {
-                var header = AuthenticationHeaderValue.Parse(authHeader);
-                var inBytes = Convert.FromBase64String(header.Parameter);
+                AuthenticationHeaderValue header = AuthenticationHeaderValue.Parse(authHeader);
+                byte[] inBytes = Convert.FromBase64String(header.Parameter);
 
-                var credentials = Encoding.UTF8.GetString(inBytes).Split(':');
+                string[] credentials = Encoding.UTF8.GetString(inBytes).Split(':');
 
-                var username = credentials[0];
-                var password = credentials[1]; 
+                string username = credentials[0];
+                string password = credentials[1];
 
                 if (username.Equals(_request.Username)
                   && password.Equals(_request.Password))

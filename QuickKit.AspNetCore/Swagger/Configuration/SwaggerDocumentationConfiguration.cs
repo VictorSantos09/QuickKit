@@ -7,7 +7,7 @@ public static class SwaggerDocumentationConfiguration
 {
     public static IServiceCollection AddSwaggerDocsFromXmlComments(this IServiceCollection services, Assembly assembly)
     {
-        services.AddSwaggerGen(x =>
+        _ = services.AddSwaggerGen(x =>
         {
             x.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, $"{assembly.GetName().Name}.xml"));
         });

@@ -35,9 +35,8 @@ public class GlobalExceptionMiddlewareDefault
     /// <returns>The error response object.</returns>
     private object BuildResponse(Exception ex)
     {
-        if (_showStaceTrace)
-        {
-            return new
+        return _showStaceTrace
+            ? (new
             {
                 error = new
                 {
@@ -48,20 +47,18 @@ public class GlobalExceptionMiddlewareDefault
                     ex.HelpLink,
                     ex.HResult,
                 }
-            };
-        }
-
-        return new
-        {
-            error = new
+            })
+            : (new
             {
-                Message = _defaultMessage,
-                Details = ex.Message,
-                ex.Data,
-                ex.HelpLink,
-                ex.HResult,
-            }
-        };
+                error = new
+                {
+                    Message = _defaultMessage,
+                    Details = ex.Message,
+                    ex.Data,
+                    ex.HelpLink,
+                    ex.HResult,
+                }
+            });
     }
 
     /// <summary>
@@ -95,7 +92,7 @@ public class GlobalExceptionMiddlewareDefault
     private Task HandleExceptionAsync(HttpContext context, Exception ex, HttpStatusCode statusCode)
     {
         PrepareContextResponse(context, statusCode);
-        var response = BuildResponse(ex);
+        object response = BuildResponse(ex);
         return context.Response.WriteAsync(JsonConvert.SerializeObject(response));
     }
 }
