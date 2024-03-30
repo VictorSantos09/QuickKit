@@ -12,17 +12,17 @@ public abstract class MenuSub : IMenuSub
     /// Gets or sets the alert message displayed when the value is null.
     /// </summary>
     protected abstract string NotNullAlertMessage { get; set; }
-/// <inheritdoc/>
+    /// <inheritdoc/>
 
     public virtual void Back()
     {
         return;
     }
-/// <inheritdoc/>
+    /// <inheritdoc/>
 
     #region Option
     public abstract void GoToOption(int option);
-/// <inheritdoc/>
+    /// <inheritdoc/>
 
     public virtual int SelectOption()
     {
@@ -33,13 +33,13 @@ public abstract class MenuSub : IMenuSub
 
     #region Show
     public abstract void Show();
-/// <inheritdoc/>
+    /// <inheritdoc/>
 
     public abstract void ShowOptions();
-/// <inheritdoc/>
+    /// <inheritdoc/>
 
     public abstract void ShowPreviousOption();
-/// <inheritdoc/>
+    /// <inheritdoc/>
 
     public virtual void ShowInvalidOptionMessage(string message, AlertType alertType = AlertType.Warning)
     {

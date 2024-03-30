@@ -10,7 +10,7 @@ namespace QuickKit.Builders.ProcedureName.Delete;
 public class ProcedureNameBuilderDeleteStrategy<TEntity> : IProcedureNameBuilderDeleteStrategy where TEntity : IEntity
 {
     /// <inheritdoc/>
-    
+
     public string Build()
     {
         string entityName = ProcedureNameBuilderTextRemover.RemoveEntity<TEntity>();

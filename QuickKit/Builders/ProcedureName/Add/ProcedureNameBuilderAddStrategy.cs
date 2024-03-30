@@ -9,8 +9,8 @@ namespace QuickKit.Builders.ProcedureName.Add;
 /// <typeparam name="TEntity">The type of entity.</typeparam>
 public class ProcedureNameBuilderAddStrategy<TEntity> : IProcedureNameBuilderAddStrategy where TEntity : IEntity
 {
- /// <inheritdoc/>
- 
+    /// <inheritdoc/>
+
     public string Build()
     {
         string entityName = ProcedureNameBuilderTextRemover.RemoveEntity<TEntity>();

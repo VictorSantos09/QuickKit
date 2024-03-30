@@ -13,11 +13,11 @@ public abstract class MenuMain : IMenuMain
     {
         Environment.Exit(0);
     }
-/// <inheritdoc/>
+    /// <inheritdoc/>
 
     #region Option
     public abstract void GoToOption(int option);
-/// <inheritdoc/>
+    /// <inheritdoc/>
 
     public abstract int SelectOption();
     /// <inheritdoc/>
@@ -25,7 +25,7 @@ public abstract class MenuMain : IMenuMain
 
     #region Show
     public abstract void ShowOptions();
-/// <inheritdoc/>
+    /// <inheritdoc/>
 
     public virtual void Show()
     {
@@ -33,7 +33,7 @@ public abstract class MenuMain : IMenuMain
         int option = SelectOption();
         GoToOption(option);
     }
-/// <inheritdoc/>
+    /// <inheritdoc/>
     public virtual void ShowInvalidOptionMessage(string message, AlertType alertType = AlertType.Warning)
     {
         Alerter.ShowAlert(message, alertType);
