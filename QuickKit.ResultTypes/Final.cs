@@ -13,6 +13,8 @@ public record Final : IFinal
         public bool IsSuccess { get; }
 
         /// <inheritdoc/>
+        public bool IsFailure => !IsSuccess;
+        /// <inheritdoc/>
         public IFinalError Error { get; }
         #endregion
 

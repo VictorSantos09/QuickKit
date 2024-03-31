@@ -24,7 +24,7 @@ public interface IFinal
     /// <summary>
     /// Gets a value indicating whether the result is a failure.
     /// </summary>
-    bool IsFailure => !IsSuccess;
+    bool IsFailure { get; }
 
     /// <summary>
     /// Gets the error associated with the result.
