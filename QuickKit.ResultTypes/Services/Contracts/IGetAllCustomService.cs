@@ -10,5 +10,5 @@ public interface IGetAllCustomService<TType>
     /// Retrieves all instances of the specified type asynchronously.
     /// </summary>
     /// <returns>A task that represents the asynchronous operation. The task result contains the collection of instances.</returns>
-    Task<Final<IEnumerable<TType>>> GetAllAsync();
+    Task<Final<IEnumerable<TType>>> GetAllAsync(CancellationToken cancellationToken);
 }

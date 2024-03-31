@@ -14,5 +14,5 @@ public interface IUpdateRepository<TEntity>
     /// </summary>
     /// <param name="entity">The entity to update.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the number of affected rows.</returns>
-    Task<int> UpdateAsync(TEntity entity);
+    Task<int> UpdateAsync(TEntity entity, CancellationToken cancellationToken);
 }

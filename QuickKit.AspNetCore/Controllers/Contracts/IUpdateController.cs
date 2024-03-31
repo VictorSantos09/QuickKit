@@ -14,5 +14,5 @@ public interface IUpdateController<TDTO>
     /// </summary>
     /// <param name="dto">The data object to update.</param>
     /// <returns>A <see cref="Task{TResult}"/> representing the asynchronous operation, containing an <see cref="IActionResult"/>.</returns>
-    Task<IActionResult> UpdateAsync(TDTO dto);
+    Task<IActionResult> UpdateAsync(TDTO dto, CancellationToken cancellationToken = default);
 }

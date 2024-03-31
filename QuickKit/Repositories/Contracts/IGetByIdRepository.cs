@@ -16,5 +16,5 @@ public interface IGetByIdRepository<TEntity, TKey>
     /// </summary>
     /// <param name="id">The primary key of the entity.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the entity, or null if not found.</returns>
-    Task<TEntity?> GetByIdAsync(TKey id);
+    Task<TEntity?> GetByIdAsync(TKey id, CancellationToken cancellationToken);
 }

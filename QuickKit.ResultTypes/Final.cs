@@ -83,6 +83,7 @@
         /// <param name="message">The error message associated with the final result.</param>
         /// <returns>A failed final result with the specified data, error code, and message.</returns>
         public static Final<TType?> Failure<TType>(TType? data, string code, string message) => new(false, FinalError.Create(code, message), data);
+        public static Final<IEnumerable<TType>> Failure<TType>(IEnumerable<TType> data, string code, string message) => new(false, FinalError.Create(code, message), data);
         #endregion
     }
 

@@ -14,5 +14,5 @@ public interface IAddRepository<TEntity>
     /// </summary>
     /// <param name="entity">The entity to add.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the number of affected rows.</returns>
-    Task<int> AddAsync(TEntity entity);
+    Task<int> AddAsync(TEntity entity, CancellationToken cancellationToken);
 }

@@ -11,5 +11,5 @@ public interface IUpdateService<TDTO>
     /// </summary>
     /// <param name="dto">The DTO containing the updated data.</param>
     /// <returns>A task representing the asynchronous operation. The task result represents the final result of the update operation.</returns>
-    public Task<Final> UpdateAsync(TDTO dto);
+    public Task<Final> UpdateAsync(TDTO dto, CancellationToken cancellationToken);
 }

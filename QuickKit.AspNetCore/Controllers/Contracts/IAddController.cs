@@ -14,5 +14,5 @@ public interface IAddController<TDTO>
     /// </summary>
     /// <param name="dto">The DTO (Data Transfer Object) representing the entity to add.</param>
     /// <returns>A <see cref="Task{TResult}"/> representing the asynchronous operation, containing an <see cref="IActionResult"/>.</returns>
-    Task<IActionResult> AddAsync(TDTO dto);
+    Task<IActionResult> AddAsync(TDTO dto, CancellationToken cancellationToken = default);
 }

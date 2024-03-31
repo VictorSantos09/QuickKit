@@ -16,7 +16,6 @@ namespace Classroom.Core.Repositories;
 
 public interface IClassroomRepository : IDomainSelfContainedRepository<ClassroomEntity, int>
 {
-    Task<IQueryable<ClassroomEntity>> GetAllPagedAsync();
 }
 
 public class ClassroomRepository : IClassroomRepository
@@ -49,7 +48,7 @@ public class ClassroomRepository : IClassroomRepository
         return new MySqlConnection("Server=localhost;Database=quickkit_demo;Uid=root;Pwd=root;");
     }
 
-    public async Task<int> AddAsync(ClassroomEntity entity)
+    public async Task<int> AddAsync(ClassroomEntity entity, CancellationToken cancellationToken = default)
     {
         CommandDefinition command = new(
             _procedureNameBuilderAddStrategy.Build<ClassroomEntity>(),
@@ -57,13 +56,14 @@ public class ClassroomRepository : IClassroomRepository
             {
                 classroom_name = entity.ClassroomName
             },
+            cancellationToken: cancellationToken,
             commandType: CommandType.StoredProcedure);
 
         using IDbConnection conn = Connect();
         return await conn.ExecuteValidatingAsync(entity, _validator, "failure", command);
     }
 
-    public async Task<int> DeleteAsync(int id)
+    public async Task<int> DeleteAsync(int id, CancellationToken cancellationToken = default)
     {
         CommandDefinition command = new(
             _procedureNameBuilderDeleteStrategy.Build<ClassroomEntity>(),
@@ -71,16 +71,18 @@ public class ClassroomRepository : IClassroomRepository
             {
                 idClassroom = id
             },
+            cancellationToken: cancellationToken,
             commandType: CommandType.StoredProcedure);
 
         using IDbConnection conn = Connect();
         return await conn.ExecuteOnTransactionAsync(command);
     }
 
-    public async Task<IEnumerable<ClassroomEntity>> GetAllAsync()
+    public async Task<IEnumerable<ClassroomEntity>> GetAllAsync(CancellationToken cancellationToken = default)
     {
         CommandDefinition command = new(
             _procedureNameBuilderGetAllStrategy.Build<ClassroomEntity>(),
+            cancellationToken: cancellationToken,
             commandType: CommandType.StoredProcedure);
 
         using IDbConnection conn = Connect();
@@ -88,18 +90,7 @@ public class ClassroomRepository : IClassroomRepository
         return result.Select(ClassroomEntity.FromSnapshot);
     }
 
-    public async Task<IQueryable<ClassroomEntity>> GetAllPagedAsync()
-    {
-        CommandDefinition command = new(
-            _procedureNameBuilderGetAllStrategy.Build<ClassroomEntity>(),
-            commandType: CommandType.StoredProcedure);
-
-        using IDbConnection conn = Connect();
-        IEnumerable<ClassroomSnapshot> result = await conn.QueryAsync<ClassroomSnapshot>(command);
-        return result.Select(ClassroomEntity.FromSnapshot).AsQueryable();
-    }
-
-    public async Task<ClassroomEntity?> GetByIdAsync(int id)
+    public async Task<ClassroomEntity?> GetByIdAsync(int id, CancellationToken cancellationToken = default)
     {
         CommandDefinition command = new(
             _procedureNameBuilderGetByStrategy.Build<ClassroomEntity>(),
@@ -107,6 +98,7 @@ public class ClassroomRepository : IClassroomRepository
             {
                 id_classroom = id
             },
+            cancellationToken: cancellationToken,
             commandType: CommandType.StoredProcedure);
 
         using IDbConnection conn = Connect();
@@ -114,12 +106,12 @@ public class ClassroomRepository : IClassroomRepository
         return ClassroomEntity.FromSnapshot(result);
     }
 
-    public async Task<ClassroomEntity> GetByIdThrowAsync(int id, string notFoundExceptionMessage)
+    public async Task<ClassroomEntity> GetByIdThrowAsync(int id, string notFoundExceptionMessage, CancellationToken cancellationToken = default)
     {
         return await GetByIdAsync(id) ?? throw new EntityNotFoundException(notFoundExceptionMessage);
     }
 
-    public async Task<int> UpdateAsync(ClassroomEntity entity)
+    public async Task<int> UpdateAsync(ClassroomEntity entity, CancellationToken cancellationToken = default)
     {
         CommandDefinition command = new(
             _procedureNameBuilderUpdateStrategy.Build<ClassroomEntity>(),
@@ -128,6 +120,7 @@ public class ClassroomRepository : IClassroomRepository
                 idClassroom = entity.Id,
                 classroomName = entity.ClassroomName
             },
+            cancellationToken: cancellationToken,
             commandType: CommandType.StoredProcedure);
 
         using IDbConnection conn = Connect();

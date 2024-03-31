@@ -14,21 +14,21 @@ public class ClassroomQuery
         _repository = repository;
     }
 
-    public async Task<ClassroomEntity?> GetClassromById(int id)
+    public async Task<ClassroomEntity?> GetClassromById(int id, CancellationToken cancellationToken = default)
     {
-        return await _repository.GetByIdAsync(id);
+        return await _repository.GetByIdAsync(id, cancellationToken);
     }
 
-    public async Task<IEnumerable<ClassroomEntity>> GetAllClassrooms()
+    public async Task<IEnumerable<ClassroomEntity>> GetAllClassrooms(CancellationToken cancellationToken = default)
     {
-        return await _repository.GetAllAsync();
+        return await _repository.GetAllAsync(cancellationToken);
     }
 
-    [UsePaging(IncludeTotalCount = true, MaxPageSize = 20)]
-    [UseFiltering]
-    [UseSorting]
-    public async Task<IEnumerable<ClassroomEntity>> GetPaginedClassrooms()
-    {
-        return await _repository.GetAllPagedAsync();
-    }
+    //[UsePaging(IncludeTotalCount = true, MaxPageSize = 20)]
+    //[UseFiltering]
+    //[UseSorting]
+    //public async Task<IEnumerable<ClassroomEntity>> GetPaginedClassrooms()
+    //{
+    //    return await _repository.GetAllPagedAsync();
+    //}
 }

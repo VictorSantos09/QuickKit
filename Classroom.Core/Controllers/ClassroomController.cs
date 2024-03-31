@@ -20,43 +20,45 @@ public class ClassroomController : ControllerBase, IController<ClassroomEntity, 
     }
 
     [Add]
-    public async Task<IActionResult> AddAsync(ClassroomEntity entity)
+    public async Task<IActionResult> AddAsync(ClassroomEntity entity, CancellationToken cancellationToken)
     {
-        Final result = await _service.AddAsync(entity);
+        Final result = await _service.AddAsync(entity, cancellationToken);
         return result.Convert(Ok);
     }
 
     [Delete]
-    public async Task<IActionResult> DeleteAsync(int id)
+    public async Task<IActionResult> DeleteAsync(int id, CancellationToken cancellationToken)
     {
-        Final result = await _service.DeleteAsync(id);
+
+        Final result = await _service.DeleteAsync(id, cancellationToken);
         return result.Convert(Ok);
+
     }
 
     [GetAll]
-    public async Task<ActionResult<IEnumerable<ClassroomEntity>>> GetAllAsync()
+    public async Task<ActionResult<IEnumerable<ClassroomEntity>>> GetAllAsync(CancellationToken cancellationToken)
     {
-        Final<IEnumerable<ClassroomEntity>> result = await _service.GetAllAsync();
+        Final<IEnumerable<ClassroomEntity>> result = await _service.GetAllAsync(cancellationToken);
         return Ok(result);
     }
 
     [GetById]
-    public async Task<ActionResult<ClassroomEntity>> GetByIdAsync(int id)
+    public async Task<ActionResult<ClassroomEntity>> GetByIdAsync(int id, CancellationToken cancellationToken)
     {
-        Final<ClassroomEntity> result = await _service.GetByIdAsync(id);
+        Final<ClassroomEntity> result = await _service.GetByIdAsync(id, cancellationToken);
         return result.Convert(HttpStatusCode.BadRequest);
     }
 
     [TestEndPoint]
-    public IActionResult TestEndPoint()
+    public IActionResult TestEndPoint(CancellationToken cancellationToken)
     {
         return Ok($"{nameof(ClassroomController)} is working");
     }
 
     [Update]
-    public async Task<IActionResult> UpdateAsync(ClassroomEntity entity)
+    public async Task<IActionResult> UpdateAsync(ClassroomEntity entity, CancellationToken cancellationToken)
     {
-        Final result = await _service.UpdateAsync(entity);
+        Final result = await _service.UpdateAsync(entity, cancellationToken);
 
         return result.Convert(HttpStatusCode.BadRequest);
     }

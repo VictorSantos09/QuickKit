@@ -12,5 +12,5 @@ public interface IDeleteService<TKey>
     /// </summary>
     /// <param name="id">The unique identifier of the entity to delete.</param>
     /// <returns>A task representing the asynchronous operation.</returns>
-    public Task<Final> DeleteAsync(TKey id);
+    public Task<Final> DeleteAsync(TKey id, CancellationToken cancellationToken);
 }

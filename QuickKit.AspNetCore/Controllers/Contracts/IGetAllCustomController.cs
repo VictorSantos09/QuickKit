@@ -12,7 +12,7 @@ namespace QuickKit.AspNetCore.Controllers.Contracts
         /// Retrieves all instances of the specified type.
         /// </summary>
         /// <returns>A task that represents the asynchronous operation. The task result contains the action result with the collection of instances.</returns>
-        Task<ActionResult<IEnumerable<TType>>> GetAllAsync();
+        Task<ActionResult<IEnumerable<TType>>> GetAllAsync(CancellationToken cancellationToken = default);
     }
 }
 

@@ -14,45 +14,47 @@ public class ClassroomService : IClassroomService
         _repository = repository;
     }
 
-    public async Task<Final> AddAsync(ClassroomEntity entity)
+    public async Task<Final> AddAsync(ClassroomEntity entity, CancellationToken cancellationToken = default)
     {
         if (entity.IsNull()) return Final.Failure("classroom.Null", "classroom can't be null");
 
-        int result = await _repository.AddAsync(entity);
+        int result = await _repository.AddAsync(entity, cancellationToken);
 
         return result <= 0 ? Final.Failure("classroom.Failure", "entity not saved") : Final.Success();
     }
 
-    public async Task<Final> DeleteAsync(int id)
+    public async Task<Final> DeleteAsync(int id, CancellationToken cancellationToken = default)
     {
         if (id <= 0) return Final.Failure("classroom.invalidId", "id not valid");
 
-        int result = await _repository.DeleteAsync(id);
+        int result = await _repository.DeleteAsync(id, cancellationToken);
 
         return result > 0 ? Final.Success() : Final.Failure("classroom.deleteFail", "delete fail");
     }
 
-    public async Task<Final<IEnumerable<ClassroomEntity>>> GetAllAsync()
+    public async Task<Final<IEnumerable<ClassroomEntity>>> GetAllAsync(CancellationToken cancellationToken = default)
     {
-        IEnumerable<ClassroomEntity> classrooms = await _repository.GetAllAsync();
+        IEnumerable<ClassroomEntity> classrooms = await _repository.GetAllAsync(cancellationToken);
 
         return !classrooms.Any()
             ? Final.Failure(classrooms, "classroom.empty", "there is no classroom registred")
             : Final.Success(classrooms);
     }
 
-    public async Task<Final<ClassroomEntity>> GetByIdAsync(int id)
+    public async Task<Final<ClassroomEntity?>> GetByIdAsync(int id, CancellationToken cancellationToken = default)
     {
-        ClassroomEntity? classroom = await _repository.GetByIdAsync(id);
+        ClassroomEntity? classroom = await _repository.GetByIdAsync(id, cancellationToken);
 
-        return classroom is null ? Final.Failure(classroom, "classroom.notFound", "classroom not found") : Final.Success(classroom);
+        if (classroom.IsNull()) return Final.Failure(classroom, "classroom.notFound", "classroom not found");
+
+        else return Final.Success(classroom);
     }
 
-    public async Task<Final> UpdateAsync(ClassroomEntity entity)
+    public async Task<Final> UpdateAsync(ClassroomEntity entity, CancellationToken cancellationToken = default)
     {
         if (entity is null) return Final.Failure("classroom.Null", "classroom can't be null");
 
-        int result = await _repository.UpdateAsync(entity);
+        int result = await _repository.UpdateAsync(entity, cancellationToken);
 
         return result <= 0 ? Final.Failure("classroom.Failure", "entity not updated") : Final.Success();
     }
