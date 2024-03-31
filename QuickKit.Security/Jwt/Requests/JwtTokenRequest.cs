@@ -8,12 +8,35 @@ namespace QuickKit.Security.Jwt.Requests;
 /// </summary>
 public readonly struct JwtTokenRequest
 {
+    /// <summary>
+    /// Gets or sets the claims associated with the JWT token.
+    /// </summary>
     public IEnumerable<Claim> Claims { get; init; }
+    /// <summary>
+    /// Gets or sets the expiration date and time of the JWT token.
+    /// </summary>
     public DateTime Expires { get; init; }
+    /// <summary>
+    /// Gets or sets the token key.
+    /// </summary>
     public string TokenKey { get; init; }
+    /// <summary>
+    /// Gets or sets the issuer of the JWT token.
+    /// </summary>
     public string Issuer { get; init; }
+    /// <summary>
+    /// Gets or sets the audience for the JWT token.
+    /// </summary>
     public string Audience { get; init; }
+    /// <summary>
+    /// Gets or sets the "Not Before" (nbf) claim value of the JWT token.
+    /// This represents the time before which the token is not valid.
+    /// </summary>
     public DateTime? NotBefore { get; init; }
+    /// <summary>
+    /// Gets or sets the algorithm used for generating the JWT token.
+    /// The default value is <see cref="SecurityAlgorithms.HmacSha256"/>.
+    /// </summary>
     public string Algorithm { get; init; } = SecurityAlgorithms.HmacSha256;
 
     /// <summary>

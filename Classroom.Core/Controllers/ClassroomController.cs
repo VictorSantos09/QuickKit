@@ -1,73 +1,64 @@
 ﻿using Classroom.Core.Entities;
-using Classroom.Core.Repositories;
 using Classroom.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 using QuickKit.AspNetCore.Attributes;
-using QuickKit.AspNetCore.Controllers;
-using QuickKit.AspNetCore.Controllers.Contracts;
+using QuickKit.ResultTypes.Converters;
+using System.Net;
 
 namespace Classroom.Core.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class ClassroomController : ControllerBase,
-    IController<ClassroomEntity, int>
+public class ClassroomController : ControllerBase, IController<ClassroomEntity, int>
 {
-    private readonly IClassroomService _classroomService;
-    private readonly IClassroomRepository _classroomRepository;
+    private readonly IClassroomService _service;
 
-    public ClassroomController(IClassroomService classroomService, IClassroomRepository classroomRepository)
+    public ClassroomController(IClassroomService service)
     {
-        _classroomService = classroomService;
-        _classroomRepository = classroomRepository;
+        _service = service;
     }
 
-    /// <summary>
-    /// Create a entity
-    /// </summary>
-    /// <param name="entity"></param>
-    /// <returns>Response</returns>
     [Add]
-    public async Task<IActionResult> AddAsync(ClassroomEntity entity)
+    public async Task<IActionResult> AddAsync(ClassroomEntity entity, CancellationToken cancellationToken)
     {
-        await _classroomService.AddAsync(entity);
-        return Ok();
+        var result = await _service.AddAsync(entity, cancellationToken);
+        return result.Convert(Ok);
     }
 
-    /// <summary>
-    /// Delete a entity
-    /// </summary>
-    /// <param name="id"></param>
-    /// <returns></returns>
     [Delete]
-    public async Task<IActionResult> DeleteAsync(int id)
+    public async Task<IActionResult> DeleteAsync(int id, CancellationToken cancellationToken)
     {
-        await _classroomService.DeleteAsync(id);
-        return Ok();
+
+        var result = await _service.DeleteAsync(id, cancellationToken);
+        return result.Convert(Ok);
+
     }
 
     [GetAll]
-    public async Task<ActionResult<IEnumerable<ClassroomEntity>>> GetAllAsync()
+    public async Task<ActionResult<IEnumerable<ClassroomEntity>>> GetAllAsync(CancellationToken cancellationToken)
     {
-        return Ok(await _classroomService.GetAllAsync());
+        var result = await _service.GetAllAsync(cancellationToken);
+        return Ok(result);
     }
 
     [GetById]
-    public async Task<IActionResult> GetByIdAsync(int id)
+    public async Task<ActionResult<ClassroomEntity>> GetByIdAsync(int id, CancellationToken cancellationToken)
     {
-        return Ok(await _classroomService.GetByIdAsync(id));
+        var result = await _service.GetByIdAsync(id, cancellationToken);
+        return result.Convert(HttpStatusCode.BadRequest);
     }
 
     [TestEndPoint]
-    public IActionResult TestEndPoint()
+    public IActionResult TestEndPoint(CancellationToken cancellationToken)
     {
-        return Ok($"{nameof(ClassroomController)} api working");
+        return Ok($"{nameof(ClassroomController)} is working");
     }
 
     [Update]
-    public async Task<IActionResult> UpdateAsync(ClassroomEntity entity)
+    public async Task<IActionResult> UpdateAsync(ClassroomEntity entity, CancellationToken cancellationToken)
     {
-        await _classroomService.UpdateAsync(entity);
-        return Ok();
+        var result = await _service.UpdateAsync(entity, cancellationToken);
+
+        return result.Convert(HttpStatusCode.BadRequest);
     }
 }

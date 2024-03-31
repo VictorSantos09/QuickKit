@@ -1,13 +1,12 @@
 ﻿using FluentValidation;
 using QuickKit.Shared.Validations.Common;
 
-namespace Classroom.Core.Entities.Validators
+namespace Classroom.Core.Entities.Validators;
+
+public class ClassroomValidator : Validator<ClassroomEntity>
 {
-    public class ClassroomValidator : Validator<ClassroomEntity>
+    public ClassroomValidator()
     {
-        public ClassroomValidator()
-        {
-            RuleFor(x => x.ClassroomName).NotEmpty();
-        }
+        _ = RuleFor(x => x.ClassroomName).NotEmpty();
     }
 }

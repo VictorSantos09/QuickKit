@@ -43,7 +43,7 @@ public interface IEntity<TEntity, TSnapshot, TKey> : IEntity<TKey>
     /// </summary>
     /// <param name="snapshot">The snapshot to convert.</param>
     /// <returns>The converted entity.</returns>
-    public abstract static TEntity FromSnapshot(TSnapshot snapshot);
+    public static abstract TEntity? FromSnapshot(TSnapshot? snapshot);
 
     /// <summary>
     /// Converts the entity to a snapshot.

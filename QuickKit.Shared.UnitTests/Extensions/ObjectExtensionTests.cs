@@ -8,11 +8,11 @@ public class ObjectExtensionTests
     public void IsNull_WhenObjectNull_ShouldReturnTrue()
     {
         // Arrange
-        object obj = null;
-        var expected = true;
+        object? obj = null;
+        bool expected = true;
 
         // Act
-        var actual = obj.IsNull();
+        bool actual = obj.IsNull();
 
         // Assert
         Assert.Equal(expected, actual);
@@ -22,11 +22,11 @@ public class ObjectExtensionTests
     public void IsNull_WhenStringNull_ShouldReturnTrue()
     {
         // Arrange
-        string obj = null;
-        var expected = true;
+        string? obj = null;
+        bool expected = true;
 
         // Act
-        var actual = obj.IsNull();
+        bool actual = obj.IsNull();
 
         // Assert
         Assert.Equal(expected, actual);
@@ -37,10 +37,10 @@ public class ObjectExtensionTests
     {
         // Arrange
         int? obj = null;
-        var expected = true;
+        bool expected = true;
 
         // Act
-        var actual = obj.IsNull();
+        bool actual = obj.IsNull();
 
         // Assert
         Assert.Equal(expected, actual);
@@ -51,10 +51,10 @@ public class ObjectExtensionTests
     {
         // Arrange
         double? obj = null;
-        var expected = true;
+        bool expected = true;
 
         // Act
-        var actual = obj.IsNull();
+        bool actual = obj.IsNull();
 
         // Assert
         Assert.Equal(expected, actual);
@@ -65,10 +65,10 @@ public class ObjectExtensionTests
     {
         // Arrange
         int? obj = null;
-        var expected = true;
+        bool expected = true;
 
         // Act
-        var actual = obj.IsNull();
+        bool actual = obj.IsNull();
 
         // Assert
         Assert.Equal(expected, actual);
@@ -79,10 +79,10 @@ public class ObjectExtensionTests
     {
         // Arrange
         decimal? obj = null;
-        var expected = true;
+        bool expected = true;
 
         // Act
-        var actual = obj.IsNull();
+        bool actual = obj.IsNull();
 
         // Assert
         Assert.Equal(expected, actual);
@@ -93,10 +93,10 @@ public class ObjectExtensionTests
     {
         // Arrange
         DateTime? obj = null;
-        var expected = true;
+        bool expected = true;
 
         // Act
-        var actual = obj.IsNull();
+        bool actual = obj.IsNull();
 
         // Assert
         Assert.Equal(expected, actual);
@@ -107,10 +107,10 @@ public class ObjectExtensionTests
     {
         // Arrange
         DateOnly? obj = null;
-        var expected = true;
+        bool expected = true;
 
         // Act
-        var actual = obj.IsNull();
+        bool actual = obj.IsNull();
 
         // Assert
         Assert.Equal(expected, actual);
@@ -121,10 +121,10 @@ public class ObjectExtensionTests
     {
         // Arrange
         TimeOnly? obj = null;
-        var expected = true;
+        bool expected = true;
 
         // Act
-        var actual = obj.IsNull();
+        bool actual = obj.IsNull();
 
         // Assert
         Assert.Equal(expected, actual);
@@ -135,10 +135,10 @@ public class ObjectExtensionTests
     {
         // Arrange
         bool? obj = null;
-        var expected = true;
+        bool expected = true;
 
         // Act
-        var actual = obj.IsNull();
+        bool actual = obj.IsNull();
 
         // Assert
         Assert.Equal(expected, actual);

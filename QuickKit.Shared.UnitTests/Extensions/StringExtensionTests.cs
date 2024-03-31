@@ -1,36 +1,35 @@
 ﻿using QuickKit.Shared.Extensions;
 
-namespace QuickKit.Shared.UnitTests.Extensions
+namespace QuickKit.Shared.UnitTests.Extensions;
+
+public class StringExtensionTests
 {
-    public class StringExtensionTests
+    [Theory]
+    [InlineData("")]
+    [InlineData("  ")]
+    [InlineData(null)]
+    public void IsEmpty_ShouldReturnTrue(string value)
     {
-        [Theory]
-        [InlineData("")]
-        [InlineData("  ")]
-        [InlineData(null)]
-        public void IsEmpty_ShouldReturnTrue(string value)
-        {
-            // Arrange
-            var expected = true;
+        // Arrange
+        bool expected = true;
 
-            // Act
-            var actual = value.IsEmpty();
+        // Act
+        bool actual = value.IsEmpty();
 
-            // Assert
-            Assert.Equal(expected, actual);
-        }
+        // Assert
+        Assert.Equal(expected, actual);
+    }
 
-        [Fact]
-        public void IsEmpty_WhenDefaultStringEmpty_ShouldReturnTrue()
-        {
-            // Arrange
-            var expected = true;
+    [Fact]
+    public void IsEmpty_WhenDefaultStringEmpty_ShouldReturnTrue()
+    {
+        // Arrange
+        bool expected = true;
 
-            // Act
-            var actual = string.Empty.IsEmpty();
+        // Act
+        bool actual = string.Empty.IsEmpty();
 
-            // Assert
-            Assert.Equal(expected, actual);
-        }
+        // Assert
+        Assert.Equal(expected, actual);
     }
 }

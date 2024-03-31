@@ -3,9 +3,12 @@ using QuickKit.Shared.Entities;
 
 namespace QuickKit.Builders.ProcedureName.Update;
 
-public class ProcedureNameBuilderUpdateStrategy<TEntity> : IProcedureNameBuilderUpdateStrategy where TEntity : IEntity
+/// <summary>
+/// Represents a strategy for building the name of an update stored procedure for a specific entity.
+/// </summary>
+public class ProcedureNameBuilderUpdateStrategy: IProcedureNameBuilderUpdateStrategy
 {
-    public string Build()
+    public string Build<TEntity>() where TEntity : IEntity
     {
         string entityName = ProcedureNameBuilderTextRemover.RemoveEntity<TEntity>();
         return $"SP_{entityName}_UPDATE".ToUpper();

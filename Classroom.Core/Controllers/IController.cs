@@ -3,12 +3,12 @@ using QuickKit.Shared.Entities;
 
 namespace Classroom.Core.Controllers;
 
-public interface IController<TEntity, TKey> : IControllerAdd<TEntity>,
-    IControllerGetAll<TEntity>,
-    IControllerUpdate<TEntity>,
-    IControllerDelete<TKey>,
-    IControllerGetById<TKey>,
-    IControllerTestEndpoint
+public interface IController<TEntity, TKey> : IAddController<TEntity>,
+    IGetAllController<TEntity>,
+    IUpdateController<TEntity>,
+    IDeleteController<TKey>,
+    IGetByIdController<TEntity, TKey>,
+    ITestEndpointController
     where TEntity : IEntity
     where TKey : IConvertible
 {

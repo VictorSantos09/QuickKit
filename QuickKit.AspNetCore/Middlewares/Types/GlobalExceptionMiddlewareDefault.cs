@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
-using QuickKit.Shared.Exceptions;
-using QuickKit.Shared.Exceptions.Base;
 using System.Net;
 
 namespace QuickKit.AspNetCore.Middlewares.Types;
@@ -37,9 +35,8 @@ public class GlobalExceptionMiddlewareDefault
     /// <returns>The error response object.</returns>
     private object BuildResponse(Exception ex)
     {
-        if (_showStaceTrace)
-        {
-            return new
+        return _showStaceTrace
+            ? (new
             {
                 error = new
                 {
@@ -50,20 +47,18 @@ public class GlobalExceptionMiddlewareDefault
                     ex.HelpLink,
                     ex.HResult,
                 }
-            };
-        }
-
-        return new
-        {
-            error = new
+            })
+            : (new
             {
-                Message = _defaultMessage,
-                Details = ex.Message,
-                ex.Data,
-                ex.HelpLink,
-                ex.HResult,
-            }
-        };
+                error = new
+                {
+                    Message = _defaultMessage,
+                    Details = ex.Message,
+                    ex.Data,
+                    ex.HelpLink,
+                    ex.HResult,
+                }
+            });
     }
 
     /// <summary>
@@ -88,22 +83,6 @@ public class GlobalExceptionMiddlewareDefault
         {
             await _next(context);
         }
-        catch (EntityNotFoundException ex)
-        {
-            await HandleExceptionAsync(context, ex,  HttpStatusCode.NotFound);
-        }
-        catch (NotFoundException ex)
-        {
-            await HandleExceptionAsync(context, ex, HttpStatusCode.NotFound);
-        }
-        catch (ValidationFailureException ex)
-        {
-            await HandleExceptionAsync(context, ex, HttpStatusCode.BadRequest);
-        }
-        catch (SnapshotNullException ex)
-        {
-            await HandleExceptionAsync(context, ex, HttpStatusCode.InternalServerError);
-        }
         catch (Exception ex)
         {
             await HandleExceptionAsync(context, ex, HttpStatusCode.InternalServerError);
@@ -113,7 +92,7 @@ public class GlobalExceptionMiddlewareDefault
     private Task HandleExceptionAsync(HttpContext context, Exception ex, HttpStatusCode statusCode)
     {
         PrepareContextResponse(context, statusCode);
-        var response = BuildResponse(ex);
+        object response = BuildResponse(ex);
         return context.Response.WriteAsync(JsonConvert.SerializeObject(response));
     }
 }

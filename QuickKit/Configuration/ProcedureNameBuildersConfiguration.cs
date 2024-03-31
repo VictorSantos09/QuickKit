@@ -5,74 +5,44 @@ using QuickKit.Builders.ProcedureName.GetAll;
 using QuickKit.Builders.ProcedureName.GetById;
 using QuickKit.Builders.ProcedureName.Update;
 using QuickKit.Shared.Entities;
-using QuickKit.Shared.Services;
 using System.Reflection;
 
 namespace QuickKit.Configuration;
+/// <summary>
+/// Provides configuration methods for adding procedure name builders to the service collection.
+/// </summary>
 public static class ProcedureNameBuildersConfiguration
 {
-    public const ServiceLifetime DefaultLifetime = SERVICE_DESCRIPTOR.DEFAULT_LIFETIME;
+    /// <summary>
+    /// The default lifetime for the service.
+    /// </summary>
+    public const ServiceLifetime DefaultLifetime = ServiceLifetime.Transient;
 
-    public static IServiceCollection AddProcedureNameBuilders<TEntity>(this IServiceCollection services,
-                                                                       TEntity entity,
-                                                                       ServiceLifetime lifetime = DefaultLifetime) where TEntity : Type, IEntity
-    {
-        var descriptor = GetServiceDescriptors(entity, lifetime);
-        AddDescriptorToServices(services, descriptor);
-        return services;
-    }
 
     public static IServiceCollection AddProcedureNameBuildersFromAssembly(this IServiceCollection services,
-                                                                                   Assembly assembly,
-                                                                                   bool onlyPublic = true,
                                                                                    ServiceLifetime lifetime = DefaultLifetime)
     {
-        var entities = FindEntitiesOnAssembly(assembly, onlyPublic);
-
-        List<ServiceDescriptor> descriptors = new();
-
-        foreach (var entity in entities)
-        {
-            descriptors.AddRange(GetServiceDescriptors(entity, lifetime));
-        }
+        List<ServiceDescriptor> descriptors = GetServiceDescriptors(lifetime);
 
         AddDescriptorToServices(services, descriptors);
 
         return services;
     }
 
-    private static IEnumerable<Type> FindEntitiesOnAssembly(Assembly assembly, bool onlyPublic)
+    private static List<ServiceDescriptor> GetServiceDescriptors(ServiceLifetime lifetime)
     {
-        var entityInterfaceType = typeof(IEntity);
-
-        var types = assembly.GetTypes().Where(type =>
-        type.IsClass &&
-        !type.IsAbstract &&
-        !type.IsInterface &&
-        entityInterfaceType.IsAssignableFrom(type));
-
-        if (onlyPublic)
+        Dictionary<Type, Type> dictionary = new()
         {
-            types = types.Where(type => type.IsPublic);
-        }
-
-        return types;
-    }
-
-    private static List<ServiceDescriptor> GetServiceDescriptors<TEntity>(TEntity entity, ServiceLifetime lifetime) where TEntity : Type
-    {
-        var dictionary = new Dictionary<Type, Type>
-        {
-            { typeof(IProcedureNameBuilderAddStrategy), typeof(ProcedureNameBuilderAddStrategy<>).MakeGenericType(entity) },
-            { typeof(IProcedureNameBuilderDeleteStrategy), typeof(ProcedureNameBuilderDeleteStrategy<>).MakeGenericType(entity) },
-            { typeof(IProcedureNameBuilderGetAllStrategy), typeof(ProcedureNameBuilderGetAllStrategy<>).MakeGenericType(entity) },
-            { typeof(IProcedureNameBuilderGetByIdStrategy), typeof(ProcedureNameBuilderGetByIdStrategy<>).MakeGenericType(entity) },
-            { typeof(IProcedureNameBuilderUpdateStrategy), typeof(ProcedureNameBuilderUpdateStrategy<>).MakeGenericType(entity) }
+            { typeof(IProcedureNameBuilderAddStrategy), typeof(ProcedureNameBuilderAddStrategy) },
+            { typeof(IProcedureNameBuilderDeleteStrategy), typeof(ProcedureNameBuilderDeleteStrategy) },
+            { typeof(IProcedureNameBuilderGetAllStrategy), typeof(ProcedureNameBuilderGetAllStrategy)},
+            { typeof(IProcedureNameBuilderGetByIdStrategy), typeof(ProcedureNameBuilderGetByIdStrategy) },
+            { typeof(IProcedureNameBuilderUpdateStrategy), typeof(ProcedureNameBuilderUpdateStrategy) }
         };
 
-        var services = new List<ServiceDescriptor>();
+        List<ServiceDescriptor> services = new();
 
-        foreach (var type in dictionary)
+        foreach (KeyValuePair<Type, Type> type in dictionary)
         {
             ServiceDescriptor service = new(type.Key, type.Value, lifetime);
             services.Add(service);
@@ -83,7 +53,7 @@ public static class ProcedureNameBuildersConfiguration
 
     private static void AddDescriptorToServices(IServiceCollection services, IEnumerable<ServiceDescriptor> descriptors)
     {
-        foreach (var descriptor in descriptors)
+        foreach (ServiceDescriptor descriptor in descriptors)
         {
             services.Add(descriptor);
         }

@@ -7,10 +7,6 @@
     <Title>QuickKit</Title>
       <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="..\QuickKit.Shared\.editorconfig" Link=".editorconfig" />
-  </ItemGroup>
  
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.35" />

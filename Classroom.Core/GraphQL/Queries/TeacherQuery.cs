@@ -14,13 +14,13 @@ public class TeacherQuery
         _repository = repository;
     }
 
-    public async Task<ClassroomEntity?> GetTeacherById(int id)
+    public async Task<ClassroomEntity?> GetTeacherById(int id, CancellationToken cancellationToken = default)
     {
-        return await _repository.GetByIdAsync(id);
+        return await _repository.GetByIdAsync(id, cancellationToken);
     }
 
-    public async Task<IEnumerable<ClassroomEntity>> GetAllTeachers()
+    public async Task<IEnumerable<ClassroomEntity>> GetAllTeachers(CancellationToken cancellationToken = default)
     {
-        return await _repository.GetAllAsync();
+        return await _repository.GetAllAsync(cancellationToken);
     }
 }
