@@ -12,6 +12,7 @@ public interface IAddService<TDTO>
     /// Adds a new entity asynchronously.
     /// </summary>
     /// <param name="dto">The DTO (Data Transfer Object) representing the entity to be added.</param>
+    /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>A task representing the asynchronous operation. The task result contains the final result.</returns>
     public Task<IFinal> AddAsync(TDTO dto, CancellationToken cancellationToken);
 }

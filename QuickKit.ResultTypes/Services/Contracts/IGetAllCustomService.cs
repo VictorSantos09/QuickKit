@@ -9,6 +9,7 @@ public interface IGetAllCustomService<TType>
     /// <summary>
     /// Retrieves all instances of the specified type asynchronously.
     /// </summary>
+    /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the collection of instances.</returns>
     Task<IFinal<IEnumerable<TType>>> GetAllAsync(CancellationToken cancellationToken);
 }

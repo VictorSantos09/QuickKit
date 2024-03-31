@@ -10,6 +10,7 @@ public interface IUpdateService<TDTO>
     /// Updates an entity asynchronously using the provided DTO.
     /// </summary>
     /// <param name="dto">The DTO containing the updated data.</param>
+    /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>A task representing the asynchronous operation. The task result represents the final result of the update operation.</returns>
     public Task<IFinal> UpdateAsync(TDTO dto, CancellationToken cancellationToken);
 }

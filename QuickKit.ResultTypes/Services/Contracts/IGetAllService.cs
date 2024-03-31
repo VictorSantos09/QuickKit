@@ -12,6 +12,7 @@ public interface IGetAllService<TEntity>
     /// <summary>
     /// Retrieves all entities asynchronously.
     /// </summary>
+    /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the collection of entities.</returns>
     Task<IFinal<IEnumerable<TEntity>>> GetAllAsync(CancellationToken cancellationToken);
 }

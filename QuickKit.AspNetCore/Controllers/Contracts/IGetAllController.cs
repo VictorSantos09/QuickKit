@@ -12,6 +12,7 @@ public interface IGetAllController<TEntity> where TEntity : IEntity
     /// <summary>
     /// Retrieves all entities asynchronously.
     /// </summary>
+    /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>A <see cref="Task{TResult}"/> representing the asynchronous operation, containing an <see cref="IActionResult"/>.</returns>
     Task<ActionResult<IEnumerable<TEntity>>> GetAllAsync(CancellationToken cancellationToken = default);
 }

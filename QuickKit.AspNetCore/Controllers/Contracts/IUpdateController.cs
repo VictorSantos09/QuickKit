@@ -13,6 +13,7 @@ public interface IUpdateController<TDTO>
     /// Updates an existing entity asynchronously.
     /// </summary>
     /// <param name="dto">The data object to update.</param>
+    /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>A <see cref="Task{TResult}"/> representing the asynchronous operation, containing an <see cref="IActionResult"/>.</returns>
     Task<IActionResult> UpdateAsync(TDTO dto, CancellationToken cancellationToken = default);
 }

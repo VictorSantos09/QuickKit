@@ -12,6 +12,7 @@ public interface IDeleteController<TKey> where TKey : IConvertible
     /// Deletes an entity by its ID asynchronously.
     /// </summary>
     /// <param name="id">The ID of the entity to delete.</param>
+    /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>A <see cref="Task{TResult}"/> representing the asynchronous operation, containing an <see cref="IActionResult"/>.</returns>
     Task<IActionResult> DeleteAsync(TKey id, CancellationToken cancellationToken = default);
 }

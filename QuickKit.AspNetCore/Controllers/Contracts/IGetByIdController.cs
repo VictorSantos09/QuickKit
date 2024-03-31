@@ -15,6 +15,7 @@ public interface IGetByIdController<TEntity, TKey>
     /// <summary>
     /// Retrieves an entity by its ID asynchronously.
     /// </summary>
+    /// <param name="cancellationToken">The cancellation token.</param>
     /// <param name="id">The ID of the entity.</param>
     /// <returns>A <see cref="Task{TResult}"/> representing the asynchronous operation, containing an <see cref="IActionResult"/>.</returns>
     Task<ActionResult<TEntity?>> GetByIdAsync(TKey id, CancellationToken cancellationToken = default);
