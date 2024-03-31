@@ -14,7 +14,7 @@ public class ClassroomService : IClassroomService
         _repository = repository;
     }
 
-    public async Task<Final> AddAsync(ClassroomEntity entity, CancellationToken cancellationToken = default)
+    public async Task<IFinal> AddAsync(ClassroomEntity entity, CancellationToken cancellationToken = default)
     {
         if (entity.IsNull()) return Final.Failure("classroom.Null", "classroom can't be null");
 
@@ -23,7 +23,7 @@ public class ClassroomService : IClassroomService
         return result <= 0 ? Final.Failure("classroom.Failure", "entity not saved") : Final.Success();
     }
 
-    public async Task<Final> DeleteAsync(int id, CancellationToken cancellationToken = default)
+    public async Task<IFinal> DeleteAsync(int id, CancellationToken cancellationToken = default)
     {
         if (id <= 0) return Final.Failure("classroom.invalidId", "id not valid");
 
@@ -32,7 +32,7 @@ public class ClassroomService : IClassroomService
         return result > 0 ? Final.Success() : Final.Failure("classroom.deleteFail", "delete fail");
     }
 
-    public async Task<Final<IEnumerable<ClassroomEntity>>> GetAllAsync(CancellationToken cancellationToken = default)
+    public async Task<IFinal<IEnumerable<ClassroomEntity>>> GetAllAsync(CancellationToken cancellationToken = default)
     {
         IEnumerable<ClassroomEntity> classrooms = await _repository.GetAllAsync(cancellationToken);
 
@@ -41,7 +41,7 @@ public class ClassroomService : IClassroomService
             : Final.Success(classrooms);
     }
 
-    public async Task<Final<ClassroomEntity?>> GetByIdAsync(int id, CancellationToken cancellationToken = default)
+    public async Task<IFinal<ClassroomEntity?>> GetByIdAsync(int id, CancellationToken cancellationToken = default)
     {
         ClassroomEntity? classroom = await _repository.GetByIdAsync(id, cancellationToken);
 
@@ -50,7 +50,7 @@ public class ClassroomService : IClassroomService
         else return Final.Success(classroom);
     }
 
-    public async Task<Final> UpdateAsync(ClassroomEntity entity, CancellationToken cancellationToken = default)
+    public async Task<IFinal> UpdateAsync(ClassroomEntity entity, CancellationToken cancellationToken = default)
     {
         if (entity is null) return Final.Failure("classroom.Null", "classroom can't be null");
 

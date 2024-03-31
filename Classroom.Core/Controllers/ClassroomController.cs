@@ -2,7 +2,6 @@
 using Classroom.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 using QuickKit.AspNetCore.Attributes;
-using QuickKit.ResultTypes;
 using QuickKit.ResultTypes.Converters;
 using System.Net;
 
@@ -22,7 +21,7 @@ public class ClassroomController : ControllerBase, IController<ClassroomEntity, 
     [Add]
     public async Task<IActionResult> AddAsync(ClassroomEntity entity, CancellationToken cancellationToken)
     {
-        Final result = await _service.AddAsync(entity, cancellationToken);
+        var result = await _service.AddAsync(entity, cancellationToken);
         return result.Convert(Ok);
     }
 
@@ -30,7 +29,7 @@ public class ClassroomController : ControllerBase, IController<ClassroomEntity, 
     public async Task<IActionResult> DeleteAsync(int id, CancellationToken cancellationToken)
     {
 
-        Final result = await _service.DeleteAsync(id, cancellationToken);
+        var result = await _service.DeleteAsync(id, cancellationToken);
         return result.Convert(Ok);
 
     }
@@ -38,14 +37,14 @@ public class ClassroomController : ControllerBase, IController<ClassroomEntity, 
     [GetAll]
     public async Task<ActionResult<IEnumerable<ClassroomEntity>>> GetAllAsync(CancellationToken cancellationToken)
     {
-        Final<IEnumerable<ClassroomEntity>> result = await _service.GetAllAsync(cancellationToken);
+        var result = await _service.GetAllAsync(cancellationToken);
         return Ok(result);
     }
 
     [GetById]
     public async Task<ActionResult<ClassroomEntity>> GetByIdAsync(int id, CancellationToken cancellationToken)
     {
-        Final<ClassroomEntity> result = await _service.GetByIdAsync(id, cancellationToken);
+        var result = await _service.GetByIdAsync(id, cancellationToken);
         return result.Convert(HttpStatusCode.BadRequest);
     }
 
@@ -58,7 +57,7 @@ public class ClassroomController : ControllerBase, IController<ClassroomEntity, 
     [Update]
     public async Task<IActionResult> UpdateAsync(ClassroomEntity entity, CancellationToken cancellationToken)
     {
-        Final result = await _service.UpdateAsync(entity, cancellationToken);
+        var result = await _service.UpdateAsync(entity, cancellationToken);
 
         return result.Convert(HttpStatusCode.BadRequest);
     }
