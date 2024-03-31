@@ -45,9 +45,7 @@ public class ClassroomService : IClassroomService
     {
         ClassroomEntity? classroom = await _repository.GetByIdAsync(id, cancellationToken);
 
-        if (classroom.IsNull()) return Final.Failure(classroom, "classroom.notFound", "classroom not found");
-
-        else return Final.Success(classroom);
+        return classroom.IsNull() ? Final.Failure(classroom, "classroom.notFound", "classroom not found") : Final.Success(classroom);
     }
 
     public async Task<IFinal> UpdateAsync(ClassroomEntity entity, CancellationToken cancellationToken = default)

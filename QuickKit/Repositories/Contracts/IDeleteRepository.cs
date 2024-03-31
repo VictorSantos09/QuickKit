@@ -15,6 +15,7 @@ public interface IDeleteRepository<TEntity, TKey>
     /// Deletes an entity by its primary key asynchronously.
     /// </summary>
     /// <param name="id">The primary key of the entity to delete.</param>
+    /// <param name="cancellationToken"></param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the number of affected rows.</returns>
     Task<int> DeleteAsync(TKey id, CancellationToken cancellationToken);
 }

@@ -4,8 +4,6 @@ using QuickKit.Builders.ProcedureName.Delete;
 using QuickKit.Builders.ProcedureName.GetAll;
 using QuickKit.Builders.ProcedureName.GetById;
 using QuickKit.Builders.ProcedureName.Update;
-using QuickKit.Shared.Entities;
-using System.Reflection;
 
 namespace QuickKit.Configuration;
 /// <summary>

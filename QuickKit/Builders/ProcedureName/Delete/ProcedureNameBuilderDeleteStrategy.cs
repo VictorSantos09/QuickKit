@@ -6,7 +6,7 @@ namespace QuickKit.Builders.ProcedureName.Delete;
 /// <summary>
 /// Represents a strategy for building the name of a delete stored procedure for a specific entity.
 /// </summary>
-public class ProcedureNameBuilderDeleteStrategy: IProcedureNameBuilderDeleteStrategy
+public class ProcedureNameBuilderDeleteStrategy : IProcedureNameBuilderDeleteStrategy
 {
     /// <inheritdoc/>
 

@@ -16,6 +16,7 @@ public interface IGetByIdThrowRepository<TEntity, TKey>
     /// </summary>
     /// <param name="id">The primary key of the entity.</param>
     /// <param name="notFoundExceptionMessage">The exception message to throw if the entity is not found.</param>
+    /// <param name="cancellationToken"></param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the entity.</returns>
     Task<TEntity> GetByIdThrowAsync(TKey id, string notFoundExceptionMessage, CancellationToken cancellationToken);
 }

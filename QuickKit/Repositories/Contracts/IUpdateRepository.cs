@@ -13,6 +13,7 @@ public interface IUpdateRepository<TEntity>
     /// Updates an existing entity asynchronously.
     /// </summary>
     /// <param name="entity">The entity to update.</param>
+    /// <param name="cancellationToken"></param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the number of affected rows.</returns>
     Task<int> UpdateAsync(TEntity entity, CancellationToken cancellationToken);
 }

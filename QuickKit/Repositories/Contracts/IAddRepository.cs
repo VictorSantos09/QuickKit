@@ -13,6 +13,7 @@ public interface IAddRepository<TEntity>
     /// Adds a new entity asynchronously.
     /// </summary>
     /// <param name="entity">The entity to add.</param>
+    /// <param name="cancellationToken"></param>
     /// <returns>A task that represents the asynchronous operation. The task result contains the number of affected rows.</returns>
     Task<int> AddAsync(TEntity entity, CancellationToken cancellationToken);
 }
