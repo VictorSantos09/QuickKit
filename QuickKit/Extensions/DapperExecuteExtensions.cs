@@ -22,7 +22,7 @@ public static class DapperExecuteExtensions
     /// <param name="command">The database command to be executed.</param>
     /// <returns>A task representing the asynchronous operation. The task result contains the number of affected rows.</returns>
     /// <exception cref="ValidationException">Thrown if the validation fails.</exception>
-    public static async Task<int> ExecuteValidatingAsync<TEntity>(this IDbConnection conn, TEntity entity,
+    public static async Task<int> ExecuteValidatingOnTransactionAsync<TEntity>(this IDbConnection conn, TEntity entity,
                                                                   IValidator<TEntity> validator,
                                                                   string validationFailureMessage,
                                                                   CommandDefinition command) where TEntity : IEntity
@@ -36,6 +36,18 @@ public static class DapperExecuteExtensions
         });
     }
 
+    public static async Task<int> ExecuteValidatingAsync<TEntity>(this IDbConnection conn, TEntity entity,
+                                                                  IValidator<TEntity> validator,
+                                                                  string validationFailureMessage,
+                                                                  CommandDefinition command) where TEntity : IEntity
+    {
+        ValidationResult result = await validator.ValidateAsync(entity);
+
+        return !result.IsValid
+            ? throw new ValidationException(validationFailureMessage, result.Errors)
+            : await conn.ExecuteAsync(command);
+    }
+
     /// <summary>
     /// Executes the specified command within a transaction on the provided database connection asynchronously.
     /// </summary>
@@ -45,7 +57,6 @@ public static class DapperExecuteExtensions
     /// <returns>A task representing the asynchronous operation. The task result contains the result of the command.</returns>
     public static async Task<TResult> ExecuteOnTransactionAsync<TResult>(this IDbConnection conn, Func<Task<TResult>> commandToExecute)
     {
-        conn.Open();
         using IDbTransaction trans = conn.BeginTransaction();
         try
         {
