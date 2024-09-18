@@ -1,0 +1,114 @@
+﻿@typeparam TDataType
+@inherits Grid<TDataType>
+
+<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="1rem;" Wrap="FlexWrap.Wrap">
+    <RadzenButton Text="@ExportExcelText" Icon="grid_on" Click="@(args => Export("excel"))" />
+    <RadzenButton Text="@ExportCSVText" Icon="wrap_text" Click="@(args => Export("csv"))" />
+</RadzenStack>
+
+<RadzenDataGrid @ref="GridComponent"
+                @bind-Value="SelectedData"
+                Data="@Data"
+                TItem="TDataType"
+                IsLoading="@IsLoading"
+                FilterPopupRenderMode="@FilterPopupRenderMode"
+                FilterCaseSensitivity="@FilterCaseSensitivity"
+                AllowFiltering="@AllowFiltering"
+                AllowColumnResize="@AllowColumnResize"
+                AllowAlternatingRows="@AllowAlternatingRows"
+                AllowSorting="@AllowSorting"
+                AllowPaging="@AllowPaging"
+                ShowPagingSummary="@ShowPagingSummary"
+                AllowColumnReorder="@AllowColumnReorder"
+                AllowGrouping="@AllowGrouping"
+                AllowMultiColumnSorting="@AllowMultiColumnSorting"
+                AllowColumnPicking="@AllowColumnPicking"
+                AllowCompositeDataCells="@AllowCompositeDataCells"
+                AllowFilterDateInput="@AllowFilterDateInput"
+                AllowPickAllColumns="@AllowPickAllColumns"
+                ColumnsPickerAllowFiltering="@ColumnsPickerAllowFiltering"
+                Density="@Density"
+                PageSize="@PageSize"
+                ColumnWidth="@ColumnWidth"
+                PagerHorizontalAlign="@PagerHorizontalAlign"
+                FilterMode="@FilterMode"
+                LogicalFilterOperator="@LogicalFilterOperator"
+                Culture="@Culture"
+                EmptyText="@EmptyText"
+                FirstPageTitle="@FirstPageTitle"
+                LastPageTitle="@LastPageTitle"
+                NextPageTitle="@NextPageTitle"
+                PrevPageTitle="@PrevPageTitle"
+                GroupPanelText="@GroupPanelText"
+                SelectionMode="@SelectionMode"
+                RowSelect="@OnRowSelectedEvent"
+                ApplyFilterText="@ApplyFilterText"
+                PageSizeText="@PageSizeText"
+                StartsWithText="@StartsWithText"
+                EndsWithText="@EndsWithText"
+                ContainsText="@ContainsText"
+                DoesNotContainText="@DoesNotContainText"
+                IsEmptyText="@IsEmptyText"
+                IsNotEmptyText="@IsNotEmptyText"
+                IsNullText="@IsNullText"
+                IsNotNullText="@IsNotNullText"
+                EqualsText="@EqualsText"
+                NotEqualsText="@NotEqualsText"
+                GreaterThanText="@GreaterThanText"
+                GreaterThanOrEqualsText="@GreaterThanOrEqualsText"
+                LessThanText="@LessThanText"
+                LessThanOrEqualsText="@LessThanOrEqualsText"
+                ClearFilterText="@ClearFilterText"
+                FilterText="@FilterText"
+                OrOperatorText="@OrOperatorText"
+                AndOperatorText="@AndOperatorText"
+                ColumnsShowingText="@ColumnsShowingText"
+                AllColumnsText="@AllColumnsText"
+                EnumFilterSelectText="@EnumFilterSelectText"
+                AllowRowSelectOnRowClick="@AllowRowSelectOnRowClick">
+    <Columns>
+        @if (SelectionMode == DataGridSelectionMode.Multiple)
+        {
+            <RadzenDataGridColumn Filterable="false"
+                                  Sortable="false"
+                                  Pickable="false"
+                                  Reorderable="false"
+                                  Groupable="false"
+                                  TextAlign="TextAlign.Center"
+                                  Width="15px"
+                                  FrozenPosition="FrozenColumnPosition.Right">
+                <HeaderTemplate>
+                    <RadzenCheckBox TabIndex="-1" TriState="false" TValue="bool?" InputAttributes="@(new Dictionary<string,object>(){ { "aria-label", "Select all items" }})"
+                                    Value="@(SelectedData == null || SelectedData?.Any() != true ? false : !Data.All(i => SelectedData.Contains(i)) ? null : Data.Any(i => SelectedData.Contains(i)))"
+                                    Change="@(args => SelectedData = args == true ? Data.ToList() : null)" />
+                </HeaderTemplate>
+                <Template Context="data">
+                    <RadzenCheckBox TabIndex="-1" TriState="false" Value="@(SelectedData != null && SelectedData.Contains(data))" InputAttributes="@(new Dictionary<string,object>(){ { "aria-label", "Select item" }})"
+                                    TValue="bool" Change=@(args => { if(!AllowRowSelectOnRowClick) { GridComponent?.SelectRow(data); }}) />
+                </Template>
+            </RadzenDataGridColumn>
+        }
+
+        @foreach (var c in Columns)
+        {
+            <RadzenDataGridColumn Property="@c.PropertyName"
+                                  Title="@c.Title"
+                                  Width="@c.Width"
+                                  TextAlign="@c.TextAlign"
+                                  Filterable="@c.Filterable"
+                                  Frozen="@c.Frozen"
+                                  Groupable="@c.Groupable"
+                                  Pickable="@c.Pickable"
+                                  Reorderable="@c.Reorderable"
+                                  Resizable="@c.Resizable"
+                                  Sortable="@c.Sortable"
+                                  UniqueID="@c.UniqueID"
+                                  ColumnPickerTitle="@c.ColumnPickerTitle"
+                                  Visible="@c.Visible" />
+        }
+    </Columns>
+</RadzenDataGrid>
+
+@code {
+
+}

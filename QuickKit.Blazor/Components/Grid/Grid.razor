@@ -1,0 +1,147 @@
+﻿@using System.Globalization
+@using QuickKit.Blazor.Components.Grid.Types
+@using QuickKit.Blazor.Services.Navigation
+@using Radzen.Blazor
+@typeparam TDataType
+@inject INavigationService service
+@using static QuickKit.Shared.Extensions.ParameterViewExtensions;
+
+@if (Data.Any() && Columns.Any())
+{
+    @if (AllowManipulation)
+    {
+        <GridManipulator Data="@Data"
+                           Columns="@Columns"
+                           IsLoading="@IsLoading"
+                           OnValueChangedEvent="@OnValueChangedEvent"
+                           Density="@Density"
+                           SelectionMode="@SelectionMode"
+                           AllowManipulation="@AllowManipulation"
+                           AllowRowSelectOnRowClick="@AllowRowSelectOnRowClick"
+                           OnRowSelectedEvent="@OnRowSelectedEvent" />
+    }
+    else
+    {
+        <GridQuery Data="@Data"
+                     Columns="@Columns"
+                     IsLoading="@IsLoading"
+                     OnValueChangedEvent="@OnValueChangedEvent"
+                     Density="@Density"
+                     SelectionMode="@SelectionMode"
+                     AllowManipulation="@AllowManipulation"
+                     AllowRowSelectOnRowClick="@AllowRowSelectOnRowClick"
+                     OnRowSelectedEvent="@OnRowSelectedEvent" />
+    }
+
+}
+
+@code {
+    #region PARAMETERS
+    [Parameter, EditorRequired]
+    public IEnumerable<TDataType> Data { get; set; }
+    [Parameter, EditorRequired]
+    public IEnumerable<GridColumn> Columns { get; set; }
+
+    [Parameter]
+    public bool IsLoading { get; set; }
+    [Parameter]
+    public EventCallback<IList<TDataType>> OnValueChangedEvent { get; set; }
+    [Parameter]
+    public Density Density { get; set; } = Density.Default;
+    [Parameter]
+    public DataGridSelectionMode SelectionMode { get; set; }
+    [Parameter]
+    public bool AllowManipulation { get; set; }
+    [Parameter]
+    public bool AllowRowSelectOnRowClick { get; set; }
+    [Parameter]
+    public EventCallback<TDataType> OnRowSelectedEvent { get; set; }
+    [Parameter]
+    public bool CanEdit { get; set; } = true;
+    [Parameter]
+    public bool CanDelete { get; set; } = true;
+    #endregion
+
+    #region PUBLIC PROPERTIES
+    public IList<TDataType>? SelectedData { get; set; }
+    public CultureInfo Culture { get; set; } = CultureInfo.CurrentCulture;
+    #endregion
+
+    #region PRIVATE PROTECTED FIELDS
+    private protected int PageSize = 15;
+    private protected string ColumnWidth = "100px";
+    private protected RadzenDataGrid<TDataType>? GridComponent;
+    private protected bool AllowFiltering = true;
+    private protected bool AllowColumnResize = true;
+    private protected bool AllowAlternatingRows = false;
+    private protected bool AllowSorting = true;
+    private protected bool AllowPaging = true;
+    private protected bool ShowPagingSummary = true;
+    private protected bool AllowColumnReorder = true;
+    private protected bool AllowGrouping = true;
+    private protected bool AllowMultiColumnSorting = true;
+    private protected bool AllowColumnPicking = true;
+    private protected bool AllowCompositeDataCells = true;
+    private protected bool AllowFilterDateInput = true;
+    private protected bool AllowPickAllColumns = true;
+    private protected bool ColumnsPickerAllowFiltering = true;
+    private protected HorizontalAlign PagerHorizontalAlign = HorizontalAlign.Left;
+    private protected FilterMode FilterMode = FilterMode.Advanced;
+    private protected LogicalFilterOperator LogicalFilterOperator = LogicalFilterOperator.Or;
+    private protected string EmptyText = "Não há registro";
+    private protected string FirstPageTitle = "Primeira página";
+    private protected string LastPageTitle = "Última página";
+    private protected string NextPageTitle = "Próxima página";
+    private protected string PrevPageTitle = "Página anterior";
+    private protected string GroupPanelText = "Arraste um cabeçalho de coluna aqui e solte-o para agrupar por essa coluna.";
+    private protected PopupRenderMode FilterPopupRenderMode = PopupRenderMode.OnDemand;
+    private protected FilterCaseSensitivity FilterCaseSensitivity = FilterCaseSensitivity.CaseInsensitive;
+    private protected string ApplyFilterText = "Aplicar";
+    private protected string PageSizeText = "Tamanho da página";
+    private protected string StartsWithText = "Começa com";
+    private protected string EndsWithText = "Termina com";
+    private protected string ContainsText = "Contém";
+    private protected string DoesNotContainText = "Não contém";
+    private protected string IsEmptyText = "Está vazio";
+    private protected string IsNotEmptyText = "Não está vazio";
+    private protected string IsNullText = "É nulo";
+    private protected string IsNotNullText = "Não é nulo";
+    private protected string EqualsText = "Igual";
+    private protected string NotEqualsText = "Diferente";
+    private protected string GreaterThanText = "Maior que";
+    private protected string GreaterThanOrEqualsText = "Maior ou igual a";
+    private protected string LessThanText = "Menor que";
+    private protected string LessThanOrEqualsText = "Menor ou igual a";
+    private protected string ClearFilterText = "Limpar";
+    private protected string FilterText = "Filtro";
+    private protected string OrOperatorText = "ou";
+    private protected string AndOperatorText = "e";
+    private protected string ColumnsShowingText = "Colunas visíveis";
+    private protected string AllColumnsText = "Todas as colunas";
+    private protected string EnumFilterSelectText = "Selecione";
+    private protected string ExportCSVText = "Exportar CSV";
+    private protected string ExportExcelText = "Exportar EXCEL";
+    #endregion
+
+    public void ChangeDensity(Density density = Density.Default)
+    {
+        Density = density;
+    }
+
+
+    public void ClearSelection()
+    {
+        SelectedData = null;
+    }
+
+    private protected void Export(string type, string? table = null) // nulo temporário
+    {
+        service.Export(table, type, new Query()
+            {
+                OrderBy = GridComponent.Query.OrderBy,
+                Filter = GridComponent.Query.Filter,
+                Select = string.Join(",", GridComponent.ColumnsCollection.Where(c => c.GetVisible() && !string.IsNullOrEmpty(c.Property))
+                            .Select(c => c.Property.Contains(".") ? $"{c.Property} as {c.Property.Replace(".", "_")}" : c.Property))
+            });
+    }
+}

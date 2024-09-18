@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit.UnitTests", "Quick
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit.Shared.UnitTests", "QuickKit.Shared.UnitTests\QuickKit.Shared.UnitTests.csproj", "{A0455EF2-8204-4FA3-9C91-993D76497884}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickKit.Blazor", "QuickKit.Blazor\QuickKit.Blazor.csproj", "{607F53DB-DA30-4110-9D5F-2E8F7720755A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{A0455EF2-8204-4FA3-9C91-993D76497884}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0455EF2-8204-4FA3-9C91-993D76497884}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0455EF2-8204-4FA3-9C91-993D76497884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{607F53DB-DA30-4110-9D5F-2E8F7720755A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607F53DB-DA30-4110-9D5F-2E8F7720755A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607F53DB-DA30-4110-9D5F-2E8F7720755A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607F53DB-DA30-4110-9D5F-2E8F7720755A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +91,7 @@ Global
 		{05968E99-5B76-4E14-91A9-7ADD8491A264} = {9ED6F13C-CCAD-424A-86A1-8041F79A9FDF}
 		{8F18EE76-1364-47B4-8F1C-7D09CCF67C24} = {31F64FCC-74CA-40A9-9F47-E43705D69CA5}
 		{A0455EF2-8204-4FA3-9C91-993D76497884} = {31F64FCC-74CA-40A9-9F47-E43705D69CA5}
+		{607F53DB-DA30-4110-9D5F-2E8F7720755A} = {9ED6F13C-CCAD-424A-86A1-8041F79A9FDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E732398-F1E1-4A23-A3B6-3BCF05F12144}
