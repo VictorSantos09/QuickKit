@@ -1,6 +1,4 @@
-﻿using QuickKit.Shared.Entities;
-
-namespace QuickKit.ResultTypes.Services.Contracts;
+﻿namespace QuickKit.ResultTypes.Services.Contracts;
 
 /// <summary>
 /// Represents a service contract for adding entities.

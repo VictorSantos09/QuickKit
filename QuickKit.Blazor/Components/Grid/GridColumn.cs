@@ -18,6 +18,7 @@ public class GridColumn
     public TextAlign TextAlign { get; }
     public string? UniqueID { get; set; } = null;
     public string? ColumnPickerTitle { get; set; } = null;
+    public RadzenFormInputType InputType { get; set; }
 
     public GridColumn(string title,
                         string propertyName,
@@ -32,7 +33,8 @@ public class GridColumn
                         bool sortable = true,
                         bool visible = true,
                         string width = "80px",
-                        TextAlign textAlign = TextAlign.Center)
+                        TextAlign textAlign = TextAlign.Center,
+                        RadzenFormInputType inputType = RadzenFormInputType.TextBox)
     {
         Title = title;
         PropertyName = propertyName;
@@ -48,6 +50,7 @@ public class GridColumn
         TextAlign = textAlign;
         UniqueID = uniqueID;
         ColumnPickerTitle = columnPickerTitle;
+        InputType = inputType;
     }
 }
 

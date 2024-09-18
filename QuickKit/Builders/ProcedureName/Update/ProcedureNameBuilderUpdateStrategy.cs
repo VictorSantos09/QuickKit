@@ -6,7 +6,7 @@ namespace QuickKit.Builders.ProcedureName.Update;
 /// <summary>
 /// Represents a strategy for building the name of an update stored procedure for a specific entity.
 /// </summary>
-public class ProcedureNameBuilderUpdateStrategy: IProcedureNameBuilderUpdateStrategy
+public class ProcedureNameBuilderUpdateStrategy : IProcedureNameBuilderUpdateStrategy
 {
     public string Build<TEntity>() where TEntity : IEntity
     {
