@@ -1,0 +1,271 @@
+﻿@typeparam TDataType
+@inherits Grid<TDataType>
+
+@* <RadzenCard Variant="Variant.Outlined" class="rz-my-4">
+    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0.5rem">
+        <div>Modo de edição:</div>
+        <RadzenSelectBar @bind-Value="@editMode" TextProperty="Text" ValueProperty="Value"
+                         Data="@(Enum.GetValues(typeof(DataGridEditMode)).Cast<DataGridEditMode>().Select(t => new { Text = $"{t}", Value = t }))" Size="ButtonSize.Small"
+                         Disabled="@(editMode == DataGridEditMode.Multiple && dataToInsert.Count() > 1)" />
+    </RadzenStack>
+</RadzenCard> *@
+
+<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="1rem;" Wrap="FlexWrap.Wrap">
+    <RadzenButton Text="@ExportExcelText" Icon="grid_on" Click="@(args => Export("excel"))" />
+    <RadzenButton Text="@ExportCSVText" Icon="wrap_text" Click="@(args => Export("csv"))" />
+</RadzenStack>
+
+<RadzenDataGrid @ref="GridComponent"
+                @bind-Value=SelectedData
+                Data="@Data"
+                TItem="TDataType"
+                EditMode="@editMode"
+                RowUpdate="@OnUpdateRow"
+                RowCreate="@OnCreateRow"
+                Sort="@(() => Reset())"
+                Page="@(() => Reset())"
+                Filter="@(() => Reset())"
+                FilterPopupRenderMode="@FilterPopupRenderMode"
+                FilterCaseSensitivity="@FilterCaseSensitivity"
+                IsLoading="@IsLoading"
+                AllowFiltering="@AllowFiltering"
+                AllowColumnResize="@AllowColumnResize"
+                AllowAlternatingRows="@AllowAlternatingRows"
+                AllowSorting="@AllowSorting"
+                AllowPaging="@AllowPaging"
+                ShowPagingSummary="@ShowPagingSummary"
+                AllowColumnReorder="@AllowColumnReorder"
+                AllowGrouping="@AllowGrouping"
+                AllowMultiColumnSorting="@AllowMultiColumnSorting"
+                AllowColumnPicking="@AllowColumnPicking"
+                AllowCompositeDataCells="@AllowCompositeDataCells"
+                AllowFilterDateInput="@AllowFilterDateInput"
+                AllowPickAllColumns="@AllowPickAllColumns"
+                ColumnsPickerAllowFiltering="@ColumnsPickerAllowFiltering"
+                Density="@Density"
+                PageSize="@PageSize"
+                ColumnWidth="@ColumnWidth"
+                PagerHorizontalAlign="@PagerHorizontalAlign"
+                FilterMode="@FilterMode"
+                LogicalFilterOperator="@LogicalFilterOperator"
+                Culture="@Culture"
+                EmptyText="@EmptyText"
+                FirstPageTitle="@FirstPageTitle"
+                LastPageTitle="@LastPageTitle"
+                NextPageTitle="@NextPageTitle"
+                PrevPageTitle="@PrevPageTitle"
+                GroupPanelText="@GroupPanelText"
+                SelectionMode="@SelectionMode"
+                RowSelect="@OnRowSelectedEvent"
+                ApplyFilterText="@ApplyFilterText"
+                PageSizeText="@PageSizeText"
+                StartsWithText="@StartsWithText"
+                EndsWithText="@EndsWithText"
+                ContainsText="@ContainsText"
+                DoesNotContainText="@DoesNotContainText"
+                IsEmptyText="@IsEmptyText"
+                IsNotEmptyText="@IsNotEmptyText"
+                IsNullText="@IsNullText"
+                IsNotNullText="@IsNotNullText"
+                EqualsText="@EqualsText"
+                NotEqualsText="@NotEqualsText"
+                GreaterThanText="@GreaterThanText"
+                GreaterThanOrEqualsText="@GreaterThanOrEqualsText"
+                LessThanText="@LessThanText"
+                LessThanOrEqualsText="@LessThanOrEqualsText"
+                ClearFilterText="@ClearFilterText"
+                FilterText="@FilterText"
+                OrOperatorText="@OrOperatorText"
+                AndOperatorText="@AndOperatorText"
+                ColumnsShowingText="@ColumnsShowingText"
+                AllColumnsText="@AllColumnsText"
+                EnumFilterSelectText="@EnumFilterSelectText"
+                AllowRowSelectOnRowClick="@AllowRowSelectOnRowClick">
+    <HeaderTemplate>
+        <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle" Text="Novo" Click="@InsertRow" Disabled="@(editMode == DataGridEditMode.Single && dataToInsert.Count() > 0)" />
+    </HeaderTemplate>
+    <Columns>
+        @if (SelectionMode == DataGridSelectionMode.Multiple)
+        {
+            <RadzenDataGridColumn Filterable="false"
+                                  Sortable="false"
+                                  Pickable="false"
+                                  Reorderable="false"
+                                  Groupable="false"
+                                  TextAlign="TextAlign.Center"
+                                  Width="15px"
+                                  FrozenPosition="FrozenColumnPosition.Right">
+                <HeaderTemplate>
+                    <RadzenCheckBox TabIndex="-1" TriState="false" TValue="bool?" InputAttributes="@(new Dictionary<string,object>(){ { "aria-label", "Select all items" }})"
+                                    Value="@(SelectedData == null || SelectedData?.Any() != true ? false : !Data.All(i => SelectedData.Contains(i)) ? null : Data.Any(i => SelectedData.Contains(i)))"
+                                    Change="@(args => SelectedData = args == true ? Data.ToList() : null)" />
+                </HeaderTemplate>
+                <Template Context="data">
+                    <RadzenCheckBox TabIndex="-1" TriState="false" Value="@(SelectedData != null && SelectedData.Contains(data))" InputAttributes="@(new Dictionary<string,object>(){ { "aria-label", "Select item" }})"
+                                    TValue="bool" Change=@(args => { if(!AllowRowSelectOnRowClick) { GridComponent?.SelectRow(data); }}) />
+                </Template>
+            </RadzenDataGridColumn>
+        }
+
+        @foreach (var c in Columns)
+        {
+            <RadzenDataGridColumn Property="@c.PropertyName"
+                                  Title="@c.Title"
+                                  Width="@c.Width"
+                                  TextAlign="@c.TextAlign"
+                                  Filterable="@c.Filterable"
+                                  Frozen="@c.Frozen"
+                                  Groupable="@c.Groupable"
+                                  Pickable="@c.Pickable"
+                                  Reorderable="@c.Reorderable"
+                                  Resizable="@c.Resizable"
+                                  Sortable="@c.Sortable"
+                                  UniqueID="@c.UniqueID"
+                                  ColumnPickerTitle="@c.ColumnPickerTitle"
+                                  Visible="@c.Visible">
+                <EditTemplate Context="order">
+                    <RadzenTextBox Style="width:100%; display: block" Name="ShipName" />
+                    <RadzenRequiredValidator Text="ShipName is required" Component="ShipName" Popup="true" />
+                </EditTemplate>
+            </RadzenDataGridColumn>
+        }
+        <RadzenDataGridColumn Context="order"
+                              Filterable="false"
+                              Sortable="false"
+                              Pickable="false"
+                              Reorderable="false"
+                              Groupable="false"
+                              TextAlign="TextAlign.Center"
+                              Frozen="true"
+                              Width="60px"
+                              FrozenPosition="FrozenColumnPosition.Right"
+                              Title="Ações">
+            <Template Context="order">
+                @if (CanEdit)
+                {
+
+                    <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium" Click="@(args => EditRow(order))" @onclick:stopPropagation="true">
+                    </RadzenButton>
+                }
+                @if (CanDelete)
+                {
+
+                    <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Variant="Variant.Flat" Shade="Shade.Lighter" Size="ButtonSize.Medium" class="rz-my-1 rz-ms-1" Click="@(args => DeleteRow(order))" @onclick:stopPropagation="true">
+                    </RadzenButton>
+                }
+            </Template>
+            <EditTemplate Context="order">
+                @if (CanEdit)
+                {
+                    <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat" Size="ButtonSize.Medium" Click="@((args) => SaveRow(order))" aria-label="Save">
+                    </RadzenButton>
+                    <RadzenButton Icon="close" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium" class="rz-my-1 rz-ms-1" Click="@((args) => CancelEdit(order))" aria-label="Cancel">
+                    </RadzenButton>
+                }
+                @if (CanDelete)
+                {
+                    <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Variant="Variant.Flat" Shade="Shade.Lighter" Size="ButtonSize.Medium" class="rz-my-1 rz-ms-1" Click="@(args => DeleteRow(order))" aria-label="Delete">
+                    </RadzenButton>
+                }
+            </EditTemplate>
+        </RadzenDataGridColumn>
+    </Columns>
+</RadzenDataGrid>
+
+@code {
+    DataGridEditMode editMode = DataGridEditMode.Single;
+
+    List<TDataType> dataToInsert = [];
+    List<TDataType> ordersToUpdate = [];
+
+    void Reset()
+    {
+        dataToInsert.Clear();
+        ordersToUpdate.Clear();
+    }
+
+    void Reset(TDataType order)
+    {
+        dataToInsert.Remove(order);
+        ordersToUpdate.Remove(order);
+    }
+
+    async Task EditRow(TDataType order)
+    {
+        if (editMode == DataGridEditMode.Single && dataToInsert.Count() > 0)
+        {
+            Reset();
+        }
+
+        ordersToUpdate.Add(order);
+        await GridComponent.EditRow(order);
+    }
+
+    void OnUpdateRow(TDataType order)
+    {
+        Reset(order);
+
+        // dbContext.Update(order);
+
+        // dbContext.SaveChanges();
+    }
+
+    async Task SaveRow(TDataType order)
+    {
+        await GridComponent.UpdateRow(order);
+    }
+
+    void CancelEdit(TDataType order)
+    {
+        Reset(order);
+
+        GridComponent.CancelEditRow(order);
+
+        // var orderEntry = dbContext.Entry(order);
+        // if (orderEntry.State == EntityState.Modified)
+        // {
+        //     orderEntry.CurrentValues.SetValues(orderEntry.OriginalValues);
+        //     orderEntry.State = EntityState.Unchanged;
+        // }
+    }
+
+    async Task DeleteRow(TDataType order)
+    {
+        Reset(order);
+
+        // if (orders.Contains(order))
+        // {
+        //     dbContext.Remove<Order>(order);
+
+        //     dbContext.SaveChanges();
+
+        //     await ordersGrid.Reload();
+        // }
+        // else
+        // {
+        //     ordersGrid.CancelEditRow(order);
+        //     await ordersGrid.Reload();
+        // }
+    }
+
+    async Task InsertRow()
+    {
+        if (editMode == DataGridEditMode.Single)
+        {
+            Reset();
+        }
+
+        // var order = new object { };
+        // dataToInsert.Add(order);
+        // await dataGrid.InsertRow(order);
+    }
+
+    void OnCreateRow(TDataType order)
+    {
+        // dbContext.Add(order);
+
+        // dbContext.SaveChanges();
+
+        // ordersToInsert.Remove(order);
+    }
+}

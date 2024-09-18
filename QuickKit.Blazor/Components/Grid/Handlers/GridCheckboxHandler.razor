@@ -1,0 +1,37 @@
+﻿@typeparam TDataType
+
+@if (SelectionMode == DataGridSelectionMode.Multiple)
+{
+    <RadzenDataGridColumn Filterable="false"
+                          TItem="TDataType"
+                          Sortable="false"
+                          Pickable="false"
+                          Reorderable="false"
+                          Groupable="false"
+                          TextAlign="TextAlign.Center"
+                          Width="15px"
+                          FrozenPosition="FrozenColumnPosition.Right">
+        <HeaderTemplate>
+            <RadzenCheckBox TabIndex="-1" TriState="false" TValue="bool?" InputAttributes="@(new Dictionary<string,object>(){ { "aria-label", "Select all items" }})"
+                            Value="@(SelectedData == null || SelectedData?.Any() != true ? false : !Data.All(i => SelectedData.Contains(i)) ? null : Data.Any(i => SelectedData.Contains(i)))"
+                            Change="@(args => SelectedData = args == true ? Data.ToList() : null)" />
+        </HeaderTemplate>
+        <Template Context="data">
+            <RadzenCheckBox TabIndex="-1" TriState="false" Value="@(SelectedData != null && SelectedData.Contains(data))" InputAttributes="@(new Dictionary<string,object>(){ { "aria-label", "Select item" }})"
+                            TValue="bool" Change=@(args => { if(!AllowRowSelectOnRowClick) { Grid?.SelectRow(data); }}) />
+        </Template>
+    </RadzenDataGridColumn>
+}
+
+@code {
+    [Parameter, EditorRequired]
+    public DataGridSelectionMode SelectionMode { get; set; }
+    [Parameter, EditorRequired]
+    public IList<TDataType> SelectedData { get; set; }
+    [Parameter, EditorRequired]
+    public bool AllowRowSelectOnRowClick { get; set; }
+    [Parameter, EditorRequired]
+    public RadzenDataGrid<TDataType>? Grid { get; set; }
+    [Parameter, EditorRequired]
+    public IEnumerable<TDataType> Data { get; set; }
+}

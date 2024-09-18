@@ -1,9 +1,4 @@
-﻿using QuickKit.Builders.ProcedureName.Add;
-using QuickKit.Builders.ProcedureName.Delete;
-using QuickKit.Builders.ProcedureName.GetAll;
-using QuickKit.Builders.ProcedureName.GetById;
-using QuickKit.Builders.ProcedureName.Update;
-using QuickKit.UnitTests.Shared.TestsEntities;
+﻿using QuickKit.UnitTests.Shared.TestsEntities;
 
 namespace QuickKit.UnitTests.Shared.Builders;
 public class ProcedureNameEntityBuilderTests

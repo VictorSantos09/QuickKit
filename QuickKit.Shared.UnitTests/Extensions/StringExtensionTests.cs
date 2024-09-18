@@ -1,6 +1,4 @@
-﻿using QuickKit.Shared.Extensions;
-
-namespace QuickKit.Shared.UnitTests.Extensions;
+﻿namespace QuickKit.Shared.UnitTests.Extensions;
 
 public class StringExtensionTests
 {
