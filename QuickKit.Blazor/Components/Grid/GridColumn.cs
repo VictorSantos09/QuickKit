@@ -1,4 +1,5 @@
-﻿using Radzen;
+﻿using QuickKit.Blazor.Common.Interfaces.Components;
+using Radzen;
 
 namespace QuickKit.Blazor.Components.Grid;
 
@@ -18,10 +19,11 @@ public class GridColumn
     public TextAlign TextAlign { get; }
     public string? UniqueID { get; set; } = null;
     public string? ColumnPickerTitle { get; set; } = null;
-    public RadzenFormInputType InputType { get; set; }
+    public GridColumnOptions Option { get; set; }
 
     public GridColumn(string title,
                         string propertyName,
+                        GridColumnOptions option,
                         string? uniqueID = null,
                         string? columnPickerTitle = null,
                         bool frozen = false,
@@ -33,8 +35,7 @@ public class GridColumn
                         bool sortable = true,
                         bool visible = true,
                         string width = "80px",
-                        TextAlign textAlign = TextAlign.Center,
-                        RadzenFormInputType inputType = RadzenFormInputType.TextBox)
+                        TextAlign textAlign = TextAlign.Center)
     {
         Title = title;
         PropertyName = propertyName;
@@ -50,8 +51,16 @@ public class GridColumn
         TextAlign = textAlign;
         UniqueID = uniqueID;
         ColumnPickerTitle = columnPickerTitle;
-        InputType = inputType;
+        Option = option;
     }
+}
+
+public class GridColumnOptions
+{
+    public RadzenFormInputType Type { get; set; }
+    public Type Model { get; set; }
+
+
 }
 
 public enum RadzenFormInputType

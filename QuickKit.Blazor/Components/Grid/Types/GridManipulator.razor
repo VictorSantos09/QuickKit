@@ -85,27 +85,24 @@
         <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle" Text="Novo" Click="@InsertRow" Disabled="@(editMode == DataGridEditMode.Single && dataToInsert.Count() > 0)" />
     </HeaderTemplate>
     <Columns>
-        @if (SelectionMode == DataGridSelectionMode.Multiple)
-        {
-            <RadzenDataGridColumn Filterable="false"
-                                  Sortable="false"
-                                  Pickable="false"
-                                  Reorderable="false"
-                                  Groupable="false"
-                                  TextAlign="TextAlign.Center"
-                                  Width="15px"
-                                  FrozenPosition="FrozenColumnPosition.Right">
-                <HeaderTemplate>
-                    <RadzenCheckBox TabIndex="-1" TriState="false" TValue="bool?" InputAttributes="@(new Dictionary<string,object>(){ { "aria-label", "Select all items" }})"
-                                    Value="@(SelectedData == null || SelectedData?.Any() != true ? false : !Data.All(i => SelectedData.Contains(i)) ? null : Data.Any(i => SelectedData.Contains(i)))"
-                                    Change="@(args => SelectedData = args == true ? Data.ToList() : null)" />
-                </HeaderTemplate>
-                <Template Context="data">
-                    <RadzenCheckBox TabIndex="-1" TriState="false" Value="@(SelectedData != null && SelectedData.Contains(data))" InputAttributes="@(new Dictionary<string,object>(){ { "aria-label", "Select item" }})"
-                                    TValue="bool" Change=@(args => { if(!AllowRowSelectOnRowClick) { GridComponent?.SelectRow(data); }}) />
-                </Template>
-            </RadzenDataGridColumn>
-        }
+        <RadzenDataGridColumn Filterable="false"
+                              Sortable="false"
+                              Pickable="false"
+                              Reorderable="false"
+                              Groupable="false"
+                              TextAlign="TextAlign.Center"
+                              Width="15px"
+                              FrozenPosition="FrozenColumnPosition.Right">
+            <HeaderTemplate>
+                <RadzenCheckBox TabIndex="-1" TriState="false" TValue="bool?"
+                                Value="@(SelectedData == null || SelectedData?.Any() != true ? false : !Data.All(i => SelectedData.Contains(i)) ? null : Data.Any(i => SelectedData.Contains(i)))"
+                                Change="@(args => SelectedData = args == true ? Data.ToList() : null)" />
+            </HeaderTemplate>
+            <Template Context="data">
+                <RadzenCheckBox TabIndex="-1" TriState="false" Value="@(SelectedData != null && SelectedData.Contains(data))"
+                                TValue="bool" Change=@(args => { if(!AllowRowSelectOnRowClick) { GridComponent?.SelectRow(data); }}) />
+            </Template>
+        </RadzenDataGridColumn>
 
         @foreach (var c in Columns)
         {
@@ -123,9 +120,120 @@
                                   UniqueID="@c.UniqueID"
                                   ColumnPickerTitle="@c.ColumnPickerTitle"
                                   Visible="@c.Visible">
-                <EditTemplate Context="order">
-                    <RadzenTextBox Style="width:100%; display: block" Name="ShipName" />
-                    <RadzenRequiredValidator Text="ShipName is required" Component="ShipName" Popup="true" />
+                <EditTemplate Context="data">
+                    @switch (c.Option.Type)
+                    {
+                        case RadzenFormInputType.TextBox:
+                        @if(c.Option.Model is ITextBoxComponent component)
+                        {
+                        <RadzenTextBox 
+                                Style="@component.Style"
+                                Name="@component.Name"
+                                Culture="@component.Culture"
+                                Disabled="@component.Disabled"
+                                MaxLength="@component.MaxLength"
+                                MouseEnter="@component.MouseEnter"
+                                MouseLeave="@component.MouseLeave"
+                                Placeholder="@component.Placeholder"
+                                ReadOnly="@component.ReadOnly"
+                                Trim="@component.Trim"
+                                Visible="@component.Visible"
+                                AutoCompleteType="@component.AutoCompleteType"
+                               Value="@GetPropertyValue(data, c.PropertyName)"
+                            ValueChanged="@(args => SetPropertyValue(data, c.PropertyName, args))" />
+                        }
+                        break;
+                        case RadzenFormInputType.DropDown:
+                 @*            <RadzenDropDown Value="@GetPropertyValue(data, c.PropertyName)"
+                                            ValueChanged="@(args => SetPropertyValue(data, c.PropertyName, args))"
+                                            TValue="TDataType"
+                                            AllowClear
+                                             AllowFiltering
+                                             AllowSelectAll
+                                             AllowVirtualization
+                                             Change
+                                             Chips
+                                             ClearSearchAfterSelection
+                                             Count
+                                             Culture
+                                             Data
+                                             Disabled
+                                             DisabledProperty
+                                             FilterCaseSensitivity
+                                             FilterAsYouType
+                                             FilterPlaceholder
+                                             MouseEnter
+                                             PageSize
+                                             ReadOnly
+                                             Visible
+                                             // etc
+                                            Style="width: 100%; max-width: 400px;" />
+                            break; *@
+                        case RadzenFormInputType.DatePicker:
+                            <RadzenDatePicker Value="@GetPropertyValue(data, c.PropertyName)"
+                                              TValue="TDataType"
+                                              ValueChanged="@(args => SetPropertyValue(data, c.PropertyName, args))"
+                                              Style="width:100%" />
+                            break;
+                        case RadzenFormInputType.Numeric:
+                        @if(c.Option.Type is RadzenNumeric component)
+                            <RadzenNumeric
+                            AutoCompleteType="@component.AutoCompleteType" 
+                            Change="@component.Change" 
+                            ConvertValue="@component.ConvertValue" 
+                            Disabled="@component.Disabled" 
+                            Format="@component.Format" 
+                            Max="@component.Max" 
+                            Min="@component.Min" 
+                            Name="@component.Name" 
+                            MouseEnter="@component.MouseEnter" 
+                            MouseLeave="@component.MouseLeave" 
+                            Placeholder="@component.Placeholder" 
+                            ReadOnly="@component.ReadOnly" 
+                            Value="@component.Value" 
+                            ValueChanged="@component.ValueChanged" 
+                            Visible ="@component.Visible"
+                            TValue="@component.TValue" 
+                            TextAlign="@component.TextAlign" 
+                            Style="@component.Style"
+                            / >
+                            break;
+                        @* case RadzenFormInputType.Button:
+                            <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat" Size="ButtonSize.Medium" aria-label="Save"> </RadzenButton>
+                            break;
+                        case RadzenFormInputType.CheckBox:
+                            <RadzenCheckBox @bind-Value=@value Name="CheckBox1" Change="" Culture="" Disabled MouseEnter="" MouseLeave="" Placeholder="" ReadOnly Style="" TValue="" Value="" ValueChanged="" Visible/>
+                            <RadzenLabel Text="CheckBox" Component="CheckBox1" class="rz-ms-2" />
+                            break;
+                        case RadzenFormInputType.CheckBoxList:
+                            <RadzenCheckBoxList @bind-Value=@values TValue="int">
+                                <Items>
+                                    <RadzenCheckBoxListItem Text="Orders" Value="1" />
+                                    <RadzenCheckBoxListItem Text="Employees" Value="2" />
+                                    <RadzenCheckBoxListItem Text="Customers" Value="3" />
+                                </Items>
+                            </RadzenCheckBoxList>
+                            break;
+                        case RadzenFormInputType.DatePicker:
+                            <RadzenLabel Text="Select Date" Component="RadzenDatePickerBindValue" />
+                            <RadzenDatePicker @bind-Value=@value Name="RadzenDatePickerBindValue" ShowCalendarWeek />
+                            break;
+                        case RadzenFormInputType.RadioButtonList:
+                            <RadzenRadioButtonList @bind-Value=@value TValue="int">
+                                <Items>
+                                    <RadzenRadioButtonListItem Text="Orders" Value="1" />
+                                    <RadzenRadioButtonListItem Text="Employees" Value="2" />
+                                    <RadzenRadioButtonListItem Text="Customers" Value="3" />
+                                </Items>
+                            </RadzenRadioButtonList>
+                            break;
+                        case RadzenFormInputType.TextArea:
+                            <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">TextArea</RadzenText>
+                            <RadzenTextArea Change=@(args => OnChange(args, "TextArea")) Style="width: 100%" aria-label="TextArea" Cols="" Culture="" Disabled MaxLength="" MouseEnter="" MouseLeave="" Name="" Placeholder=""  ReadOnly Rows="" Value="" ValueChanged="" Visible/ >
+                            break; *@
+                        default:
+                            break;
+                    }
                 </EditTemplate>
             </RadzenDataGridColumn>
         }
@@ -267,5 +375,24 @@
         // dbContext.SaveChanges();
 
         // ordersToInsert.Remove(order);
+    }
+
+    private string? GetPropertyValue(object obj, string propertyName)
+    {
+        var objValue = obj?.GetType().GetProperty(propertyName)?.GetValue(obj, null);
+
+        return objValue is null ? null : objValue.ToString();
+    }
+
+    private T? SetPropertyValue<T>(object obj, string propertyName, T value)
+    {
+        var propertyInfo = obj?.GetType().GetProperty(propertyName);
+        if (propertyInfo != null && propertyInfo.CanWrite)
+        {
+            propertyInfo.SetValue(obj, value);
+            return value;
+        }
+
+        return default(T);
     }
 }

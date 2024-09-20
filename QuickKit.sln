@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit.UnitTests", "Quick
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit.Shared.UnitTests", "QuickKit.Shared.UnitTests\QuickKit.Shared.UnitTests.csproj", "{A0455EF2-8204-4FA3-9C91-993D76497884}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickKit.Blazor", "QuickKit.Blazor\QuickKit.Blazor.csproj", "{607F53DB-DA30-4110-9D5F-2E8F7720755A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickKit.Blazor", "QuickKit.Blazor\QuickKit.Blazor.csproj", "{607F53DB-DA30-4110-9D5F-2E8F7720755A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
