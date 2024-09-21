@@ -1,14 +1,16 @@
-﻿@typeparam TDataType
+﻿@using QuickKit.Blazor.Components.Input
+@using System.Globalization
+@typeparam TDataType
 @inherits Grid<TDataType>
 
-@* <RadzenCard Variant="Variant.Outlined" class="rz-my-4">
+<RadzenCard Variant="Variant.Outlined" class="rz-my-4">
     <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0.5rem">
-        <div>Modo de edição:</div>
+        <div>Modo de Seleção</div>
         <RadzenSelectBar @bind-Value="@editMode" TextProperty="Text" ValueProperty="Value"
                          Data="@(Enum.GetValues(typeof(DataGridEditMode)).Cast<DataGridEditMode>().Select(t => new { Text = $"{t}", Value = t }))" Size="ButtonSize.Small"
                          Disabled="@(editMode == DataGridEditMode.Multiple && dataToInsert.Count() > 1)" />
     </RadzenStack>
-</RadzenCard> *@
+</RadzenCard>
 
 <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="1rem;" Wrap="FlexWrap.Wrap">
     <RadzenButton Text="@ExportExcelText" Icon="grid_on" Click="@(args => Export("excel"))" />
@@ -82,7 +84,7 @@
                 EnumFilterSelectText="@EnumFilterSelectText"
                 AllowRowSelectOnRowClick="@AllowRowSelectOnRowClick">
     <HeaderTemplate>
-        <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle" Text="Novo" Click="@InsertRow" Disabled="@(editMode == DataGridEditMode.Single && dataToInsert.Count() > 0)" />
+        <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle" Text="Novo" Click="@InsertRow" Disabled="@(editMode == DataGridEditMode.Single && dataToInsert.Count > 0)" />
     </HeaderTemplate>
     <Columns>
         <RadzenDataGridColumn Filterable="false"
@@ -123,115 +125,92 @@
                 <EditTemplate Context="data">
                     @switch (c.Option.Type)
                     {
+                        <!--Render TextBox-->
                         case RadzenFormInputType.TextBox:
-                        @if(c.Option.Model is ITextBoxComponent component)
-                        {
-                        <RadzenTextBox 
-                                Style="@component.Style"
-                                Name="@component.Name"
-                                Culture="@component.Culture"
-                                Disabled="@component.Disabled"
-                                MaxLength="@component.MaxLength"
-                                MouseEnter="@component.MouseEnter"
-                                MouseLeave="@component.MouseLeave"
-                                Placeholder="@component.Placeholder"
-                                ReadOnly="@component.ReadOnly"
-                                Trim="@component.Trim"
-                                Visible="@component.Visible"
-                                AutoCompleteType="@component.AutoCompleteType"
-                               Value="@GetPropertyValue(data, c.PropertyName)"
-                            ValueChanged="@(args => SetPropertyValue(data, c.PropertyName, args))" />
-                        }
-                        break;
-                        case RadzenFormInputType.DropDown:
-                 @*            <RadzenDropDown Value="@GetPropertyValue(data, c.PropertyName)"
-                                            ValueChanged="@(args => SetPropertyValue(data, c.PropertyName, args))"
-                                            TValue="TDataType"
-                                            AllowClear
-                                             AllowFiltering
-                                             AllowSelectAll
-                                             AllowVirtualization
-                                             Change
-                                             Chips
-                                             ClearSearchAfterSelection
-                                             Count
-                                             Culture
-                                             Data
-                                             Disabled
-                                             DisabledProperty
-                                             FilterCaseSensitivity
-                                             FilterAsYouType
-                                             FilterPlaceholder
-                                             MouseEnter
-                                             PageSize
-                                             ReadOnly
-                                             Visible
-                                             // etc
-                                            Style="width: 100%; max-width: 400px;" />
-                            break; *@
-                        case RadzenFormInputType.DatePicker:
-                            <RadzenDatePicker Value="@GetPropertyValue(data, c.PropertyName)"
-                                              TValue="TDataType"
-                                              ValueChanged="@(args => SetPropertyValue(data, c.PropertyName, args))"
-                                              Style="width:100%" />
+                                <RadzenTextBox Style="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenTextBox.Style)))"
+                                               Name="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenTextBox.Name)))"
+                                               Culture="@(GetPropertyValue<CultureInfo>(c.Option.Model, nameof(RadzenTextBox.Culture)))"
+                                               Disabled="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.Disabled)))"
+                                               MaxLength="@(GetPropertyValue<long?>(c.Option.Model, nameof(RadzenTextBox.MaxLength)))"
+                                               Placeholder="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenTextBox.Placeholder)))"
+                                               ReadOnly="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.ReadOnly)))"
+                                               Trim="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.Trim)))"
+                                               Visible="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.Visible)))"
+                                               Value="@GetPropertyValueString(data, c.PropertyName)"
+                                               ValueChanged="@(args => SetPropertyValue(data, c.PropertyName, args))" />
                             break;
+                        <!--Render Numeric-->
                         case RadzenFormInputType.Numeric:
-                        @if(c.Option.Type is RadzenNumeric component)
-                            <RadzenNumeric
-                            AutoCompleteType="@component.AutoCompleteType" 
-                            Change="@component.Change" 
-                            ConvertValue="@component.ConvertValue" 
-                            Disabled="@component.Disabled" 
-                            Format="@component.Format" 
-                            Max="@component.Max" 
-                            Min="@component.Min" 
-                            Name="@component.Name" 
-                            MouseEnter="@component.MouseEnter" 
-                            MouseLeave="@component.MouseLeave" 
-                            Placeholder="@component.Placeholder" 
-                            ReadOnly="@component.ReadOnly" 
-                            Value="@component.Value" 
-                            ValueChanged="@component.ValueChanged" 
-                            Visible ="@component.Visible"
-                            TValue="@component.TValue" 
-                            TextAlign="@component.TextAlign" 
-                            Style="@component.Style"
-                            / >
+                            switch (c.Option.NumericType)
+                            {
+                                <!--Render Numeric Int-->
+                                case NumericType.Int:
+                                    <RadzenNumeric TValue="int"
+                                                   Value="GetPropertyValueInt(data, c.PropertyName)"
+                                                   ValueChanged="@(args => SetPropertyValue<int>(data, c.PropertyName, args))"
+                                                   Name="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenNumeric<int>.Name)))"
+                                                   Max="@(GetPropertyValue<decimal?>(c.Option.Model, nameof(RadzenNumeric<int>.Max)))"
+                                                   Min="@(GetPropertyValue<decimal?>(c.Option.Model, nameof(RadzenNumeric<int>.Min)))"
+                                                   Step="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenNumeric<int>.Step)))"
+                                                   Disabled="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<int>.Disabled)))"
+                                                   ReadOnly="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<int>.ReadOnly)))"
+                                                   Placeholder="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenNumeric<int>.Placeholder)))"
+                                                   ShowUpDown="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<int>.ShowUpDown)))"
+                                                   Style="width: 100%;" />
+                                    break;
+                                <!--Render Numeric Float-->
+                                case NumericType.Float:
+                                    <RadzenNumeric TValue="float"
+                                                   Value="GetPropertyValueFloat(data, c.PropertyName)"
+                                                   ValueChanged="@(args => SetPropertyValue<float>(data, c.PropertyName, args))"
+                                                   Max="@(GetPropertyValue<decimal?>(c.Option.Model, nameof(RadzenNumeric<float>.Max)))"
+                                                   Min="@(GetPropertyValue<decimal?>(c.Option.Model, nameof(RadzenNumeric<float>.Min)))"
+                                                   Step="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenNumeric<float>.Step)))"
+                                                   Disabled="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<float>.Disabled)))"
+                                                   ReadOnly="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<float>.ReadOnly)))"
+                                                   Placeholder="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenNumeric<float>.Placeholder)))"
+                                                   ShowUpDown="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<float>.ShowUpDown)))"
+                                                   Style="width: 100%;" />
+                                    break;
+                                <!--Render Numeric Double-->
+                                case NumericType.Double:
+                                    <RadzenNumeric TValue="double"
+                                                   Value="GetPropertyValueDouble(data, c.PropertyName)"
+                                                   ValueChanged="@(args => SetPropertyValue<double>(data, c.PropertyName, args))"
+                                                   Max="@(GetPropertyValue<decimal?>(c.Option.Model, nameof(RadzenNumeric<double>.Max)))"
+                                                   Min="@(GetPropertyValue<decimal?>(c.Option.Model, nameof(RadzenNumeric<double>.Min)))"
+                                                   Step="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenNumeric<double>.Step)))"
+                                                   Disabled="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<double>.Disabled)))"
+                                                   ReadOnly="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<double>.ReadOnly)))"
+                                                   Placeholder="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenNumeric<double>.Placeholder)))"
+                                                   ShowUpDown="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<double>.ShowUpDown)))"
+                                                   Style="width: 100%;" />
+                                    break;
+                                <!--Render Numeric Long-->
+                                case NumericType.Long:
+                                    <RadzenNumeric TValue="long"
+                                                   Value="GetPropertyValueLong(data, c.PropertyName)"
+                                                   ValueChanged="@(args => SetPropertyValue<double>(data, c.PropertyName, args))"
+                                                   Max="@(GetPropertyValue<decimal?>(c.Option.Model, nameof(RadzenNumeric<double>.Max)))"
+                                                   Min="@(GetPropertyValue<decimal?>(c.Option.Model, nameof(RadzenNumeric<double>.Min)))"
+                                                   Step="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenNumeric<double>.Step)))"
+                                                   Disabled="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<double>.Disabled)))"
+                                                   ReadOnly="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<double>.ReadOnly)))"
+                                                   Placeholder="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenNumeric<double>.Placeholder)))"
+                                                   ShowUpDown="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<double>.ShowUpDown)))"
+                                                   Style="width: 100%;" />
+                                    break;
+
+                                default:
+                                    break;
+                            }
                             break;
-                        @* case RadzenFormInputType.Button:
-                            <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat" Size="ButtonSize.Medium" aria-label="Save"> </RadzenButton>
-                            break;
-                        case RadzenFormInputType.CheckBox:
-                            <RadzenCheckBox @bind-Value=@value Name="CheckBox1" Change="" Culture="" Disabled MouseEnter="" MouseLeave="" Placeholder="" ReadOnly Style="" TValue="" Value="" ValueChanged="" Visible/>
-                            <RadzenLabel Text="CheckBox" Component="CheckBox1" class="rz-ms-2" />
-                            break;
-                        case RadzenFormInputType.CheckBoxList:
-                            <RadzenCheckBoxList @bind-Value=@values TValue="int">
-                                <Items>
-                                    <RadzenCheckBoxListItem Text="Orders" Value="1" />
-                                    <RadzenCheckBoxListItem Text="Employees" Value="2" />
-                                    <RadzenCheckBoxListItem Text="Customers" Value="3" />
-                                </Items>
-                            </RadzenCheckBoxList>
-                            break;
-                        case RadzenFormInputType.DatePicker:
-                            <RadzenLabel Text="Select Date" Component="RadzenDatePickerBindValue" />
-                            <RadzenDatePicker @bind-Value=@value Name="RadzenDatePickerBindValue" ShowCalendarWeek />
-                            break;
-                        case RadzenFormInputType.RadioButtonList:
-                            <RadzenRadioButtonList @bind-Value=@value TValue="int">
-                                <Items>
-                                    <RadzenRadioButtonListItem Text="Orders" Value="1" />
-                                    <RadzenRadioButtonListItem Text="Employees" Value="2" />
-                                    <RadzenRadioButtonListItem Text="Customers" Value="3" />
-                                </Items>
-                            </RadzenRadioButtonList>
-                            break;
-                        case RadzenFormInputType.TextArea:
-                            <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">TextArea</RadzenText>
-                            <RadzenTextArea Change=@(args => OnChange(args, "TextArea")) Style="width: 100%" aria-label="TextArea" Cols="" Culture="" Disabled MaxLength="" MouseEnter="" MouseLeave="" Name="" Placeholder=""  ReadOnly Rows="" Value="" ValueChanged="" Visible/ >
-                            break; *@
+
+
+
                         default:
+                            <RadzenTextBox Value="@GetPropertyValueString(data, c.PropertyName)"
+                                           ValueChanged="@(args => SetPropertyValue(data, c.PropertyName, args))" />
                             break;
                     }
                 </EditTemplate>
@@ -281,11 +260,92 @@
 </RadzenDataGrid>
 
 @code {
+    #region Variables
     DataGridEditMode editMode = DataGridEditMode.Single;
-
     List<TDataType> dataToInsert = [];
     List<TDataType> ordersToUpdate = [];
+    #endregion
 
+    #region Get Property Value
+
+    private static T GetValueFromProperty<T>(object obj, string propertyName)
+    {
+        var objValue = obj?.GetType().GetProperty(propertyName)?.GetValue(obj, null);
+        return objValue is null ? default(T) : (T)objValue;
+    }
+
+    private string? GetPropertyValueString(object obj, string propertyName)
+    {
+        var objValue = GetValueFromProperty<string>(obj, propertyName);
+        return objValue is null ? null : objValue.ToString();
+    }
+
+    private T? GetPropertyValue<T>(object obj, string propertyName)
+    {
+        var objValue = GetValueFromProperty<T>(obj, propertyName);
+        return objValue is null ? default(T) : (T)objValue;
+    }
+
+    #region Get Value Numeric
+    private int GetPropertyValueInt(object obj, string propertyName)
+    {
+        var objValue = GetValueFromProperty<int>(obj, propertyName);
+        return objValue == 0 ? 0 : int.Parse(objValue.ToString());
+    }
+
+    private long GetPropertyValueLong(object obj, string propertyName)
+    {
+        var objValue = GetValueFromProperty<long>(obj, propertyName);
+        return objValue == 0 ? 0 : long.Parse(objValue.ToString());
+    }
+
+    private float GetPropertyValueFloat(object obj, string propertyName)
+    {
+        var objValue = GetValueFromProperty<float>(obj, propertyName);
+        return objValue == 0 ? 0 : float.Parse(objValue.ToString());
+    }
+
+    private double GetPropertyValueDouble(object obj, string propertyName)
+    {
+        var objValue = GetValueFromProperty<double>(obj, propertyName);
+        return objValue == 0 ? 0 : double.Parse(objValue.ToString());
+    }
+    #endregion
+
+
+    #endregion
+
+
+    #region Set Property Value
+
+    private T? SetPropertyValue<T>(object obj, string propertyName, T value)
+    {
+        var propertyInfo = obj?.GetType().GetProperty(propertyName);
+        if (propertyInfo != null && propertyInfo.CanWrite)
+        {
+            propertyInfo.SetValue(obj, value);
+            return value;
+        }
+
+        return default(T);
+    }
+
+    private T? SetPropertyValue<T>(object obj, string propertyName, object value)
+    {
+        var propertyInfo = obj?.GetType().GetProperty(propertyName);
+        if (propertyInfo != null && propertyInfo.CanWrite)
+        {
+            propertyInfo.SetValue(obj, value);
+            return (T)value;
+        }
+
+        return default(T);
+    }
+
+    #endregion
+
+
+    #region OTHERS
     void Reset()
     {
         dataToInsert.Clear();
@@ -376,23 +436,5 @@
 
         // ordersToInsert.Remove(order);
     }
-
-    private string? GetPropertyValue(object obj, string propertyName)
-    {
-        var objValue = obj?.GetType().GetProperty(propertyName)?.GetValue(obj, null);
-
-        return objValue is null ? null : objValue.ToString();
-    }
-
-    private T? SetPropertyValue<T>(object obj, string propertyName, T value)
-    {
-        var propertyInfo = obj?.GetType().GetProperty(propertyName);
-        if (propertyInfo != null && propertyInfo.CanWrite)
-        {
-            propertyInfo.SetValue(obj, value);
-            return value;
-        }
-
-        return default(T);
-    }
+    #endregion
 }

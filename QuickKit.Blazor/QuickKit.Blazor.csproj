@@ -19,8 +19,4 @@
     <ProjectReference Include="..\QuickKit.Shared\QuickKit.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Components\Input\Numeric\" />
-  </ItemGroup>
-
 </Project>
