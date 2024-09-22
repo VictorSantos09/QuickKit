@@ -1,10 +1,12 @@
-﻿@typeparam TDataType
+﻿@using QuickKit.Blazor.Components.Button
+@typeparam TDataType
 @inherits Grid<TDataType>
 
-<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="1rem;" Wrap="FlexWrap.Wrap">
-    <RadzenButton Text="@ExportExcelText" Icon="grid_on" Click="@(args => Export("excel"))" />
-    <RadzenButton Text="@ExportCSVText" Icon="wrap_text" Click="@(args => Export("csv"))" />
-</RadzenStack>
+<!--Export-->
+    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="1rem;" Wrap="FlexWrap.Wrap" class="rz-my-4">
+        <RadzenButton Text="@ExportExcelText" Icon="grid_on" Click="@(args => Export("excel"))" />
+        <RadzenButton Text="@ExportCSVText" Icon="wrap_text" Click="@(args => Export("csv"))" />
+    </RadzenStack>
 
 <RadzenDataGrid @ref="GridComponent"
                 @bind-Value="SelectedData"
@@ -78,12 +80,12 @@
                                   Width="15px"
                                   FrozenPosition="FrozenColumnPosition.Right">
                 <HeaderTemplate>
-                    <RadzenCheckBox TabIndex="-1" TriState="false" TValue="bool?" InputAttributes="@(new Dictionary<string,object>(){ { "aria-label", "Select all items" }})"
+                    <RadzenCheckBox TabIndex="-1" TriState="false" TValue="bool?"
                                     Value="@(SelectedData == null || SelectedData?.Any() != true ? false : !Data.All(i => SelectedData.Contains(i)) ? null : Data.Any(i => SelectedData.Contains(i)))"
                                     Change="@(args => SelectedData = args == true ? Data.ToList() : null)" />
                 </HeaderTemplate>
                 <Template Context="data">
-                    <RadzenCheckBox TabIndex="-1" TriState="false" Value="@(SelectedData != null && SelectedData.Contains(data))" InputAttributes="@(new Dictionary<string,object>(){ { "aria-label", "Select item" }})"
+                    <RadzenCheckBox TabIndex="-1" TriState="false" Value="@(SelectedData != null && SelectedData.Contains(data))"
                                     TValue="bool" Change=@(args => { if(!AllowRowSelectOnRowClick) { GridComponent?.SelectRow(data); }}) />
                 </Template>
             </RadzenDataGridColumn>
@@ -106,6 +108,46 @@
                                   ColumnPickerTitle="@c.ColumnPickerTitle"
                                   Visible="@c.Visible" />
         }
+
+        <RadzenDataGridColumn Context="order"
+                              Filterable="false"
+                              Sortable="false"
+                              Pickable="false"
+                              Reorderable="false"
+                              Groupable="false"
+                              TextAlign="TextAlign.Center"
+                              Frozen="true"
+                              Width="60px"
+                              FrozenPosition="FrozenColumnPosition.Right"
+                              Title="Ações">
+            <Template Context="data">
+                @if(CustomActionButton is not null)
+                @foreach (var b in CustomActionButton)
+                {
+                    <Button Class="@DEFAULT_CLASS_SPACING_BUTTON"
+                            BusyText="@b.BusyText"
+                            ButtonStyle="@b.ButtonStyle"
+                            ButtonType="@b.ButtonType"
+                            Culture="@b.Culture"
+                            Disabled="@b.Disabled"
+                            Icon="@b.Icon"
+                            IconColor="@b.IconColor"
+                            Image="@b.Image"
+                            ImageAlternateText="@b.ImageAlternateText"
+                            IsBusy="@b.IsBusy"
+                            MouseEnter="@b.MouseEnter"
+                            MouseLeave="@b.MouseLeave"
+                            OnClick="async () => await b.OnClick.InvokeAsync(data)"
+                            Shade="@b.Shade"
+                            Size="@b.Size"
+                            Style="@b.Style"
+                            Text="@b.Text"
+                            Variant="@b.Variant"
+                            Visible="@b.Visible" />
+                }
+
+            </Template>
+        </RadzenDataGridColumn>
     </Columns>
 </RadzenDataGrid>
 

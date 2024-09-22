@@ -1,4 +1,5 @@
 ﻿@using System.Globalization
+@using QuickKit.Blazor.Components.Button
 @using QuickKit.Blazor.Components.Grid.Types
 @using QuickKit.Blazor.Services.Navigation
 @using Radzen.Blazor
@@ -11,43 +12,55 @@
     @if (AllowManipulation)
     {
         <GridManipulator Data="@Data"
-                           Columns="@Columns"
-                           IsLoading="@IsLoading"
-                           OnValueChangedEvent="@OnValueChangedEvent"
-                           Density="@Density"
-                           SelectionMode="@SelectionMode"
-                           AllowManipulation="@AllowManipulation"
-                           AllowRowSelectOnRowClick="@AllowRowSelectOnRowClick"
-                           OnRowSelectedEvent="@OnRowSelectedEvent" />
+                         Columns="@Columns"
+                         IsLoading="@IsLoading"
+                         OnValueChangedEvent="@OnValueChangedEvent"
+                         CustomActionButton="@CustomActionButton"
+                         Density="@Density"
+                         SelectionMode="@SelectionMode"
+                         AllowManipulation="@AllowManipulation"
+                         ShowNewRecordButton="@ShowNewRecordButton"
+                         OnNewRecordButtonClick="@OnNewRecordButtonClick"
+                         AllowRowSelectOnRowClick="@AllowRowSelectOnRowClick"
+                         OnRowSelectedEvent="@OnRowSelectedEvent" />
     }
     else
     {
         <GridQuery Data="@Data"
-                     Columns="@Columns"
-                     IsLoading="@IsLoading"
-                     OnValueChangedEvent="@OnValueChangedEvent"
-                     Density="@Density"
-                     SelectionMode="@SelectionMode"
-                     AllowManipulation="@AllowManipulation"
-                     AllowRowSelectOnRowClick="@AllowRowSelectOnRowClick"
-                     OnRowSelectedEvent="@OnRowSelectedEvent" />
+                   Columns="@Columns"
+                   IsLoading="@IsLoading"
+                   OnValueChangedEvent="@OnValueChangedEvent"
+                   Density="@Density"
+                   CustomActionButton="@CustomActionButton"
+                   SelectionMode="@SelectionMode"
+                   AllowManipulation="@AllowManipulation"
+                   AllowRowSelectOnRowClick="@AllowRowSelectOnRowClick"
+                   OnRowSelectedEvent="@OnRowSelectedEvent" />
     }
 
 }
 
 @code {
+    protected const string DEFAULT_CLASS_SPACING_BUTTON = "rz-my-1 rz-ms-1";
+
     #region PARAMETERS
     [Parameter, EditorRequired]
     public IEnumerable<TDataType> Data { get; set; }
     [Parameter, EditorRequired]
     public IEnumerable<GridColumn> Columns { get; set; }
+    [Parameter]
+    public IEnumerable<IButtonComponent<TDataType>> CustomActionButton { get; set; }
+    [Parameter]
+    public bool ShowNewRecordButton { get; set; } = true;
+    [Parameter]
+    public EventCallback<MouseEventArgs> OnNewRecordButtonClick { get; set; }
 
     [Parameter]
     public bool IsLoading { get; set; }
     [Parameter]
     public EventCallback<IList<TDataType>> OnValueChangedEvent { get; set; }
     [Parameter]
-    public Density Density { get; set; } = Density.Default;
+    public Density Density { get; set; } = Density.Compact;
     [Parameter]
     public DataGridSelectionMode SelectionMode { get; set; }
     [Parameter]
@@ -69,7 +82,7 @@
 
     #region PRIVATE PROTECTED FIELDS
     private protected int PageSize = 15;
-    private protected string ColumnWidth = "100px";
+    private protected string ColumnWidth = "80px";
     private protected RadzenDataGrid<TDataType>? GridComponent;
     private protected bool AllowFiltering = true;
     private protected bool AllowColumnResize = true;
@@ -141,7 +154,7 @@
                 OrderBy = GridComponent.Query.OrderBy,
                 Filter = GridComponent.Query.Filter,
                 Select = string.Join(",", GridComponent.ColumnsCollection.Where(c => c.GetVisible() && !string.IsNullOrEmpty(c.Property))
-                            .Select(c => c.Property.Contains(".") ? $"{c.Property} as {c.Property.Replace(".", "_")}" : c.Property))
+                                .Select(c => c.Property.Contains(".") ? $"{c.Property} as {c.Property.Replace(".", "_")}" : c.Property))
             });
     }
 }

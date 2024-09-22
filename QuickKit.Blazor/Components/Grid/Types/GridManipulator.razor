@@ -1,22 +1,27 @@
 ﻿@using QuickKit.Blazor.Components.Input
 @using System.Globalization
+@using QuickKit.Blazor.Components.Button;
 @typeparam TDataType
 @inherits Grid<TDataType>
 
+<!--Editing Mode-->
 <RadzenCard Variant="Variant.Outlined" class="rz-my-4">
     <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0.5rem">
-        <div>Modo de Seleção</div>
+        <div>Modo de Edição</div>
         <RadzenSelectBar @bind-Value="@editMode" TextProperty="Text" ValueProperty="Value"
                          Data="@(Enum.GetValues(typeof(DataGridEditMode)).Cast<DataGridEditMode>().Select(t => new { Text = $"{t}", Value = t }))" Size="ButtonSize.Small"
                          Disabled="@(editMode == DataGridEditMode.Multiple && dataToInsert.Count() > 1)" />
     </RadzenStack>
+
 </RadzenCard>
 
-<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="1rem;" Wrap="FlexWrap.Wrap">
+<!--Export-->
+<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="1rem;" Wrap="FlexWrap.Wrap" class="rz-my-4">
     <RadzenButton Text="@ExportExcelText" Icon="grid_on" Click="@(args => Export("excel"))" />
     <RadzenButton Text="@ExportCSVText" Icon="wrap_text" Click="@(args => Export("csv"))" />
 </RadzenStack>
 
+<!--Grid-->
 <RadzenDataGrid @ref="GridComponent"
                 @bind-Value=SelectedData
                 Data="@Data"
@@ -83,9 +88,14 @@
                 AllColumnsText="@AllColumnsText"
                 EnumFilterSelectText="@EnumFilterSelectText"
                 AllowRowSelectOnRowClick="@AllowRowSelectOnRowClick">
+    <!--Header template New Record-->
     <HeaderTemplate>
-        <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle" Text="Novo" Click="@InsertRow" Disabled="@(editMode == DataGridEditMode.Single && dataToInsert.Count > 0)" />
+        @if (ShowNewRecordButton)
+        {
+            <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle" Text="Novo" Click="@OnNewRecordButtonClick" Disabled="@(editMode == DataGridEditMode.Single && dataToInsert.Count > 0)" />
+        }
     </HeaderTemplate>
+    <!--Columns-->
     <Columns>
         <RadzenDataGridColumn Filterable="false"
                               Sortable="false"
@@ -95,11 +105,13 @@
                               TextAlign="TextAlign.Center"
                               Width="15px"
                               FrozenPosition="FrozenColumnPosition.Right">
+            <!--Header template Checkbox Selection-->
             <HeaderTemplate>
                 <RadzenCheckBox TabIndex="-1" TriState="false" TValue="bool?"
                                 Value="@(SelectedData == null || SelectedData?.Any() != true ? false : !Data.All(i => SelectedData.Contains(i)) ? null : Data.Any(i => SelectedData.Contains(i)))"
                                 Change="@(args => SelectedData = args == true ? Data.ToList() : null)" />
             </HeaderTemplate>
+            <!--Checkbox Selection-->
             <Template Context="data">
                 <RadzenCheckBox TabIndex="-1" TriState="false" Value="@(SelectedData != null && SelectedData.Contains(data))"
                                 TValue="bool" Change=@(args => { if(!AllowRowSelectOnRowClick) { GridComponent?.SelectRow(data); }}) />
@@ -108,6 +120,7 @@
 
         @foreach (var c in Columns)
         {
+            <!--Column Creation-->
             <RadzenDataGridColumn Property="@c.PropertyName"
                                   Title="@c.Title"
                                   Width="@c.Width"
@@ -122,22 +135,24 @@
                                   UniqueID="@c.UniqueID"
                                   ColumnPickerTitle="@c.ColumnPickerTitle"
                                   Visible="@c.Visible">
+                <!--Data Manipulation-->
                 <EditTemplate Context="data">
                     @switch (c.Option.Type)
                     {
                         <!--Render TextBox-->
                         case RadzenFormInputType.TextBox:
-                                <RadzenTextBox Style="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenTextBox.Style)))"
-                                               Name="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenTextBox.Name)))"
-                                               Culture="@(GetPropertyValue<CultureInfo>(c.Option.Model, nameof(RadzenTextBox.Culture)))"
-                                               Disabled="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.Disabled)))"
-                                               MaxLength="@(GetPropertyValue<long?>(c.Option.Model, nameof(RadzenTextBox.MaxLength)))"
-                                               Placeholder="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenTextBox.Placeholder)))"
-                                               ReadOnly="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.ReadOnly)))"
-                                               Trim="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.Trim)))"
-                                               Visible="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.Visible)))"
-                                               Value="@GetPropertyValueString(data, c.PropertyName)"
-                                               ValueChanged="@(args => SetPropertyValue(data, c.PropertyName, args))" />
+                            <RadzenTextBox Style="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenTextBox.Style)))"
+                                           Name="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenTextBox.Name)))"
+                                           Culture="@(GetPropertyValue<CultureInfo>(c.Option.Model, nameof(RadzenTextBox.Culture)))"
+                                           Disabled="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.Disabled)))"
+                                           MaxLength="@(GetPropertyValue<long?>(c.Option.Model, nameof(RadzenTextBox.MaxLength)))"
+                                           Placeholder="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenTextBox.Placeholder)))"
+                                           ReadOnly="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.ReadOnly)))"
+                                           Trim="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.Trim)))"
+                                           Visible="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.Visible)))"
+                                           Value="@GetPropertyValueString(data, c.PropertyName)"
+                                           ValueChanged="@(args => SetPropertyValue(data, c.PropertyName, args))" />
+                            <RadzenRequiredValidator Text="ShipName is required" Component="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenTextBox.Name)))" Popup="true" />
                             break;
                         <!--Render Numeric-->
                         case RadzenFormInputType.Numeric:
@@ -170,7 +185,9 @@
                                                    ReadOnly="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<float>.ReadOnly)))"
                                                    Placeholder="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenNumeric<float>.Placeholder)))"
                                                    ShowUpDown="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenNumeric<float>.ShowUpDown)))"
+                                                   Name="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenNumeric<float>.Name)))"
                                                    Style="width: 100%;" />
+                                    <RadzenRequiredValidator Text="ShipName is required" Component="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenNumeric<float>.Name)))" Popup="true" />
                                     break;
                                 <!--Render Numeric Double-->
                                 case NumericType.Double:
@@ -207,7 +224,6 @@
                             break;
 
 
-
                         default:
                             <RadzenTextBox Value="@GetPropertyValueString(data, c.PropertyName)"
                                            ValueChanged="@(args => SetPropertyValue(data, c.PropertyName, args))" />
@@ -216,6 +232,7 @@
                 </EditTemplate>
             </RadzenDataGridColumn>
         }
+        <!--Actions Column-->
         <RadzenDataGridColumn Context="order"
                               Filterable="false"
                               Sortable="false"
@@ -228,10 +245,32 @@
                               FrozenPosition="FrozenColumnPosition.Right"
                               Title="Ações">
             <Template Context="order">
+                @foreach (var b in CustomActionButton)
+                {
+                    <Button Class="@DEFAULT_CLASS_SPACING_BUTTON"
+                            BusyText="@b.BusyText"
+                            ButtonStyle="@b.ButtonStyle"
+                            ButtonType="@b.ButtonType"
+                            Culture="@b.Culture"
+                            Disabled="@b.Disabled"
+                            Icon="@b.Icon"
+                            IconColor="@b.IconColor"
+                            Image="@b.Image"
+                            ImageAlternateText="@b.ImageAlternateText"
+                            IsBusy="@b.IsBusy"
+                            MouseEnter="@b.MouseEnter"
+                            MouseLeave="@b.MouseLeave"
+                            OnClick="@(async () => await @b.OnClick.InvokeAsync(order))"
+                            Shade="@b.Shade"
+                            Size="@b.Size"
+                            Style="@b.Style"
+                            Text="@b.Text"
+                            Variant="@b.Variant"
+                            Visible="@b.Visible" />
+                }
                 @if (CanEdit)
                 {
-
-                    <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium" Click="@(args => EditRow(order))" @onclick:stopPropagation="true">
+                    <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium" class="@DEFAULT_CLASS_SPACING_BUTTON" Click="@(args => EditRow(order))" @onclick:stopPropagation="true">
                     </RadzenButton>
                 }
                 @if (CanDelete)
@@ -246,12 +285,12 @@
                 {
                     <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat" Size="ButtonSize.Medium" Click="@((args) => SaveRow(order))" aria-label="Save">
                     </RadzenButton>
-                    <RadzenButton Icon="close" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium" class="rz-my-1 rz-ms-1" Click="@((args) => CancelEdit(order))" aria-label="Cancel">
+                    <RadzenButton Icon="close" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium" class="@DEFAULT_CLASS_SPACING_BUTTON" Click="@((args) => CancelEdit(order))" aria-label="Cancel">
                     </RadzenButton>
                 }
                 @if (CanDelete)
                 {
-                    <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Variant="Variant.Flat" Shade="Shade.Lighter" Size="ButtonSize.Medium" class="rz-my-1 rz-ms-1" Click="@(args => DeleteRow(order))" aria-label="Delete">
+                    <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Variant="Variant.Flat" Shade="Shade.Lighter" Size="ButtonSize.Medium" class="@DEFAULT_CLASS_SPACING_BUTTON" Click="@(args => DeleteRow(order))" aria-label="Delete">
                     </RadzenButton>
                 }
             </EditTemplate>
@@ -344,7 +383,6 @@
 
     #endregion
 
-
     #region OTHERS
     void Reset()
     {
@@ -414,18 +452,6 @@
         //     ordersGrid.CancelEditRow(order);
         //     await ordersGrid.Reload();
         // }
-    }
-
-    async Task InsertRow()
-    {
-        if (editMode == DataGridEditMode.Single)
-        {
-            Reset();
-        }
-
-        // var order = new object { };
-        // dataToInsert.Add(order);
-        // await dataGrid.InsertRow(order);
     }
 
     void OnCreateRow(TDataType order)

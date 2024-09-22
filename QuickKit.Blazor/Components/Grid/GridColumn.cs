@@ -7,6 +7,7 @@ namespace QuickKit.Blazor.Components.Grid;
 public class GridColumn
 {
     public string Title { get; set; }
+    public string Name { get; set; }
     public string PropertyName { get; set; }
     public bool Frozen { get; set; }
     public bool Filterable { get; set; } = true;
@@ -21,7 +22,7 @@ public class GridColumn
     public string? UniqueID { get; set; } = null;
     public string? ColumnPickerTitle { get; set; } = null;
     public GridColumnOptions<IRadzenComponent> Option { get; set; }
-    public Type TValue { get; set; }
+    public bool IsDialog { get; set; } = false;
 
     public GridColumn(string title,
                         string propertyName,
@@ -38,7 +39,8 @@ public class GridColumn
                         bool visible = true,
                         string width = "80px",
                         TextAlign textAlign = TextAlign.Center,
-                        Type tValue = null)
+                        bool isTemplate = false,
+                        string name = null)
     {
         Title = title;
         PropertyName = propertyName;
@@ -55,7 +57,8 @@ public class GridColumn
         UniqueID = uniqueID;
         ColumnPickerTitle = columnPickerTitle;
         Option = option;
-        TValue = tValue;
+        IsDialog = isTemplate;
+        Name = name;
     }
 }
 
@@ -91,7 +94,7 @@ public enum RadzenFormInputType
     SpeechToTextButton,
     SpitButton,
     Switch,
-    TemplateForm,
+    Template,
     TextArea,
     TextBox,
     Upload

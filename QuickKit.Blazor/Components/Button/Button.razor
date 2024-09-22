@@ -1,0 +1,65 @@
+﻿@using System.Globalization
+<RadzenButton 
+    class="@Class"
+    ButtonStyle="@ButtonStyle" 
+    Variant="@Variant" 
+    Shade="@Shade" 
+    Icon="@Icon" 
+    BusyText="@BusyText"
+    ButtonType="@ButtonType"
+    Disabled="@Disabled"
+    IconColor="@IconColor"
+    Image="@Image"
+    IsBusy="@IsBusy"
+    ImageAlternateText="@ImageAlternateText"
+    MouseEnter="@MouseEnter"
+    MouseLeave="@MouseLeave"
+    Size="@Size"
+    Style="@Style"
+    Text="@Text"
+    Visible="@Visible"
+    Culture="@Culture"
+    Click=@OnClick />
+
+@code {
+    [Parameter]
+    public string Class { get; set; }
+    [Parameter]
+    public ButtonStyle ButtonStyle { get; set; } = ButtonStyle.Info;
+    [Parameter]
+    public Variant Variant { get; set; } = Variant.Flat;
+    [Parameter]
+    public Shade Shade { get; set; } = Shade.Light;
+    [Parameter]
+    public string Icon {get; set;}
+    [Parameter]
+    public string BusyText {get; set;}
+    [Parameter]
+    public ButtonType ButtonType { get; set; } = ButtonType.Button;
+    [Parameter]
+    public bool Disabled {get; set;}
+    [Parameter]
+    public string IconColor {get; set;}
+    [Parameter]
+    public string Image {get; set;}
+    [Parameter]
+    public bool IsBusy {get; set;}
+    [Parameter] 
+    public string ImageAlternateText {get; set;}
+    [Parameter]
+    public EventCallback<ElementReference> MouseEnter {get; set;}
+    [Parameter]
+    public EventCallback<ElementReference> MouseLeave { get; set; }
+    [Parameter]
+    public EventCallback<MouseEventArgs> OnClick { get; set; }
+    [Parameter]
+    public ButtonSize Size { get; set; } = ButtonSize.Medium;
+    [Parameter]
+    public string Style {get; set;}
+    [Parameter]
+    public string Text {get; set;}
+    [Parameter]
+    public bool Visible {get; set;}
+    [Parameter]
+    public CultureInfo Culture { get; set; }
+}
