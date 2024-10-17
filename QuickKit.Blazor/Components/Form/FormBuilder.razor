@@ -1,0 +1,163 @@
+﻿@using QuickKit.Blazor.Components.Grid
+@using QuickKit.Blazor.Components.Input
+@typeparam TModel
+
+<RadzenTemplateForm TItem="TModel"
+                    Data="@Model"
+                    Submit="@OnValidSubmit"
+                    InvalidSubmit="@OnInvalidSubmit"
+                    class="rz-background-color-secondary-light rz-p-3 rz-shadow-2">
+    <RadzenRow
+        JustifyContent="JustifyContent.Normal"
+        AlignItems="AlignItems.Center">
+        @foreach (var field in FieldConfigs)
+        {
+            <RadzenColumn>
+                <RadzenFormField
+                    AllowFloatingLabel="true"
+                    Text="@field.Name"
+                    Visible="@field.Visible">
+                    <ChildContent>
+                        @switch (field.InputType)
+                        {
+                            case RadzenFormInputType.TextBox:
+                                <RadzenTextBox Name="@field.PropertyName"
+                                               @bind-Value="@field.Value"
+                                               Placeholder="@field.Placeholder"
+                                               MaxLength="@field.MaxLength"
+                                               ReadOnly="@field.IsReadOnly"
+                                               Disabled="@field.IsDisabled"
+                                               AutoCompleteType="@field.AutoCompleteType"
+                                               Culture="@field.Culture"
+                                               Trim="@field.Trim"
+                                               Visible="@field.Visible" />
+                                break;
+
+                            case RadzenFormInputType.DropDown:
+                                <RadzenDropDown Data="@field.Data"
+                                                Name="@field.Name"
+                                                @bind-Value=@field.Values
+                                                TextProperty="@field.TextProperty"
+                                                ValueProperty="@field.ValueProperty"
+                                                Placeholder="@field.Placeholder"
+                                                Style="@field.Style"
+                                                Disabled="@field.Disabled"
+                                                AllowClear="@field.AllowClear"
+                                                AllowFiltering="@field.AllowFiltering"
+                                                Visible="@field.Visible"
+                                                AllowSelectAll="@field.AllowSelectAll"
+                                                AllowVirtualization="@field.AllowVirtualization"
+                                                Chips="@field.Chips"
+                                                ClearSearchAfterSelection="@field.ClearSearchAfterSelection"
+                                                Count="@field.Count"
+                                                Culture="@field.Culture"
+                                                DisabledProperty="@field.DisabledProperty"
+                                                EmptyAriaLabel="@field.EmptyAriaLabel"
+                                                FilterAsYouType="@field.FilterAsYouType"
+                                                FilterCaseSensitivity="@field.FilterCaseSensitivity"
+                                                FilterDelay="@field.FilterDelay"
+                                                FilterOperator="@field.FilterOperator"
+                                                FilterPlaceholder="@field.FilterPlaceholder"
+                                                MaxSelectedLabels="@field.MaxSelectedLabels"
+                                                Multiple="@field.Multiple"
+                                                PageSize="@field.PageSize"
+                                                OpenOnFocus="@field.OpenOnFocus"
+                                                PopupStyle="@field.PopupStyle"
+                                                ReadOnly="@field.ReadOnly"
+                                                RemoveChipTitle="@field.RemoveChipTitle"
+                                                SearchAriaLabel="@field.SearchAriaLabel"
+                                                SearchText="@field.SearchText"
+                                                SelectAllText="@field.SelectAllText"
+                                                SelectedItem="@field.SelectedItem"
+                                                SelectedItemChanged="@field.SelectedItemChanged"
+                                                SelectedItemsText="@field.SelectedItemsText"
+                                                Separator="@field.Separator" />
+                                break;
+
+                            case RadzenFormInputType.TextArea:
+                                <RadzenTextArea Cols="@field.Cols"
+                                                Culture="@field.Culture"
+                                                Disabled="@field.Disabled"
+                                                MaxLength="@field.MaxLength"
+                                                Placeholder="@field.Placeholder"
+                                                ReadOnly="@field.ReadOnly"
+                                                Rows="@field.Rows"
+                                                Style="@field.Style"
+                                                Visible="@field.Visible"
+                                                Name="@field.Name"
+                                                @bind-Value="@field.Value" />
+                                break;
+
+                            case RadzenFormInputType.DatePicker:
+                                <RadzenDatePicker AllowClear="@field.AllowClear"
+                                                  AllowInput="@field.AllowInput"
+                                                  CalendarWeekTitle="@field.CalendarWeekTitle"
+                                                  Culture="@field.Culture"
+                                                  DateFormat="@field.DateFormat"
+                                                  Disabled="@field.Disabled"
+                                                  HourFormat="@field.HourFormat"
+                                                  HoursStep="@field.HoursStep"
+                                                  InitialViewDate="@field.InitialViewDate"
+                                                  Inline="@field.Inline"
+                                                  Kind="@field.Kind"
+                                                  Max="@field.MaxDate"
+                                                  Min="@field.MinDate"
+                                                  MinutesStep="@field.MinutesStep"
+                                                  Name="@field.Name"
+                                                  NextMonthAriaLabel="@field.NextMonthAriaLabel"
+                                                  OkAriaLabel="@field.OkAriaLabel"
+                                                  PadHours="@field.PadHours"
+                                                  PadMinutes="@field.PadMinutes"
+                                                  PadSeconds="@field.PadSeconds"
+                                                  ParseInput="@field.ParseInput"
+                                                  Placeholder="@field.Placeholder"
+                                                  PopupRenderMode="@field.PopupRenderMode"
+                                                  PrevMonthAriaLabel="@field.PrevMonthAriaLabel"
+                                                  ReadOnly="@field.ReadOnly"
+                                                  SecondsStep="@field.SecondsStep"
+                                                  YearRange="@field.YearRange"
+                                                  Visible="@field.Visible"
+                                                  @bind-Value=@field.Value
+                                                  TValue="string" />
+                                break;
+
+                            default:
+                                <RadzenTextBox
+                                    Name="@field.Name"
+                                    @bind-Value="@field.Value"
+                                    Style="@field.Style" />
+                                break;
+                        }
+                    </ChildContent>
+
+                    <Helper>
+                        @if (field.IsRequired && field.Visible)
+                        {
+                            <RadzenRequiredValidator
+                                Component="@field.PropertyName"
+                                Text="@field.ValidationMessage" />
+                        }
+                    </Helper>
+                </RadzenFormField>
+            </RadzenColumn>
+        }
+    </RadzenRow>
+    <RadzenButton ButtonType="ButtonType.Submit" Text="Salvar" class="rz-ripple"/>
+</RadzenTemplateForm>
+
+@code {
+    [Parameter]
+    public bool Popup { get; set; }
+
+    [Parameter]
+    public TModel Model { get; set; }
+
+    [Parameter]
+    public List<FieldConfig> FieldConfigs { get; set; } = new();
+
+    [Parameter]
+    public EventCallback<TModel> OnValidSubmit { get; set; }
+
+    [Parameter]
+    public EventCallback<FormInvalidSubmitEventArgs> OnInvalidSubmit { get; set; }
+}
