@@ -151,6 +151,7 @@
                                            Trim="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.Trim)))"
                                            Visible="@(GetPropertyValue<bool>(c.Option.Model, nameof(RadzenTextBox.Visible)))"
                                            Value="@GetPropertyValueString(data, c.PropertyName)"
+                                           Change="@(args => SetPropertyValue(data, c.PropertyName, args))"
                                            ValueChanged="@(args => SetPropertyValue(data, c.PropertyName, args))" />
                             <RadzenRequiredValidator Text="ShipName is required" Component="@(GetPropertyValue<string>(c.Option.Model, nameof(RadzenTextBox.Name)))" Popup="true" />
                             break;
