@@ -60,32 +60,32 @@ echo Copiando DLLs selecionadas...
 REM Copiar as DLLs com base na escolha do usuário
 if /i "%copyQuickKit%"=="S" (
     echo copiando QuickKit.dll
-    copy QuickKit\bin\debug\net7.0\QuickKit.dll "%destPath%"
+    copy QuickKit\bin\debug\net8.0\QuickKit.dll "%destPath%"
 )
 
 if /i "%copyAspNetCore%"=="S" (
     echo copiando QuickKit.AspNetCore.dll
-    copy QuickKit.AspNetCore\bin\debug\net7.0\QuickKit.AspNetCore.dll "%destPath%"
+    copy QuickKit.AspNetCore\bin\debug\net8.0\QuickKit.AspNetCore.dll "%destPath%"
 )
 
 if /i "%copyCmd%"=="S" (
     echo copiando QuickKit.Cmd.dll
-    copy QuickKit.Cmd\bin\debug\net7.0\QuickKit.Cmd.dll "%destPath%"
+    copy QuickKit.Cmd\bin\debug\net8.0\QuickKit.Cmd.dll "%destPath%"
 )
 
 if /i "%copyResultTypes%"=="S" (
     echo copiando QuickKit.ResultTypes.dll
-    copy QuickKit.ResultTypes\bin\debug\net7.0\QuickKit.ResultTypes.dll "%destPath%"
+    copy QuickKit.ResultTypes\bin\debug\net8.0\QuickKit.ResultTypes.dll "%destPath%"
 )
 
 if /i "%copySecurity%"=="S" (
     echo copiando QuickKit.Security.dll
-    copy QuickKit.Security\bin\debug\net7.0\QuickKit.Security.dll "%destPath%"
+    copy QuickKit.Security\bin\debug\net8.0\QuickKit.Security.dll "%destPath%"
 )
 
 if /i "%copyShared%"=="S" (
     echo copiando QuickKit.Shared.dll
-    copy QuickKit.Shared\bin\debug\net7.0\QuickKit.Shared.dll "%destPath%"
+    copy QuickKit.Shared\bin\debug\net8.0\QuickKit.Shared.dll "%destPath%"
 )
 
 if /i "%copyBlazor%"=="S" (
