@@ -1,0 +1,30 @@
+﻿@using QuickKit.Blazor.Components.Input
+
+@switch (FieldConfig.ItemType)
+{
+    case ItemType.Normal:
+        <RadzenColumn Size="@ColumnSize">
+            <FieldBuilder Field="FieldConfig" />
+        </RadzenColumn>
+        break;
+    case ItemType.Group:
+        <RadzenColumn Size="@ColumnSize">
+            <RadzenFieldset Text="@FieldConfig.GroupTitle">
+                <FieldBuilder Field="FieldConfig" />
+            </RadzenFieldset>
+        </RadzenColumn>
+        break;
+    default:
+        <p>ItemType was not informed.</p>
+        break;
+}
+
+@code {
+    [Parameter, EditorRequired]
+    public FieldConfig FieldConfig { get; set; }
+
+    [Parameter, EditorRequired]
+    public int? ColumnSize { get; set; }
+
+    public const sbyte COLUMN_MAX_SIZE = 12;
+}

@@ -1,0 +1,20 @@
+﻿@using QuickKit.Blazor.Components.Input
+
+<RadzenRow JustifyContent="@DEFAULT_JUSTIFY"
+           AlignItems="@DEFAULT_ALIGNEMENT"
+           Gap="@DEFAULT_GAP"
+           RowGap="@DEFAULT_GAP">
+    <ColumnBuilder ColumnSize="@ColumnSize" FieldConfig="@FieldConfig" />
+</RadzenRow>
+
+@code {
+    [Parameter, EditorRequired]
+    public FieldConfig FieldConfig { get; set; }
+
+    [Parameter, EditorRequired]
+    public sbyte ColumnSize { get; set; }
+
+    public const JustifyContent DEFAULT_JUSTIFY = JustifyContent.Normal;
+    public const AlignItems DEFAULT_ALIGNEMENT = AlignItems.Center;
+    public const string DEFAULT_GAP = "1.5rem";
+}

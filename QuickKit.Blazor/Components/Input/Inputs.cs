@@ -8,8 +8,16 @@ using System.Linq.Expressions;
 
 namespace QuickKit.Blazor.Components.Input;
 
+public enum ItemType
+{
+    Normal,
+    Group
+}
 public class FieldConfig
 {
+    public ItemType ItemType { get; set; } = ItemType.Normal;
+    public string GroupTitle { get; set; } = string.Empty;
+    public bool SingleLine { get; set; }
     public string PropertyName { get; set; }
     public string? Label { get; set; }
     public string? Placeholder { get; set; }
